@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `CreateAssessmentTemplateRequest` struct in crate `rusoto`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, CreateAssessmentTemplateRequest">
+
+    <title>rusoto::inspector::CreateAssessmentTemplateRequest - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='../index.html'>rusoto</a>::<wbr><a href='index.html'>inspector</a></p><script>window.sidebarCurrent = {name: 'CreateAssessmentTemplateRequest', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content struct">
+<h1 class='fqn'><span class='in-band'>Struct <a href='../index.html'>rusoto</a>::<wbr><a href='index.html'>inspector</a>::<wbr><a class='struct' href=''>CreateAssessmentTemplateRequest</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-257420' class='srclink' href='../../src/rusoto/home/travis/build/rusoto/rusoto/target/debug/build/rusoto-61f21223a43ed2cb/out/inspector.rs.html#5097-5118' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct CreateAssessmentTemplateRequest {
+    pub assessment_target_arn: <a class='type' href='../../rusoto/inspector/type.Arn.html' title='rusoto::inspector::Arn'>Arn</a>,
+    pub assessment_template_name: <a class='type' href='../../rusoto/inspector/type.AssessmentTemplateName.html' title='rusoto::inspector::AssessmentTemplateName'>AssessmentTemplateName</a>,
+    pub duration_in_seconds: <a class='type' href='../../rusoto/inspector/type.AssessmentRunDuration.html' title='rusoto::inspector::AssessmentRunDuration'>AssessmentRunDuration</a>,
+    pub rules_package_arns: <a class='type' href='../../rusoto/inspector/type.AssessmentTemplateRulesPackageArnList.html' title='rusoto::inspector::AssessmentTemplateRulesPackageArnList'>AssessmentTemplateRulesPackageArnList</a>,
+    pub user_attributes_for_findings: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/inspector/type.UserAttributeList.html' title='rusoto::inspector::UserAttributeList'>UserAttributeList</a>&gt;,
+}</pre><h2 class='fields'>Fields</h2><span id='structfield.assessment_target_arn' class='structfield'>
+                           <span id='assessment_target_arn.v' class='invisible'>
+                           <code>assessment_target_arn: <a class='type' href='../../rusoto/inspector/type.Arn.html' title='rusoto::inspector::Arn'>Arn</a></code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>The ARN that specifies the assessment target for which you want to create the assessment template.</p>
+</div><span id='structfield.assessment_template_name' class='structfield'>
+                           <span id='assessment_template_name.v' class='invisible'>
+                           <code>assessment_template_name: <a class='type' href='../../rusoto/inspector/type.AssessmentTemplateName.html' title='rusoto::inspector::AssessmentTemplateName'>AssessmentTemplateName</a></code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>The user-defined name that identifies the assessment template that you want to create. You can create several assessment templates for an assessment target. The names of the assessment templates that correspond to a particular assessment target must be unique.</p>
+</div><span id='structfield.duration_in_seconds' class='structfield'>
+                           <span id='duration_in_seconds.v' class='invisible'>
+                           <code>duration_in_seconds: <a class='type' href='../../rusoto/inspector/type.AssessmentRunDuration.html' title='rusoto::inspector::AssessmentRunDuration'>AssessmentRunDuration</a></code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>The duration of the assessment run in seconds. The default value is 3600 seconds (one hour).</p>
+</div><span id='structfield.rules_package_arns' class='structfield'>
+                           <span id='rules_package_arns.v' class='invisible'>
+                           <code>rules_package_arns: <a class='type' href='../../rusoto/inspector/type.AssessmentTemplateRulesPackageArnList.html' title='rusoto::inspector::AssessmentTemplateRulesPackageArnList'>AssessmentTemplateRulesPackageArnList</a></code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>The ARNs that specify the rules packages that you want to attach to the assessment template.</p>
+</div><span id='structfield.user_attributes_for_findings' class='structfield'>
+                           <span id='user_attributes_for_findings.v' class='invisible'>
+                           <code>user_attributes_for_findings: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/inspector/type.UserAttributeList.html' title='rusoto::inspector::UserAttributeList'>UserAttributeList</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>The user-defined attributes that are assigned to every finding that is generated by the assessment run that uses this assessment template.</p>
+</div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../../rusoto/inspector/struct.CreateAssessmentTemplateRequest.html' title='rusoto::inspector::CreateAssessmentTemplateRequest'>CreateAssessmentTemplateRequest</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-257426' class='srclink' href='../../src/rusoto/home/travis/build/rusoto/rusoto/target/debug/build/rusoto-61f21223a43ed2cb/out/inspector.rs.html#5096' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.default' class='method'><span id='default.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../../rusoto/inspector/struct.CreateAssessmentTemplateRequest.html' title='rusoto::inspector::CreateAssessmentTemplateRequest'>CreateAssessmentTemplateRequest</a></code></span></h4>
+<div class='docblock'><p>Returns the &quot;default value&quot; for a type. <a href="https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default">Read more</a></p>
+</div></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "rusoto";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../../jquery.js"></script>
+    <script src="../../main.js"></script>
+    
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>

@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `cognitoidentity` mod in crate `rusoto`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, cognitoidentity">
+
+    <title>rusoto::cognitoidentity - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='../index.html'>rusoto</a></p><script>window.sidebarCurrent = {name: 'cognitoidentity', ty: 'mod', relpath: '../'};</script><script defer src="../sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content mod">
+<h1 class='fqn'><span class='in-band'>Module <a href='../index.html'>rusoto</a>::<wbr><a class='mod' href=''>cognitoidentity</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-49747' class='srclink' href='../../src/rusoto/src/cognitoidentity.rs.html#1-3' title='goto source code'>[src]</a></span></h1>
+<div class='docblock'><p>AWS Cognito Identity</p>
+</div><h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CognitoIdentityClient.html'
+                                  title='rusoto::cognitoidentity::CognitoIdentityClient'>CognitoIdentityClient</a></td>
+                           <td class='docblock-short'>
+                                <p>A client for the Amazon Cognito Identity API.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CognitoIdentityProvider.html'
+                                  title='rusoto::cognitoidentity::CognitoIdentityProvider'>CognitoIdentityProvider</a></td>
+                           <td class='docblock-short'>
+                                <p>A provider representing an Amazon Cognito Identity User Pool and its client ID.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateIdentityPoolInput.html'
+                                  title='rusoto::cognitoidentity::CreateIdentityPoolInput'>CreateIdentityPoolInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Input to the CreateIdentityPool action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Credentials.html'
+                                  title='rusoto::cognitoidentity::Credentials'>Credentials</a></td>
+                           <td class='docblock-short'>
+                                <p>Credentials for the provided identity ID.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteIdentitiesInput.html'
+                                  title='rusoto::cognitoidentity::DeleteIdentitiesInput'>DeleteIdentitiesInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Input to the <code>DeleteIdentities</code> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteIdentitiesResponse.html'
+                                  title='rusoto::cognitoidentity::DeleteIdentitiesResponse'>DeleteIdentitiesResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>Returned in response to a successful <code>DeleteIdentities</code> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteIdentityPoolInput.html'
+                                  title='rusoto::cognitoidentity::DeleteIdentityPoolInput'>DeleteIdentityPoolInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Input to the DeleteIdentityPool action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeIdentityInput.html'
+                                  title='rusoto::cognitoidentity::DescribeIdentityInput'>DescribeIdentityInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Input to the <code>DescribeIdentity</code> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeIdentityPoolInput.html'
+                                  title='rusoto::cognitoidentity::DescribeIdentityPoolInput'>DescribeIdentityPoolInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Input to the DescribeIdentityPool action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetCredentialsForIdentityInput.html'
+                                  title='rusoto::cognitoidentity::GetCredentialsForIdentityInput'>GetCredentialsForIdentityInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Input to the <code>GetCredentialsForIdentity</code> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetCredentialsForIdentityResponse.html'
+                                  title='rusoto::cognitoidentity::GetCredentialsForIdentityResponse'>GetCredentialsForIdentityResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>Returned in response to a successful <code>GetCredentialsForIdentity</code> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetIdInput.html'
+                                  title='rusoto::cognitoidentity::GetIdInput'>GetIdInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Input to the GetId action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetIdResponse.html'
+                                  title='rusoto::cognitoidentity::GetIdResponse'>GetIdResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>Returned in response to a GetId request.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetIdentityPoolRolesInput.html'
+                                  title='rusoto::cognitoidentity::GetIdentityPoolRolesInput'>GetIdentityPoolRolesInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Input to the <code>GetIdentityPoolRoles</code> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetIdentityPoolRolesResponse.html'
+                                  title='rusoto::cognitoidentity::GetIdentityPoolRolesResponse'>GetIdentityPoolRolesResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>Returned in response to a successful <code>GetIdentityPoolRoles</code> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetOpenIdTokenForDeveloperIdentityInput.html'
+                                  title='rusoto::cognitoidentity::GetOpenIdTokenForDeveloperIdentityInput'>GetOpenIdTokenForDeveloperIdentityInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Input to the <code>GetOpenIdTokenForDeveloperIdentity</code> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetOpenIdTokenForDeveloperIdentityResponse.html'
+                                  title='rusoto::cognitoidentity::GetOpenIdTokenForDeveloperIdentityResponse'>GetOpenIdTokenForDeveloperIdentityResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>Returned in response to a successful <code>GetOpenIdTokenForDeveloperIdentity</code> request.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetOpenIdTokenInput.html'
+                                  title='rusoto::cognitoidentity::GetOpenIdTokenInput'>GetOpenIdTokenInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Input to the GetOpenIdToken action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetOpenIdTokenResponse.html'
+                                  title='rusoto::cognitoidentity::GetOpenIdTokenResponse'>GetOpenIdTokenResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>Returned in response to a successful GetOpenIdToken request.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.IdentityDescription.html'
+                                  title='rusoto::cognitoidentity::IdentityDescription'>IdentityDescription</a></td>
+                           <td class='docblock-short'>
+                                <p>A description of the identity.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.IdentityPool.html'
+                                  title='rusoto::cognitoidentity::IdentityPool'>IdentityPool</a></td>
+                           <td class='docblock-short'>
+                                <p>An object representing a Cognito identity pool.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.IdentityPoolShortDescription.html'
+                                  title='rusoto::cognitoidentity::IdentityPoolShortDescription'>IdentityPoolShortDescription</a></td>
+                           <td class='docblock-short'>
+                                <p>A description of the identity pool.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListIdentitiesInput.html'
+                                  title='rusoto::cognitoidentity::ListIdentitiesInput'>ListIdentitiesInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Input to the ListIdentities action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListIdentitiesResponse.html'
+                                  title='rusoto::cognitoidentity::ListIdentitiesResponse'>ListIdentitiesResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The response to a ListIdentities request.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListIdentityPoolsInput.html'
+                                  title='rusoto::cognitoidentity::ListIdentityPoolsInput'>ListIdentityPoolsInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Input to the ListIdentityPools action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListIdentityPoolsResponse.html'
+                                  title='rusoto::cognitoidentity::ListIdentityPoolsResponse'>ListIdentityPoolsResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The result of a successful ListIdentityPools action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.LookupDeveloperIdentityInput.html'
+                                  title='rusoto::cognitoidentity::LookupDeveloperIdentityInput'>LookupDeveloperIdentityInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Input to the <code>LookupDeveloperIdentityInput</code> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.LookupDeveloperIdentityResponse.html'
+                                  title='rusoto::cognitoidentity::LookupDeveloperIdentityResponse'>LookupDeveloperIdentityResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>Returned in response to a successful <code>LookupDeveloperIdentity</code> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.MergeDeveloperIdentitiesInput.html'
+                                  title='rusoto::cognitoidentity::MergeDeveloperIdentitiesInput'>MergeDeveloperIdentitiesInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Input to the <code>MergeDeveloperIdentities</code> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.MergeDeveloperIdentitiesResponse.html'
+                                  title='rusoto::cognitoidentity::MergeDeveloperIdentitiesResponse'>MergeDeveloperIdentitiesResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>Returned in response to a successful <code>MergeDeveloperIdentities</code> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SetIdentityPoolRolesInput.html'
+                                  title='rusoto::cognitoidentity::SetIdentityPoolRolesInput'>SetIdentityPoolRolesInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Input to the <code>SetIdentityPoolRoles</code> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UnlinkDeveloperIdentityInput.html'
+                                  title='rusoto::cognitoidentity::UnlinkDeveloperIdentityInput'>UnlinkDeveloperIdentityInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Input to the <code>UnlinkDeveloperIdentity</code> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UnlinkIdentityInput.html'
+                                  title='rusoto::cognitoidentity::UnlinkIdentityInput'>UnlinkIdentityInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Input to the UnlinkIdentity action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UnprocessedIdentityId.html'
+                                  title='rusoto::cognitoidentity::UnprocessedIdentityId'>UnprocessedIdentityId</a></td>
+                           <td class='docblock-short'>
+                                <p>An array of UnprocessedIdentityId objects, each of which contains an ErrorCode and IdentityId.</p>
+                           </td>
+                       </tr></table><h2 id='enums' class='section-header'><a href="#enums">Enums</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.CreateIdentityPoolError.html'
+                                  title='rusoto::cognitoidentity::CreateIdentityPoolError'>CreateIdentityPoolError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DeleteIdentitiesError.html'
+                                  title='rusoto::cognitoidentity::DeleteIdentitiesError'>DeleteIdentitiesError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DeleteIdentityPoolError.html'
+                                  title='rusoto::cognitoidentity::DeleteIdentityPoolError'>DeleteIdentityPoolError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeIdentityError.html'
+                                  title='rusoto::cognitoidentity::DescribeIdentityError'>DescribeIdentityError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeIdentityPoolError.html'
+                                  title='rusoto::cognitoidentity::DescribeIdentityPoolError'>DescribeIdentityPoolError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.GetCredentialsForIdentityError.html'
+                                  title='rusoto::cognitoidentity::GetCredentialsForIdentityError'>GetCredentialsForIdentityError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.GetIdError.html'
+                                  title='rusoto::cognitoidentity::GetIdError'>GetIdError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.GetIdentityPoolRolesError.html'
+                                  title='rusoto::cognitoidentity::GetIdentityPoolRolesError'>GetIdentityPoolRolesError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.GetOpenIdTokenError.html'
+                                  title='rusoto::cognitoidentity::GetOpenIdTokenError'>GetOpenIdTokenError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.GetOpenIdTokenForDeveloperIdentityError.html'
+                                  title='rusoto::cognitoidentity::GetOpenIdTokenForDeveloperIdentityError'>GetOpenIdTokenForDeveloperIdentityError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ListIdentitiesError.html'
+                                  title='rusoto::cognitoidentity::ListIdentitiesError'>ListIdentitiesError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ListIdentityPoolsError.html'
+                                  title='rusoto::cognitoidentity::ListIdentityPoolsError'>ListIdentityPoolsError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.LookupDeveloperIdentityError.html'
+                                  title='rusoto::cognitoidentity::LookupDeveloperIdentityError'>LookupDeveloperIdentityError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.MergeDeveloperIdentitiesError.html'
+                                  title='rusoto::cognitoidentity::MergeDeveloperIdentitiesError'>MergeDeveloperIdentitiesError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.SetIdentityPoolRolesError.html'
+                                  title='rusoto::cognitoidentity::SetIdentityPoolRolesError'>SetIdentityPoolRolesError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.UnlinkDeveloperIdentityError.html'
+                                  title='rusoto::cognitoidentity::UnlinkDeveloperIdentityError'>UnlinkDeveloperIdentityError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.UnlinkIdentityError.html'
+                                  title='rusoto::cognitoidentity::UnlinkIdentityError'>UnlinkIdentityError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.UpdateIdentityPoolError.html'
+                                  title='rusoto::cognitoidentity::UpdateIdentityPoolError'>UpdateIdentityPoolError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr></table><h2 id='types' class='section-header'><a href="#types">Type Definitions</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ARNString.html'
+                                  title='rusoto::cognitoidentity::ARNString'>ARNString</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AccessKeyString.html'
+                                  title='rusoto::cognitoidentity::AccessKeyString'>AccessKeyString</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AccountId.html'
+                                  title='rusoto::cognitoidentity::AccountId'>AccountId</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.CognitoIdentityProviderClientId.html'
+                                  title='rusoto::cognitoidentity::CognitoIdentityProviderClientId'>CognitoIdentityProviderClientId</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.CognitoIdentityProviderList.html'
+                                  title='rusoto::cognitoidentity::CognitoIdentityProviderList'>CognitoIdentityProviderList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.CognitoIdentityProviderName.html'
+                                  title='rusoto::cognitoidentity::CognitoIdentityProviderName'>CognitoIdentityProviderName</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.DateType.html'
+                                  title='rusoto::cognitoidentity::DateType'>DateType</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.DeveloperProviderName.html'
+                                  title='rusoto::cognitoidentity::DeveloperProviderName'>DeveloperProviderName</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.DeveloperUserIdentifier.html'
+                                  title='rusoto::cognitoidentity::DeveloperUserIdentifier'>DeveloperUserIdentifier</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.DeveloperUserIdentifierList.html'
+                                  title='rusoto::cognitoidentity::DeveloperUserIdentifierList'>DeveloperUserIdentifierList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ErrorCode.html'
+                                  title='rusoto::cognitoidentity::ErrorCode'>ErrorCode</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.HideDisabled.html'
+                                  title='rusoto::cognitoidentity::HideDisabled'>HideDisabled</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.IdentitiesList.html'
+                                  title='rusoto::cognitoidentity::IdentitiesList'>IdentitiesList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.IdentityId.html'
+                                  title='rusoto::cognitoidentity::IdentityId'>IdentityId</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.IdentityIdList.html'
+                                  title='rusoto::cognitoidentity::IdentityIdList'>IdentityIdList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.IdentityPoolId.html'
+                                  title='rusoto::cognitoidentity::IdentityPoolId'>IdentityPoolId</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.IdentityPoolName.html'
+                                  title='rusoto::cognitoidentity::IdentityPoolName'>IdentityPoolName</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.IdentityPoolUnauthenticated.html'
+                                  title='rusoto::cognitoidentity::IdentityPoolUnauthenticated'>IdentityPoolUnauthenticated</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.IdentityPoolsList.html'
+                                  title='rusoto::cognitoidentity::IdentityPoolsList'>IdentityPoolsList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.IdentityProviderId.html'
+                                  title='rusoto::cognitoidentity::IdentityProviderId'>IdentityProviderId</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.IdentityProviderName.html'
+                                  title='rusoto::cognitoidentity::IdentityProviderName'>IdentityProviderName</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.IdentityProviderToken.html'
+                                  title='rusoto::cognitoidentity::IdentityProviderToken'>IdentityProviderToken</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.IdentityProviders.html'
+                                  title='rusoto::cognitoidentity::IdentityProviders'>IdentityProviders</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.LoginsList.html'
+                                  title='rusoto::cognitoidentity::LoginsList'>LoginsList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.LoginsMap.html'
+                                  title='rusoto::cognitoidentity::LoginsMap'>LoginsMap</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.OIDCProviderList.html'
+                                  title='rusoto::cognitoidentity::OIDCProviderList'>OIDCProviderList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.OIDCToken.html'
+                                  title='rusoto::cognitoidentity::OIDCToken'>OIDCToken</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.PaginationKey.html'
+                                  title='rusoto::cognitoidentity::PaginationKey'>PaginationKey</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.QueryLimit.html'
+                                  title='rusoto::cognitoidentity::QueryLimit'>QueryLimit</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.RoleType.html'
+                                  title='rusoto::cognitoidentity::RoleType'>RoleType</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.RolesMap.html'
+                                  title='rusoto::cognitoidentity::RolesMap'>RolesMap</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.SAMLProviderList.html'
+                                  title='rusoto::cognitoidentity::SAMLProviderList'>SAMLProviderList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.SecretKeyString.html'
+                                  title='rusoto::cognitoidentity::SecretKeyString'>SecretKeyString</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.SessionTokenString.html'
+                                  title='rusoto::cognitoidentity::SessionTokenString'>SessionTokenString</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.TokenDuration.html'
+                                  title='rusoto::cognitoidentity::TokenDuration'>TokenDuration</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.UnprocessedIdentityIdList.html'
+                                  title='rusoto::cognitoidentity::UnprocessedIdentityIdList'>UnprocessedIdentityIdList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr></table></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "rusoto";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../../jquery.js"></script>
+    <script src="../../main.js"></script>
+    
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>

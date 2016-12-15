@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `PutRuleRequest` struct in crate `rusoto`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, PutRuleRequest">
+
+    <title>rusoto::events::PutRuleRequest - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='../index.html'>rusoto</a>::<wbr><a href='index.html'>events</a></p><script>window.sidebarCurrent = {name: 'PutRuleRequest', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content struct">
+<h1 class='fqn'><span class='in-band'>Struct <a href='../index.html'>rusoto</a>::<wbr><a href='index.html'>events</a>::<wbr><a class='struct' href=''>PutRuleRequest</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-218586' class='srclink' href='../../src/rusoto/home/travis/build/rusoto/rusoto/target/debug/build/rusoto-61f21223a43ed2cb/out/events.rs.html#2009-2030' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct PutRuleRequest {
+    pub description: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/events/type.RuleDescription.html' title='rusoto::events::RuleDescription'>RuleDescription</a>&gt;,
+    pub event_pattern: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/events/type.EventPattern.html' title='rusoto::events::EventPattern'>EventPattern</a>&gt;,
+    pub name: <a class='type' href='../../rusoto/events/type.RuleName.html' title='rusoto::events::RuleName'>RuleName</a>,
+    pub role_arn: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/events/type.RoleArn.html' title='rusoto::events::RoleArn'>RoleArn</a>&gt;,
+    pub schedule_expression: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/events/type.ScheduleExpression.html' title='rusoto::events::ScheduleExpression'>ScheduleExpression</a>&gt;,
+    pub state: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/events/type.RuleState.html' title='rusoto::events::RuleState'>RuleState</a>&gt;,
+}</pre><div class='docblock'><p>Container for the parameters to the <a>PutRule</a> operation.</p>
+</div><h2 class='fields'>Fields</h2><span id='structfield.description' class='structfield'>
+                           <span id='description.v' class='invisible'>
+                           <code>description: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/events/type.RuleDescription.html' title='rusoto::events::RuleDescription'>RuleDescription</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>A description of the rule.</p>
+</div><span id='structfield.event_pattern' class='structfield'>
+                           <span id='event_pattern.v' class='invisible'>
+                           <code>event_pattern: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/events/type.EventPattern.html' title='rusoto::events::EventPattern'>EventPattern</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>The event pattern.</p>
+</div><span id='structfield.name' class='structfield'>
+                           <span id='name.v' class='invisible'>
+                           <code>name: <a class='type' href='../../rusoto/events/type.RuleName.html' title='rusoto::events::RuleName'>RuleName</a></code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>The name of the rule that you are creating or updating.</p>
+</div><span id='structfield.role_arn' class='structfield'>
+                           <span id='role_arn.v' class='invisible'>
+                           <code>role_arn: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/events/type.RoleArn.html' title='rusoto::events::RoleArn'>RoleArn</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>The Amazon Resource Name (ARN) of the IAM role associated with the rule.</p>
+</div><span id='structfield.schedule_expression' class='structfield'>
+                           <span id='schedule_expression.v' class='invisible'>
+                           <code>schedule_expression: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/events/type.ScheduleExpression.html' title='rusoto::events::ScheduleExpression'>ScheduleExpression</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>The scheduling expression. For example, "cron(0 20 * * ? *)", "rate(5 minutes)".</p>
+</div><span id='structfield.state' class='structfield'>
+                           <span id='state.v' class='invisible'>
+                           <code>state: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/events/type.RuleState.html' title='rusoto::events::RuleState'>RuleState</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>Indicates whether the rule is enabled or disabled.</p>
+</div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../../rusoto/events/struct.PutRuleRequest.html' title='rusoto::events::PutRuleRequest'>PutRuleRequest</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-218593' class='srclink' href='../../src/rusoto/home/travis/build/rusoto/rusoto/target/debug/build/rusoto-61f21223a43ed2cb/out/events.rs.html#2008' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.default' class='method'><span id='default.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../../rusoto/events/struct.PutRuleRequest.html' title='rusoto::events::PutRuleRequest'>PutRuleRequest</a></code></span></h4>
+<div class='docblock'><p>Returns the &quot;default value&quot; for a type. <a href="https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default">Read more</a></p>
+</div></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "rusoto";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../../jquery.js"></script>
+    <script src="../../main.js"></script>
+    
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>

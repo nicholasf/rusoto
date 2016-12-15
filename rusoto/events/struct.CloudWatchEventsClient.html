@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `CloudWatchEventsClient` struct in crate `rusoto`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, CloudWatchEventsClient">
+
+    <title>rusoto::events::CloudWatchEventsClient - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='../index.html'>rusoto</a>::<wbr><a href='index.html'>events</a></p><script>window.sidebarCurrent = {name: 'CloudWatchEventsClient', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content struct">
+<h1 class='fqn'><span class='in-band'>Struct <a href='../index.html'>rusoto</a>::<wbr><a href='index.html'>events</a>::<wbr><a class='struct' href=''>CloudWatchEventsClient</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-220879' class='srclink' href='../../src/rusoto/home/travis/build/rusoto/rusoto/target/debug/build/rusoto-61f21223a43ed2cb/out/events.rs.html#4792-4797' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct CloudWatchEventsClient&lt;P,&nbsp;D&gt; <span class='where'>where P: <a class='trait' href='../../rusoto/trait.ProvideAwsCredentials.html' title='rusoto::ProvideAwsCredentials'>ProvideAwsCredentials</a>, D: <a class='trait' href='../../rusoto/trait.DispatchSignedRequest.html' title='rusoto::DispatchSignedRequest'>DispatchSignedRequest</a></span> { /* fields omitted */ }</pre><div class='docblock'><p>A client for the Amazon CloudWatch Events API.</p>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;P&gt; <a class='struct' href='../../rusoto/events/struct.CloudWatchEventsClient.html' title='rusoto::events::CloudWatchEventsClient'>CloudWatchEventsClient</a>&lt;P,&nbsp;<a class='struct' href='https://hyperium.github.io/hyper/hyper/client/struct.Client.html' title='hyper::client::Client'>Client</a>&gt; <span class='where'>where P: <a class='trait' href='../../rusoto/trait.ProvideAwsCredentials.html' title='rusoto::ProvideAwsCredentials'>ProvideAwsCredentials</a></span></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-220885' class='srclink' href='../../src/rusoto/home/travis/build/rusoto/rusoto/target/debug/build/rusoto-61f21223a43ed2cb/out/events.rs.html#4798-4806' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.new' class='method'><span id='new.v' class='invisible'><code>fn <a href='#method.new' class='fnname'>new</a>(credentials_provider: P, region: <a class='enum' href='../../rusoto/enum.Region.html' title='rusoto::Region'>Region</a>) -&gt; Self</code></span></h4>
+</div><h3 class='impl'><span class='in-band'><code>impl&lt;P,&nbsp;D&gt; <a class='struct' href='../../rusoto/events/struct.CloudWatchEventsClient.html' title='rusoto::events::CloudWatchEventsClient'>CloudWatchEventsClient</a>&lt;P,&nbsp;D&gt; <span class='where'>where P: <a class='trait' href='../../rusoto/trait.ProvideAwsCredentials.html' title='rusoto::ProvideAwsCredentials'>ProvideAwsCredentials</a>, D: <a class='trait' href='../../rusoto/trait.DispatchSignedRequest.html' title='rusoto::DispatchSignedRequest'>DispatchSignedRequest</a></span></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-220891' class='srclink' href='../../src/rusoto/home/travis/build/rusoto/rusoto/target/debug/build/rusoto-61f21223a43ed2cb/out/events.rs.html#4807-5049' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.with_request_dispatcher' class='method'><span id='with_request_dispatcher.v' class='invisible'><code>fn <a href='#method.with_request_dispatcher' class='fnname'>with_request_dispatcher</a>(request_dispatcher: D, credentials_provider: P, region: <a class='enum' href='../../rusoto/enum.Region.html' title='rusoto::Region'>Region</a>) -&gt; Self</code></span></h4>
+<h4 id='method.delete_rule' class='method'><span id='delete_rule.v' class='invisible'><code>fn <a href='#method.delete_rule' class='fnname'>delete_rule</a>(&amp;self, input: &amp;<a class='struct' href='../../rusoto/events/struct.DeleteRuleRequest.html' title='rusoto::events::DeleteRuleRequest'>DeleteRuleRequest</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>,&nbsp;<a class='enum' href='../../rusoto/events/enum.DeleteRuleError.html' title='rusoto::events::DeleteRuleError'>DeleteRuleError</a>&gt;</code></span></h4>
+<div class='docblock'><p>Deletes a rule. You must remove all targets from a rule using <a>RemoveTargets</a> before you can delete the rule.</p> <p> <b>Note:</b> When you make a change with this action, incoming events might still continue to match to the deleted rule. Please allow a short period of time for changes to take effect. </p>
+</div><h4 id='method.describe_rule' class='method'><span id='describe_rule.v' class='invisible'><code>fn <a href='#method.describe_rule' class='fnname'>describe_rule</a>(&amp;self, input: &amp;<a class='struct' href='../../rusoto/events/struct.DescribeRuleRequest.html' title='rusoto::events::DescribeRuleRequest'>DescribeRuleRequest</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../../rusoto/events/struct.DescribeRuleResponse.html' title='rusoto::events::DescribeRuleResponse'>DescribeRuleResponse</a>,&nbsp;<a class='enum' href='../../rusoto/events/enum.DescribeRuleError.html' title='rusoto::events::DescribeRuleError'>DescribeRuleError</a>&gt;</code></span></h4>
+<div class='docblock'><p>Describes the details of the specified rule.</p>
+</div><h4 id='method.disable_rule' class='method'><span id='disable_rule.v' class='invisible'><code>fn <a href='#method.disable_rule' class='fnname'>disable_rule</a>(&amp;self, input: &amp;<a class='struct' href='../../rusoto/events/struct.DisableRuleRequest.html' title='rusoto::events::DisableRuleRequest'>DisableRuleRequest</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>,&nbsp;<a class='enum' href='../../rusoto/events/enum.DisableRuleError.html' title='rusoto::events::DisableRuleError'>DisableRuleError</a>&gt;</code></span></h4>
+<div class='docblock'><p>Disables a rule. A disabled rule won't match any events, and won't self-trigger if it has a schedule expression.</p> <p> <b>Note:</b> When you make a change with this action, incoming events might still continue to match to the disabled rule. Please allow a short period of time for changes to take effect. </p>
+</div><h4 id='method.enable_rule' class='method'><span id='enable_rule.v' class='invisible'><code>fn <a href='#method.enable_rule' class='fnname'>enable_rule</a>(&amp;self, input: &amp;<a class='struct' href='../../rusoto/events/struct.EnableRuleRequest.html' title='rusoto::events::EnableRuleRequest'>EnableRuleRequest</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>,&nbsp;<a class='enum' href='../../rusoto/events/enum.EnableRuleError.html' title='rusoto::events::EnableRuleError'>EnableRuleError</a>&gt;</code></span></h4>
+<div class='docblock'><p>Enables a rule. If the rule does not exist, the operation fails.</p> <p> <b>Note:</b> When you make a change with this action, incoming events might not immediately start matching to a newly enabled rule. Please allow a short period of time for changes to take effect. </p>
+</div><h4 id='method.list_rule_names_by_target' class='method'><span id='list_rule_names_by_target.v' class='invisible'><code>fn <a href='#method.list_rule_names_by_target' class='fnname'>list_rule_names_by_target</a>(&amp;self, input: &amp;<a class='struct' href='../../rusoto/events/struct.ListRuleNamesByTargetRequest.html' title='rusoto::events::ListRuleNamesByTargetRequest'>ListRuleNamesByTargetRequest</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../../rusoto/events/struct.ListRuleNamesByTargetResponse.html' title='rusoto::events::ListRuleNamesByTargetResponse'>ListRuleNamesByTargetResponse</a>,&nbsp;<a class='enum' href='../../rusoto/events/enum.ListRuleNamesByTargetError.html' title='rusoto::events::ListRuleNamesByTargetError'>ListRuleNamesByTargetError</a>&gt;</code></span></h4>
+<div class='docblock'><p>Lists the names of the rules that the given target is put to. Using this action, you can find out which of the rules in Amazon CloudWatch Events can invoke a specific target in your account. If you have more rules in your account than the given limit, the results will be paginated. In that case, use the next token returned in the response and repeat the ListRulesByTarget action until the NextToken in the response is returned as null.</p>
+</div><h4 id='method.list_rules' class='method'><span id='list_rules.v' class='invisible'><code>fn <a href='#method.list_rules' class='fnname'>list_rules</a>(&amp;self, input: &amp;<a class='struct' href='../../rusoto/events/struct.ListRulesRequest.html' title='rusoto::events::ListRulesRequest'>ListRulesRequest</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../../rusoto/events/struct.ListRulesResponse.html' title='rusoto::events::ListRulesResponse'>ListRulesResponse</a>,&nbsp;<a class='enum' href='../../rusoto/events/enum.ListRulesError.html' title='rusoto::events::ListRulesError'>ListRulesError</a>&gt;</code></span></h4>
+<div class='docblock'><p>Lists the Amazon CloudWatch Events rules in your account. You can either list all the rules or you can provide a prefix to match to the rule names. If you have more rules in your account than the given limit, the results will be paginated. In that case, use the next token returned in the response and repeat the ListRules action until the NextToken in the response is returned as null.</p>
+</div><h4 id='method.list_targets_by_rule' class='method'><span id='list_targets_by_rule.v' class='invisible'><code>fn <a href='#method.list_targets_by_rule' class='fnname'>list_targets_by_rule</a>(&amp;self, input: &amp;<a class='struct' href='../../rusoto/events/struct.ListTargetsByRuleRequest.html' title='rusoto::events::ListTargetsByRuleRequest'>ListTargetsByRuleRequest</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../../rusoto/events/struct.ListTargetsByRuleResponse.html' title='rusoto::events::ListTargetsByRuleResponse'>ListTargetsByRuleResponse</a>,&nbsp;<a class='enum' href='../../rusoto/events/enum.ListTargetsByRuleError.html' title='rusoto::events::ListTargetsByRuleError'>ListTargetsByRuleError</a>&gt;</code></span></h4>
+<div class='docblock'><p>Lists of targets assigned to the rule.</p>
+</div><h4 id='method.put_events' class='method'><span id='put_events.v' class='invisible'><code>fn <a href='#method.put_events' class='fnname'>put_events</a>(&amp;self, input: &amp;<a class='struct' href='../../rusoto/events/struct.PutEventsRequest.html' title='rusoto::events::PutEventsRequest'>PutEventsRequest</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../../rusoto/events/struct.PutEventsResponse.html' title='rusoto::events::PutEventsResponse'>PutEventsResponse</a>,&nbsp;<a class='enum' href='../../rusoto/events/enum.PutEventsError.html' title='rusoto::events::PutEventsError'>PutEventsError</a>&gt;</code></span></h4>
+<div class='docblock'><p>Sends custom events to Amazon CloudWatch Events so that they can be matched to rules.</p>
+</div><h4 id='method.put_rule' class='method'><span id='put_rule.v' class='invisible'><code>fn <a href='#method.put_rule' class='fnname'>put_rule</a>(&amp;self, input: &amp;<a class='struct' href='../../rusoto/events/struct.PutRuleRequest.html' title='rusoto::events::PutRuleRequest'>PutRuleRequest</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../../rusoto/events/struct.PutRuleResponse.html' title='rusoto::events::PutRuleResponse'>PutRuleResponse</a>,&nbsp;<a class='enum' href='../../rusoto/events/enum.PutRuleError.html' title='rusoto::events::PutRuleError'>PutRuleError</a>&gt;</code></span></h4>
+<div class='docblock'><p>Creates or updates a rule. Rules are enabled by default, or based on value of the State parameter. You can disable a rule using <a>DisableRule</a>.</p> <p> <b>Note:</b> When you make a change with this action, incoming events might not immediately start matching to new or updated rules. Please allow a short period of time for changes to take effect.</p> <p>A rule must contain at least an EventPattern or ScheduleExpression. Rules with EventPatterns are triggered when a matching event is observed. Rules with ScheduleExpressions self-trigger based on the given schedule. A rule can have both an EventPattern and a ScheduleExpression, in which case the rule will trigger on matching events as well as on a schedule.</p> <p> <b>Note:</b> Most services in AWS treat : or / as the same character in Amazon Resource Names (ARNs). However, CloudWatch Events uses an exact match in event patterns and rules. Be sure to use the correct ARN characters when creating event patterns so that they match the ARN syntax in the event you want to match. </p>
+</div><h4 id='method.put_targets' class='method'><span id='put_targets.v' class='invisible'><code>fn <a href='#method.put_targets' class='fnname'>put_targets</a>(&amp;self, input: &amp;<a class='struct' href='../../rusoto/events/struct.PutTargetsRequest.html' title='rusoto::events::PutTargetsRequest'>PutTargetsRequest</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../../rusoto/events/struct.PutTargetsResponse.html' title='rusoto::events::PutTargetsResponse'>PutTargetsResponse</a>,&nbsp;<a class='enum' href='../../rusoto/events/enum.PutTargetsError.html' title='rusoto::events::PutTargetsError'>PutTargetsError</a>&gt;</code></span></h4>
+<div class='docblock'><p>Adds target(s) to a rule. Updates the target(s) if they are already associated with the role. In other words, if there is already a target with the given target ID, then the target associated with that ID is updated.</p> <p> <b>Note:</b> When you make a change with this action, when the associated rule triggers, new or updated targets might not be immediately invoked. Please allow a short period of time for changes to take effect. </p>
+</div><h4 id='method.remove_targets' class='method'><span id='remove_targets.v' class='invisible'><code>fn <a href='#method.remove_targets' class='fnname'>remove_targets</a>(&amp;self, input: &amp;<a class='struct' href='../../rusoto/events/struct.RemoveTargetsRequest.html' title='rusoto::events::RemoveTargetsRequest'>RemoveTargetsRequest</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../../rusoto/events/struct.RemoveTargetsResponse.html' title='rusoto::events::RemoveTargetsResponse'>RemoveTargetsResponse</a>,&nbsp;<a class='enum' href='../../rusoto/events/enum.RemoveTargetsError.html' title='rusoto::events::RemoveTargetsError'>RemoveTargetsError</a>&gt;</code></span></h4>
+<div class='docblock'><p>Removes target(s) from a rule so that when the rule is triggered, those targets will no longer be invoked.</p> <p> <b>Note:</b> When you make a change with this action, when the associated rule triggers, removed targets might still continue to be invoked. Please allow a short period of time for changes to take effect. </p>
+</div><h4 id='method.test_event_pattern' class='method'><span id='test_event_pattern.v' class='invisible'><code>fn <a href='#method.test_event_pattern' class='fnname'>test_event_pattern</a>(&amp;self, input: &amp;<a class='struct' href='../../rusoto/events/struct.TestEventPatternRequest.html' title='rusoto::events::TestEventPatternRequest'>TestEventPatternRequest</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../../rusoto/events/struct.TestEventPatternResponse.html' title='rusoto::events::TestEventPatternResponse'>TestEventPatternResponse</a>,&nbsp;<a class='enum' href='../../rusoto/events/enum.TestEventPatternError.html' title='rusoto::events::TestEventPatternError'>TestEventPatternError</a>&gt;</code></span></h4>
+<div class='docblock'><p>Tests whether an event pattern matches the provided event.</p> <p> <b>Note:</b> Most services in AWS treat : or / as the same character in Amazon Resource Names (ARNs). However, CloudWatch Events uses an exact match in event patterns and rules. Be sure to use the correct ARN characters when creating event patterns so that they match the ARN syntax in the event you want to match. </p>
+</div></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "rusoto";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../../jquery.js"></script>
+    <script src="../../main.js"></script>
+    
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>

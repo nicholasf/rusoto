@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `KinesisFirehoseClient` struct in crate `rusoto`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, KinesisFirehoseClient">
+
+    <title>rusoto::firehose::KinesisFirehoseClient - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='../index.html'>rusoto</a>::<wbr><a href='index.html'>firehose</a></p><script>window.sidebarCurrent = {name: 'KinesisFirehoseClient', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content struct">
+<h1 class='fqn'><span class='in-band'>Struct <a href='../index.html'>rusoto</a>::<wbr><a href='index.html'>firehose</a>::<wbr><a class='struct' href=''>KinesisFirehoseClient</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-226990' class='srclink' href='../../src/rusoto/home/travis/build/rusoto/rusoto/target/debug/build/rusoto-61f21223a43ed2cb/out/firehose.rs.html#10285-10290' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct KinesisFirehoseClient&lt;P,&nbsp;D&gt; <span class='where'>where P: <a class='trait' href='../../rusoto/trait.ProvideAwsCredentials.html' title='rusoto::ProvideAwsCredentials'>ProvideAwsCredentials</a>, D: <a class='trait' href='../../rusoto/trait.DispatchSignedRequest.html' title='rusoto::DispatchSignedRequest'>DispatchSignedRequest</a></span> { /* fields omitted */ }</pre><div class='docblock'><p>A client for the Firehose API.</p>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;P&gt; <a class='struct' href='../../rusoto/firehose/struct.KinesisFirehoseClient.html' title='rusoto::firehose::KinesisFirehoseClient'>KinesisFirehoseClient</a>&lt;P,&nbsp;<a class='struct' href='https://hyperium.github.io/hyper/hyper/client/struct.Client.html' title='hyper::client::Client'>Client</a>&gt; <span class='where'>where P: <a class='trait' href='../../rusoto/trait.ProvideAwsCredentials.html' title='rusoto::ProvideAwsCredentials'>ProvideAwsCredentials</a></span></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-226996' class='srclink' href='../../src/rusoto/home/travis/build/rusoto/rusoto/target/debug/build/rusoto-61f21223a43ed2cb/out/firehose.rs.html#10291-10299' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.new' class='method'><span id='new.v' class='invisible'><code>fn <a href='#method.new' class='fnname'>new</a>(credentials_provider: P, region: <a class='enum' href='../../rusoto/enum.Region.html' title='rusoto::Region'>Region</a>) -&gt; Self</code></span></h4>
+</div><h3 class='impl'><span class='in-band'><code>impl&lt;P,&nbsp;D&gt; <a class='struct' href='../../rusoto/firehose/struct.KinesisFirehoseClient.html' title='rusoto::firehose::KinesisFirehoseClient'>KinesisFirehoseClient</a>&lt;P,&nbsp;D&gt; <span class='where'>where P: <a class='trait' href='../../rusoto/trait.ProvideAwsCredentials.html' title='rusoto::ProvideAwsCredentials'>ProvideAwsCredentials</a>, D: <a class='trait' href='../../rusoto/trait.DispatchSignedRequest.html' title='rusoto::DispatchSignedRequest'>DispatchSignedRequest</a></span></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-227002' class='srclink' href='../../src/rusoto/home/travis/build/rusoto/rusoto/target/debug/build/rusoto-61f21223a43ed2cb/out/firehose.rs.html#10300-10456' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.with_request_dispatcher' class='method'><span id='with_request_dispatcher.v' class='invisible'><code>fn <a href='#method.with_request_dispatcher' class='fnname'>with_request_dispatcher</a>(request_dispatcher: D, credentials_provider: P, region: <a class='enum' href='../../rusoto/enum.Region.html' title='rusoto::Region'>Region</a>) -&gt; Self</code></span></h4>
+<h4 id='method.create_delivery_stream' class='method'><span id='create_delivery_stream.v' class='invisible'><code>fn <a href='#method.create_delivery_stream' class='fnname'>create_delivery_stream</a>(&amp;self, input: &amp;<a class='struct' href='../../rusoto/firehose/struct.CreateDeliveryStreamInput.html' title='rusoto::firehose::CreateDeliveryStreamInput'>CreateDeliveryStreamInput</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../../rusoto/firehose/struct.CreateDeliveryStreamOutput.html' title='rusoto::firehose::CreateDeliveryStreamOutput'>CreateDeliveryStreamOutput</a>,&nbsp;<a class='enum' href='../../rusoto/firehose/enum.CreateDeliveryStreamError.html' title='rusoto::firehose::CreateDeliveryStreamError'>CreateDeliveryStreamError</a>&gt;</code></span></h4>
+<div class='docblock'><p>Creates a delivery stream.</p> <p> <a>CreateDeliveryStream</a> is an asynchronous operation that immediately returns. The initial status of the delivery stream is <code>CREATING</code>. After the delivery stream is created, its status is <code>ACTIVE</code> and it now accepts data. Attempts to send data to a delivery stream that is not in the <code>ACTIVE</code> state cause an exception. To check the state of a delivery stream, use <a>DescribeDeliveryStream</a>.</p> <p>The name of a delivery stream identifies it. You can't have two delivery streams with the same name in the same region. Two delivery streams in different AWS accounts or different regions in the same AWS account can have the same name.</p> <p>By default, you can create up to 20 delivery streams per region.</p> <p>A delivery stream can only be configured with a single destination, Amazon S3, Amazon Elasticsearch Service, or Amazon Redshift. For correct <a>CreateDeliveryStream</a> request syntax, specify only one destination configuration parameter: either <b>S3DestinationConfiguration</b>, <b>ElasticsearchDestinationConfiguration</b>, or <b>RedshiftDestinationConfiguration</b>. </p> <p>As part of <b>S3DestinationConfiguration</b>, optional values <b>BufferingHints</b>, <b>EncryptionConfiguration</b>, and <b>CompressionFormat</b> can be provided. By default, if no <b>BufferingHints</b> value is provided, Firehose buffers data up to 5 MB or for 5 minutes, whichever condition is satisfied first. Note that <b>BufferingHints</b> is a hint, so there are some cases where the service cannot adhere to these conditions strictly; for example, record boundaries are such that the size is a little over or under the configured buffering size. By default, no encryption is performed. We strongly recommend that you enable encryption to ensure secure data storage in Amazon S3.</p> <p>A few notes about <b>RedshiftDestinationConfiguration</b>:</p> <ul> <li> <p>An Amazon Redshift destination requires an S3 bucket as intermediate location, as Firehose first delivers data to S3 and then uses <code>COPY</code> syntax to load data into an Amazon Redshift table. This is specified in the <b>RedshiftDestinationConfiguration.S3Configuration</b> parameter element.</p> </li> <li> <p>The compression formats <code>SNAPPY</code> or <code>ZIP</code> cannot be specified in <b>RedshiftDestinationConfiguration.S3Configuration</b> because the Amazon Redshift <code>COPY</code> operation that reads from the S3 bucket doesn't support these compression formats.</p> </li> <li> <p>We strongly recommend that the username and password provided is used exclusively for Firehose purposes, and that the permissions for the account are restricted for Amazon Redshift <code>INSERT</code> permissions.</p> </li> </ul> <p>Firehose assumes the IAM role that is configured as part of destinations. The IAM role should allow the Firehose principal to assume the role, and the role should have permissions that allows the service to deliver the data. For more information, see <a href="http://docs.aws.amazon.com/firehose/latest/dev/controlling-access.html#using-iam-s3">Amazon S3 Bucket Access</a> in the <i>Amazon Kinesis Firehose Developer Guide</i>.</p>
+</div><h4 id='method.delete_delivery_stream' class='method'><span id='delete_delivery_stream.v' class='invisible'><code>fn <a href='#method.delete_delivery_stream' class='fnname'>delete_delivery_stream</a>(&amp;self, input: &amp;<a class='struct' href='../../rusoto/firehose/struct.DeleteDeliveryStreamInput.html' title='rusoto::firehose::DeleteDeliveryStreamInput'>DeleteDeliveryStreamInput</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../../rusoto/firehose/struct.DeleteDeliveryStreamOutput.html' title='rusoto::firehose::DeleteDeliveryStreamOutput'>DeleteDeliveryStreamOutput</a>,&nbsp;<a class='enum' href='../../rusoto/firehose/enum.DeleteDeliveryStreamError.html' title='rusoto::firehose::DeleteDeliveryStreamError'>DeleteDeliveryStreamError</a>&gt;</code></span></h4>
+<div class='docblock'><p>Deletes a delivery stream and its data.</p> <p>You can delete a delivery stream only if it is in <code>ACTIVE</code> or <code>DELETING</code> state, and not in the <code>CREATING</code> state. While the deletion request is in process, the delivery stream is in the <code>DELETING</code> state.</p> <p>To check the state of a delivery stream, use <a>DescribeDeliveryStream</a>.</p> <p>While the delivery stream is <code>DELETING</code> state, the service may continue to accept the records, but the service doesn't make any guarantees with respect to delivering the data. Therefore, as a best practice, you should first stop any applications that are sending records before deleting a delivery stream.</p>
+</div><h4 id='method.describe_delivery_stream' class='method'><span id='describe_delivery_stream.v' class='invisible'><code>fn <a href='#method.describe_delivery_stream' class='fnname'>describe_delivery_stream</a>(&amp;self, input: &amp;<a class='struct' href='../../rusoto/firehose/struct.DescribeDeliveryStreamInput.html' title='rusoto::firehose::DescribeDeliveryStreamInput'>DescribeDeliveryStreamInput</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../../rusoto/firehose/struct.DescribeDeliveryStreamOutput.html' title='rusoto::firehose::DescribeDeliveryStreamOutput'>DescribeDeliveryStreamOutput</a>,&nbsp;<a class='enum' href='../../rusoto/firehose/enum.DescribeDeliveryStreamError.html' title='rusoto::firehose::DescribeDeliveryStreamError'>DescribeDeliveryStreamError</a>&gt;</code></span></h4>
+<div class='docblock'><p>Describes the specified delivery stream and gets the status. For example, after your delivery stream is created, call <a>DescribeDeliveryStream</a> to see if the delivery stream is <code>ACTIVE</code> and therefore ready for data to be sent to it.</p>
+</div><h4 id='method.list_delivery_streams' class='method'><span id='list_delivery_streams.v' class='invisible'><code>fn <a href='#method.list_delivery_streams' class='fnname'>list_delivery_streams</a>(&amp;self, input: &amp;<a class='struct' href='../../rusoto/firehose/struct.ListDeliveryStreamsInput.html' title='rusoto::firehose::ListDeliveryStreamsInput'>ListDeliveryStreamsInput</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../../rusoto/firehose/struct.ListDeliveryStreamsOutput.html' title='rusoto::firehose::ListDeliveryStreamsOutput'>ListDeliveryStreamsOutput</a>,&nbsp;<a class='enum' href='../../rusoto/firehose/enum.ListDeliveryStreamsError.html' title='rusoto::firehose::ListDeliveryStreamsError'>ListDeliveryStreamsError</a>&gt;</code></span></h4>
+<div class='docblock'><p>Lists your delivery streams.</p> <p>The number of delivery streams might be too large to return using a single call to <a>ListDeliveryStreams</a>. You can limit the number of delivery streams returned, using the <b>Limit</b> parameter. To determine whether there are more delivery streams to list, check the value of <b>HasMoreDeliveryStreams</b> in the output. If there are more delivery streams to list, you can request them by specifying the name of the last delivery stream returned in the call in the <b>ExclusiveStartDeliveryStreamName</b> parameter of a subsequent call.</p>
+</div><h4 id='method.put_record' class='method'><span id='put_record.v' class='invisible'><code>fn <a href='#method.put_record' class='fnname'>put_record</a>(&amp;self, input: &amp;<a class='struct' href='../../rusoto/firehose/struct.PutRecordInput.html' title='rusoto::firehose::PutRecordInput'>PutRecordInput</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../../rusoto/firehose/struct.PutRecordOutput.html' title='rusoto::firehose::PutRecordOutput'>PutRecordOutput</a>,&nbsp;<a class='enum' href='../../rusoto/firehose/enum.PutRecordError.html' title='rusoto::firehose::PutRecordError'>PutRecordError</a>&gt;</code></span></h4>
+<div class='docblock'><p>Writes a single data record into an Amazon Kinesis Firehose delivery stream. To write multiple data records into a delivery stream, use <a>PutRecordBatch</a>. Applications using these operations are referred to as producers.</p> <p>By default, each delivery stream can take in up to 2,000 transactions per second, 5,000 records per second, or 5 MB per second. Note that if you use <a>PutRecord</a> and <a>PutRecordBatch</a>, the limits are an aggregate across these two operations for each delivery stream. For more information about limits and how to request an increase, see <a href="http://docs.aws.amazon.com/firehose/latest/dev/limits.html">Amazon Kinesis Firehose Limits</a>. </p> <p>You must specify the name of the delivery stream and the data record when using <a>PutRecord</a>. The data record consists of a data blob that can be up to 1,000 KB in size, and any kind of data, for example, a segment from a log file, geographic location data, web site clickstream data, etc.</p> <p>Firehose buffers records before delivering them to the destination. To disambiguate the data blobs at the destination, a common solution is to use delimiters in the data, such as a newline (<code>\n</code>) or some other character unique within the data. This allows the consumer application(s) to parse individual data items when reading the data from the destination.</p> <p>The <a>PutRecord</a> operation returns a <b>RecordId</b>, which is a unique string assigned to each record. Producer applications can use this ID for purposes such as auditability and investigation.</p> <p>If the <a>PutRecord</a> operation throws a <b>ServiceUnavailableException</b>, back off and retry. If the exception persists, it is possible that the throughput limits have been exceeded for the delivery stream. </p> <p>Data records sent to Firehose are stored for 24 hours from the time they are added to a delivery stream as it attempts to send the records to the destination. If the destination is unreachable for more than 24 hours, the data is no longer available.</p>
+</div><h4 id='method.put_record_batch' class='method'><span id='put_record_batch.v' class='invisible'><code>fn <a href='#method.put_record_batch' class='fnname'>put_record_batch</a>(&amp;self, input: &amp;<a class='struct' href='../../rusoto/firehose/struct.PutRecordBatchInput.html' title='rusoto::firehose::PutRecordBatchInput'>PutRecordBatchInput</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../../rusoto/firehose/struct.PutRecordBatchOutput.html' title='rusoto::firehose::PutRecordBatchOutput'>PutRecordBatchOutput</a>,&nbsp;<a class='enum' href='../../rusoto/firehose/enum.PutRecordBatchError.html' title='rusoto::firehose::PutRecordBatchError'>PutRecordBatchError</a>&gt;</code></span></h4>
+<div class='docblock'><p>Writes multiple data records into a delivery stream in a single call, which can achieve higher throughput per producer than when writing single records. To write single data records into a delivery stream, use <a>PutRecord</a>. Applications using these operations are referred to as producers.</p> <p>Each <a>PutRecordBatch</a> request supports up to 500 records. Each record in the request can be as large as 1,000 KB (before 64-bit encoding), up to a limit of 4 MB for the entire request. By default, each delivery stream can take in up to 2,000 transactions per second, 5,000 records per second, or 5 MB per second. Note that if you use <a>PutRecord</a> and <a>PutRecordBatch</a>, the limits are an aggregate across these two operations for each delivery stream. For more information about limits and how to request an increase, see <a href="http://docs.aws.amazon.com/firehose/latest/dev/limits.html">Amazon Kinesis Firehose Limits</a>. </p> <p>You must specify the name of the delivery stream and the data record when using <a>PutRecord</a>. The data record consists of a data blob that can be up to 1,000 KB in size, and any kind of data, for example, a segment from a log file, geographic location data, web site clickstream data, and so on.</p> <p>Firehose buffers records before delivering them to the destination. To disambiguate the data blobs at the destination, a common solution is to use delimiters in the data, such as a newline (<code>\n</code>) or some other character unique within the data. This allows the consumer application(s) to parse individual data items when reading the data from the destination.</p> <p>The <a>PutRecordBatch</a> response includes a count of any failed records, <b>FailedPutCount</b>, and an array of responses, <b>RequestResponses</b>. The <b>FailedPutCount</b> value is a count of records that failed. Each entry in the <b>RequestResponses</b> array gives additional information of the processed record. Each entry in <b>RequestResponses</b> directly correlates with a record in the request array using the same ordering, from the top to the bottom of the request and response. <b>RequestResponses</b> always includes the same number of records as the request array. <b>RequestResponses</b> both successfully and unsuccessfully processed records. Firehose attempts to process all records in each <a>PutRecordBatch</a> request. A single record failure does not stop the processing of subsequent records.</p> <p>A successfully processed record includes a <b>RecordId</b> value, which is a unique value identified for the record. An unsuccessfully processed record includes <b>ErrorCode</b> and <b>ErrorMessage</b> values. <b>ErrorCode</b> reflects the type of error and is one of the following values: <code>ServiceUnavailable</code> or <code>InternalFailure</code>. <code>ErrorMessage</code> provides more detailed information about the error.</p> <p>If <b>FailedPutCount</b> is greater than 0 (zero), retry the request. A retry of the entire batch of records is possible; however, we strongly recommend that you inspect the entire response and resend only those records that failed processing. This minimizes duplicate records and also reduces the total bytes sent (and corresponding charges).</p> <p>If the <a>PutRecordBatch</a> operation throws a <b>ServiceUnavailableException</b>, back off and retry. If the exception persists, it is possible that the throughput limits have been exceeded for the delivery stream.</p> <p>Data records sent to Firehose are stored for 24 hours from the time they are added to a delivery stream as it attempts to send the records to the destination. If the destination is unreachable for more than 24 hours, the data is no longer available.</p>
+</div><h4 id='method.update_destination' class='method'><span id='update_destination.v' class='invisible'><code>fn <a href='#method.update_destination' class='fnname'>update_destination</a>(&amp;self, input: &amp;<a class='struct' href='../../rusoto/firehose/struct.UpdateDestinationInput.html' title='rusoto::firehose::UpdateDestinationInput'>UpdateDestinationInput</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../../rusoto/firehose/struct.UpdateDestinationOutput.html' title='rusoto::firehose::UpdateDestinationOutput'>UpdateDestinationOutput</a>,&nbsp;<a class='enum' href='../../rusoto/firehose/enum.UpdateDestinationError.html' title='rusoto::firehose::UpdateDestinationError'>UpdateDestinationError</a>&gt;</code></span></h4>
+<div class='docblock'><p>Updates the specified destination of the specified delivery stream. Note: Switching between Elasticsearch and other services is not supported. For Elasticsearch destination, you can only update an existing Elasticsearch destination with this operation.</p> <p>This operation can be used to change the destination type (for example, to replace the Amazon S3 destination with Amazon Redshift) or change the parameters associated with a given destination (for example, to change the bucket name of the Amazon S3 destination). The update may not occur immediately. The target delivery stream remains active while the configurations are updated, so data writes to the delivery stream can continue during this process. The updated configurations are normally effective within a few minutes.</p> <p>If the destination type is the same, Firehose merges the configuration parameters specified in the <a>UpdateDestination</a> request with the destination configuration that already exists on the delivery stream. If any of the parameters are not specified in the update request, then the existing configuration parameters are retained. For example, in the Amazon S3 destination, if <a>EncryptionConfiguration</a> is not specified then the existing <a>EncryptionConfiguration</a> is maintained on the destination.</p> <p>If the destination type is not the same, for example, changing the destination from Amazon S3 to Amazon Redshift, Firehose does not merge any parameters. In this case, all parameters must be specified.</p> <p>Firehose uses the <b>CurrentDeliveryStreamVersionId</b> to avoid race conditions and conflicting merges. This is a required field in every request and the service only updates the configuration if the existing configuration matches the <b>VersionId</b>. After the update is applied successfully, the <b>VersionId</b> is updated, which can be retrieved with the <a>DescribeDeliveryStream</a> operation. The new <b>VersionId</b> should be uses to set <b>CurrentDeliveryStreamVersionId</b> in the next <a>UpdateDestination</a> operation.</p>
+</div></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "rusoto";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../../jquery.js"></script>
+    <script src="../../main.js"></script>
+    
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>

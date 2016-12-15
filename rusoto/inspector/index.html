@@ -1,0 +1,1511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `inspector` mod in crate `rusoto`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, inspector">
+
+    <title>rusoto::inspector - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='../index.html'>rusoto</a></p><script>window.sidebarCurrent = {name: 'inspector', ty: 'mod', relpath: '../'};</script><script defer src="../sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content mod">
+<h1 class='fqn'><span class='in-band'>Module <a href='../index.html'>rusoto</a>::<wbr><a class='mod' href=''>inspector</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-254773' class='srclink' href='../../src/rusoto/src/inspector.rs.html#1-3' title='goto source code'>[src]</a></span></h1>
+<div class='docblock'><p>Amazon Inspector</p>
+</div><h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AddAttributesToFindingsRequest.html'
+                                  title='rusoto::inspector::AddAttributesToFindingsRequest'>AddAttributesToFindingsRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AddAttributesToFindingsResponse.html'
+                                  title='rusoto::inspector::AddAttributesToFindingsResponse'>AddAttributesToFindingsResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AgentAlreadyRunningAssessment.html'
+                                  title='rusoto::inspector::AgentAlreadyRunningAssessment'>AgentAlreadyRunningAssessment</a></td>
+                           <td class='docblock-short'>
+                                <p>Used in the exception error that is thrown if you start an assessment run for an assessment target that includes an EC2 instance that is already participating in another started assessment run.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AgentFilter.html'
+                                  title='rusoto::inspector::AgentFilter'>AgentFilter</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains information about an Amazon Inspector agent. This data type is used as a request parameter in the <a>ListAssessmentRunAgents</a> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AgentPreview.html'
+                                  title='rusoto::inspector::AgentPreview'>AgentPreview</a></td>
+                           <td class='docblock-short'>
+                                <p>Used as a response element in the <a>PreviewAgents</a> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AssessmentRun.html'
+                                  title='rusoto::inspector::AssessmentRun'>AssessmentRun</a></td>
+                           <td class='docblock-short'>
+                                <p>A snapshot of an Amazon Inspector assessment run that contains the findings of the assessment run .</p> <p>Used as the response element in the <a>DescribeAssessmentRuns</a> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AssessmentRunAgent.html'
+                                  title='rusoto::inspector::AssessmentRunAgent'>AssessmentRunAgent</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains information about an Amazon Inspector agent. This data type is used as a response element in the <a>ListAssessmentRunAgents</a> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AssessmentRunFilter.html'
+                                  title='rusoto::inspector::AssessmentRunFilter'>AssessmentRunFilter</a></td>
+                           <td class='docblock-short'>
+                                <p>Used as the request parameter in the <a>ListAssessmentRuns</a> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AssessmentRunNotification.html'
+                                  title='rusoto::inspector::AssessmentRunNotification'>AssessmentRunNotification</a></td>
+                           <td class='docblock-short'>
+                                <p>Used as one of the elements of the <a>AssessmentRun</a> data type.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AssessmentRunStateChange.html'
+                                  title='rusoto::inspector::AssessmentRunStateChange'>AssessmentRunStateChange</a></td>
+                           <td class='docblock-short'>
+                                <p>Used as one of the elements of the <a>AssessmentRun</a> data type.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AssessmentTarget.html'
+                                  title='rusoto::inspector::AssessmentTarget'>AssessmentTarget</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains information about an Amazon Inspector application. This data type is used as the response element in the <a>DescribeAssessmentTargets</a> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AssessmentTargetFilter.html'
+                                  title='rusoto::inspector::AssessmentTargetFilter'>AssessmentTargetFilter</a></td>
+                           <td class='docblock-short'>
+                                <p>Used as the request parameter in the <a>ListAssessmentTargets</a> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AssessmentTemplate.html'
+                                  title='rusoto::inspector::AssessmentTemplate'>AssessmentTemplate</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains information about an Amazon Inspector assessment template. This data type is used as the response element in the <a>DescribeAssessmentTemplates</a> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AssessmentTemplateFilter.html'
+                                  title='rusoto::inspector::AssessmentTemplateFilter'>AssessmentTemplateFilter</a></td>
+                           <td class='docblock-short'>
+                                <p>Used as the request parameter in the <a>ListAssessmentTemplates</a> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AssetAttributes.html'
+                                  title='rusoto::inspector::AssetAttributes'>AssetAttributes</a></td>
+                           <td class='docblock-short'>
+                                <p>A collection of attributes of the host from which the finding is generated.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Attribute.html'
+                                  title='rusoto::inspector::Attribute'>Attribute</a></td>
+                           <td class='docblock-short'>
+                                <p>This data type is used as a request parameter in the <a>AddAttributesToFindings</a> and <a>CreateAssessmentTemplate</a> actions.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateAssessmentTargetRequest.html'
+                                  title='rusoto::inspector::CreateAssessmentTargetRequest'>CreateAssessmentTargetRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateAssessmentTargetResponse.html'
+                                  title='rusoto::inspector::CreateAssessmentTargetResponse'>CreateAssessmentTargetResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateAssessmentTemplateRequest.html'
+                                  title='rusoto::inspector::CreateAssessmentTemplateRequest'>CreateAssessmentTemplateRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateAssessmentTemplateResponse.html'
+                                  title='rusoto::inspector::CreateAssessmentTemplateResponse'>CreateAssessmentTemplateResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateResourceGroupRequest.html'
+                                  title='rusoto::inspector::CreateResourceGroupRequest'>CreateResourceGroupRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateResourceGroupResponse.html'
+                                  title='rusoto::inspector::CreateResourceGroupResponse'>CreateResourceGroupResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteAssessmentRunRequest.html'
+                                  title='rusoto::inspector::DeleteAssessmentRunRequest'>DeleteAssessmentRunRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteAssessmentTargetRequest.html'
+                                  title='rusoto::inspector::DeleteAssessmentTargetRequest'>DeleteAssessmentTargetRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteAssessmentTemplateRequest.html'
+                                  title='rusoto::inspector::DeleteAssessmentTemplateRequest'>DeleteAssessmentTemplateRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeAssessmentRunsRequest.html'
+                                  title='rusoto::inspector::DescribeAssessmentRunsRequest'>DescribeAssessmentRunsRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeAssessmentRunsResponse.html'
+                                  title='rusoto::inspector::DescribeAssessmentRunsResponse'>DescribeAssessmentRunsResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeAssessmentTargetsRequest.html'
+                                  title='rusoto::inspector::DescribeAssessmentTargetsRequest'>DescribeAssessmentTargetsRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeAssessmentTargetsResponse.html'
+                                  title='rusoto::inspector::DescribeAssessmentTargetsResponse'>DescribeAssessmentTargetsResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeAssessmentTemplatesRequest.html'
+                                  title='rusoto::inspector::DescribeAssessmentTemplatesRequest'>DescribeAssessmentTemplatesRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeAssessmentTemplatesResponse.html'
+                                  title='rusoto::inspector::DescribeAssessmentTemplatesResponse'>DescribeAssessmentTemplatesResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeCrossAccountAccessRoleResponse.html'
+                                  title='rusoto::inspector::DescribeCrossAccountAccessRoleResponse'>DescribeCrossAccountAccessRoleResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeFindingsRequest.html'
+                                  title='rusoto::inspector::DescribeFindingsRequest'>DescribeFindingsRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeFindingsResponse.html'
+                                  title='rusoto::inspector::DescribeFindingsResponse'>DescribeFindingsResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeResourceGroupsRequest.html'
+                                  title='rusoto::inspector::DescribeResourceGroupsRequest'>DescribeResourceGroupsRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeResourceGroupsResponse.html'
+                                  title='rusoto::inspector::DescribeResourceGroupsResponse'>DescribeResourceGroupsResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeRulesPackagesRequest.html'
+                                  title='rusoto::inspector::DescribeRulesPackagesRequest'>DescribeRulesPackagesRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeRulesPackagesResponse.html'
+                                  title='rusoto::inspector::DescribeRulesPackagesResponse'>DescribeRulesPackagesResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DurationRange.html'
+                                  title='rusoto::inspector::DurationRange'>DurationRange</a></td>
+                           <td class='docblock-short'>
+                                <p>This data type is used in the <a>AssessmentTemplateFilter</a> data type.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.EventSubscription.html'
+                                  title='rusoto::inspector::EventSubscription'>EventSubscription</a></td>
+                           <td class='docblock-short'>
+                                <p>This data type is used in the <a>Subscription</a> data type.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.FailedItemDetails.html'
+                                  title='rusoto::inspector::FailedItemDetails'>FailedItemDetails</a></td>
+                           <td class='docblock-short'>
+                                <p>Includes details about the failed items.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Finding.html'
+                                  title='rusoto::inspector::Finding'>Finding</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains information about an Amazon Inspector finding. This data type is used as the response element in the <a>DescribeFindings</a> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.FindingFilter.html'
+                                  title='rusoto::inspector::FindingFilter'>FindingFilter</a></td>
+                           <td class='docblock-short'>
+                                <p>This data type is used as a request parameter in the <a>ListFindings</a> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetTelemetryMetadataRequest.html'
+                                  title='rusoto::inspector::GetTelemetryMetadataRequest'>GetTelemetryMetadataRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetTelemetryMetadataResponse.html'
+                                  title='rusoto::inspector::GetTelemetryMetadataResponse'>GetTelemetryMetadataResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.InspectorClient.html'
+                                  title='rusoto::inspector::InspectorClient'>InspectorClient</a></td>
+                           <td class='docblock-short'>
+                                <p>A client for the Amazon Inspector API.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.InspectorServiceAttributes.html'
+                                  title='rusoto::inspector::InspectorServiceAttributes'>InspectorServiceAttributes</a></td>
+                           <td class='docblock-short'>
+                                <p>This data type is used in the <a>Finding</a> data type.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListAssessmentRunAgentsRequest.html'
+                                  title='rusoto::inspector::ListAssessmentRunAgentsRequest'>ListAssessmentRunAgentsRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListAssessmentRunAgentsResponse.html'
+                                  title='rusoto::inspector::ListAssessmentRunAgentsResponse'>ListAssessmentRunAgentsResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListAssessmentRunsRequest.html'
+                                  title='rusoto::inspector::ListAssessmentRunsRequest'>ListAssessmentRunsRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListAssessmentRunsResponse.html'
+                                  title='rusoto::inspector::ListAssessmentRunsResponse'>ListAssessmentRunsResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListAssessmentTargetsRequest.html'
+                                  title='rusoto::inspector::ListAssessmentTargetsRequest'>ListAssessmentTargetsRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListAssessmentTargetsResponse.html'
+                                  title='rusoto::inspector::ListAssessmentTargetsResponse'>ListAssessmentTargetsResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListAssessmentTemplatesRequest.html'
+                                  title='rusoto::inspector::ListAssessmentTemplatesRequest'>ListAssessmentTemplatesRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListAssessmentTemplatesResponse.html'
+                                  title='rusoto::inspector::ListAssessmentTemplatesResponse'>ListAssessmentTemplatesResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListEventSubscriptionsRequest.html'
+                                  title='rusoto::inspector::ListEventSubscriptionsRequest'>ListEventSubscriptionsRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListEventSubscriptionsResponse.html'
+                                  title='rusoto::inspector::ListEventSubscriptionsResponse'>ListEventSubscriptionsResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListFindingsRequest.html'
+                                  title='rusoto::inspector::ListFindingsRequest'>ListFindingsRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListFindingsResponse.html'
+                                  title='rusoto::inspector::ListFindingsResponse'>ListFindingsResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListRulesPackagesRequest.html'
+                                  title='rusoto::inspector::ListRulesPackagesRequest'>ListRulesPackagesRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListRulesPackagesResponse.html'
+                                  title='rusoto::inspector::ListRulesPackagesResponse'>ListRulesPackagesResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListTagsForResourceRequest.html'
+                                  title='rusoto::inspector::ListTagsForResourceRequest'>ListTagsForResourceRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListTagsForResourceResponse.html'
+                                  title='rusoto::inspector::ListTagsForResourceResponse'>ListTagsForResourceResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.PreviewAgentsRequest.html'
+                                  title='rusoto::inspector::PreviewAgentsRequest'>PreviewAgentsRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.PreviewAgentsResponse.html'
+                                  title='rusoto::inspector::PreviewAgentsResponse'>PreviewAgentsResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RegisterCrossAccountAccessRoleRequest.html'
+                                  title='rusoto::inspector::RegisterCrossAccountAccessRoleRequest'>RegisterCrossAccountAccessRoleRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RemoveAttributesFromFindingsRequest.html'
+                                  title='rusoto::inspector::RemoveAttributesFromFindingsRequest'>RemoveAttributesFromFindingsRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RemoveAttributesFromFindingsResponse.html'
+                                  title='rusoto::inspector::RemoveAttributesFromFindingsResponse'>RemoveAttributesFromFindingsResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ResourceGroup.html'
+                                  title='rusoto::inspector::ResourceGroup'>ResourceGroup</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains information about a resource group. The resource group defines a set of tags that, when queried, identify the AWS resources that make up the assessment target. This data type is used as the response element in the <a>DescribeResourceGroups</a> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ResourceGroupTag.html'
+                                  title='rusoto::inspector::ResourceGroupTag'>ResourceGroupTag</a></td>
+                           <td class='docblock-short'>
+                                <p>This data type is used as one of the elements of the <a>ResourceGroup</a> data type.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RulesPackage.html'
+                                  title='rusoto::inspector::RulesPackage'>RulesPackage</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains information about an Amazon Inspector rules package. This data type is used as the response element in the <a>DescribeRulesPackages</a> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SetTagsForResourceRequest.html'
+                                  title='rusoto::inspector::SetTagsForResourceRequest'>SetTagsForResourceRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.StartAssessmentRunRequest.html'
+                                  title='rusoto::inspector::StartAssessmentRunRequest'>StartAssessmentRunRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.StartAssessmentRunResponse.html'
+                                  title='rusoto::inspector::StartAssessmentRunResponse'>StartAssessmentRunResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.StopAssessmentRunRequest.html'
+                                  title='rusoto::inspector::StopAssessmentRunRequest'>StopAssessmentRunRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SubscribeToEventRequest.html'
+                                  title='rusoto::inspector::SubscribeToEventRequest'>SubscribeToEventRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Subscription.html'
+                                  title='rusoto::inspector::Subscription'>Subscription</a></td>
+                           <td class='docblock-short'>
+                                <p>This data type is used as a response element in the <a>ListEventSubscriptions</a> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Tag.html'
+                                  title='rusoto::inspector::Tag'>Tag</a></td>
+                           <td class='docblock-short'>
+                                <p>A key and value pair. This data type is used as a request parameter in the <a>SetTagsForResource</a> action and a response element in the <a>ListTagsForResource</a> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.TelemetryMetadata.html'
+                                  title='rusoto::inspector::TelemetryMetadata'>TelemetryMetadata</a></td>
+                           <td class='docblock-short'>
+                                <p>The metadata about the Amazon Inspector application data metrics collected by the agent. This data type is used as the response element in the <a>GetTelemetryMetadata</a> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.TimestampRange.html'
+                                  title='rusoto::inspector::TimestampRange'>TimestampRange</a></td>
+                           <td class='docblock-short'>
+                                <p>This data type is used in the <a>AssessmentRunFilter</a> data type.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UnsubscribeFromEventRequest.html'
+                                  title='rusoto::inspector::UnsubscribeFromEventRequest'>UnsubscribeFromEventRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UpdateAssessmentTargetRequest.html'
+                                  title='rusoto::inspector::UpdateAssessmentTargetRequest'>UpdateAssessmentTargetRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr></table><h2 id='enums' class='section-header'><a href="#enums">Enums</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.AddAttributesToFindingsError.html'
+                                  title='rusoto::inspector::AddAttributesToFindingsError'>AddAttributesToFindingsError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.CreateAssessmentTargetError.html'
+                                  title='rusoto::inspector::CreateAssessmentTargetError'>CreateAssessmentTargetError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.CreateAssessmentTemplateError.html'
+                                  title='rusoto::inspector::CreateAssessmentTemplateError'>CreateAssessmentTemplateError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.CreateResourceGroupError.html'
+                                  title='rusoto::inspector::CreateResourceGroupError'>CreateResourceGroupError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DeleteAssessmentRunError.html'
+                                  title='rusoto::inspector::DeleteAssessmentRunError'>DeleteAssessmentRunError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DeleteAssessmentTargetError.html'
+                                  title='rusoto::inspector::DeleteAssessmentTargetError'>DeleteAssessmentTargetError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DeleteAssessmentTemplateError.html'
+                                  title='rusoto::inspector::DeleteAssessmentTemplateError'>DeleteAssessmentTemplateError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeAssessmentRunsError.html'
+                                  title='rusoto::inspector::DescribeAssessmentRunsError'>DescribeAssessmentRunsError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeAssessmentTargetsError.html'
+                                  title='rusoto::inspector::DescribeAssessmentTargetsError'>DescribeAssessmentTargetsError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeAssessmentTemplatesError.html'
+                                  title='rusoto::inspector::DescribeAssessmentTemplatesError'>DescribeAssessmentTemplatesError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeCrossAccountAccessRoleError.html'
+                                  title='rusoto::inspector::DescribeCrossAccountAccessRoleError'>DescribeCrossAccountAccessRoleError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeFindingsError.html'
+                                  title='rusoto::inspector::DescribeFindingsError'>DescribeFindingsError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeResourceGroupsError.html'
+                                  title='rusoto::inspector::DescribeResourceGroupsError'>DescribeResourceGroupsError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeRulesPackagesError.html'
+                                  title='rusoto::inspector::DescribeRulesPackagesError'>DescribeRulesPackagesError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.GetTelemetryMetadataError.html'
+                                  title='rusoto::inspector::GetTelemetryMetadataError'>GetTelemetryMetadataError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ListAssessmentRunAgentsError.html'
+                                  title='rusoto::inspector::ListAssessmentRunAgentsError'>ListAssessmentRunAgentsError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ListAssessmentRunsError.html'
+                                  title='rusoto::inspector::ListAssessmentRunsError'>ListAssessmentRunsError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ListAssessmentTargetsError.html'
+                                  title='rusoto::inspector::ListAssessmentTargetsError'>ListAssessmentTargetsError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ListAssessmentTemplatesError.html'
+                                  title='rusoto::inspector::ListAssessmentTemplatesError'>ListAssessmentTemplatesError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ListEventSubscriptionsError.html'
+                                  title='rusoto::inspector::ListEventSubscriptionsError'>ListEventSubscriptionsError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ListFindingsError.html'
+                                  title='rusoto::inspector::ListFindingsError'>ListFindingsError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ListRulesPackagesError.html'
+                                  title='rusoto::inspector::ListRulesPackagesError'>ListRulesPackagesError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ListTagsForResourceError.html'
+                                  title='rusoto::inspector::ListTagsForResourceError'>ListTagsForResourceError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.PreviewAgentsError.html'
+                                  title='rusoto::inspector::PreviewAgentsError'>PreviewAgentsError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.RegisterCrossAccountAccessRoleError.html'
+                                  title='rusoto::inspector::RegisterCrossAccountAccessRoleError'>RegisterCrossAccountAccessRoleError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.RemoveAttributesFromFindingsError.html'
+                                  title='rusoto::inspector::RemoveAttributesFromFindingsError'>RemoveAttributesFromFindingsError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.SetTagsForResourceError.html'
+                                  title='rusoto::inspector::SetTagsForResourceError'>SetTagsForResourceError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.StartAssessmentRunError.html'
+                                  title='rusoto::inspector::StartAssessmentRunError'>StartAssessmentRunError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.StopAssessmentRunError.html'
+                                  title='rusoto::inspector::StopAssessmentRunError'>StopAssessmentRunError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.SubscribeToEventError.html'
+                                  title='rusoto::inspector::SubscribeToEventError'>SubscribeToEventError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.UnsubscribeFromEventError.html'
+                                  title='rusoto::inspector::UnsubscribeFromEventError'>UnsubscribeFromEventError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.UpdateAssessmentTargetError.html'
+                                  title='rusoto::inspector::UpdateAssessmentTargetError'>UpdateAssessmentTargetError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr></table><h2 id='types' class='section-header'><a href="#types">Type Definitions</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AccessDeniedErrorCode.html'
+                                  title='rusoto::inspector::AccessDeniedErrorCode'>AccessDeniedErrorCode</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AddRemoveAttributesFindingArnList.html'
+                                  title='rusoto::inspector::AddRemoveAttributesFindingArnList'>AddRemoveAttributesFindingArnList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AgentAlreadyRunningAssessmentList.html'
+                                  title='rusoto::inspector::AgentAlreadyRunningAssessmentList'>AgentAlreadyRunningAssessmentList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AgentHealth.html'
+                                  title='rusoto::inspector::AgentHealth'>AgentHealth</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AgentHealthCode.html'
+                                  title='rusoto::inspector::AgentHealthCode'>AgentHealthCode</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AgentHealthCodeList.html'
+                                  title='rusoto::inspector::AgentHealthCodeList'>AgentHealthCodeList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AgentHealthList.html'
+                                  title='rusoto::inspector::AgentHealthList'>AgentHealthList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AgentId.html'
+                                  title='rusoto::inspector::AgentId'>AgentId</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AgentIdList.html'
+                                  title='rusoto::inspector::AgentIdList'>AgentIdList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AgentPreviewList.html'
+                                  title='rusoto::inspector::AgentPreviewList'>AgentPreviewList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AmiId.html'
+                                  title='rusoto::inspector::AmiId'>AmiId</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Arn.html'
+                                  title='rusoto::inspector::Arn'>Arn</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AssessmentRulesPackageArnList.html'
+                                  title='rusoto::inspector::AssessmentRulesPackageArnList'>AssessmentRulesPackageArnList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AssessmentRunAgentList.html'
+                                  title='rusoto::inspector::AssessmentRunAgentList'>AssessmentRunAgentList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AssessmentRunDuration.html'
+                                  title='rusoto::inspector::AssessmentRunDuration'>AssessmentRunDuration</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AssessmentRunInProgressArnList.html'
+                                  title='rusoto::inspector::AssessmentRunInProgressArnList'>AssessmentRunInProgressArnList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AssessmentRunList.html'
+                                  title='rusoto::inspector::AssessmentRunList'>AssessmentRunList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AssessmentRunName.html'
+                                  title='rusoto::inspector::AssessmentRunName'>AssessmentRunName</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AssessmentRunNotificationList.html'
+                                  title='rusoto::inspector::AssessmentRunNotificationList'>AssessmentRunNotificationList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AssessmentRunNotificationSnsStatusCode.html'
+                                  title='rusoto::inspector::AssessmentRunNotificationSnsStatusCode'>AssessmentRunNotificationSnsStatusCode</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AssessmentRunState.html'
+                                  title='rusoto::inspector::AssessmentRunState'>AssessmentRunState</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AssessmentRunStateChangeList.html'
+                                  title='rusoto::inspector::AssessmentRunStateChangeList'>AssessmentRunStateChangeList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AssessmentRunStateList.html'
+                                  title='rusoto::inspector::AssessmentRunStateList'>AssessmentRunStateList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AssessmentTargetList.html'
+                                  title='rusoto::inspector::AssessmentTargetList'>AssessmentTargetList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AssessmentTargetName.html'
+                                  title='rusoto::inspector::AssessmentTargetName'>AssessmentTargetName</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AssessmentTemplateList.html'
+                                  title='rusoto::inspector::AssessmentTemplateList'>AssessmentTemplateList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AssessmentTemplateName.html'
+                                  title='rusoto::inspector::AssessmentTemplateName'>AssessmentTemplateName</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AssessmentTemplateRulesPackageArnList.html'
+                                  title='rusoto::inspector::AssessmentTemplateRulesPackageArnList'>AssessmentTemplateRulesPackageArnList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AssetType.html'
+                                  title='rusoto::inspector::AssetType'>AssetType</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AttributeKey.html'
+                                  title='rusoto::inspector::AttributeKey'>AttributeKey</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AttributeList.html'
+                                  title='rusoto::inspector::AttributeList'>AttributeList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AttributeValue.html'
+                                  title='rusoto::inspector::AttributeValue'>AttributeValue</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AutoScalingGroup.html'
+                                  title='rusoto::inspector::AutoScalingGroup'>AutoScalingGroup</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AutoScalingGroupList.html'
+                                  title='rusoto::inspector::AutoScalingGroupList'>AutoScalingGroupList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.BatchDescribeArnList.html'
+                                  title='rusoto::inspector::BatchDescribeArnList'>BatchDescribeArnList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Bool.html'
+                                  title='rusoto::inspector::Bool'>Bool</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ErrorMessage.html'
+                                  title='rusoto::inspector::ErrorMessage'>ErrorMessage</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.EventSubscriptionList.html'
+                                  title='rusoto::inspector::EventSubscriptionList'>EventSubscriptionList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.FailedItemErrorCode.html'
+                                  title='rusoto::inspector::FailedItemErrorCode'>FailedItemErrorCode</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.FailedItems.html'
+                                  title='rusoto::inspector::FailedItems'>FailedItems</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.FilterRulesPackageArnList.html'
+                                  title='rusoto::inspector::FilterRulesPackageArnList'>FilterRulesPackageArnList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.FindingId.html'
+                                  title='rusoto::inspector::FindingId'>FindingId</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.FindingList.html'
+                                  title='rusoto::inspector::FindingList'>FindingList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Hostname.html'
+                                  title='rusoto::inspector::Hostname'>Hostname</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.InspectorEvent.html'
+                                  title='rusoto::inspector::InspectorEvent'>InspectorEvent</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.InvalidCrossAccountRoleErrorCode.html'
+                                  title='rusoto::inspector::InvalidCrossAccountRoleErrorCode'>InvalidCrossAccountRoleErrorCode</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.InvalidInputErrorCode.html'
+                                  title='rusoto::inspector::InvalidInputErrorCode'>InvalidInputErrorCode</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.IocConfidence.html'
+                                  title='rusoto::inspector::IocConfidence'>IocConfidence</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Ipv4Address.html'
+                                  title='rusoto::inspector::Ipv4Address'>Ipv4Address</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Ipv4AddressList.html'
+                                  title='rusoto::inspector::Ipv4AddressList'>Ipv4AddressList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.LimitExceededErrorCode.html'
+                                  title='rusoto::inspector::LimitExceededErrorCode'>LimitExceededErrorCode</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ListEventSubscriptionsMaxResults.html'
+                                  title='rusoto::inspector::ListEventSubscriptionsMaxResults'>ListEventSubscriptionsMaxResults</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ListMaxResults.html'
+                                  title='rusoto::inspector::ListMaxResults'>ListMaxResults</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ListParentArnList.html'
+                                  title='rusoto::inspector::ListParentArnList'>ListParentArnList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ListReturnedArnList.html'
+                                  title='rusoto::inspector::ListReturnedArnList'>ListReturnedArnList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Locale.html'
+                                  title='rusoto::inspector::Locale'>Locale</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Long.html'
+                                  title='rusoto::inspector::Long'>Long</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Message.html'
+                                  title='rusoto::inspector::Message'>Message</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.MessageType.html'
+                                  title='rusoto::inspector::MessageType'>MessageType</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.NamePattern.html'
+                                  title='rusoto::inspector::NamePattern'>NamePattern</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.NoSuchEntityErrorCode.html'
+                                  title='rusoto::inspector::NoSuchEntityErrorCode'>NoSuchEntityErrorCode</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.NumericSeverity.html'
+                                  title='rusoto::inspector::NumericSeverity'>NumericSeverity</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.NumericVersion.html'
+                                  title='rusoto::inspector::NumericVersion'>NumericVersion</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.PaginationToken.html'
+                                  title='rusoto::inspector::PaginationToken'>PaginationToken</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.PreviewAgentsMaxResults.html'
+                                  title='rusoto::inspector::PreviewAgentsMaxResults'>PreviewAgentsMaxResults</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ProviderName.html'
+                                  title='rusoto::inspector::ProviderName'>ProviderName</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ResourceGroupList.html'
+                                  title='rusoto::inspector::ResourceGroupList'>ResourceGroupList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ResourceGroupTags.html'
+                                  title='rusoto::inspector::ResourceGroupTags'>ResourceGroupTags</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.RuleName.html'
+                                  title='rusoto::inspector::RuleName'>RuleName</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.RuleNameList.html'
+                                  title='rusoto::inspector::RuleNameList'>RuleNameList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.RulesPackageList.html'
+                                  title='rusoto::inspector::RulesPackageList'>RulesPackageList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.RulesPackageName.html'
+                                  title='rusoto::inspector::RulesPackageName'>RulesPackageName</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ServiceName.html'
+                                  title='rusoto::inspector::ServiceName'>ServiceName</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Severity.html'
+                                  title='rusoto::inspector::Severity'>Severity</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.SeverityList.html'
+                                  title='rusoto::inspector::SeverityList'>SeverityList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.SubscriptionList.html'
+                                  title='rusoto::inspector::SubscriptionList'>SubscriptionList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.TagKey.html'
+                                  title='rusoto::inspector::TagKey'>TagKey</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.TagList.html'
+                                  title='rusoto::inspector::TagList'>TagList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.TagValue.html'
+                                  title='rusoto::inspector::TagValue'>TagValue</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.TelemetryMetadataList.html'
+                                  title='rusoto::inspector::TelemetryMetadataList'>TelemetryMetadataList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Text.html'
+                                  title='rusoto::inspector::Text'>Text</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Timestamp.html'
+                                  title='rusoto::inspector::Timestamp'>Timestamp</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.UserAttributeKeyList.html'
+                                  title='rusoto::inspector::UserAttributeKeyList'>UserAttributeKeyList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.UserAttributeList.html'
+                                  title='rusoto::inspector::UserAttributeList'>UserAttributeList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Version.html'
+                                  title='rusoto::inspector::Version'>Version</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr></table></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "rusoto";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../../jquery.js"></script>
+    <script src="../../main.js"></script>
+    
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>

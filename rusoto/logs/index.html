@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `logs` mod in crate `rusoto`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, logs">
+
+    <title>rusoto::logs - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='../index.html'>rusoto</a></p><script>window.sidebarCurrent = {name: 'logs', ty: 'mod', relpath: '../'};</script><script defer src="../sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content mod">
+<h1 class='fqn'><span class='in-band'>Module <a href='../index.html'>rusoto</a>::<wbr><a class='mod' href=''>logs</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-299498' class='srclink' href='../../src/rusoto/src/logs.rs.html#1-3' title='goto source code'>[src]</a></span></h1>
+<div class='docblock'><p>Amazon CloudWatch Logs</p>
+</div><h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CancelExportTaskRequest.html'
+                                  title='rusoto::logs::CancelExportTaskRequest'>CancelExportTaskRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CloudWatchLogsClient.html'
+                                  title='rusoto::logs::CloudWatchLogsClient'>CloudWatchLogsClient</a></td>
+                           <td class='docblock-short'>
+                                <p>A client for the Amazon CloudWatch Logs API.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateExportTaskRequest.html'
+                                  title='rusoto::logs::CreateExportTaskRequest'>CreateExportTaskRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateExportTaskResponse.html'
+                                  title='rusoto::logs::CreateExportTaskResponse'>CreateExportTaskResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateLogGroupRequest.html'
+                                  title='rusoto::logs::CreateLogGroupRequest'>CreateLogGroupRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateLogStreamRequest.html'
+                                  title='rusoto::logs::CreateLogStreamRequest'>CreateLogStreamRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteDestinationRequest.html'
+                                  title='rusoto::logs::DeleteDestinationRequest'>DeleteDestinationRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteLogGroupRequest.html'
+                                  title='rusoto::logs::DeleteLogGroupRequest'>DeleteLogGroupRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteLogStreamRequest.html'
+                                  title='rusoto::logs::DeleteLogStreamRequest'>DeleteLogStreamRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteMetricFilterRequest.html'
+                                  title='rusoto::logs::DeleteMetricFilterRequest'>DeleteMetricFilterRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteRetentionPolicyRequest.html'
+                                  title='rusoto::logs::DeleteRetentionPolicyRequest'>DeleteRetentionPolicyRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteSubscriptionFilterRequest.html'
+                                  title='rusoto::logs::DeleteSubscriptionFilterRequest'>DeleteSubscriptionFilterRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeDestinationsRequest.html'
+                                  title='rusoto::logs::DescribeDestinationsRequest'>DescribeDestinationsRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeDestinationsResponse.html'
+                                  title='rusoto::logs::DescribeDestinationsResponse'>DescribeDestinationsResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeExportTasksRequest.html'
+                                  title='rusoto::logs::DescribeExportTasksRequest'>DescribeExportTasksRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeExportTasksResponse.html'
+                                  title='rusoto::logs::DescribeExportTasksResponse'>DescribeExportTasksResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeLogGroupsRequest.html'
+                                  title='rusoto::logs::DescribeLogGroupsRequest'>DescribeLogGroupsRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeLogGroupsResponse.html'
+                                  title='rusoto::logs::DescribeLogGroupsResponse'>DescribeLogGroupsResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeLogStreamsRequest.html'
+                                  title='rusoto::logs::DescribeLogStreamsRequest'>DescribeLogStreamsRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeLogStreamsResponse.html'
+                                  title='rusoto::logs::DescribeLogStreamsResponse'>DescribeLogStreamsResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeMetricFiltersRequest.html'
+                                  title='rusoto::logs::DescribeMetricFiltersRequest'>DescribeMetricFiltersRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeMetricFiltersResponse.html'
+                                  title='rusoto::logs::DescribeMetricFiltersResponse'>DescribeMetricFiltersResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeSubscriptionFiltersRequest.html'
+                                  title='rusoto::logs::DescribeSubscriptionFiltersRequest'>DescribeSubscriptionFiltersRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeSubscriptionFiltersResponse.html'
+                                  title='rusoto::logs::DescribeSubscriptionFiltersResponse'>DescribeSubscriptionFiltersResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Destination.html'
+                                  title='rusoto::logs::Destination'>Destination</a></td>
+                           <td class='docblock-short'>
+                                <p>A cross account destination that is the recipient of subscription log events.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ExportTask.html'
+                                  title='rusoto::logs::ExportTask'>ExportTask</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents an export task.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ExportTaskExecutionInfo.html'
+                                  title='rusoto::logs::ExportTaskExecutionInfo'>ExportTaskExecutionInfo</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the status of an export task.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ExportTaskStatus.html'
+                                  title='rusoto::logs::ExportTaskStatus'>ExportTaskStatus</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the status of an export task.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.FilterLogEventsRequest.html'
+                                  title='rusoto::logs::FilterLogEventsRequest'>FilterLogEventsRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.FilterLogEventsResponse.html'
+                                  title='rusoto::logs::FilterLogEventsResponse'>FilterLogEventsResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.FilteredLogEvent.html'
+                                  title='rusoto::logs::FilteredLogEvent'>FilteredLogEvent</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents a matched event from a <code>FilterLogEvents</code> request.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetLogEventsRequest.html'
+                                  title='rusoto::logs::GetLogEventsRequest'>GetLogEventsRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetLogEventsResponse.html'
+                                  title='rusoto::logs::GetLogEventsResponse'>GetLogEventsResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.InputLogEvent.html'
+                                  title='rusoto::logs::InputLogEvent'>InputLogEvent</a></td>
+                           <td class='docblock-short'>
+                                <p>A log event is a record of some activity that was recorded by the application or resource being monitored. The log event record that CloudWatch Logs understands contains two properties: the timestamp of when the event occurred, and the raw event message.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.LogGroup.html'
+                                  title='rusoto::logs::LogGroup'>LogGroup</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.LogStream.html'
+                                  title='rusoto::logs::LogStream'>LogStream</a></td>
+                           <td class='docblock-short'>
+                                <p>A log stream is sequence of log events from a single emitter of logs.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.MetricFilter.html'
+                                  title='rusoto::logs::MetricFilter'>MetricFilter</a></td>
+                           <td class='docblock-short'>
+                                <p>Metric filters can be used to express how CloudWatch Logs would extract metric observations from ingested log events and transform them to metric data in a CloudWatch metric.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.MetricFilterMatchRecord.html'
+                                  title='rusoto::logs::MetricFilterMatchRecord'>MetricFilterMatchRecord</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.MetricTransformation.html'
+                                  title='rusoto::logs::MetricTransformation'>MetricTransformation</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.OutputLogEvent.html'
+                                  title='rusoto::logs::OutputLogEvent'>OutputLogEvent</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.PutDestinationPolicyRequest.html'
+                                  title='rusoto::logs::PutDestinationPolicyRequest'>PutDestinationPolicyRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.PutDestinationRequest.html'
+                                  title='rusoto::logs::PutDestinationRequest'>PutDestinationRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.PutDestinationResponse.html'
+                                  title='rusoto::logs::PutDestinationResponse'>PutDestinationResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.PutLogEventsRequest.html'
+                                  title='rusoto::logs::PutLogEventsRequest'>PutLogEventsRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.PutLogEventsResponse.html'
+                                  title='rusoto::logs::PutLogEventsResponse'>PutLogEventsResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.PutMetricFilterRequest.html'
+                                  title='rusoto::logs::PutMetricFilterRequest'>PutMetricFilterRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.PutRetentionPolicyRequest.html'
+                                  title='rusoto::logs::PutRetentionPolicyRequest'>PutRetentionPolicyRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.PutSubscriptionFilterRequest.html'
+                                  title='rusoto::logs::PutSubscriptionFilterRequest'>PutSubscriptionFilterRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RejectedLogEventsInfo.html'
+                                  title='rusoto::logs::RejectedLogEventsInfo'>RejectedLogEventsInfo</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SearchedLogStream.html'
+                                  title='rusoto::logs::SearchedLogStream'>SearchedLogStream</a></td>
+                           <td class='docblock-short'>
+                                <p>An object indicating the search status of a log stream in a <code>FilterLogEvents</code> request.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SubscriptionFilter.html'
+                                  title='rusoto::logs::SubscriptionFilter'>SubscriptionFilter</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.TestMetricFilterRequest.html'
+                                  title='rusoto::logs::TestMetricFilterRequest'>TestMetricFilterRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.TestMetricFilterResponse.html'
+                                  title='rusoto::logs::TestMetricFilterResponse'>TestMetricFilterResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr></table><h2 id='enums' class='section-header'><a href="#enums">Enums</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.CancelExportTaskError.html'
+                                  title='rusoto::logs::CancelExportTaskError'>CancelExportTaskError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.CreateExportTaskError.html'
+                                  title='rusoto::logs::CreateExportTaskError'>CreateExportTaskError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.CreateLogGroupError.html'
+                                  title='rusoto::logs::CreateLogGroupError'>CreateLogGroupError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.CreateLogStreamError.html'
+                                  title='rusoto::logs::CreateLogStreamError'>CreateLogStreamError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DeleteDestinationError.html'
+                                  title='rusoto::logs::DeleteDestinationError'>DeleteDestinationError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DeleteLogGroupError.html'
+                                  title='rusoto::logs::DeleteLogGroupError'>DeleteLogGroupError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DeleteLogStreamError.html'
+                                  title='rusoto::logs::DeleteLogStreamError'>DeleteLogStreamError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DeleteMetricFilterError.html'
+                                  title='rusoto::logs::DeleteMetricFilterError'>DeleteMetricFilterError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DeleteRetentionPolicyError.html'
+                                  title='rusoto::logs::DeleteRetentionPolicyError'>DeleteRetentionPolicyError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DeleteSubscriptionFilterError.html'
+                                  title='rusoto::logs::DeleteSubscriptionFilterError'>DeleteSubscriptionFilterError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeDestinationsError.html'
+                                  title='rusoto::logs::DescribeDestinationsError'>DescribeDestinationsError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeExportTasksError.html'
+                                  title='rusoto::logs::DescribeExportTasksError'>DescribeExportTasksError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeLogGroupsError.html'
+                                  title='rusoto::logs::DescribeLogGroupsError'>DescribeLogGroupsError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeLogStreamsError.html'
+                                  title='rusoto::logs::DescribeLogStreamsError'>DescribeLogStreamsError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeMetricFiltersError.html'
+                                  title='rusoto::logs::DescribeMetricFiltersError'>DescribeMetricFiltersError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeSubscriptionFiltersError.html'
+                                  title='rusoto::logs::DescribeSubscriptionFiltersError'>DescribeSubscriptionFiltersError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.FilterLogEventsError.html'
+                                  title='rusoto::logs::FilterLogEventsError'>FilterLogEventsError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.GetLogEventsError.html'
+                                  title='rusoto::logs::GetLogEventsError'>GetLogEventsError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.PutDestinationError.html'
+                                  title='rusoto::logs::PutDestinationError'>PutDestinationError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.PutDestinationPolicyError.html'
+                                  title='rusoto::logs::PutDestinationPolicyError'>PutDestinationPolicyError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.PutLogEventsError.html'
+                                  title='rusoto::logs::PutLogEventsError'>PutLogEventsError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.PutMetricFilterError.html'
+                                  title='rusoto::logs::PutMetricFilterError'>PutMetricFilterError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.PutRetentionPolicyError.html'
+                                  title='rusoto::logs::PutRetentionPolicyError'>PutRetentionPolicyError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.PutSubscriptionFilterError.html'
+                                  title='rusoto::logs::PutSubscriptionFilterError'>PutSubscriptionFilterError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.TestMetricFilterError.html'
+                                  title='rusoto::logs::TestMetricFilterError'>TestMetricFilterError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr></table><h2 id='types' class='section-header'><a href="#types">Type Definitions</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AccessPolicy.html'
+                                  title='rusoto::logs::AccessPolicy'>AccessPolicy</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Arn.html'
+                                  title='rusoto::logs::Arn'>Arn</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Days.html'
+                                  title='rusoto::logs::Days'>Days</a></td>
+                           <td class='docblock-short'>
+                                <p>Specifies the number of days you want to retain log events in the specified log group. Possible values are: 1, 3, 5, 7, 14, 30, 60, 90, 120, 150, 180, 365, 400, 545, 731, 1827, 3653.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.DefaultValue.html'
+                                  title='rusoto::logs::DefaultValue'>DefaultValue</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Descending.html'
+                                  title='rusoto::logs::Descending'>Descending</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.DescribeLimit.html'
+                                  title='rusoto::logs::DescribeLimit'>DescribeLimit</a></td>
+                           <td class='docblock-short'>
+                                <p>The maximum number of results to return.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.DestinationArn.html'
+                                  title='rusoto::logs::DestinationArn'>DestinationArn</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.DestinationName.html'
+                                  title='rusoto::logs::DestinationName'>DestinationName</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Destinations.html'
+                                  title='rusoto::logs::Destinations'>Destinations</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.EventId.html'
+                                  title='rusoto::logs::EventId'>EventId</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.EventMessage.html'
+                                  title='rusoto::logs::EventMessage'>EventMessage</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.EventNumber.html'
+                                  title='rusoto::logs::EventNumber'>EventNumber</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.EventsLimit.html'
+                                  title='rusoto::logs::EventsLimit'>EventsLimit</a></td>
+                           <td class='docblock-short'>
+                                <p>The maximum number of events to return.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ExportDestinationBucket.html'
+                                  title='rusoto::logs::ExportDestinationBucket'>ExportDestinationBucket</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ExportDestinationPrefix.html'
+                                  title='rusoto::logs::ExportDestinationPrefix'>ExportDestinationPrefix</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ExportTaskId.html'
+                                  title='rusoto::logs::ExportTaskId'>ExportTaskId</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ExportTaskName.html'
+                                  title='rusoto::logs::ExportTaskName'>ExportTaskName</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ExportTaskStatusCode.html'
+                                  title='rusoto::logs::ExportTaskStatusCode'>ExportTaskStatusCode</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ExportTaskStatusMessage.html'
+                                  title='rusoto::logs::ExportTaskStatusMessage'>ExportTaskStatusMessage</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ExportTasks.html'
+                                  title='rusoto::logs::ExportTasks'>ExportTasks</a></td>
+                           <td class='docblock-short'>
+                                <p>A list of export tasks.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ExtractedValues.html'
+                                  title='rusoto::logs::ExtractedValues'>ExtractedValues</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.FilterCount.html'
+                                  title='rusoto::logs::FilterCount'>FilterCount</a></td>
+                           <td class='docblock-short'>
+                                <p>The number of metric filters associated with the log group.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.FilterName.html'
+                                  title='rusoto::logs::FilterName'>FilterName</a></td>
+                           <td class='docblock-short'>
+                                <p>A name for a metric or subscription filter.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.FilterPattern.html'
+                                  title='rusoto::logs::FilterPattern'>FilterPattern</a></td>
+                           <td class='docblock-short'>
+                                <p>A symbolic description of how CloudWatch Logs should interpret the data in each log event. For example, a log event may contain timestamps, IP addresses, strings, and so on. You use the filter pattern to specify what to look for in the log event message.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.FilteredLogEvents.html'
+                                  title='rusoto::logs::FilteredLogEvents'>FilteredLogEvents</a></td>
+                           <td class='docblock-short'>
+                                <p>A list of matched <code>FilteredLogEvent</code> objects returned from a <code>FilterLogEvents</code> request.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.InputLogEvents.html'
+                                  title='rusoto::logs::InputLogEvents'>InputLogEvents</a></td>
+                           <td class='docblock-short'>
+                                <p>A list of log events belonging to a log stream.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.InputLogStreamNames.html'
+                                  title='rusoto::logs::InputLogStreamNames'>InputLogStreamNames</a></td>
+                           <td class='docblock-short'>
+                                <p>A list of log stream names.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Interleaved.html'
+                                  title='rusoto::logs::Interleaved'>Interleaved</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.LogEventIndex.html'
+                                  title='rusoto::logs::LogEventIndex'>LogEventIndex</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.LogGroupName.html'
+                                  title='rusoto::logs::LogGroupName'>LogGroupName</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.LogGroups.html'
+                                  title='rusoto::logs::LogGroups'>LogGroups</a></td>
+                           <td class='docblock-short'>
+                                <p>A list of log groups.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.LogStreamName.html'
+                                  title='rusoto::logs::LogStreamName'>LogStreamName</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.LogStreamSearchedCompletely.html'
+                                  title='rusoto::logs::LogStreamSearchedCompletely'>LogStreamSearchedCompletely</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.LogStreams.html'
+                                  title='rusoto::logs::LogStreams'>LogStreams</a></td>
+                           <td class='docblock-short'>
+                                <p>A list of log streams.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.MetricFilterMatches.html'
+                                  title='rusoto::logs::MetricFilterMatches'>MetricFilterMatches</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.MetricFilters.html'
+                                  title='rusoto::logs::MetricFilters'>MetricFilters</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.MetricName.html'
+                                  title='rusoto::logs::MetricName'>MetricName</a></td>
+                           <td class='docblock-short'>
+                                <p>The name of the CloudWatch metric to which the monitored log information should be published. For example, you may publish to a metric called ErrorCount.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.MetricNamespace.html'
+                                  title='rusoto::logs::MetricNamespace'>MetricNamespace</a></td>
+                           <td class='docblock-short'>
+                                <p>The destination namespace of the new CloudWatch metric.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.MetricTransformations.html'
+                                  title='rusoto::logs::MetricTransformations'>MetricTransformations</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.MetricValue.html'
+                                  title='rusoto::logs::MetricValue'>MetricValue</a></td>
+                           <td class='docblock-short'>
+                                <p>What to publish to the metric. For example, if you're counting the occurrences of a particular term like "Error", the value will be "1" for each occurrence. If you're counting the bytes transferred the published value will be the value in the log event.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.NextToken.html'
+                                  title='rusoto::logs::NextToken'>NextToken</a></td>
+                           <td class='docblock-short'>
+                                <p>A string token used for pagination that points to the next page of results. It must be a value obtained from the response of the previous request. The token expires after 24 hours.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.OrderBy.html'
+                                  title='rusoto::logs::OrderBy'>OrderBy</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.OutputLogEvents.html'
+                                  title='rusoto::logs::OutputLogEvents'>OutputLogEvents</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.RoleArn.html'
+                                  title='rusoto::logs::RoleArn'>RoleArn</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.SearchedLogStreams.html'
+                                  title='rusoto::logs::SearchedLogStreams'>SearchedLogStreams</a></td>
+                           <td class='docblock-short'>
+                                <p>A list of <code>SearchedLogStream</code> objects indicating the search status for log streams in a <code>FilterLogEvents</code> request.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.SequenceToken.html'
+                                  title='rusoto::logs::SequenceToken'>SequenceToken</a></td>
+                           <td class='docblock-short'>
+                                <p>A string token used for making PutLogEvents requests. A <code>sequenceToken</code> can only be used once, and PutLogEvents requests must include the <code>sequenceToken</code> obtained from the response of the previous request.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.StartFromHead.html'
+                                  title='rusoto::logs::StartFromHead'>StartFromHead</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.StoredBytes.html'
+                                  title='rusoto::logs::StoredBytes'>StoredBytes</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.SubscriptionFilters.html'
+                                  title='rusoto::logs::SubscriptionFilters'>SubscriptionFilters</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.TargetArn.html'
+                                  title='rusoto::logs::TargetArn'>TargetArn</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.TestEventMessages.html'
+                                  title='rusoto::logs::TestEventMessages'>TestEventMessages</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Timestamp.html'
+                                  title='rusoto::logs::Timestamp'>Timestamp</a></td>
+                           <td class='docblock-short'>
+                                <p>A point in time expressed as the number of milliseconds since Jan 1, 1970 00:00:00 UTC.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Token.html'
+                                  title='rusoto::logs::Token'>Token</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Value.html'
+                                  title='rusoto::logs::Value'>Value</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr></table></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "rusoto";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../../jquery.js"></script>
+    <script src="../../main.js"></script>
+    
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>

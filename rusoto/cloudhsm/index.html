@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `cloudhsm` mod in crate `rusoto`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, cloudhsm">
+
+    <title>rusoto::cloudhsm - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='../index.html'>rusoto</a></p><script>window.sidebarCurrent = {name: 'cloudhsm', ty: 'mod', relpath: '../'};</script><script defer src="../sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content mod">
+<h1 class='fqn'><span class='in-band'>Module <a href='../index.html'>rusoto</a>::<wbr><a class='mod' href=''>cloudhsm</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-3327' class='srclink' href='../../src/rusoto/src/cloudhsm.rs.html#1-3' title='goto source code'>[src]</a></span></h1>
+<div class='docblock'><p>AWS CloudHSM</p>
+</div><h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AddTagsToResourceRequest.html'
+                                  title='rusoto::cloudhsm::AddTagsToResourceRequest'>AddTagsToResourceRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AddTagsToResourceResponse.html'
+                                  title='rusoto::cloudhsm::AddTagsToResourceResponse'>AddTagsToResourceResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CloudHsmClient.html'
+                                  title='rusoto::cloudhsm::CloudHsmClient'>CloudHsmClient</a></td>
+                           <td class='docblock-short'>
+                                <p>A client for the CloudHSM API.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateHapgRequest.html'
+                                  title='rusoto::cloudhsm::CreateHapgRequest'>CreateHapgRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains the inputs for the <a>CreateHapgRequest</a> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateHapgResponse.html'
+                                  title='rusoto::cloudhsm::CreateHapgResponse'>CreateHapgResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains the output of the <a>CreateHAPartitionGroup</a> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateHsmRequest.html'
+                                  title='rusoto::cloudhsm::CreateHsmRequest'>CreateHsmRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains the inputs for the <a>CreateHsm</a> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateHsmResponse.html'
+                                  title='rusoto::cloudhsm::CreateHsmResponse'>CreateHsmResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains the output of the <a>CreateHsm</a> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateLunaClientRequest.html'
+                                  title='rusoto::cloudhsm::CreateLunaClientRequest'>CreateLunaClientRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains the inputs for the <a>CreateLunaClient</a> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateLunaClientResponse.html'
+                                  title='rusoto::cloudhsm::CreateLunaClientResponse'>CreateLunaClientResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains the output of the <a>CreateLunaClient</a> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteHapgRequest.html'
+                                  title='rusoto::cloudhsm::DeleteHapgRequest'>DeleteHapgRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains the inputs for the <a>DeleteHapg</a> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteHapgResponse.html'
+                                  title='rusoto::cloudhsm::DeleteHapgResponse'>DeleteHapgResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains the output of the <a>DeleteHapg</a> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteHsmRequest.html'
+                                  title='rusoto::cloudhsm::DeleteHsmRequest'>DeleteHsmRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains the inputs for the <a>DeleteHsm</a> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteHsmResponse.html'
+                                  title='rusoto::cloudhsm::DeleteHsmResponse'>DeleteHsmResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains the output of the <a>DeleteHsm</a> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteLunaClientRequest.html'
+                                  title='rusoto::cloudhsm::DeleteLunaClientRequest'>DeleteLunaClientRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteLunaClientResponse.html'
+                                  title='rusoto::cloudhsm::DeleteLunaClientResponse'>DeleteLunaClientResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeHapgRequest.html'
+                                  title='rusoto::cloudhsm::DescribeHapgRequest'>DescribeHapgRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains the inputs for the <a>DescribeHapg</a> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeHapgResponse.html'
+                                  title='rusoto::cloudhsm::DescribeHapgResponse'>DescribeHapgResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains the output of the <a>DescribeHapg</a> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeHsmRequest.html'
+                                  title='rusoto::cloudhsm::DescribeHsmRequest'>DescribeHsmRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains the inputs for the <a>DescribeHsm</a> operation. </p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeHsmResponse.html'
+                                  title='rusoto::cloudhsm::DescribeHsmResponse'>DescribeHsmResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains the output of the <a>DescribeHsm</a> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeLunaClientRequest.html'
+                                  title='rusoto::cloudhsm::DescribeLunaClientRequest'>DescribeLunaClientRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeLunaClientResponse.html'
+                                  title='rusoto::cloudhsm::DescribeLunaClientResponse'>DescribeLunaClientResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetConfigRequest.html'
+                                  title='rusoto::cloudhsm::GetConfigRequest'>GetConfigRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetConfigResponse.html'
+                                  title='rusoto::cloudhsm::GetConfigResponse'>GetConfigResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListAvailableZonesRequest.html'
+                                  title='rusoto::cloudhsm::ListAvailableZonesRequest'>ListAvailableZonesRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains the inputs for the <a>ListAvailableZones</a> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListAvailableZonesResponse.html'
+                                  title='rusoto::cloudhsm::ListAvailableZonesResponse'>ListAvailableZonesResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListHapgsRequest.html'
+                                  title='rusoto::cloudhsm::ListHapgsRequest'>ListHapgsRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListHapgsResponse.html'
+                                  title='rusoto::cloudhsm::ListHapgsResponse'>ListHapgsResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListHsmsRequest.html'
+                                  title='rusoto::cloudhsm::ListHsmsRequest'>ListHsmsRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListHsmsResponse.html'
+                                  title='rusoto::cloudhsm::ListHsmsResponse'>ListHsmsResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains the output of the <a>ListHsms</a> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListLunaClientsRequest.html'
+                                  title='rusoto::cloudhsm::ListLunaClientsRequest'>ListLunaClientsRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListLunaClientsResponse.html'
+                                  title='rusoto::cloudhsm::ListLunaClientsResponse'>ListLunaClientsResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListTagsForResourceRequest.html'
+                                  title='rusoto::cloudhsm::ListTagsForResourceRequest'>ListTagsForResourceRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListTagsForResourceResponse.html'
+                                  title='rusoto::cloudhsm::ListTagsForResourceResponse'>ListTagsForResourceResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ModifyHapgRequest.html'
+                                  title='rusoto::cloudhsm::ModifyHapgRequest'>ModifyHapgRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ModifyHapgResponse.html'
+                                  title='rusoto::cloudhsm::ModifyHapgResponse'>ModifyHapgResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ModifyHsmRequest.html'
+                                  title='rusoto::cloudhsm::ModifyHsmRequest'>ModifyHsmRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains the inputs for the <a>ModifyHsm</a> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ModifyHsmResponse.html'
+                                  title='rusoto::cloudhsm::ModifyHsmResponse'>ModifyHsmResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains the output of the <a>ModifyHsm</a> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ModifyLunaClientRequest.html'
+                                  title='rusoto::cloudhsm::ModifyLunaClientRequest'>ModifyLunaClientRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ModifyLunaClientResponse.html'
+                                  title='rusoto::cloudhsm::ModifyLunaClientResponse'>ModifyLunaClientResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RemoveTagsFromResourceRequest.html'
+                                  title='rusoto::cloudhsm::RemoveTagsFromResourceRequest'>RemoveTagsFromResourceRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RemoveTagsFromResourceResponse.html'
+                                  title='rusoto::cloudhsm::RemoveTagsFromResourceResponse'>RemoveTagsFromResourceResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Tag.html'
+                                  title='rusoto::cloudhsm::Tag'>Tag</a></td>
+                           <td class='docblock-short'>
+                                <p>A key-value pair that identifies or specifies metadata about an AWS CloudHSM resource.</p>
+                           </td>
+                       </tr></table><h2 id='enums' class='section-header'><a href="#enums">Enums</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.AddTagsToResourceError.html'
+                                  title='rusoto::cloudhsm::AddTagsToResourceError'>AddTagsToResourceError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.CreateHapgError.html'
+                                  title='rusoto::cloudhsm::CreateHapgError'>CreateHapgError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.CreateHsmError.html'
+                                  title='rusoto::cloudhsm::CreateHsmError'>CreateHsmError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.CreateLunaClientError.html'
+                                  title='rusoto::cloudhsm::CreateLunaClientError'>CreateLunaClientError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DeleteHapgError.html'
+                                  title='rusoto::cloudhsm::DeleteHapgError'>DeleteHapgError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DeleteHsmError.html'
+                                  title='rusoto::cloudhsm::DeleteHsmError'>DeleteHsmError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DeleteLunaClientError.html'
+                                  title='rusoto::cloudhsm::DeleteLunaClientError'>DeleteLunaClientError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeHapgError.html'
+                                  title='rusoto::cloudhsm::DescribeHapgError'>DescribeHapgError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeHsmError.html'
+                                  title='rusoto::cloudhsm::DescribeHsmError'>DescribeHsmError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeLunaClientError.html'
+                                  title='rusoto::cloudhsm::DescribeLunaClientError'>DescribeLunaClientError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.GetConfigError.html'
+                                  title='rusoto::cloudhsm::GetConfigError'>GetConfigError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ListAvailableZonesError.html'
+                                  title='rusoto::cloudhsm::ListAvailableZonesError'>ListAvailableZonesError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ListHapgsError.html'
+                                  title='rusoto::cloudhsm::ListHapgsError'>ListHapgsError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ListHsmsError.html'
+                                  title='rusoto::cloudhsm::ListHsmsError'>ListHsmsError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ListLunaClientsError.html'
+                                  title='rusoto::cloudhsm::ListLunaClientsError'>ListLunaClientsError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ListTagsForResourceError.html'
+                                  title='rusoto::cloudhsm::ListTagsForResourceError'>ListTagsForResourceError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ModifyHapgError.html'
+                                  title='rusoto::cloudhsm::ModifyHapgError'>ModifyHapgError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ModifyHsmError.html'
+                                  title='rusoto::cloudhsm::ModifyHsmError'>ModifyHsmError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ModifyLunaClientError.html'
+                                  title='rusoto::cloudhsm::ModifyLunaClientError'>ModifyLunaClientError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.RemoveTagsFromResourceError.html'
+                                  title='rusoto::cloudhsm::RemoveTagsFromResourceError'>RemoveTagsFromResourceError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr></table><h2 id='types' class='section-header'><a href="#types">Type Definitions</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AZ.html'
+                                  title='rusoto::cloudhsm::AZ'>AZ</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AZList.html'
+                                  title='rusoto::cloudhsm::AZList'>AZList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Boolean.html'
+                                  title='rusoto::cloudhsm::Boolean'>Boolean</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Certificate.html'
+                                  title='rusoto::cloudhsm::Certificate'>Certificate</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.CertificateFingerprint.html'
+                                  title='rusoto::cloudhsm::CertificateFingerprint'>CertificateFingerprint</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ClientArn.html'
+                                  title='rusoto::cloudhsm::ClientArn'>ClientArn</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ClientLabel.html'
+                                  title='rusoto::cloudhsm::ClientLabel'>ClientLabel</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ClientList.html'
+                                  title='rusoto::cloudhsm::ClientList'>ClientList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ClientToken.html'
+                                  title='rusoto::cloudhsm::ClientToken'>ClientToken</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ClientVersion.html'
+                                  title='rusoto::cloudhsm::ClientVersion'>ClientVersion</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.CloudHsmObjectState.html'
+                                  title='rusoto::cloudhsm::CloudHsmObjectState'>CloudHsmObjectState</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.EniId.html'
+                                  title='rusoto::cloudhsm::EniId'>EniId</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ExternalId.html'
+                                  title='rusoto::cloudhsm::ExternalId'>ExternalId</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.HapgArn.html'
+                                  title='rusoto::cloudhsm::HapgArn'>HapgArn</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.HapgList.html'
+                                  title='rusoto::cloudhsm::HapgList'>HapgList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.HsmArn.html'
+                                  title='rusoto::cloudhsm::HsmArn'>HsmArn</a></td>
+                           <td class='docblock-short'>
+                                <p>An ARN that identifies an HSM.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.HsmList.html'
+                                  title='rusoto::cloudhsm::HsmList'>HsmList</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains a list of ARNs that identify the HSMs.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.HsmSerialNumber.html'
+                                  title='rusoto::cloudhsm::HsmSerialNumber'>HsmSerialNumber</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.HsmStatus.html'
+                                  title='rusoto::cloudhsm::HsmStatus'>HsmStatus</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.IamRoleArn.html'
+                                  title='rusoto::cloudhsm::IamRoleArn'>IamRoleArn</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.IpAddress.html'
+                                  title='rusoto::cloudhsm::IpAddress'>IpAddress</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Label.html'
+                                  title='rusoto::cloudhsm::Label'>Label</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.PaginationToken.html'
+                                  title='rusoto::cloudhsm::PaginationToken'>PaginationToken</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.PartitionArn.html'
+                                  title='rusoto::cloudhsm::PartitionArn'>PartitionArn</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.PartitionList.html'
+                                  title='rusoto::cloudhsm::PartitionList'>PartitionList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.PartitionSerial.html'
+                                  title='rusoto::cloudhsm::PartitionSerial'>PartitionSerial</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.PartitionSerialList.html'
+                                  title='rusoto::cloudhsm::PartitionSerialList'>PartitionSerialList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.SshKey.html'
+                                  title='rusoto::cloudhsm::SshKey'>SshKey</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.SubnetId.html'
+                                  title='rusoto::cloudhsm::SubnetId'>SubnetId</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.SubscriptionType.html'
+                                  title='rusoto::cloudhsm::SubscriptionType'>SubscriptionType</a></td>
+                           <td class='docblock-short'>
+                                <p><p>Specifies the type of subscription for the HSM.</p> <ul> <li><b>PRODUCTION</b> - The HSM is being used in a production environment.</li> <li><b>TRIAL</b> - The HSM is being used in a product trial.</li> </ul></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.TagKey.html'
+                                  title='rusoto::cloudhsm::TagKey'>TagKey</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.TagKeyList.html'
+                                  title='rusoto::cloudhsm::TagKeyList'>TagKeyList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.TagList.html'
+                                  title='rusoto::cloudhsm::TagList'>TagList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.TagValue.html'
+                                  title='rusoto::cloudhsm::TagValue'>TagValue</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Timestamp.html'
+                                  title='rusoto::cloudhsm::Timestamp'>Timestamp</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.VpcId.html'
+                                  title='rusoto::cloudhsm::VpcId'>VpcId</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr></table></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "rusoto";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../../jquery.js"></script>
+    <script src="../../main.js"></script>
+    
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>

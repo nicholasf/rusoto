@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `workspaces` mod in crate `rusoto`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, workspaces">
+
+    <title>rusoto::workspaces - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='../index.html'>rusoto</a></p><script>window.sidebarCurrent = {name: 'workspaces', ty: 'mod', relpath: '../'};</script><script defer src="../sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content mod">
+<h1 class='fqn'><span class='in-band'>Module <a href='../index.html'>rusoto</a>::<wbr><a class='mod' href=''>workspaces</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-435963' class='srclink' href='../../src/rusoto/src/workspaces.rs.html#1-2' title='goto source code'>[src]</a></span></h1>
+<div class='docblock'><p>Amazon Workspaces</p>
+</div><h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ComputeType.html'
+                                  title='rusoto::workspaces::ComputeType'>ComputeType</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains information about the compute type of a WorkSpace bundle.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateTagsRequest.html'
+                                  title='rusoto::workspaces::CreateTagsRequest'>CreateTagsRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The request of the <a>CreateTags</a> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateTagsResult.html'
+                                  title='rusoto::workspaces::CreateTagsResult'>CreateTagsResult</a></td>
+                           <td class='docblock-short'>
+                                <p>The result of the <a>CreateTags</a> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateWorkspacesRequest.html'
+                                  title='rusoto::workspaces::CreateWorkspacesRequest'>CreateWorkspacesRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains the inputs for the <a>CreateWorkspaces</a> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateWorkspacesResult.html'
+                                  title='rusoto::workspaces::CreateWorkspacesResult'>CreateWorkspacesResult</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains the result of the <a>CreateWorkspaces</a> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DefaultWorkspaceCreationProperties.html'
+                                  title='rusoto::workspaces::DefaultWorkspaceCreationProperties'>DefaultWorkspaceCreationProperties</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains default WorkSpace creation information.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteTagsRequest.html'
+                                  title='rusoto::workspaces::DeleteTagsRequest'>DeleteTagsRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The request of the <a>DeleteTags</a> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteTagsResult.html'
+                                  title='rusoto::workspaces::DeleteTagsResult'>DeleteTagsResult</a></td>
+                           <td class='docblock-short'>
+                                <p>The result of the <a>DeleteTags</a> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeTagsRequest.html'
+                                  title='rusoto::workspaces::DescribeTagsRequest'>DescribeTagsRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The request of the <a>DescribeTags</a> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeTagsResult.html'
+                                  title='rusoto::workspaces::DescribeTagsResult'>DescribeTagsResult</a></td>
+                           <td class='docblock-short'>
+                                <p>The result of the <a>DescribeTags</a> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeWorkspaceBundlesRequest.html'
+                                  title='rusoto::workspaces::DescribeWorkspaceBundlesRequest'>DescribeWorkspaceBundlesRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains the inputs for the <a>DescribeWorkspaceBundles</a> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeWorkspaceBundlesResult.html'
+                                  title='rusoto::workspaces::DescribeWorkspaceBundlesResult'>DescribeWorkspaceBundlesResult</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains the results of the <a>DescribeWorkspaceBundles</a> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeWorkspaceDirectoriesRequest.html'
+                                  title='rusoto::workspaces::DescribeWorkspaceDirectoriesRequest'>DescribeWorkspaceDirectoriesRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains the inputs for the <a>DescribeWorkspaceDirectories</a> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeWorkspaceDirectoriesResult.html'
+                                  title='rusoto::workspaces::DescribeWorkspaceDirectoriesResult'>DescribeWorkspaceDirectoriesResult</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains the results of the <a>DescribeWorkspaceDirectories</a> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeWorkspacesConnectionStatusRequest.html'
+                                  title='rusoto::workspaces::DescribeWorkspacesConnectionStatusRequest'>DescribeWorkspacesConnectionStatusRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeWorkspacesConnectionStatusResult.html'
+                                  title='rusoto::workspaces::DescribeWorkspacesConnectionStatusResult'>DescribeWorkspacesConnectionStatusResult</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeWorkspacesRequest.html'
+                                  title='rusoto::workspaces::DescribeWorkspacesRequest'>DescribeWorkspacesRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains the inputs for the <a>DescribeWorkspaces</a> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeWorkspacesResult.html'
+                                  title='rusoto::workspaces::DescribeWorkspacesResult'>DescribeWorkspacesResult</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains the results for the <a>DescribeWorkspaces</a> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.FailedCreateWorkspaceRequest.html'
+                                  title='rusoto::workspaces::FailedCreateWorkspaceRequest'>FailedCreateWorkspaceRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains information about a WorkSpace that could not be created.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.FailedWorkspaceChangeRequest.html'
+                                  title='rusoto::workspaces::FailedWorkspaceChangeRequest'>FailedWorkspaceChangeRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains information about a WorkSpace that could not be rebooted (<a>RebootWorkspaces</a>), rebuilt (<a>RebuildWorkspaces</a>), terminated (<a>TerminateWorkspaces</a>), started (<a>StartWorkspaces</a>), or stopped (<a>StopWorkspaces</a>).</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ModifyWorkspacePropertiesRequest.html'
+                                  title='rusoto::workspaces::ModifyWorkspacePropertiesRequest'>ModifyWorkspacePropertiesRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ModifyWorkspacePropertiesResult.html'
+                                  title='rusoto::workspaces::ModifyWorkspacePropertiesResult'>ModifyWorkspacePropertiesResult</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RebootRequest.html'
+                                  title='rusoto::workspaces::RebootRequest'>RebootRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains information used with the <a>RebootWorkspaces</a> operation to reboot a WorkSpace.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RebootWorkspacesRequest.html'
+                                  title='rusoto::workspaces::RebootWorkspacesRequest'>RebootWorkspacesRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains the inputs for the <a>RebootWorkspaces</a> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RebootWorkspacesResult.html'
+                                  title='rusoto::workspaces::RebootWorkspacesResult'>RebootWorkspacesResult</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains the results of the <a>RebootWorkspaces</a> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RebuildRequest.html'
+                                  title='rusoto::workspaces::RebuildRequest'>RebuildRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains information used with the <a>RebuildWorkspaces</a> operation to rebuild a WorkSpace.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RebuildWorkspacesRequest.html'
+                                  title='rusoto::workspaces::RebuildWorkspacesRequest'>RebuildWorkspacesRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains the inputs for the <a>RebuildWorkspaces</a> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RebuildWorkspacesResult.html'
+                                  title='rusoto::workspaces::RebuildWorkspacesResult'>RebuildWorkspacesResult</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains the results of the <a>RebuildWorkspaces</a> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.StartRequest.html'
+                                  title='rusoto::workspaces::StartRequest'>StartRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes the start request.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.StartWorkspacesRequest.html'
+                                  title='rusoto::workspaces::StartWorkspacesRequest'>StartWorkspacesRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.StartWorkspacesResult.html'
+                                  title='rusoto::workspaces::StartWorkspacesResult'>StartWorkspacesResult</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.StopRequest.html'
+                                  title='rusoto::workspaces::StopRequest'>StopRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes the stop request.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.StopWorkspacesRequest.html'
+                                  title='rusoto::workspaces::StopWorkspacesRequest'>StopWorkspacesRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.StopWorkspacesResult.html'
+                                  title='rusoto::workspaces::StopWorkspacesResult'>StopWorkspacesResult</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Tag.html'
+                                  title='rusoto::workspaces::Tag'>Tag</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes the tag of the WorkSpace.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.TerminateRequest.html'
+                                  title='rusoto::workspaces::TerminateRequest'>TerminateRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains information used with the <a>TerminateWorkspaces</a> operation to terminate a WorkSpace.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.TerminateWorkspacesRequest.html'
+                                  title='rusoto::workspaces::TerminateWorkspacesRequest'>TerminateWorkspacesRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains the inputs for the <a>TerminateWorkspaces</a> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.TerminateWorkspacesResult.html'
+                                  title='rusoto::workspaces::TerminateWorkspacesResult'>TerminateWorkspacesResult</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains the results of the <a>TerminateWorkspaces</a> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UserStorage.html'
+                                  title='rusoto::workspaces::UserStorage'>UserStorage</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains information about the user storage for a WorkSpace bundle.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Workspace.html'
+                                  title='rusoto::workspaces::Workspace'>Workspace</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains information about a WorkSpace.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.WorkspaceBundle.html'
+                                  title='rusoto::workspaces::WorkspaceBundle'>WorkspaceBundle</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains information about a WorkSpace bundle.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.WorkspaceConnectionStatus.html'
+                                  title='rusoto::workspaces::WorkspaceConnectionStatus'>WorkspaceConnectionStatus</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes the connection status of a WorkSpace.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.WorkspaceDirectory.html'
+                                  title='rusoto::workspaces::WorkspaceDirectory'>WorkspaceDirectory</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains information about an AWS Directory Service directory for use with Amazon WorkSpaces.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.WorkspaceProperties.html'
+                                  title='rusoto::workspaces::WorkspaceProperties'>WorkspaceProperties</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes the properties of a WorkSpace.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.WorkspaceRequest.html'
+                                  title='rusoto::workspaces::WorkspaceRequest'>WorkspaceRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains information about a WorkSpace creation request.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.WorkspacesClient.html'
+                                  title='rusoto::workspaces::WorkspacesClient'>WorkspacesClient</a></td>
+                           <td class='docblock-short'>
+                                <p>A client for the Amazon WorkSpaces API.</p>
+                           </td>
+                       </tr></table><h2 id='enums' class='section-header'><a href="#enums">Enums</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.CreateTagsError.html'
+                                  title='rusoto::workspaces::CreateTagsError'>CreateTagsError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.CreateWorkspacesError.html'
+                                  title='rusoto::workspaces::CreateWorkspacesError'>CreateWorkspacesError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DeleteTagsError.html'
+                                  title='rusoto::workspaces::DeleteTagsError'>DeleteTagsError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeTagsError.html'
+                                  title='rusoto::workspaces::DescribeTagsError'>DescribeTagsError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeWorkspaceBundlesError.html'
+                                  title='rusoto::workspaces::DescribeWorkspaceBundlesError'>DescribeWorkspaceBundlesError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeWorkspaceDirectoriesError.html'
+                                  title='rusoto::workspaces::DescribeWorkspaceDirectoriesError'>DescribeWorkspaceDirectoriesError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeWorkspacesConnectionStatusError.html'
+                                  title='rusoto::workspaces::DescribeWorkspacesConnectionStatusError'>DescribeWorkspacesConnectionStatusError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeWorkspacesError.html'
+                                  title='rusoto::workspaces::DescribeWorkspacesError'>DescribeWorkspacesError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ModifyWorkspacePropertiesError.html'
+                                  title='rusoto::workspaces::ModifyWorkspacePropertiesError'>ModifyWorkspacePropertiesError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.RebootWorkspacesError.html'
+                                  title='rusoto::workspaces::RebootWorkspacesError'>RebootWorkspacesError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.RebuildWorkspacesError.html'
+                                  title='rusoto::workspaces::RebuildWorkspacesError'>RebuildWorkspacesError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.StartWorkspacesError.html'
+                                  title='rusoto::workspaces::StartWorkspacesError'>StartWorkspacesError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.StopWorkspacesError.html'
+                                  title='rusoto::workspaces::StopWorkspacesError'>StopWorkspacesError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.TerminateWorkspacesError.html'
+                                  title='rusoto::workspaces::TerminateWorkspacesError'>TerminateWorkspacesError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr></table><h2 id='types' class='section-header'><a href="#types">Type Definitions</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ARN.html'
+                                  title='rusoto::workspaces::ARN'>ARN</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Alias.html'
+                                  title='rusoto::workspaces::Alias'>Alias</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.BooleanObject.html'
+                                  title='rusoto::workspaces::BooleanObject'>BooleanObject</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.BundleId.html'
+                                  title='rusoto::workspaces::BundleId'>BundleId</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.BundleIdList.html'
+                                  title='rusoto::workspaces::BundleIdList'>BundleIdList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.BundleList.html'
+                                  title='rusoto::workspaces::BundleList'>BundleList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.BundleOwner.html'
+                                  title='rusoto::workspaces::BundleOwner'>BundleOwner</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Compute.html'
+                                  title='rusoto::workspaces::Compute'>Compute</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ComputerName.html'
+                                  title='rusoto::workspaces::ComputerName'>ComputerName</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ConnectionState.html'
+                                  title='rusoto::workspaces::ConnectionState'>ConnectionState</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.DefaultOu.html'
+                                  title='rusoto::workspaces::DefaultOu'>DefaultOu</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Description.html'
+                                  title='rusoto::workspaces::Description'>Description</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.DirectoryId.html'
+                                  title='rusoto::workspaces::DirectoryId'>DirectoryId</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.DirectoryIdList.html'
+                                  title='rusoto::workspaces::DirectoryIdList'>DirectoryIdList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.DirectoryList.html'
+                                  title='rusoto::workspaces::DirectoryList'>DirectoryList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.DirectoryName.html'
+                                  title='rusoto::workspaces::DirectoryName'>DirectoryName</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.DnsIpAddresses.html'
+                                  title='rusoto::workspaces::DnsIpAddresses'>DnsIpAddresses</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ErrorType.html'
+                                  title='rusoto::workspaces::ErrorType'>ErrorType</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ExceptionMessage.html'
+                                  title='rusoto::workspaces::ExceptionMessage'>ExceptionMessage</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.FailedCreateWorkspaceRequests.html'
+                                  title='rusoto::workspaces::FailedCreateWorkspaceRequests'>FailedCreateWorkspaceRequests</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.FailedRebootWorkspaceRequests.html'
+                                  title='rusoto::workspaces::FailedRebootWorkspaceRequests'>FailedRebootWorkspaceRequests</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.FailedRebuildWorkspaceRequests.html'
+                                  title='rusoto::workspaces::FailedRebuildWorkspaceRequests'>FailedRebuildWorkspaceRequests</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.FailedStartWorkspaceRequests.html'
+                                  title='rusoto::workspaces::FailedStartWorkspaceRequests'>FailedStartWorkspaceRequests</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.FailedStopWorkspaceRequests.html'
+                                  title='rusoto::workspaces::FailedStopWorkspaceRequests'>FailedStopWorkspaceRequests</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.FailedTerminateWorkspaceRequests.html'
+                                  title='rusoto::workspaces::FailedTerminateWorkspaceRequests'>FailedTerminateWorkspaceRequests</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.IpAddress.html'
+                                  title='rusoto::workspaces::IpAddress'>IpAddress</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Limit.html'
+                                  title='rusoto::workspaces::Limit'>Limit</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.NonEmptyString.html'
+                                  title='rusoto::workspaces::NonEmptyString'>NonEmptyString</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.PaginationToken.html'
+                                  title='rusoto::workspaces::PaginationToken'>PaginationToken</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.RebootWorkspaceRequests.html'
+                                  title='rusoto::workspaces::RebootWorkspaceRequests'>RebootWorkspaceRequests</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.RebuildWorkspaceRequests.html'
+                                  title='rusoto::workspaces::RebuildWorkspaceRequests'>RebuildWorkspaceRequests</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.RegistrationCode.html'
+                                  title='rusoto::workspaces::RegistrationCode'>RegistrationCode</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.RunningMode.html'
+                                  title='rusoto::workspaces::RunningMode'>RunningMode</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.RunningModeAutoStopTimeoutInMinutes.html'
+                                  title='rusoto::workspaces::RunningModeAutoStopTimeoutInMinutes'>RunningModeAutoStopTimeoutInMinutes</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.SecurityGroupId.html'
+                                  title='rusoto::workspaces::SecurityGroupId'>SecurityGroupId</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.StartWorkspaceRequests.html'
+                                  title='rusoto::workspaces::StartWorkspaceRequests'>StartWorkspaceRequests</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.StopWorkspaceRequests.html'
+                                  title='rusoto::workspaces::StopWorkspaceRequests'>StopWorkspaceRequests</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.SubnetId.html'
+                                  title='rusoto::workspaces::SubnetId'>SubnetId</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.SubnetIds.html'
+                                  title='rusoto::workspaces::SubnetIds'>SubnetIds</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.TagKey.html'
+                                  title='rusoto::workspaces::TagKey'>TagKey</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.TagKeyList.html'
+                                  title='rusoto::workspaces::TagKeyList'>TagKeyList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.TagList.html'
+                                  title='rusoto::workspaces::TagList'>TagList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.TagValue.html'
+                                  title='rusoto::workspaces::TagValue'>TagValue</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.TerminateWorkspaceRequests.html'
+                                  title='rusoto::workspaces::TerminateWorkspaceRequests'>TerminateWorkspaceRequests</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Timestamp.html'
+                                  title='rusoto::workspaces::Timestamp'>Timestamp</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.UserName.html'
+                                  title='rusoto::workspaces::UserName'>UserName</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.VolumeEncryptionKey.html'
+                                  title='rusoto::workspaces::VolumeEncryptionKey'>VolumeEncryptionKey</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.WorkspaceConnectionStatusList.html'
+                                  title='rusoto::workspaces::WorkspaceConnectionStatusList'>WorkspaceConnectionStatusList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.WorkspaceDirectoryState.html'
+                                  title='rusoto::workspaces::WorkspaceDirectoryState'>WorkspaceDirectoryState</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.WorkspaceDirectoryType.html'
+                                  title='rusoto::workspaces::WorkspaceDirectoryType'>WorkspaceDirectoryType</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.WorkspaceErrorCode.html'
+                                  title='rusoto::workspaces::WorkspaceErrorCode'>WorkspaceErrorCode</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.WorkspaceId.html'
+                                  title='rusoto::workspaces::WorkspaceId'>WorkspaceId</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.WorkspaceIdList.html'
+                                  title='rusoto::workspaces::WorkspaceIdList'>WorkspaceIdList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.WorkspaceList.html'
+                                  title='rusoto::workspaces::WorkspaceList'>WorkspaceList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.WorkspaceRequestList.html'
+                                  title='rusoto::workspaces::WorkspaceRequestList'>WorkspaceRequestList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.WorkspaceState.html'
+                                  title='rusoto::workspaces::WorkspaceState'>WorkspaceState</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr></table></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "rusoto";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../../jquery.js"></script>
+    <script src="../../main.js"></script>
+    
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>

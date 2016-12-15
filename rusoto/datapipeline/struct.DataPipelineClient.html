@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `DataPipelineClient` struct in crate `rusoto`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, DataPipelineClient">
+
+    <title>rusoto::datapipeline::DataPipelineClient - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='../index.html'>rusoto</a>::<wbr><a href='index.html'>datapipeline</a></p><script>window.sidebarCurrent = {name: 'DataPipelineClient', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content struct">
+<h1 class='fqn'><span class='in-band'>Struct <a href='../index.html'>rusoto</a>::<wbr><a href='index.html'>datapipeline</a>::<wbr><a class='struct' href=''>DataPipelineClient</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-73878' class='srclink' href='../../src/rusoto/home/travis/build/rusoto/rusoto/target/debug/build/rusoto-61f21223a43ed2cb/out/datapipeline.rs.html#11600-11605' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct DataPipelineClient&lt;P,&nbsp;D&gt; <span class='where'>where P: <a class='trait' href='../../rusoto/trait.ProvideAwsCredentials.html' title='rusoto::ProvideAwsCredentials'>ProvideAwsCredentials</a>, D: <a class='trait' href='../../rusoto/trait.DispatchSignedRequest.html' title='rusoto::DispatchSignedRequest'>DispatchSignedRequest</a></span> { /* fields omitted */ }</pre><div class='docblock'><p>A client for the AWS Data Pipeline API.</p>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;P&gt; <a class='struct' href='../../rusoto/datapipeline/struct.DataPipelineClient.html' title='rusoto::datapipeline::DataPipelineClient'>DataPipelineClient</a>&lt;P,&nbsp;<a class='struct' href='https://hyperium.github.io/hyper/hyper/client/struct.Client.html' title='hyper::client::Client'>Client</a>&gt; <span class='where'>where P: <a class='trait' href='../../rusoto/trait.ProvideAwsCredentials.html' title='rusoto::ProvideAwsCredentials'>ProvideAwsCredentials</a></span></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-73884' class='srclink' href='../../src/rusoto/home/travis/build/rusoto/rusoto/target/debug/build/rusoto-61f21223a43ed2cb/out/datapipeline.rs.html#11606-11614' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.new' class='method'><span id='new.v' class='invisible'><code>fn <a href='#method.new' class='fnname'>new</a>(credentials_provider: P, region: <a class='enum' href='../../rusoto/enum.Region.html' title='rusoto::Region'>Region</a>) -&gt; Self</code></span></h4>
+</div><h3 class='impl'><span class='in-band'><code>impl&lt;P,&nbsp;D&gt; <a class='struct' href='../../rusoto/datapipeline/struct.DataPipelineClient.html' title='rusoto::datapipeline::DataPipelineClient'>DataPipelineClient</a>&lt;P,&nbsp;D&gt; <span class='where'>where P: <a class='trait' href='../../rusoto/trait.ProvideAwsCredentials.html' title='rusoto::ProvideAwsCredentials'>ProvideAwsCredentials</a>, D: <a class='trait' href='../../rusoto/trait.DispatchSignedRequest.html' title='rusoto::DispatchSignedRequest'>DispatchSignedRequest</a></span></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-73890' class='srclink' href='../../src/rusoto/home/travis/build/rusoto/rusoto/target/debug/build/rusoto-61f21223a43ed2cb/out/datapipeline.rs.html#11615-12012' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.with_request_dispatcher' class='method'><span id='with_request_dispatcher.v' class='invisible'><code>fn <a href='#method.with_request_dispatcher' class='fnname'>with_request_dispatcher</a>(request_dispatcher: D, credentials_provider: P, region: <a class='enum' href='../../rusoto/enum.Region.html' title='rusoto::Region'>Region</a>) -&gt; Self</code></span></h4>
+<h4 id='method.activate_pipeline' class='method'><span id='activate_pipeline.v' class='invisible'><code>fn <a href='#method.activate_pipeline' class='fnname'>activate_pipeline</a>(&amp;self, input: &amp;<a class='struct' href='../../rusoto/datapipeline/struct.ActivatePipelineInput.html' title='rusoto::datapipeline::ActivatePipelineInput'>ActivatePipelineInput</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../../rusoto/datapipeline/struct.ActivatePipelineOutput.html' title='rusoto::datapipeline::ActivatePipelineOutput'>ActivatePipelineOutput</a>,&nbsp;<a class='enum' href='../../rusoto/datapipeline/enum.ActivatePipelineError.html' title='rusoto::datapipeline::ActivatePipelineError'>ActivatePipelineError</a>&gt;</code></span></h4>
+<div class='docblock'><p>Validates the specified pipeline and starts processing pipeline tasks. If the pipeline does not pass validation, activation fails.</p> <p>If you need to pause the pipeline to investigate an issue with a component, such as a data source or script, call <a>DeactivatePipeline</a>.</p> <p>To activate a finished pipeline, modify the end date for the pipeline and then activate it.</p>
+</div><h4 id='method.add_tags' class='method'><span id='add_tags.v' class='invisible'><code>fn <a href='#method.add_tags' class='fnname'>add_tags</a>(&amp;self, input: &amp;<a class='struct' href='../../rusoto/datapipeline/struct.AddTagsInput.html' title='rusoto::datapipeline::AddTagsInput'>AddTagsInput</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../../rusoto/datapipeline/struct.AddTagsOutput.html' title='rusoto::datapipeline::AddTagsOutput'>AddTagsOutput</a>,&nbsp;<a class='enum' href='../../rusoto/datapipeline/enum.AddTagsError.html' title='rusoto::datapipeline::AddTagsError'>AddTagsError</a>&gt;</code></span></h4>
+<div class='docblock'><p>Adds or modifies tags for the specified pipeline.</p>
+</div><h4 id='method.create_pipeline' class='method'><span id='create_pipeline.v' class='invisible'><code>fn <a href='#method.create_pipeline' class='fnname'>create_pipeline</a>(&amp;self, input: &amp;<a class='struct' href='../../rusoto/datapipeline/struct.CreatePipelineInput.html' title='rusoto::datapipeline::CreatePipelineInput'>CreatePipelineInput</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../../rusoto/datapipeline/struct.CreatePipelineOutput.html' title='rusoto::datapipeline::CreatePipelineOutput'>CreatePipelineOutput</a>,&nbsp;<a class='enum' href='../../rusoto/datapipeline/enum.CreatePipelineError.html' title='rusoto::datapipeline::CreatePipelineError'>CreatePipelineError</a>&gt;</code></span></h4>
+<div class='docblock'><p>Creates a new, empty pipeline. Use <a>PutPipelineDefinition</a> to populate the pipeline.</p>
+</div><h4 id='method.deactivate_pipeline' class='method'><span id='deactivate_pipeline.v' class='invisible'><code>fn <a href='#method.deactivate_pipeline' class='fnname'>deactivate_pipeline</a>(&amp;self, input: &amp;<a class='struct' href='../../rusoto/datapipeline/struct.DeactivatePipelineInput.html' title='rusoto::datapipeline::DeactivatePipelineInput'>DeactivatePipelineInput</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../../rusoto/datapipeline/struct.DeactivatePipelineOutput.html' title='rusoto::datapipeline::DeactivatePipelineOutput'>DeactivatePipelineOutput</a>,&nbsp;<a class='enum' href='../../rusoto/datapipeline/enum.DeactivatePipelineError.html' title='rusoto::datapipeline::DeactivatePipelineError'>DeactivatePipelineError</a>&gt;</code></span></h4>
+<div class='docblock'><p>Deactivates the specified running pipeline. The pipeline is set to the <code>DEACTIVATING</code> state until the deactivation process completes.</p> <p>To resume a deactivated pipeline, use <a>ActivatePipeline</a>. By default, the pipeline resumes from the last completed execution. Optionally, you can specify the date and time to resume the pipeline.</p>
+</div><h4 id='method.delete_pipeline' class='method'><span id='delete_pipeline.v' class='invisible'><code>fn <a href='#method.delete_pipeline' class='fnname'>delete_pipeline</a>(&amp;self, input: &amp;<a class='struct' href='../../rusoto/datapipeline/struct.DeletePipelineInput.html' title='rusoto::datapipeline::DeletePipelineInput'>DeletePipelineInput</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>,&nbsp;<a class='enum' href='../../rusoto/datapipeline/enum.DeletePipelineError.html' title='rusoto::datapipeline::DeletePipelineError'>DeletePipelineError</a>&gt;</code></span></h4>
+<div class='docblock'><p>Deletes a pipeline, its pipeline definition, and its run history. AWS Data Pipeline attempts to cancel instances associated with the pipeline that are currently being processed by task runners.</p> <p>Deleting a pipeline cannot be undone. You cannot query or restore a deleted pipeline. To temporarily pause a pipeline instead of deleting it, call <a>SetStatus</a> with the status set to <code>PAUSE</code> on individual components. Components that are paused by <a>SetStatus</a> can be resumed.</p>
+</div><h4 id='method.describe_objects' class='method'><span id='describe_objects.v' class='invisible'><code>fn <a href='#method.describe_objects' class='fnname'>describe_objects</a>(&amp;self, input: &amp;<a class='struct' href='../../rusoto/datapipeline/struct.DescribeObjectsInput.html' title='rusoto::datapipeline::DescribeObjectsInput'>DescribeObjectsInput</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../../rusoto/datapipeline/struct.DescribeObjectsOutput.html' title='rusoto::datapipeline::DescribeObjectsOutput'>DescribeObjectsOutput</a>,&nbsp;<a class='enum' href='../../rusoto/datapipeline/enum.DescribeObjectsError.html' title='rusoto::datapipeline::DescribeObjectsError'>DescribeObjectsError</a>&gt;</code></span></h4>
+<div class='docblock'><p>Gets the object definitions for a set of objects associated with the pipeline. Object definitions are composed of a set of fields that define the properties of the object.</p>
+</div><h4 id='method.describe_pipelines' class='method'><span id='describe_pipelines.v' class='invisible'><code>fn <a href='#method.describe_pipelines' class='fnname'>describe_pipelines</a>(&amp;self, input: &amp;<a class='struct' href='../../rusoto/datapipeline/struct.DescribePipelinesInput.html' title='rusoto::datapipeline::DescribePipelinesInput'>DescribePipelinesInput</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../../rusoto/datapipeline/struct.DescribePipelinesOutput.html' title='rusoto::datapipeline::DescribePipelinesOutput'>DescribePipelinesOutput</a>,&nbsp;<a class='enum' href='../../rusoto/datapipeline/enum.DescribePipelinesError.html' title='rusoto::datapipeline::DescribePipelinesError'>DescribePipelinesError</a>&gt;</code></span></h4>
+<div class='docblock'><p>Retrieves metadata about one or more pipelines. The information retrieved includes the name of the pipeline, the pipeline identifier, its current state, and the user account that owns the pipeline. Using account credentials, you can retrieve metadata about pipelines that you or your IAM users have created. If you are using an IAM user account, you can retrieve metadata about only those pipelines for which you have read permissions.</p> <p>To retrieve the full pipeline definition instead of metadata about the pipeline, call <a>GetPipelineDefinition</a>.</p>
+</div><h4 id='method.evaluate_expression' class='method'><span id='evaluate_expression.v' class='invisible'><code>fn <a href='#method.evaluate_expression' class='fnname'>evaluate_expression</a>(&amp;self, input: &amp;<a class='struct' href='../../rusoto/datapipeline/struct.EvaluateExpressionInput.html' title='rusoto::datapipeline::EvaluateExpressionInput'>EvaluateExpressionInput</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../../rusoto/datapipeline/struct.EvaluateExpressionOutput.html' title='rusoto::datapipeline::EvaluateExpressionOutput'>EvaluateExpressionOutput</a>,&nbsp;<a class='enum' href='../../rusoto/datapipeline/enum.EvaluateExpressionError.html' title='rusoto::datapipeline::EvaluateExpressionError'>EvaluateExpressionError</a>&gt;</code></span></h4>
+<div class='docblock'><p>Task runners call <code>EvaluateExpression</code> to evaluate a string in the context of the specified object. For example, a task runner can evaluate SQL queries stored in Amazon S3.</p>
+</div><h4 id='method.get_pipeline_definition' class='method'><span id='get_pipeline_definition.v' class='invisible'><code>fn <a href='#method.get_pipeline_definition' class='fnname'>get_pipeline_definition</a>(&amp;self, input: &amp;<a class='struct' href='../../rusoto/datapipeline/struct.GetPipelineDefinitionInput.html' title='rusoto::datapipeline::GetPipelineDefinitionInput'>GetPipelineDefinitionInput</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../../rusoto/datapipeline/struct.GetPipelineDefinitionOutput.html' title='rusoto::datapipeline::GetPipelineDefinitionOutput'>GetPipelineDefinitionOutput</a>,&nbsp;<a class='enum' href='../../rusoto/datapipeline/enum.GetPipelineDefinitionError.html' title='rusoto::datapipeline::GetPipelineDefinitionError'>GetPipelineDefinitionError</a>&gt;</code></span></h4>
+<div class='docblock'><p>Gets the definition of the specified pipeline. You can call <code>GetPipelineDefinition</code> to retrieve the pipeline definition that you provided using <a>PutPipelineDefinition</a>.</p>
+</div><h4 id='method.list_pipelines' class='method'><span id='list_pipelines.v' class='invisible'><code>fn <a href='#method.list_pipelines' class='fnname'>list_pipelines</a>(&amp;self, input: &amp;<a class='struct' href='../../rusoto/datapipeline/struct.ListPipelinesInput.html' title='rusoto::datapipeline::ListPipelinesInput'>ListPipelinesInput</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../../rusoto/datapipeline/struct.ListPipelinesOutput.html' title='rusoto::datapipeline::ListPipelinesOutput'>ListPipelinesOutput</a>,&nbsp;<a class='enum' href='../../rusoto/datapipeline/enum.ListPipelinesError.html' title='rusoto::datapipeline::ListPipelinesError'>ListPipelinesError</a>&gt;</code></span></h4>
+<div class='docblock'><p>Lists the pipeline identifiers for all active pipelines that you have permission to access.</p>
+</div><h4 id='method.poll_for_task' class='method'><span id='poll_for_task.v' class='invisible'><code>fn <a href='#method.poll_for_task' class='fnname'>poll_for_task</a>(&amp;self, input: &amp;<a class='struct' href='../../rusoto/datapipeline/struct.PollForTaskInput.html' title='rusoto::datapipeline::PollForTaskInput'>PollForTaskInput</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../../rusoto/datapipeline/struct.PollForTaskOutput.html' title='rusoto::datapipeline::PollForTaskOutput'>PollForTaskOutput</a>,&nbsp;<a class='enum' href='../../rusoto/datapipeline/enum.PollForTaskError.html' title='rusoto::datapipeline::PollForTaskError'>PollForTaskError</a>&gt;</code></span></h4>
+<div class='docblock'><p>Task runners call <code>PollForTask</code> to receive a task to perform from AWS Data Pipeline. The task runner specifies which tasks it can perform by setting a value for the <code>workerGroup</code> parameter. The task returned can come from any of the pipelines that match the <code>workerGroup</code> value passed in by the task runner and that was launched using the IAM user credentials specified by the task runner.</p> <p>If tasks are ready in the work queue, <code>PollForTask</code> returns a response immediately. If no tasks are available in the queue, <code>PollForTask</code> uses long-polling and holds on to a poll connection for up to a 90 seconds, during which time the first newly scheduled task is handed to the task runner. To accomodate this, set the socket timeout in your task runner to 90 seconds. The task runner should not call <code>PollForTask</code> again on the same <code>workerGroup</code> until it receives a response, and this can take up to 90 seconds. </p>
+</div><h4 id='method.put_pipeline_definition' class='method'><span id='put_pipeline_definition.v' class='invisible'><code>fn <a href='#method.put_pipeline_definition' class='fnname'>put_pipeline_definition</a>(&amp;self, input: &amp;<a class='struct' href='../../rusoto/datapipeline/struct.PutPipelineDefinitionInput.html' title='rusoto::datapipeline::PutPipelineDefinitionInput'>PutPipelineDefinitionInput</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../../rusoto/datapipeline/struct.PutPipelineDefinitionOutput.html' title='rusoto::datapipeline::PutPipelineDefinitionOutput'>PutPipelineDefinitionOutput</a>,&nbsp;<a class='enum' href='../../rusoto/datapipeline/enum.PutPipelineDefinitionError.html' title='rusoto::datapipeline::PutPipelineDefinitionError'>PutPipelineDefinitionError</a>&gt;</code></span></h4>
+<div class='docblock'><p>Adds tasks, schedules, and preconditions to the specified pipeline. You can use <code>PutPipelineDefinition</code> to populate a new pipeline.</p> <p> <code>PutPipelineDefinition</code> also validates the configuration as it adds it to the pipeline. Changes to the pipeline are saved unless one of the following three validation errors exists in the pipeline. </p> <ol> <li>An object is missing a name or identifier field.</li> <li>A string or reference field is empty.</li> <li>The number of objects in the pipeline exceeds the maximum allowed objects.</li> <li>The pipeline is in a FINISHED state.</li> </ol> <p> Pipeline object definitions are passed to the <code>PutPipelineDefinition</code> action and returned by the <a>GetPipelineDefinition</a> action. </p>
+</div><h4 id='method.query_objects' class='method'><span id='query_objects.v' class='invisible'><code>fn <a href='#method.query_objects' class='fnname'>query_objects</a>(&amp;self, input: &amp;<a class='struct' href='../../rusoto/datapipeline/struct.QueryObjectsInput.html' title='rusoto::datapipeline::QueryObjectsInput'>QueryObjectsInput</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../../rusoto/datapipeline/struct.QueryObjectsOutput.html' title='rusoto::datapipeline::QueryObjectsOutput'>QueryObjectsOutput</a>,&nbsp;<a class='enum' href='../../rusoto/datapipeline/enum.QueryObjectsError.html' title='rusoto::datapipeline::QueryObjectsError'>QueryObjectsError</a>&gt;</code></span></h4>
+<div class='docblock'><p>Queries the specified pipeline for the names of objects that match the specified set of conditions.</p>
+</div><h4 id='method.remove_tags' class='method'><span id='remove_tags.v' class='invisible'><code>fn <a href='#method.remove_tags' class='fnname'>remove_tags</a>(&amp;self, input: &amp;<a class='struct' href='../../rusoto/datapipeline/struct.RemoveTagsInput.html' title='rusoto::datapipeline::RemoveTagsInput'>RemoveTagsInput</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../../rusoto/datapipeline/struct.RemoveTagsOutput.html' title='rusoto::datapipeline::RemoveTagsOutput'>RemoveTagsOutput</a>,&nbsp;<a class='enum' href='../../rusoto/datapipeline/enum.RemoveTagsError.html' title='rusoto::datapipeline::RemoveTagsError'>RemoveTagsError</a>&gt;</code></span></h4>
+<div class='docblock'><p>Removes existing tags from the specified pipeline.</p>
+</div><h4 id='method.report_task_progress' class='method'><span id='report_task_progress.v' class='invisible'><code>fn <a href='#method.report_task_progress' class='fnname'>report_task_progress</a>(&amp;self, input: &amp;<a class='struct' href='../../rusoto/datapipeline/struct.ReportTaskProgressInput.html' title='rusoto::datapipeline::ReportTaskProgressInput'>ReportTaskProgressInput</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../../rusoto/datapipeline/struct.ReportTaskProgressOutput.html' title='rusoto::datapipeline::ReportTaskProgressOutput'>ReportTaskProgressOutput</a>,&nbsp;<a class='enum' href='../../rusoto/datapipeline/enum.ReportTaskProgressError.html' title='rusoto::datapipeline::ReportTaskProgressError'>ReportTaskProgressError</a>&gt;</code></span></h4>
+<div class='docblock'><p>Task runners call <code>ReportTaskProgress</code> when assigned a task to acknowledge that it has the task. If the web service does not receive this acknowledgement within 2 minutes, it assigns the task in a subsequent <a>PollForTask</a> call. After this initial acknowledgement, the task runner only needs to report progress every 15 minutes to maintain its ownership of the task. You can change this reporting time from 15 minutes by specifying a <code>reportProgressTimeout</code> field in your pipeline.</p> <p>If a task runner does not report its status after 5 minutes, AWS Data Pipeline assumes that the task runner is unable to process the task and reassigns the task in a subsequent response to <a>PollForTask</a>. Task runners should call <code>ReportTaskProgress</code> every 60 seconds.</p>
+</div><h4 id='method.report_task_runner_heartbeat' class='method'><span id='report_task_runner_heartbeat.v' class='invisible'><code>fn <a href='#method.report_task_runner_heartbeat' class='fnname'>report_task_runner_heartbeat</a>(&amp;self, input: &amp;<a class='struct' href='../../rusoto/datapipeline/struct.ReportTaskRunnerHeartbeatInput.html' title='rusoto::datapipeline::ReportTaskRunnerHeartbeatInput'>ReportTaskRunnerHeartbeatInput</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../../rusoto/datapipeline/struct.ReportTaskRunnerHeartbeatOutput.html' title='rusoto::datapipeline::ReportTaskRunnerHeartbeatOutput'>ReportTaskRunnerHeartbeatOutput</a>,&nbsp;<a class='enum' href='../../rusoto/datapipeline/enum.ReportTaskRunnerHeartbeatError.html' title='rusoto::datapipeline::ReportTaskRunnerHeartbeatError'>ReportTaskRunnerHeartbeatError</a>&gt;</code></span></h4>
+<div class='docblock'><p>Task runners call <code>ReportTaskRunnerHeartbeat</code> every 15 minutes to indicate that they are operational. If the AWS Data Pipeline Task Runner is launched on a resource managed by AWS Data Pipeline, the web service can use this call to detect when the task runner application has failed and restart a new instance.</p>
+</div><h4 id='method.set_status' class='method'><span id='set_status.v' class='invisible'><code>fn <a href='#method.set_status' class='fnname'>set_status</a>(&amp;self, input: &amp;<a class='struct' href='../../rusoto/datapipeline/struct.SetStatusInput.html' title='rusoto::datapipeline::SetStatusInput'>SetStatusInput</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>,&nbsp;<a class='enum' href='../../rusoto/datapipeline/enum.SetStatusError.html' title='rusoto::datapipeline::SetStatusError'>SetStatusError</a>&gt;</code></span></h4>
+<div class='docblock'><p>Requests that the status of the specified physical or logical pipeline objects be updated in the specified pipeline. This update might not occur immediately, but is eventually consistent. The status that can be set depends on the type of object (for example, DataNode or Activity). You cannot perform this operation on <code>FINISHED</code> pipelines and attempting to do so returns <code>InvalidRequestException</code>.</p>
+</div><h4 id='method.set_task_status' class='method'><span id='set_task_status.v' class='invisible'><code>fn <a href='#method.set_task_status' class='fnname'>set_task_status</a>(&amp;self, input: &amp;<a class='struct' href='../../rusoto/datapipeline/struct.SetTaskStatusInput.html' title='rusoto::datapipeline::SetTaskStatusInput'>SetTaskStatusInput</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../../rusoto/datapipeline/struct.SetTaskStatusOutput.html' title='rusoto::datapipeline::SetTaskStatusOutput'>SetTaskStatusOutput</a>,&nbsp;<a class='enum' href='../../rusoto/datapipeline/enum.SetTaskStatusError.html' title='rusoto::datapipeline::SetTaskStatusError'>SetTaskStatusError</a>&gt;</code></span></h4>
+<div class='docblock'><p>Task runners call <code>SetTaskStatus</code> to notify AWS Data Pipeline that a task is completed and provide information about the final status. A task runner makes this call regardless of whether the task was sucessful. A task runner does not need to call <code>SetTaskStatus</code> for tasks that are canceled by the web service during a call to <a>ReportTaskProgress</a>.</p>
+</div><h4 id='method.validate_pipeline_definition' class='method'><span id='validate_pipeline_definition.v' class='invisible'><code>fn <a href='#method.validate_pipeline_definition' class='fnname'>validate_pipeline_definition</a>(&amp;self, input: &amp;<a class='struct' href='../../rusoto/datapipeline/struct.ValidatePipelineDefinitionInput.html' title='rusoto::datapipeline::ValidatePipelineDefinitionInput'>ValidatePipelineDefinitionInput</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../../rusoto/datapipeline/struct.ValidatePipelineDefinitionOutput.html' title='rusoto::datapipeline::ValidatePipelineDefinitionOutput'>ValidatePipelineDefinitionOutput</a>,&nbsp;<a class='enum' href='../../rusoto/datapipeline/enum.ValidatePipelineDefinitionError.html' title='rusoto::datapipeline::ValidatePipelineDefinitionError'>ValidatePipelineDefinitionError</a>&gt;</code></span></h4>
+<div class='docblock'><p>Validates the specified pipeline definition to ensure that it is well formed and can be run without error.</p>
+</div></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "rusoto";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../../jquery.js"></script>
+    <script src="../../main.js"></script>
+    
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>

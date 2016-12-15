@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `EcrClient` struct in crate `rusoto`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, EcrClient">
+
+    <title>rusoto::ecr::EcrClient - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='../index.html'>rusoto</a>::<wbr><a href='index.html'>ecr</a></p><script>window.sidebarCurrent = {name: 'EcrClient', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content struct">
+<h1 class='fqn'><span class='in-band'>Struct <a href='../index.html'>rusoto</a>::<wbr><a href='index.html'>ecr</a>::<wbr><a class='struct' href=''>EcrClient</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-181817' class='srclink' href='../../src/rusoto/home/travis/build/rusoto/rusoto/target/debug/build/rusoto-61f21223a43ed2cb/out/ecr.rs.html#6979-6984' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct EcrClient&lt;P,&nbsp;D&gt; <span class='where'>where P: <a class='trait' href='../../rusoto/trait.ProvideAwsCredentials.html' title='rusoto::ProvideAwsCredentials'>ProvideAwsCredentials</a>, D: <a class='trait' href='../../rusoto/trait.DispatchSignedRequest.html' title='rusoto::DispatchSignedRequest'>DispatchSignedRequest</a></span> { /* fields omitted */ }</pre><div class='docblock'><p>A client for the Amazon ECR API.</p>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;P&gt; <a class='struct' href='../../rusoto/ecr/struct.EcrClient.html' title='rusoto::ecr::EcrClient'>EcrClient</a>&lt;P,&nbsp;<a class='struct' href='https://hyperium.github.io/hyper/hyper/client/struct.Client.html' title='hyper::client::Client'>Client</a>&gt; <span class='where'>where P: <a class='trait' href='../../rusoto/trait.ProvideAwsCredentials.html' title='rusoto::ProvideAwsCredentials'>ProvideAwsCredentials</a></span></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-181823' class='srclink' href='../../src/rusoto/home/travis/build/rusoto/rusoto/target/debug/build/rusoto-61f21223a43ed2cb/out/ecr.rs.html#6985-6992' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.new' class='method'><span id='new.v' class='invisible'><code>fn <a href='#method.new' class='fnname'>new</a>(credentials_provider: P, region: <a class='enum' href='../../rusoto/enum.Region.html' title='rusoto::Region'>Region</a>) -&gt; Self</code></span></h4>
+</div><h3 class='impl'><span class='in-band'><code>impl&lt;P,&nbsp;D&gt; <a class='struct' href='../../rusoto/ecr/struct.EcrClient.html' title='rusoto::ecr::EcrClient'>EcrClient</a>&lt;P,&nbsp;D&gt; <span class='where'>where P: <a class='trait' href='../../rusoto/trait.ProvideAwsCredentials.html' title='rusoto::ProvideAwsCredentials'>ProvideAwsCredentials</a>, D: <a class='trait' href='../../rusoto/trait.DispatchSignedRequest.html' title='rusoto::DispatchSignedRequest'>DispatchSignedRequest</a></span></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-181829' class='srclink' href='../../src/rusoto/home/travis/build/rusoto/rusoto/target/debug/build/rusoto-61f21223a43ed2cb/out/ecr.rs.html#6993-7328' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.with_request_dispatcher' class='method'><span id='with_request_dispatcher.v' class='invisible'><code>fn <a href='#method.with_request_dispatcher' class='fnname'>with_request_dispatcher</a>(request_dispatcher: D, credentials_provider: P, region: <a class='enum' href='../../rusoto/enum.Region.html' title='rusoto::Region'>Region</a>) -&gt; Self</code></span></h4>
+<h4 id='method.batch_check_layer_availability' class='method'><span id='batch_check_layer_availability.v' class='invisible'><code>fn <a href='#method.batch_check_layer_availability' class='fnname'>batch_check_layer_availability</a>(&amp;self, input: &amp;<a class='struct' href='../../rusoto/ecr/struct.BatchCheckLayerAvailabilityRequest.html' title='rusoto::ecr::BatchCheckLayerAvailabilityRequest'>BatchCheckLayerAvailabilityRequest</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../../rusoto/ecr/struct.BatchCheckLayerAvailabilityResponse.html' title='rusoto::ecr::BatchCheckLayerAvailabilityResponse'>BatchCheckLayerAvailabilityResponse</a>,&nbsp;<a class='enum' href='../../rusoto/ecr/enum.BatchCheckLayerAvailabilityError.html' title='rusoto::ecr::BatchCheckLayerAvailabilityError'>BatchCheckLayerAvailabilityError</a>&gt;</code></span></h4>
+<div class='docblock'><p><p>Check the availability of multiple image layers in a specified registry and repository.</p> <note> <p>This operation is used by the Amazon ECR proxy, and it is not intended for general use by customers. Use the <code>docker</code> CLI to pull, tag, and push images.</p> </note></p>
+</div><h4 id='method.batch_delete_image' class='method'><span id='batch_delete_image.v' class='invisible'><code>fn <a href='#method.batch_delete_image' class='fnname'>batch_delete_image</a>(&amp;self, input: &amp;<a class='struct' href='../../rusoto/ecr/struct.BatchDeleteImageRequest.html' title='rusoto::ecr::BatchDeleteImageRequest'>BatchDeleteImageRequest</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../../rusoto/ecr/struct.BatchDeleteImageResponse.html' title='rusoto::ecr::BatchDeleteImageResponse'>BatchDeleteImageResponse</a>,&nbsp;<a class='enum' href='../../rusoto/ecr/enum.BatchDeleteImageError.html' title='rusoto::ecr::BatchDeleteImageError'>BatchDeleteImageError</a>&gt;</code></span></h4>
+<div class='docblock'><p>Deletes a list of specified images within a specified repository. Images are specified with either <code>imageTag</code> or <code>imageDigest</code>.</p>
+</div><h4 id='method.batch_get_image' class='method'><span id='batch_get_image.v' class='invisible'><code>fn <a href='#method.batch_get_image' class='fnname'>batch_get_image</a>(&amp;self, input: &amp;<a class='struct' href='../../rusoto/ecr/struct.BatchGetImageRequest.html' title='rusoto::ecr::BatchGetImageRequest'>BatchGetImageRequest</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../../rusoto/ecr/struct.BatchGetImageResponse.html' title='rusoto::ecr::BatchGetImageResponse'>BatchGetImageResponse</a>,&nbsp;<a class='enum' href='../../rusoto/ecr/enum.BatchGetImageError.html' title='rusoto::ecr::BatchGetImageError'>BatchGetImageError</a>&gt;</code></span></h4>
+<div class='docblock'><p>Gets detailed information for specified images within a specified repository. Images are specified with either <code>imageTag</code> or <code>imageDigest</code>.</p>
+</div><h4 id='method.complete_layer_upload' class='method'><span id='complete_layer_upload.v' class='invisible'><code>fn <a href='#method.complete_layer_upload' class='fnname'>complete_layer_upload</a>(&amp;self, input: &amp;<a class='struct' href='../../rusoto/ecr/struct.CompleteLayerUploadRequest.html' title='rusoto::ecr::CompleteLayerUploadRequest'>CompleteLayerUploadRequest</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../../rusoto/ecr/struct.CompleteLayerUploadResponse.html' title='rusoto::ecr::CompleteLayerUploadResponse'>CompleteLayerUploadResponse</a>,&nbsp;<a class='enum' href='../../rusoto/ecr/enum.CompleteLayerUploadError.html' title='rusoto::ecr::CompleteLayerUploadError'>CompleteLayerUploadError</a>&gt;</code></span></h4>
+<div class='docblock'><p><p>Inform Amazon ECR that the image layer upload for a specified registry, repository name, and upload ID, has completed. You can optionally provide a <code>sha256</code> digest of the image layer for data validation purposes.</p> <note> <p>This operation is used by the Amazon ECR proxy, and it is not intended for general use by customers. Use the <code>docker</code> CLI to pull, tag, and push images.</p> </note></p>
+</div><h4 id='method.create_repository' class='method'><span id='create_repository.v' class='invisible'><code>fn <a href='#method.create_repository' class='fnname'>create_repository</a>(&amp;self, input: &amp;<a class='struct' href='../../rusoto/ecr/struct.CreateRepositoryRequest.html' title='rusoto::ecr::CreateRepositoryRequest'>CreateRepositoryRequest</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../../rusoto/ecr/struct.CreateRepositoryResponse.html' title='rusoto::ecr::CreateRepositoryResponse'>CreateRepositoryResponse</a>,&nbsp;<a class='enum' href='../../rusoto/ecr/enum.CreateRepositoryError.html' title='rusoto::ecr::CreateRepositoryError'>CreateRepositoryError</a>&gt;</code></span></h4>
+<div class='docblock'><p>Creates an image repository.</p>
+</div><h4 id='method.delete_repository' class='method'><span id='delete_repository.v' class='invisible'><code>fn <a href='#method.delete_repository' class='fnname'>delete_repository</a>(&amp;self, input: &amp;<a class='struct' href='../../rusoto/ecr/struct.DeleteRepositoryRequest.html' title='rusoto::ecr::DeleteRepositoryRequest'>DeleteRepositoryRequest</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../../rusoto/ecr/struct.DeleteRepositoryResponse.html' title='rusoto::ecr::DeleteRepositoryResponse'>DeleteRepositoryResponse</a>,&nbsp;<a class='enum' href='../../rusoto/ecr/enum.DeleteRepositoryError.html' title='rusoto::ecr::DeleteRepositoryError'>DeleteRepositoryError</a>&gt;</code></span></h4>
+<div class='docblock'><p>Deletes an existing image repository. If a repository contains images, you must use the <code>force</code> option to delete it.</p>
+</div><h4 id='method.delete_repository_policy' class='method'><span id='delete_repository_policy.v' class='invisible'><code>fn <a href='#method.delete_repository_policy' class='fnname'>delete_repository_policy</a>(&amp;self, input: &amp;<a class='struct' href='../../rusoto/ecr/struct.DeleteRepositoryPolicyRequest.html' title='rusoto::ecr::DeleteRepositoryPolicyRequest'>DeleteRepositoryPolicyRequest</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../../rusoto/ecr/struct.DeleteRepositoryPolicyResponse.html' title='rusoto::ecr::DeleteRepositoryPolicyResponse'>DeleteRepositoryPolicyResponse</a>,&nbsp;<a class='enum' href='../../rusoto/ecr/enum.DeleteRepositoryPolicyError.html' title='rusoto::ecr::DeleteRepositoryPolicyError'>DeleteRepositoryPolicyError</a>&gt;</code></span></h4>
+<div class='docblock'><p>Deletes the repository policy from a specified repository.</p>
+</div><h4 id='method.describe_repositories' class='method'><span id='describe_repositories.v' class='invisible'><code>fn <a href='#method.describe_repositories' class='fnname'>describe_repositories</a>(&amp;self, input: &amp;<a class='struct' href='../../rusoto/ecr/struct.DescribeRepositoriesRequest.html' title='rusoto::ecr::DescribeRepositoriesRequest'>DescribeRepositoriesRequest</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../../rusoto/ecr/struct.DescribeRepositoriesResponse.html' title='rusoto::ecr::DescribeRepositoriesResponse'>DescribeRepositoriesResponse</a>,&nbsp;<a class='enum' href='../../rusoto/ecr/enum.DescribeRepositoriesError.html' title='rusoto::ecr::DescribeRepositoriesError'>DescribeRepositoriesError</a>&gt;</code></span></h4>
+<div class='docblock'><p>Describes image repositories in a registry.</p>
+</div><h4 id='method.get_authorization_token' class='method'><span id='get_authorization_token.v' class='invisible'><code>fn <a href='#method.get_authorization_token' class='fnname'>get_authorization_token</a>(&amp;self, input: &amp;<a class='struct' href='../../rusoto/ecr/struct.GetAuthorizationTokenRequest.html' title='rusoto::ecr::GetAuthorizationTokenRequest'>GetAuthorizationTokenRequest</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../../rusoto/ecr/struct.GetAuthorizationTokenResponse.html' title='rusoto::ecr::GetAuthorizationTokenResponse'>GetAuthorizationTokenResponse</a>,&nbsp;<a class='enum' href='../../rusoto/ecr/enum.GetAuthorizationTokenError.html' title='rusoto::ecr::GetAuthorizationTokenError'>GetAuthorizationTokenError</a>&gt;</code></span></h4>
+<div class='docblock'><p>Retrieves a token that is valid for a specified registry for 12 hours. This command allows you to use the <code>docker</code> CLI to push and pull images with Amazon ECR. If you do not specify a registry, the default registry is assumed.</p> <p>The <code>authorizationToken</code> returned for each registry specified is a base64 encoded string that can be decoded and used in a <code>docker login</code> command to authenticate to a registry. The AWS CLI offers an <code>aws ecr get-login</code> command that simplifies the login process.</p>
+</div><h4 id='method.get_download_url_for_layer' class='method'><span id='get_download_url_for_layer.v' class='invisible'><code>fn <a href='#method.get_download_url_for_layer' class='fnname'>get_download_url_for_layer</a>(&amp;self, input: &amp;<a class='struct' href='../../rusoto/ecr/struct.GetDownloadUrlForLayerRequest.html' title='rusoto::ecr::GetDownloadUrlForLayerRequest'>GetDownloadUrlForLayerRequest</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../../rusoto/ecr/struct.GetDownloadUrlForLayerResponse.html' title='rusoto::ecr::GetDownloadUrlForLayerResponse'>GetDownloadUrlForLayerResponse</a>,&nbsp;<a class='enum' href='../../rusoto/ecr/enum.GetDownloadUrlForLayerError.html' title='rusoto::ecr::GetDownloadUrlForLayerError'>GetDownloadUrlForLayerError</a>&gt;</code></span></h4>
+<div class='docblock'><p><p>Retrieves the pre-signed Amazon S3 download URL corresponding to an image layer. You can only get URLs for image layers that are referenced in an image.</p> <note> <p>This operation is used by the Amazon ECR proxy, and it is not intended for general use by customers. Use the <code>docker</code> CLI to pull, tag, and push images.</p> </note></p>
+</div><h4 id='method.get_repository_policy' class='method'><span id='get_repository_policy.v' class='invisible'><code>fn <a href='#method.get_repository_policy' class='fnname'>get_repository_policy</a>(&amp;self, input: &amp;<a class='struct' href='../../rusoto/ecr/struct.GetRepositoryPolicyRequest.html' title='rusoto::ecr::GetRepositoryPolicyRequest'>GetRepositoryPolicyRequest</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../../rusoto/ecr/struct.GetRepositoryPolicyResponse.html' title='rusoto::ecr::GetRepositoryPolicyResponse'>GetRepositoryPolicyResponse</a>,&nbsp;<a class='enum' href='../../rusoto/ecr/enum.GetRepositoryPolicyError.html' title='rusoto::ecr::GetRepositoryPolicyError'>GetRepositoryPolicyError</a>&gt;</code></span></h4>
+<div class='docblock'><p>Retrieves the repository policy for a specified repository.</p>
+</div><h4 id='method.initiate_layer_upload' class='method'><span id='initiate_layer_upload.v' class='invisible'><code>fn <a href='#method.initiate_layer_upload' class='fnname'>initiate_layer_upload</a>(&amp;self, input: &amp;<a class='struct' href='../../rusoto/ecr/struct.InitiateLayerUploadRequest.html' title='rusoto::ecr::InitiateLayerUploadRequest'>InitiateLayerUploadRequest</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../../rusoto/ecr/struct.InitiateLayerUploadResponse.html' title='rusoto::ecr::InitiateLayerUploadResponse'>InitiateLayerUploadResponse</a>,&nbsp;<a class='enum' href='../../rusoto/ecr/enum.InitiateLayerUploadError.html' title='rusoto::ecr::InitiateLayerUploadError'>InitiateLayerUploadError</a>&gt;</code></span></h4>
+<div class='docblock'><p><p>Notify Amazon ECR that you intend to upload an image layer.</p> <note> <p>This operation is used by the Amazon ECR proxy, and it is not intended for general use by customers. Use the <code>docker</code> CLI to pull, tag, and push images.</p> </note></p>
+</div><h4 id='method.list_images' class='method'><span id='list_images.v' class='invisible'><code>fn <a href='#method.list_images' class='fnname'>list_images</a>(&amp;self, input: &amp;<a class='struct' href='../../rusoto/ecr/struct.ListImagesRequest.html' title='rusoto::ecr::ListImagesRequest'>ListImagesRequest</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../../rusoto/ecr/struct.ListImagesResponse.html' title='rusoto::ecr::ListImagesResponse'>ListImagesResponse</a>,&nbsp;<a class='enum' href='../../rusoto/ecr/enum.ListImagesError.html' title='rusoto::ecr::ListImagesError'>ListImagesError</a>&gt;</code></span></h4>
+<div class='docblock'><p>Lists all the image IDs for a given repository.</p> <p>You can filter images based on whether or not they are tagged by setting the <code>tagStatus</code> parameter to <code>TAGGED</code> or <code>UNTAGGED</code>. For example, you can filter your results to return only <code>UNTAGGED</code> images and then pipe that result to a <a>BatchDeleteImage</a> operation to delete them. Or, you can filter your results to return only <code>TAGGED</code> images to list all of the tags in your repository.</p>
+</div><h4 id='method.put_image' class='method'><span id='put_image.v' class='invisible'><code>fn <a href='#method.put_image' class='fnname'>put_image</a>(&amp;self, input: &amp;<a class='struct' href='../../rusoto/ecr/struct.PutImageRequest.html' title='rusoto::ecr::PutImageRequest'>PutImageRequest</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../../rusoto/ecr/struct.PutImageResponse.html' title='rusoto::ecr::PutImageResponse'>PutImageResponse</a>,&nbsp;<a class='enum' href='../../rusoto/ecr/enum.PutImageError.html' title='rusoto::ecr::PutImageError'>PutImageError</a>&gt;</code></span></h4>
+<div class='docblock'><p><p>Creates or updates the image manifest associated with an image.</p> <note> <p>This operation is used by the Amazon ECR proxy, and it is not intended for general use by customers. Use the <code>docker</code> CLI to pull, tag, and push images.</p> </note></p>
+</div><h4 id='method.set_repository_policy' class='method'><span id='set_repository_policy.v' class='invisible'><code>fn <a href='#method.set_repository_policy' class='fnname'>set_repository_policy</a>(&amp;self, input: &amp;<a class='struct' href='../../rusoto/ecr/struct.SetRepositoryPolicyRequest.html' title='rusoto::ecr::SetRepositoryPolicyRequest'>SetRepositoryPolicyRequest</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../../rusoto/ecr/struct.SetRepositoryPolicyResponse.html' title='rusoto::ecr::SetRepositoryPolicyResponse'>SetRepositoryPolicyResponse</a>,&nbsp;<a class='enum' href='../../rusoto/ecr/enum.SetRepositoryPolicyError.html' title='rusoto::ecr::SetRepositoryPolicyError'>SetRepositoryPolicyError</a>&gt;</code></span></h4>
+<div class='docblock'><p>Applies a repository policy on a specified repository to control access permissions.</p>
+</div><h4 id='method.upload_layer_part' class='method'><span id='upload_layer_part.v' class='invisible'><code>fn <a href='#method.upload_layer_part' class='fnname'>upload_layer_part</a>(&amp;self, input: &amp;<a class='struct' href='../../rusoto/ecr/struct.UploadLayerPartRequest.html' title='rusoto::ecr::UploadLayerPartRequest'>UploadLayerPartRequest</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../../rusoto/ecr/struct.UploadLayerPartResponse.html' title='rusoto::ecr::UploadLayerPartResponse'>UploadLayerPartResponse</a>,&nbsp;<a class='enum' href='../../rusoto/ecr/enum.UploadLayerPartError.html' title='rusoto::ecr::UploadLayerPartError'>UploadLayerPartError</a>&gt;</code></span></h4>
+<div class='docblock'><p><p>Uploads an image layer part to Amazon ECR.</p> <note> <p>This operation is used by the Amazon ECR proxy, and it is not intended for general use by customers. Use the <code>docker</code> CLI to pull, tag, and push images.</p> </note></p>
+</div></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "rusoto";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../../jquery.js"></script>
+    <script src="../../main.js"></script>
+    
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `ListCommandInvocationsRequest` struct in crate `rusoto`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, ListCommandInvocationsRequest">
+
+    <title>rusoto::ssm::ListCommandInvocationsRequest - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='../index.html'>rusoto</a>::<wbr><a href='index.html'>ssm</a></p><script>window.sidebarCurrent = {name: 'ListCommandInvocationsRequest', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content struct">
+<h1 class='fqn'><span class='in-band'>Struct <a href='../index.html'>rusoto</a>::<wbr><a href='index.html'>ssm</a>::<wbr><a class='struct' href=''>ListCommandInvocationsRequest</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-370652' class='srclink' href='../../src/rusoto/home/travis/build/rusoto/rusoto/target/debug/build/rusoto-61f21223a43ed2cb/out/ssm.rs.html#9143-9167' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct ListCommandInvocationsRequest {
+    pub command_id: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/ssm/type.CommandId.html' title='rusoto::ssm::CommandId'>CommandId</a>&gt;,
+    pub details: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/ssm/type.Boolean.html' title='rusoto::ssm::Boolean'>Boolean</a>&gt;,
+    pub filters: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/ssm/type.CommandFilterList.html' title='rusoto::ssm::CommandFilterList'>CommandFilterList</a>&gt;,
+    pub instance_id: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/ssm/type.InstanceId.html' title='rusoto::ssm::InstanceId'>InstanceId</a>&gt;,
+    pub max_results: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/ssm/type.CommandMaxResults.html' title='rusoto::ssm::CommandMaxResults'>CommandMaxResults</a>&gt;,
+    pub next_token: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/ssm/type.NextToken.html' title='rusoto::ssm::NextToken'>NextToken</a>&gt;,
+}</pre><h2 class='fields'>Fields</h2><span id='structfield.command_id' class='structfield'>
+                           <span id='command_id.v' class='invisible'>
+                           <code>command_id: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/ssm/type.CommandId.html' title='rusoto::ssm::CommandId'>CommandId</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>(Optional) The invocations for a specific command ID.</p>
+</div><span id='structfield.details' class='structfield'>
+                           <span id='details.v' class='invisible'>
+                           <code>details: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/ssm/type.Boolean.html' title='rusoto::ssm::Boolean'>Boolean</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>(Optional) If set this returns the response of the command executions and any command output. By default this is set to False. </p>
+</div><span id='structfield.filters' class='structfield'>
+                           <span id='filters.v' class='invisible'>
+                           <code>filters: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/ssm/type.CommandFilterList.html' title='rusoto::ssm::CommandFilterList'>CommandFilterList</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>(Optional) One or more filters. Use a filter to return a more specific list of results.</p>
+</div><span id='structfield.instance_id' class='structfield'>
+                           <span id='instance_id.v' class='invisible'>
+                           <code>instance_id: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/ssm/type.InstanceId.html' title='rusoto::ssm::InstanceId'>InstanceId</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>(Optional) The command execution details for a specific instance ID.</p>
+</div><span id='structfield.max_results' class='structfield'>
+                           <span id='max_results.v' class='invisible'>
+                           <code>max_results: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/ssm/type.CommandMaxResults.html' title='rusoto::ssm::CommandMaxResults'>CommandMaxResults</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>(Optional) The maximum number of items to return for this call. The call also returns a token that you can specify in a subsequent call to get the next set of results.</p>
+</div><span id='structfield.next_token' class='structfield'>
+                           <span id='next_token.v' class='invisible'>
+                           <code>next_token: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/ssm/type.NextToken.html' title='rusoto::ssm::NextToken'>NextToken</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>(Optional) The token for the next set of items to return. (You received this token from a previous call.)</p>
+</div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../../rusoto/ssm/struct.ListCommandInvocationsRequest.html' title='rusoto::ssm::ListCommandInvocationsRequest'>ListCommandInvocationsRequest</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-370659' class='srclink' href='../../src/rusoto/home/travis/build/rusoto/rusoto/target/debug/build/rusoto-61f21223a43ed2cb/out/ssm.rs.html#9142' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.default' class='method'><span id='default.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../../rusoto/ssm/struct.ListCommandInvocationsRequest.html' title='rusoto::ssm::ListCommandInvocationsRequest'>ListCommandInvocationsRequest</a></code></span></h4>
+<div class='docblock'><p>Returns the &quot;default value&quot; for a type. <a href="https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default">Read more</a></p>
+</div></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "rusoto";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../../jquery.js"></script>
+    <script src="../../main.js"></script>
+    
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>

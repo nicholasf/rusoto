@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `codecommit` mod in crate `rusoto`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, codecommit">
+
+    <title>rusoto::codecommit - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='../index.html'>rusoto</a></p><script>window.sidebarCurrent = {name: 'codecommit', ty: 'mod', relpath: '../'};</script><script defer src="../sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content mod">
+<h1 class='fqn'><span class='in-band'>Module <a href='../index.html'>rusoto</a>::<wbr><a class='mod' href=''>codecommit</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-13386' class='srclink' href='../../src/rusoto/src/codecommit.rs.html#1-3' title='goto source code'>[src]</a></span></h1>
+<div class='docblock'><p>AWS CodeCommit</p>
+</div><h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.BatchGetRepositoriesInput.html'
+                                  title='rusoto::codecommit::BatchGetRepositoriesInput'>BatchGetRepositoriesInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input of a batch get repositories operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.BatchGetRepositoriesOutput.html'
+                                  title='rusoto::codecommit::BatchGetRepositoriesOutput'>BatchGetRepositoriesOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the output of a batch get repositories operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.BranchInfo.html'
+                                  title='rusoto::codecommit::BranchInfo'>BranchInfo</a></td>
+                           <td class='docblock-short'>
+                                <p>Returns information about a branch.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CodeCommitClient.html'
+                                  title='rusoto::codecommit::CodeCommitClient'>CodeCommitClient</a></td>
+                           <td class='docblock-short'>
+                                <p>A client for the CodeCommit API.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Commit.html'
+                                  title='rusoto::codecommit::Commit'>Commit</a></td>
+                           <td class='docblock-short'>
+                                <p>Returns information about a specific commit.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateBranchInput.html'
+                                  title='rusoto::codecommit::CreateBranchInput'>CreateBranchInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input of a create branch operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateRepositoryInput.html'
+                                  title='rusoto::codecommit::CreateRepositoryInput'>CreateRepositoryInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input of a create repository operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateRepositoryOutput.html'
+                                  title='rusoto::codecommit::CreateRepositoryOutput'>CreateRepositoryOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the output of a create repository operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteRepositoryInput.html'
+                                  title='rusoto::codecommit::DeleteRepositoryInput'>DeleteRepositoryInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input of a delete repository operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteRepositoryOutput.html'
+                                  title='rusoto::codecommit::DeleteRepositoryOutput'>DeleteRepositoryOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the output of a delete repository operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetBranchInput.html'
+                                  title='rusoto::codecommit::GetBranchInput'>GetBranchInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input of a get branch operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetBranchOutput.html'
+                                  title='rusoto::codecommit::GetBranchOutput'>GetBranchOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the output of a get branch operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetCommitInput.html'
+                                  title='rusoto::codecommit::GetCommitInput'>GetCommitInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input of a get commit operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetCommitOutput.html'
+                                  title='rusoto::codecommit::GetCommitOutput'>GetCommitOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the output of a get commit operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetRepositoryInput.html'
+                                  title='rusoto::codecommit::GetRepositoryInput'>GetRepositoryInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input of a get repository operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetRepositoryOutput.html'
+                                  title='rusoto::codecommit::GetRepositoryOutput'>GetRepositoryOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the output of a get repository operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetRepositoryTriggersInput.html'
+                                  title='rusoto::codecommit::GetRepositoryTriggersInput'>GetRepositoryTriggersInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input of a get repository triggers operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetRepositoryTriggersOutput.html'
+                                  title='rusoto::codecommit::GetRepositoryTriggersOutput'>GetRepositoryTriggersOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the output of a get repository triggers operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListBranchesInput.html'
+                                  title='rusoto::codecommit::ListBranchesInput'>ListBranchesInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input of a list branches operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListBranchesOutput.html'
+                                  title='rusoto::codecommit::ListBranchesOutput'>ListBranchesOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the output of a list branches operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListRepositoriesInput.html'
+                                  title='rusoto::codecommit::ListRepositoriesInput'>ListRepositoriesInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input of a list repositories operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListRepositoriesOutput.html'
+                                  title='rusoto::codecommit::ListRepositoriesOutput'>ListRepositoriesOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the output of a list repositories operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.PutRepositoryTriggersInput.html'
+                                  title='rusoto::codecommit::PutRepositoryTriggersInput'>PutRepositoryTriggersInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input ofa put repository triggers operation. </p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.PutRepositoryTriggersOutput.html'
+                                  title='rusoto::codecommit::PutRepositoryTriggersOutput'>PutRepositoryTriggersOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the output of a put repository triggers operation. </p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RepositoryMetadata.html'
+                                  title='rusoto::codecommit::RepositoryMetadata'>RepositoryMetadata</a></td>
+                           <td class='docblock-short'>
+                                <p>Information about a repository.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RepositoryNameIdPair.html'
+                                  title='rusoto::codecommit::RepositoryNameIdPair'>RepositoryNameIdPair</a></td>
+                           <td class='docblock-short'>
+                                <p>Information about a repository name and ID.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RepositoryTrigger.html'
+                                  title='rusoto::codecommit::RepositoryTrigger'>RepositoryTrigger</a></td>
+                           <td class='docblock-short'>
+                                <p>Information about a trigger for a repository.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RepositoryTriggerExecutionFailure.html'
+                                  title='rusoto::codecommit::RepositoryTriggerExecutionFailure'>RepositoryTriggerExecutionFailure</a></td>
+                           <td class='docblock-short'>
+                                <p>A trigger failed to run.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.TestRepositoryTriggersInput.html'
+                                  title='rusoto::codecommit::TestRepositoryTriggersInput'>TestRepositoryTriggersInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input of a test repository triggers operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.TestRepositoryTriggersOutput.html'
+                                  title='rusoto::codecommit::TestRepositoryTriggersOutput'>TestRepositoryTriggersOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the output of a test repository triggers operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UpdateDefaultBranchInput.html'
+                                  title='rusoto::codecommit::UpdateDefaultBranchInput'>UpdateDefaultBranchInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input of an update default branch operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UpdateRepositoryDescriptionInput.html'
+                                  title='rusoto::codecommit::UpdateRepositoryDescriptionInput'>UpdateRepositoryDescriptionInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input of an update repository description operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UpdateRepositoryNameInput.html'
+                                  title='rusoto::codecommit::UpdateRepositoryNameInput'>UpdateRepositoryNameInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input of an update repository description operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UserInfo.html'
+                                  title='rusoto::codecommit::UserInfo'>UserInfo</a></td>
+                           <td class='docblock-short'>
+                                <p>Information about the user who made a specified commit.</p>
+                           </td>
+                       </tr></table><h2 id='enums' class='section-header'><a href="#enums">Enums</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.BatchGetRepositoriesError.html'
+                                  title='rusoto::codecommit::BatchGetRepositoriesError'>BatchGetRepositoriesError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.CreateBranchError.html'
+                                  title='rusoto::codecommit::CreateBranchError'>CreateBranchError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.CreateRepositoryError.html'
+                                  title='rusoto::codecommit::CreateRepositoryError'>CreateRepositoryError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DeleteRepositoryError.html'
+                                  title='rusoto::codecommit::DeleteRepositoryError'>DeleteRepositoryError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.GetBranchError.html'
+                                  title='rusoto::codecommit::GetBranchError'>GetBranchError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.GetCommitError.html'
+                                  title='rusoto::codecommit::GetCommitError'>GetCommitError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.GetRepositoryError.html'
+                                  title='rusoto::codecommit::GetRepositoryError'>GetRepositoryError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.GetRepositoryTriggersError.html'
+                                  title='rusoto::codecommit::GetRepositoryTriggersError'>GetRepositoryTriggersError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ListBranchesError.html'
+                                  title='rusoto::codecommit::ListBranchesError'>ListBranchesError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ListRepositoriesError.html'
+                                  title='rusoto::codecommit::ListRepositoriesError'>ListRepositoriesError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.PutRepositoryTriggersError.html'
+                                  title='rusoto::codecommit::PutRepositoryTriggersError'>PutRepositoryTriggersError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.TestRepositoryTriggersError.html'
+                                  title='rusoto::codecommit::TestRepositoryTriggersError'>TestRepositoryTriggersError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.UpdateDefaultBranchError.html'
+                                  title='rusoto::codecommit::UpdateDefaultBranchError'>UpdateDefaultBranchError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.UpdateRepositoryDescriptionError.html'
+                                  title='rusoto::codecommit::UpdateRepositoryDescriptionError'>UpdateRepositoryDescriptionError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.UpdateRepositoryNameError.html'
+                                  title='rusoto::codecommit::UpdateRepositoryNameError'>UpdateRepositoryNameError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr></table><h2 id='types' class='section-header'><a href="#types">Type Definitions</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AccountId.html'
+                                  title='rusoto::codecommit::AccountId'>AccountId</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AdditionalData.html'
+                                  title='rusoto::codecommit::AdditionalData'>AdditionalData</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Arn.html'
+                                  title='rusoto::codecommit::Arn'>Arn</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.BranchName.html'
+                                  title='rusoto::codecommit::BranchName'>BranchName</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.BranchNameList.html'
+                                  title='rusoto::codecommit::BranchNameList'>BranchNameList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.CloneUrlHttp.html'
+                                  title='rusoto::codecommit::CloneUrlHttp'>CloneUrlHttp</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.CloneUrlSsh.html'
+                                  title='rusoto::codecommit::CloneUrlSsh'>CloneUrlSsh</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.CommitId.html'
+                                  title='rusoto::codecommit::CommitId'>CommitId</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.CreationDate.html'
+                                  title='rusoto::codecommit::CreationDate'>CreationDate</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Date.html'
+                                  title='rusoto::codecommit::Date'>Date</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Email.html'
+                                  title='rusoto::codecommit::Email'>Email</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.LastModifiedDate.html'
+                                  title='rusoto::codecommit::LastModifiedDate'>LastModifiedDate</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Message.html'
+                                  title='rusoto::codecommit::Message'>Message</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Name.html'
+                                  title='rusoto::codecommit::Name'>Name</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.NextToken.html'
+                                  title='rusoto::codecommit::NextToken'>NextToken</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ObjectId.html'
+                                  title='rusoto::codecommit::ObjectId'>ObjectId</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.OrderEnum.html'
+                                  title='rusoto::codecommit::OrderEnum'>OrderEnum</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ParentList.html'
+                                  title='rusoto::codecommit::ParentList'>ParentList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.RepositoryDescription.html'
+                                  title='rusoto::codecommit::RepositoryDescription'>RepositoryDescription</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.RepositoryId.html'
+                                  title='rusoto::codecommit::RepositoryId'>RepositoryId</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.RepositoryMetadataList.html'
+                                  title='rusoto::codecommit::RepositoryMetadataList'>RepositoryMetadataList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.RepositoryName.html'
+                                  title='rusoto::codecommit::RepositoryName'>RepositoryName</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.RepositoryNameIdPairList.html'
+                                  title='rusoto::codecommit::RepositoryNameIdPairList'>RepositoryNameIdPairList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.RepositoryNameList.html'
+                                  title='rusoto::codecommit::RepositoryNameList'>RepositoryNameList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.RepositoryNotFoundList.html'
+                                  title='rusoto::codecommit::RepositoryNotFoundList'>RepositoryNotFoundList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.RepositoryTriggerCustomData.html'
+                                  title='rusoto::codecommit::RepositoryTriggerCustomData'>RepositoryTriggerCustomData</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.RepositoryTriggerEventEnum.html'
+                                  title='rusoto::codecommit::RepositoryTriggerEventEnum'>RepositoryTriggerEventEnum</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.RepositoryTriggerEventList.html'
+                                  title='rusoto::codecommit::RepositoryTriggerEventList'>RepositoryTriggerEventList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.RepositoryTriggerExecutionFailureList.html'
+                                  title='rusoto::codecommit::RepositoryTriggerExecutionFailureList'>RepositoryTriggerExecutionFailureList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.RepositoryTriggerExecutionFailureMessage.html'
+                                  title='rusoto::codecommit::RepositoryTriggerExecutionFailureMessage'>RepositoryTriggerExecutionFailureMessage</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.RepositoryTriggerName.html'
+                                  title='rusoto::codecommit::RepositoryTriggerName'>RepositoryTriggerName</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.RepositoryTriggerNameList.html'
+                                  title='rusoto::codecommit::RepositoryTriggerNameList'>RepositoryTriggerNameList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.RepositoryTriggersConfigurationId.html'
+                                  title='rusoto::codecommit::RepositoryTriggersConfigurationId'>RepositoryTriggersConfigurationId</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.RepositoryTriggersList.html'
+                                  title='rusoto::codecommit::RepositoryTriggersList'>RepositoryTriggersList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.SortByEnum.html'
+                                  title='rusoto::codecommit::SortByEnum'>SortByEnum</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr></table></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "rusoto";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../../jquery.js"></script>
+    <script src="../../main.js"></script>
+    
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>

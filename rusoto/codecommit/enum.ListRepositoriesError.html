@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `ListRepositoriesError` enum in crate `rusoto`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, ListRepositoriesError">
+
+    <title>rusoto::codecommit::ListRepositoriesError - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='../index.html'>rusoto</a>::<wbr><a href='index.html'>codecommit</a></p><script>window.sidebarCurrent = {name: 'ListRepositoriesError', ty: 'enum', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content enum">
+<h1 class='fqn'><span class='in-band'>Enum <a href='../index.html'>rusoto</a>::<wbr><a href='index.html'>codecommit</a>::<wbr><a class='enum' href=''>ListRepositoriesError</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-18825' class='srclink' href='../../src/rusoto/home/travis/build/rusoto/rusoto/target/debug/build/rusoto-61f21223a43ed2cb/out/codecommit.rs.html#7996-8018' title='goto source code'>[src]</a></span></h1>
+<pre class='rust enum'>pub enum ListRepositoriesError {
+    InvalidSortBy(<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>),
+    InvalidOrder(<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>),
+    InvalidContinuationToken(<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>),
+    HttpDispatch(<a class='struct' href='../../rusoto/struct.HttpDispatchError.html' title='rusoto::HttpDispatchError'>HttpDispatchError</a>),
+    Credentials(<a class='struct' href='../../rusoto/struct.CredentialsError.html' title='rusoto::CredentialsError'>CredentialsError</a>),
+    Validation(<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>),
+    Unknown(<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>),
+}</pre><h2 class='variants'>Variants</h2>
+<span id='variant.InvalidSortBy' class='variant'><span id='InvalidSortBy.v' class='invisible'><code>InvalidSortBy(<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>)</code></span></span><div class='docblock'><p>The specified sort by value is not valid.</p>
+</div><span id='variant.InvalidOrder' class='variant'><span id='InvalidOrder.v' class='invisible'><code>InvalidOrder(<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>)</code></span></span><div class='docblock'><p>The specified sort order is not valid.</p>
+</div><span id='variant.InvalidContinuationToken' class='variant'><span id='InvalidContinuationToken.v' class='invisible'><code>InvalidContinuationToken(<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>)</code></span></span><div class='docblock'><p>The specified continuation token is not valid.</p>
+</div><span id='variant.HttpDispatch' class='variant'><span id='HttpDispatch.v' class='invisible'><code>HttpDispatch(<a class='struct' href='../../rusoto/struct.HttpDispatchError.html' title='rusoto::HttpDispatchError'>HttpDispatchError</a>)</code></span></span><div class='docblock'><p>An error occurred dispatching the HTTP request</p>
+</div><span id='variant.Credentials' class='variant'><span id='Credentials.v' class='invisible'><code>Credentials(<a class='struct' href='../../rusoto/struct.CredentialsError.html' title='rusoto::CredentialsError'>CredentialsError</a>)</code></span></span><div class='docblock'><p>An error was encountered with AWS credentials.</p>
+</div><span id='variant.Validation' class='variant'><span id='Validation.v' class='invisible'><code>Validation(<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>)</code></span></span><div class='docblock'><p>A validation error occurred.  Details from AWS are provided.</p>
+</div><span id='variant.Unknown' class='variant'><span id='Unknown.v' class='invisible'><code>Unknown(<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>)</code></span></span><div class='docblock'><p>An unknown error occurred.  The raw HTTP response is provided.</p>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl <a class='enum' href='../../rusoto/codecommit/enum.ListRepositoriesError.html' title='rusoto::codecommit::ListRepositoriesError'>ListRepositoriesError</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-18897' class='srclink' href='../../src/rusoto/home/travis/build/rusoto/rusoto/target/debug/build/rusoto-61f21223a43ed2cb/out/codecommit.rs.html#8019-8044' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.from_body' class='method'><span id='from_body.v' class='invisible'><code>fn <a href='#method.from_body' class='fnname'>from_body</a>(body: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='enum' href='../../rusoto/codecommit/enum.ListRepositoriesError.html' title='rusoto::codecommit::ListRepositoriesError'>ListRepositoriesError</a></code></span></h4>
+</div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html' title='core::cmp::PartialEq'>PartialEq</a> for <a class='enum' href='../../rusoto/codecommit/enum.ListRepositoriesError.html' title='rusoto::codecommit::ListRepositoriesError'>ListRepositoriesError</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-18840' class='srclink' href='../../src/rusoto/home/travis/build/rusoto/rusoto/target/debug/build/rusoto-61f21223a43ed2cb/out/codecommit.rs.html#7995' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.eq' class='method'><span id='eq.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#tymethod.eq' class='fnname'>eq</a>(&amp;self, __arg_0: &amp;<a class='enum' href='../../rusoto/codecommit/enum.ListRepositoriesError.html' title='rusoto::codecommit::ListRepositoriesError'>ListRepositoriesError</a>) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code></span></h4>
+<div class='docblock'><p>This method tests for <code>self</code> and <code>other</code> values to be equal, and is used by <code>==</code>. <a href="https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#tymethod.eq">Read more</a></p>
+</div><h4 id='method.ne' class='method'><span id='ne.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#method.ne' class='fnname'>ne</a>(&amp;self, __arg_0: &amp;<a class='enum' href='../../rusoto/codecommit/enum.ListRepositoriesError.html' title='rusoto::codecommit::ListRepositoriesError'>ListRepositoriesError</a>) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code></span></h4>
+<div class='docblock'><p>This method tests for <code>!=</code>.</p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='enum' href='../../rusoto/codecommit/enum.ListRepositoriesError.html' title='rusoto::codecommit::ListRepositoriesError'>ListRepositoriesError</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-18879' class='srclink' href='../../src/rusoto/home/travis/build/rusoto/rusoto/target/debug/build/rusoto-61f21223a43ed2cb/out/codecommit.rs.html#7995' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.fmt' class='method'><span id='fmt.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#tymethod.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></span></h4>
+<div class='docblock'><p>Formats the value using the given formatter.</p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/convert/trait.From.html' title='core::convert::From'>From</a>&lt;Error&gt; for <a class='enum' href='../../rusoto/codecommit/enum.ListRepositoriesError.html' title='rusoto::codecommit::ListRepositoriesError'>ListRepositoriesError</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-18907' class='srclink' href='../../src/rusoto/home/travis/build/rusoto/rusoto/target/debug/build/rusoto-61f21223a43ed2cb/out/codecommit.rs.html#8045-8049' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.from' class='method'><span id='from.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/convert/trait.From.html#tymethod.from' class='fnname'>from</a>(err: Error) -&gt; <a class='enum' href='../../rusoto/codecommit/enum.ListRepositoriesError.html' title='rusoto::codecommit::ListRepositoriesError'>ListRepositoriesError</a></code></span></h4>
+<div class='docblock'><p>Performs the conversion.</p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/convert/trait.From.html' title='core::convert::From'>From</a>&lt;<a class='struct' href='../../rusoto/struct.CredentialsError.html' title='rusoto::CredentialsError'>CredentialsError</a>&gt; for <a class='enum' href='../../rusoto/codecommit/enum.ListRepositoriesError.html' title='rusoto::codecommit::ListRepositoriesError'>ListRepositoriesError</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-18910' class='srclink' href='../../src/rusoto/home/travis/build/rusoto/rusoto/target/debug/build/rusoto-61f21223a43ed2cb/out/codecommit.rs.html#8050-8054' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.from-1' class='method'><span id='from.v-1' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/convert/trait.From.html#tymethod.from' class='fnname'>from</a>(err: <a class='struct' href='../../rusoto/struct.CredentialsError.html' title='rusoto::CredentialsError'>CredentialsError</a>) -&gt; <a class='enum' href='../../rusoto/codecommit/enum.ListRepositoriesError.html' title='rusoto::codecommit::ListRepositoriesError'>ListRepositoriesError</a></code></span></h4>
+<div class='docblock'><p>Performs the conversion.</p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/convert/trait.From.html' title='core::convert::From'>From</a>&lt;<a class='struct' href='../../rusoto/struct.HttpDispatchError.html' title='rusoto::HttpDispatchError'>HttpDispatchError</a>&gt; for <a class='enum' href='../../rusoto/codecommit/enum.ListRepositoriesError.html' title='rusoto::codecommit::ListRepositoriesError'>ListRepositoriesError</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-18913' class='srclink' href='../../src/rusoto/home/travis/build/rusoto/rusoto/target/debug/build/rusoto-61f21223a43ed2cb/out/codecommit.rs.html#8055-8059' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.from-2' class='method'><span id='from.v-2' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/convert/trait.From.html#tymethod.from' class='fnname'>from</a>(err: <a class='struct' href='../../rusoto/struct.HttpDispatchError.html' title='rusoto::HttpDispatchError'>HttpDispatchError</a>) -&gt; <a class='enum' href='../../rusoto/codecommit/enum.ListRepositoriesError.html' title='rusoto::codecommit::ListRepositoriesError'>ListRepositoriesError</a></code></span></h4>
+<div class='docblock'><p>Performs the conversion.</p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Display.html' title='core::fmt::Display'>Display</a> for <a class='enum' href='../../rusoto/codecommit/enum.ListRepositoriesError.html' title='rusoto::codecommit::ListRepositoriesError'>ListRepositoriesError</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-18916' class='srclink' href='../../src/rusoto/home/travis/build/rusoto/rusoto/target/debug/build/rusoto-61f21223a43ed2cb/out/codecommit.rs.html#8060-8064' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.fmt-1' class='method'><span id='fmt.v-1' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Display.html#tymethod.fmt' class='fnname'>fmt</a>(&amp;self, f: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></span></h4>
+<div class='docblock'><p>Formats the value using the given formatter.</p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/std/error/trait.Error.html' title='std::error::Error'>Error</a> for <a class='enum' href='../../rusoto/codecommit/enum.ListRepositoriesError.html' title='rusoto::codecommit::ListRepositoriesError'>ListRepositoriesError</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-18922' class='srclink' href='../../src/rusoto/home/travis/build/rusoto/rusoto/target/debug/build/rusoto-61f21223a43ed2cb/out/codecommit.rs.html#8065-8079' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.description' class='method'><span id='description.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/std/error/trait.Error.html#tymethod.description' class='fnname'>description</a>(&amp;self) -&gt; &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a></code></span></h4>
+<div class='docblock'><p>A short description of the error. <a href="https://doc.rust-lang.org/nightly/std/error/trait.Error.html#tymethod.description">Read more</a></p>
+</div><h4 id='method.cause' class='method'><span id='cause.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/std/error/trait.Error.html#method.cause' class='fnname'>cause</a>(&amp;self) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;&amp;<a class='trait' href='https://doc.rust-lang.org/nightly/std/error/trait.Error.html' title='std::error::Error'>Error</a>&gt;</code><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div></span></h4>
+<div class='docblock'><p>The lower-level cause of this error, if any. <a href="https://doc.rust-lang.org/nightly/std/error/trait.Error.html#method.cause">Read more</a></p>
+</div></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "rusoto";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../../jquery.js"></script>
+    <script src="../../main.js"></script>
+    
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>

@@ -1,0 +1,1511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `ssm` mod in crate `rusoto`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, ssm">
+
+    <title>rusoto::ssm - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='../index.html'>rusoto</a></p><script>window.sidebarCurrent = {name: 'ssm', ty: 'mod', relpath: '../'};</script><script defer src="../sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content mod">
+<h1 class='fqn'><span class='in-band'>Module <a href='../index.html'>rusoto</a>::<wbr><a class='mod' href=''>ssm</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-365530' class='srclink' href='../../src/rusoto/src/ssm.rs.html#1-3' title='goto source code'>[src]</a></span></h1>
+<div class='docblock'><p>Amazon EC2 Simple Systems Manager</p>
+</div><h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Activation.html'
+                                  title='rusoto::ssm::Activation'>Activation</a></td>
+                           <td class='docblock-short'>
+                                <p>An activation registers one or more on-premises servers or virtual machines (VMs) with AWS so that you can configure those servers or VMs using Run Command. A server or VM that has been registered with AWS is called a managed instance.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AddTagsToResourceRequest.html'
+                                  title='rusoto::ssm::AddTagsToResourceRequest'>AddTagsToResourceRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AddTagsToResourceResult.html'
+                                  title='rusoto::ssm::AddTagsToResourceResult'>AddTagsToResourceResult</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Association.html'
+                                  title='rusoto::ssm::Association'>Association</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes an association of an SSM document and an instance.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AssociationDescription.html'
+                                  title='rusoto::ssm::AssociationDescription'>AssociationDescription</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes the parameters for a document.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AssociationFilter.html'
+                                  title='rusoto::ssm::AssociationFilter'>AssociationFilter</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes a filter.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AssociationStatus.html'
+                                  title='rusoto::ssm::AssociationStatus'>AssociationStatus</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes an association status.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CancelCommandRequest.html'
+                                  title='rusoto::ssm::CancelCommandRequest'>CancelCommandRequest</a></td>
+                           <td class='docblock-short'>
+                                <p><p/></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CancelCommandResult.html'
+                                  title='rusoto::ssm::CancelCommandResult'>CancelCommandResult</a></td>
+                           <td class='docblock-short'>
+                                <p>Whether or not the command was successfully canceled. There is no guarantee that a request can be canceled.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Command.html'
+                                  title='rusoto::ssm::Command'>Command</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes a command request.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CommandFilter.html'
+                                  title='rusoto::ssm::CommandFilter'>CommandFilter</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes a command filter.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CommandInvocation.html'
+                                  title='rusoto::ssm::CommandInvocation'>CommandInvocation</a></td>
+                           <td class='docblock-short'>
+                                <p>An invocation is copy of a command sent to a specific instance. A command can apply to one or more instances. A command invocation applies to one instance. For example, if a user executes SendCommand against three instances, then a command invocation is created for each requested instance ID. A command invocation returns status and detail information about a command you executed. </p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CommandPlugin.html'
+                                  title='rusoto::ssm::CommandPlugin'>CommandPlugin</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes plugin details.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateActivationRequest.html'
+                                  title='rusoto::ssm::CreateActivationRequest'>CreateActivationRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateActivationResult.html'
+                                  title='rusoto::ssm::CreateActivationResult'>CreateActivationResult</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateAssociationBatchRequest.html'
+                                  title='rusoto::ssm::CreateAssociationBatchRequest'>CreateAssociationBatchRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateAssociationBatchRequestEntry.html'
+                                  title='rusoto::ssm::CreateAssociationBatchRequestEntry'>CreateAssociationBatchRequestEntry</a></td>
+                           <td class='docblock-short'>
+                                <p> Describes the association of an SSM document and an instance. </p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateAssociationBatchResult.html'
+                                  title='rusoto::ssm::CreateAssociationBatchResult'>CreateAssociationBatchResult</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateAssociationRequest.html'
+                                  title='rusoto::ssm::CreateAssociationRequest'>CreateAssociationRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateAssociationResult.html'
+                                  title='rusoto::ssm::CreateAssociationResult'>CreateAssociationResult</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateDocumentRequest.html'
+                                  title='rusoto::ssm::CreateDocumentRequest'>CreateDocumentRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateDocumentResult.html'
+                                  title='rusoto::ssm::CreateDocumentResult'>CreateDocumentResult</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteActivationRequest.html'
+                                  title='rusoto::ssm::DeleteActivationRequest'>DeleteActivationRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteActivationResult.html'
+                                  title='rusoto::ssm::DeleteActivationResult'>DeleteActivationResult</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteAssociationRequest.html'
+                                  title='rusoto::ssm::DeleteAssociationRequest'>DeleteAssociationRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteAssociationResult.html'
+                                  title='rusoto::ssm::DeleteAssociationResult'>DeleteAssociationResult</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteDocumentRequest.html'
+                                  title='rusoto::ssm::DeleteDocumentRequest'>DeleteDocumentRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteDocumentResult.html'
+                                  title='rusoto::ssm::DeleteDocumentResult'>DeleteDocumentResult</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeregisterManagedInstanceRequest.html'
+                                  title='rusoto::ssm::DeregisterManagedInstanceRequest'>DeregisterManagedInstanceRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeregisterManagedInstanceResult.html'
+                                  title='rusoto::ssm::DeregisterManagedInstanceResult'>DeregisterManagedInstanceResult</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeActivationsFilter.html'
+                                  title='rusoto::ssm::DescribeActivationsFilter'>DescribeActivationsFilter</a></td>
+                           <td class='docblock-short'>
+                                <p>Filter for the DescribeActivation API.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeActivationsRequest.html'
+                                  title='rusoto::ssm::DescribeActivationsRequest'>DescribeActivationsRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeActivationsResult.html'
+                                  title='rusoto::ssm::DescribeActivationsResult'>DescribeActivationsResult</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeAssociationRequest.html'
+                                  title='rusoto::ssm::DescribeAssociationRequest'>DescribeAssociationRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeAssociationResult.html'
+                                  title='rusoto::ssm::DescribeAssociationResult'>DescribeAssociationResult</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeDocumentPermissionRequest.html'
+                                  title='rusoto::ssm::DescribeDocumentPermissionRequest'>DescribeDocumentPermissionRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeDocumentPermissionResponse.html'
+                                  title='rusoto::ssm::DescribeDocumentPermissionResponse'>DescribeDocumentPermissionResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeDocumentRequest.html'
+                                  title='rusoto::ssm::DescribeDocumentRequest'>DescribeDocumentRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeDocumentResult.html'
+                                  title='rusoto::ssm::DescribeDocumentResult'>DescribeDocumentResult</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeInstanceInformationRequest.html'
+                                  title='rusoto::ssm::DescribeInstanceInformationRequest'>DescribeInstanceInformationRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeInstanceInformationResult.html'
+                                  title='rusoto::ssm::DescribeInstanceInformationResult'>DescribeInstanceInformationResult</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DocumentDescription.html'
+                                  title='rusoto::ssm::DocumentDescription'>DocumentDescription</a></td>
+                           <td class='docblock-short'>
+                                <p> Describes an SSM document. </p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DocumentFilter.html'
+                                  title='rusoto::ssm::DocumentFilter'>DocumentFilter</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes a filter.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DocumentIdentifier.html'
+                                  title='rusoto::ssm::DocumentIdentifier'>DocumentIdentifier</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes the name of an SSM document.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DocumentParameter.html'
+                                  title='rusoto::ssm::DocumentParameter'>DocumentParameter</a></td>
+                           <td class='docblock-short'>
+                                <p>Parameters specified in the SSM document that execute on the server when the command is run. </p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.FailedCreateAssociation.html'
+                                  title='rusoto::ssm::FailedCreateAssociation'>FailedCreateAssociation</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes a failed association.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetDocumentRequest.html'
+                                  title='rusoto::ssm::GetDocumentRequest'>GetDocumentRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetDocumentResult.html'
+                                  title='rusoto::ssm::GetDocumentResult'>GetDocumentResult</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.InstanceInformation.html'
+                                  title='rusoto::ssm::InstanceInformation'>InstanceInformation</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes a filter for a specific list of instances. </p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.InstanceInformationFilter.html'
+                                  title='rusoto::ssm::InstanceInformationFilter'>InstanceInformationFilter</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes a filter for a specific list of instances. </p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListAssociationsRequest.html'
+                                  title='rusoto::ssm::ListAssociationsRequest'>ListAssociationsRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListAssociationsResult.html'
+                                  title='rusoto::ssm::ListAssociationsResult'>ListAssociationsResult</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListCommandInvocationsRequest.html'
+                                  title='rusoto::ssm::ListCommandInvocationsRequest'>ListCommandInvocationsRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListCommandInvocationsResult.html'
+                                  title='rusoto::ssm::ListCommandInvocationsResult'>ListCommandInvocationsResult</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListCommandsRequest.html'
+                                  title='rusoto::ssm::ListCommandsRequest'>ListCommandsRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListCommandsResult.html'
+                                  title='rusoto::ssm::ListCommandsResult'>ListCommandsResult</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListDocumentsRequest.html'
+                                  title='rusoto::ssm::ListDocumentsRequest'>ListDocumentsRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListDocumentsResult.html'
+                                  title='rusoto::ssm::ListDocumentsResult'>ListDocumentsResult</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListTagsForResourceRequest.html'
+                                  title='rusoto::ssm::ListTagsForResourceRequest'>ListTagsForResourceRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListTagsForResourceResult.html'
+                                  title='rusoto::ssm::ListTagsForResourceResult'>ListTagsForResourceResult</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ModifyDocumentPermissionRequest.html'
+                                  title='rusoto::ssm::ModifyDocumentPermissionRequest'>ModifyDocumentPermissionRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ModifyDocumentPermissionResponse.html'
+                                  title='rusoto::ssm::ModifyDocumentPermissionResponse'>ModifyDocumentPermissionResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.NotificationConfig.html'
+                                  title='rusoto::ssm::NotificationConfig'>NotificationConfig</a></td>
+                           <td class='docblock-short'>
+                                <p>Configurations for sending notifications.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RemoveTagsFromResourceRequest.html'
+                                  title='rusoto::ssm::RemoveTagsFromResourceRequest'>RemoveTagsFromResourceRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RemoveTagsFromResourceResult.html'
+                                  title='rusoto::ssm::RemoveTagsFromResourceResult'>RemoveTagsFromResourceResult</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SendCommandRequest.html'
+                                  title='rusoto::ssm::SendCommandRequest'>SendCommandRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SendCommandResult.html'
+                                  title='rusoto::ssm::SendCommandResult'>SendCommandResult</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SsmClient.html'
+                                  title='rusoto::ssm::SsmClient'>SsmClient</a></td>
+                           <td class='docblock-short'>
+                                <p>A client for the Amazon SSM API.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Tag.html'
+                                  title='rusoto::ssm::Tag'>Tag</a></td>
+                           <td class='docblock-short'>
+                                <p> Metadata that you assign to your managed instances. Tags enable you to categorize your managed instances in different ways, for example, by purpose, owner, or environment.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UpdateAssociationStatusRequest.html'
+                                  title='rusoto::ssm::UpdateAssociationStatusRequest'>UpdateAssociationStatusRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UpdateAssociationStatusResult.html'
+                                  title='rusoto::ssm::UpdateAssociationStatusResult'>UpdateAssociationStatusResult</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UpdateManagedInstanceRoleRequest.html'
+                                  title='rusoto::ssm::UpdateManagedInstanceRoleRequest'>UpdateManagedInstanceRoleRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UpdateManagedInstanceRoleResult.html'
+                                  title='rusoto::ssm::UpdateManagedInstanceRoleResult'>UpdateManagedInstanceRoleResult</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr></table><h2 id='enums' class='section-header'><a href="#enums">Enums</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.AddTagsToResourceError.html'
+                                  title='rusoto::ssm::AddTagsToResourceError'>AddTagsToResourceError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.CancelCommandError.html'
+                                  title='rusoto::ssm::CancelCommandError'>CancelCommandError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.CreateActivationError.html'
+                                  title='rusoto::ssm::CreateActivationError'>CreateActivationError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.CreateAssociationBatchError.html'
+                                  title='rusoto::ssm::CreateAssociationBatchError'>CreateAssociationBatchError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.CreateAssociationError.html'
+                                  title='rusoto::ssm::CreateAssociationError'>CreateAssociationError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.CreateDocumentError.html'
+                                  title='rusoto::ssm::CreateDocumentError'>CreateDocumentError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DeleteActivationError.html'
+                                  title='rusoto::ssm::DeleteActivationError'>DeleteActivationError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DeleteAssociationError.html'
+                                  title='rusoto::ssm::DeleteAssociationError'>DeleteAssociationError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DeleteDocumentError.html'
+                                  title='rusoto::ssm::DeleteDocumentError'>DeleteDocumentError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DeregisterManagedInstanceError.html'
+                                  title='rusoto::ssm::DeregisterManagedInstanceError'>DeregisterManagedInstanceError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeActivationsError.html'
+                                  title='rusoto::ssm::DescribeActivationsError'>DescribeActivationsError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeAssociationError.html'
+                                  title='rusoto::ssm::DescribeAssociationError'>DescribeAssociationError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeDocumentError.html'
+                                  title='rusoto::ssm::DescribeDocumentError'>DescribeDocumentError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeDocumentPermissionError.html'
+                                  title='rusoto::ssm::DescribeDocumentPermissionError'>DescribeDocumentPermissionError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeInstanceInformationError.html'
+                                  title='rusoto::ssm::DescribeInstanceInformationError'>DescribeInstanceInformationError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.GetDocumentError.html'
+                                  title='rusoto::ssm::GetDocumentError'>GetDocumentError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ListAssociationsError.html'
+                                  title='rusoto::ssm::ListAssociationsError'>ListAssociationsError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ListCommandInvocationsError.html'
+                                  title='rusoto::ssm::ListCommandInvocationsError'>ListCommandInvocationsError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ListCommandsError.html'
+                                  title='rusoto::ssm::ListCommandsError'>ListCommandsError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ListDocumentsError.html'
+                                  title='rusoto::ssm::ListDocumentsError'>ListDocumentsError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ListTagsForResourceError.html'
+                                  title='rusoto::ssm::ListTagsForResourceError'>ListTagsForResourceError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ModifyDocumentPermissionError.html'
+                                  title='rusoto::ssm::ModifyDocumentPermissionError'>ModifyDocumentPermissionError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.RemoveTagsFromResourceError.html'
+                                  title='rusoto::ssm::RemoveTagsFromResourceError'>RemoveTagsFromResourceError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.SendCommandError.html'
+                                  title='rusoto::ssm::SendCommandError'>SendCommandError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.UpdateAssociationStatusError.html'
+                                  title='rusoto::ssm::UpdateAssociationStatusError'>UpdateAssociationStatusError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.UpdateManagedInstanceRoleError.html'
+                                  title='rusoto::ssm::UpdateManagedInstanceRoleError'>UpdateManagedInstanceRoleError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr></table><h2 id='types' class='section-header'><a href="#types">Type Definitions</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AccountId.html'
+                                  title='rusoto::ssm::AccountId'>AccountId</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AccountIdList.html'
+                                  title='rusoto::ssm::AccountIdList'>AccountIdList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ActivationCode.html'
+                                  title='rusoto::ssm::ActivationCode'>ActivationCode</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ActivationDescription.html'
+                                  title='rusoto::ssm::ActivationDescription'>ActivationDescription</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ActivationId.html'
+                                  title='rusoto::ssm::ActivationId'>ActivationId</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ActivationList.html'
+                                  title='rusoto::ssm::ActivationList'>ActivationList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AssociationDescriptionList.html'
+                                  title='rusoto::ssm::AssociationDescriptionList'>AssociationDescriptionList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AssociationFilterKey.html'
+                                  title='rusoto::ssm::AssociationFilterKey'>AssociationFilterKey</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AssociationFilterList.html'
+                                  title='rusoto::ssm::AssociationFilterList'>AssociationFilterList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AssociationFilterValue.html'
+                                  title='rusoto::ssm::AssociationFilterValue'>AssociationFilterValue</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AssociationList.html'
+                                  title='rusoto::ssm::AssociationList'>AssociationList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AssociationStatusName.html'
+                                  title='rusoto::ssm::AssociationStatusName'>AssociationStatusName</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.BatchErrorMessage.html'
+                                  title='rusoto::ssm::BatchErrorMessage'>BatchErrorMessage</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Boolean.html'
+                                  title='rusoto::ssm::Boolean'>Boolean</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.CommandFilterKey.html'
+                                  title='rusoto::ssm::CommandFilterKey'>CommandFilterKey</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.CommandFilterList.html'
+                                  title='rusoto::ssm::CommandFilterList'>CommandFilterList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.CommandFilterValue.html'
+                                  title='rusoto::ssm::CommandFilterValue'>CommandFilterValue</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.CommandId.html'
+                                  title='rusoto::ssm::CommandId'>CommandId</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.CommandInvocationList.html'
+                                  title='rusoto::ssm::CommandInvocationList'>CommandInvocationList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.CommandInvocationStatus.html'
+                                  title='rusoto::ssm::CommandInvocationStatus'>CommandInvocationStatus</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.CommandList.html'
+                                  title='rusoto::ssm::CommandList'>CommandList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.CommandMaxResults.html'
+                                  title='rusoto::ssm::CommandMaxResults'>CommandMaxResults</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.CommandPluginList.html'
+                                  title='rusoto::ssm::CommandPluginList'>CommandPluginList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.CommandPluginName.html'
+                                  title='rusoto::ssm::CommandPluginName'>CommandPluginName</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.CommandPluginOutput.html'
+                                  title='rusoto::ssm::CommandPluginOutput'>CommandPluginOutput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.CommandPluginStatus.html'
+                                  title='rusoto::ssm::CommandPluginStatus'>CommandPluginStatus</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.CommandStatus.html'
+                                  title='rusoto::ssm::CommandStatus'>CommandStatus</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Comment.html'
+                                  title='rusoto::ssm::Comment'>Comment</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ComputerName.html'
+                                  title='rusoto::ssm::ComputerName'>ComputerName</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.CreateAssociationBatchRequestEntries.html'
+                                  title='rusoto::ssm::CreateAssociationBatchRequestEntries'>CreateAssociationBatchRequestEntries</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.CreatedDate.html'
+                                  title='rusoto::ssm::CreatedDate'>CreatedDate</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.DateTime.html'
+                                  title='rusoto::ssm::DateTime'>DateTime</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.DefaultInstanceName.html'
+                                  title='rusoto::ssm::DefaultInstanceName'>DefaultInstanceName</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.DescribeActivationsFilterKeys.html'
+                                  title='rusoto::ssm::DescribeActivationsFilterKeys'>DescribeActivationsFilterKeys</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.DescribeActivationsFilterList.html'
+                                  title='rusoto::ssm::DescribeActivationsFilterList'>DescribeActivationsFilterList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.DescriptionInDocument.html'
+                                  title='rusoto::ssm::DescriptionInDocument'>DescriptionInDocument</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.DocumentARN.html'
+                                  title='rusoto::ssm::DocumentARN'>DocumentARN</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.DocumentContent.html'
+                                  title='rusoto::ssm::DocumentContent'>DocumentContent</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.DocumentFilterKey.html'
+                                  title='rusoto::ssm::DocumentFilterKey'>DocumentFilterKey</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.DocumentFilterList.html'
+                                  title='rusoto::ssm::DocumentFilterList'>DocumentFilterList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.DocumentFilterValue.html'
+                                  title='rusoto::ssm::DocumentFilterValue'>DocumentFilterValue</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.DocumentHash.html'
+                                  title='rusoto::ssm::DocumentHash'>DocumentHash</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.DocumentHashType.html'
+                                  title='rusoto::ssm::DocumentHashType'>DocumentHashType</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.DocumentIdentifierList.html'
+                                  title='rusoto::ssm::DocumentIdentifierList'>DocumentIdentifierList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.DocumentName.html'
+                                  title='rusoto::ssm::DocumentName'>DocumentName</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.DocumentOwner.html'
+                                  title='rusoto::ssm::DocumentOwner'>DocumentOwner</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.DocumentParameterDefaultValue.html'
+                                  title='rusoto::ssm::DocumentParameterDefaultValue'>DocumentParameterDefaultValue</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.DocumentParameterDescrption.html'
+                                  title='rusoto::ssm::DocumentParameterDescrption'>DocumentParameterDescrption</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.DocumentParameterList.html'
+                                  title='rusoto::ssm::DocumentParameterList'>DocumentParameterList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.DocumentParameterName.html'
+                                  title='rusoto::ssm::DocumentParameterName'>DocumentParameterName</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.DocumentParameterType.html'
+                                  title='rusoto::ssm::DocumentParameterType'>DocumentParameterType</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.DocumentPermissionType.html'
+                                  title='rusoto::ssm::DocumentPermissionType'>DocumentPermissionType</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.DocumentSha1.html'
+                                  title='rusoto::ssm::DocumentSha1'>DocumentSha1</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.DocumentStatus.html'
+                                  title='rusoto::ssm::DocumentStatus'>DocumentStatus</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ExpirationDate.html'
+                                  title='rusoto::ssm::ExpirationDate'>ExpirationDate</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.FailedCreateAssociationList.html'
+                                  title='rusoto::ssm::FailedCreateAssociationList'>FailedCreateAssociationList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Fault.html'
+                                  title='rusoto::ssm::Fault'>Fault</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.IPAddress.html'
+                                  title='rusoto::ssm::IPAddress'>IPAddress</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.IamRole.html'
+                                  title='rusoto::ssm::IamRole'>IamRole</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.InstanceId.html'
+                                  title='rusoto::ssm::InstanceId'>InstanceId</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.InstanceIdList.html'
+                                  title='rusoto::ssm::InstanceIdList'>InstanceIdList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.InstanceInformationFilterKey.html'
+                                  title='rusoto::ssm::InstanceInformationFilterKey'>InstanceInformationFilterKey</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.InstanceInformationFilterList.html'
+                                  title='rusoto::ssm::InstanceInformationFilterList'>InstanceInformationFilterList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.InstanceInformationFilterValue.html'
+                                  title='rusoto::ssm::InstanceInformationFilterValue'>InstanceInformationFilterValue</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.InstanceInformationFilterValueSet.html'
+                                  title='rusoto::ssm::InstanceInformationFilterValueSet'>InstanceInformationFilterValueSet</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.InstanceInformationList.html'
+                                  title='rusoto::ssm::InstanceInformationList'>InstanceInformationList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.InvocationTraceOutput.html'
+                                  title='rusoto::ssm::InvocationTraceOutput'>InvocationTraceOutput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.KeyList.html'
+                                  title='rusoto::ssm::KeyList'>KeyList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ManagedInstanceId.html'
+                                  title='rusoto::ssm::ManagedInstanceId'>ManagedInstanceId</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.MaxResults.html'
+                                  title='rusoto::ssm::MaxResults'>MaxResults</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.MaxResultsEC2Compatible.html'
+                                  title='rusoto::ssm::MaxResultsEC2Compatible'>MaxResultsEC2Compatible</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.NextToken.html'
+                                  title='rusoto::ssm::NextToken'>NextToken</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.NotificationArn.html'
+                                  title='rusoto::ssm::NotificationArn'>NotificationArn</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.NotificationEvent.html'
+                                  title='rusoto::ssm::NotificationEvent'>NotificationEvent</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.NotificationEventList.html'
+                                  title='rusoto::ssm::NotificationEventList'>NotificationEventList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.NotificationType.html'
+                                  title='rusoto::ssm::NotificationType'>NotificationType</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ParameterName.html'
+                                  title='rusoto::ssm::ParameterName'>ParameterName</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ParameterValue.html'
+                                  title='rusoto::ssm::ParameterValue'>ParameterValue</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ParameterValueList.html'
+                                  title='rusoto::ssm::ParameterValueList'>ParameterValueList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Parameters.html'
+                                  title='rusoto::ssm::Parameters'>Parameters</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.PingStatus.html'
+                                  title='rusoto::ssm::PingStatus'>PingStatus</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.PlatformType.html'
+                                  title='rusoto::ssm::PlatformType'>PlatformType</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.PlatformTypeList.html'
+                                  title='rusoto::ssm::PlatformTypeList'>PlatformTypeList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.RegistrationLimit.html'
+                                  title='rusoto::ssm::RegistrationLimit'>RegistrationLimit</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.RegistrationsCount.html'
+                                  title='rusoto::ssm::RegistrationsCount'>RegistrationsCount</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ResourceId.html'
+                                  title='rusoto::ssm::ResourceId'>ResourceId</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ResourceType.html'
+                                  title='rusoto::ssm::ResourceType'>ResourceType</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ResourceTypeForTagging.html'
+                                  title='rusoto::ssm::ResourceTypeForTagging'>ResourceTypeForTagging</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ResponseCode.html'
+                                  title='rusoto::ssm::ResponseCode'>ResponseCode</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.S3BucketName.html'
+                                  title='rusoto::ssm::S3BucketName'>S3BucketName</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.S3KeyPrefix.html'
+                                  title='rusoto::ssm::S3KeyPrefix'>S3KeyPrefix</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ServiceRole.html'
+                                  title='rusoto::ssm::ServiceRole'>ServiceRole</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.StatusAdditionalInfo.html'
+                                  title='rusoto::ssm::StatusAdditionalInfo'>StatusAdditionalInfo</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.StatusMessage.html'
+                                  title='rusoto::ssm::StatusMessage'>StatusMessage</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.StringList.html'
+                                  title='rusoto::ssm::StringList'>StringList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.TagKey.html'
+                                  title='rusoto::ssm::TagKey'>TagKey</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.TagList.html'
+                                  title='rusoto::ssm::TagList'>TagList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.TagValue.html'
+                                  title='rusoto::ssm::TagValue'>TagValue</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.TimeoutSeconds.html'
+                                  title='rusoto::ssm::TimeoutSeconds'>TimeoutSeconds</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Version.html'
+                                  title='rusoto::ssm::Version'>Version</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr></table></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "rusoto";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../../jquery.js"></script>
+    <script src="../../main.js"></script>
+    
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>

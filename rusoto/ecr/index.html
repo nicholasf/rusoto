@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `ecr` mod in crate `rusoto`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, ecr">
+
+    <title>rusoto::ecr - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='../index.html'>rusoto</a></p><script>window.sidebarCurrent = {name: 'ecr', ty: 'mod', relpath: '../'};</script><script defer src="../sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content mod">
+<h1 class='fqn'><span class='in-band'>Module <a href='../index.html'>rusoto</a>::<wbr><a class='mod' href=''>ecr</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-176853' class='srclink' href='../../src/rusoto/src/ecr.rs.html#1-3' title='goto source code'>[src]</a></span></h1>
+<div class='docblock'><p>Amazon EC2 Container Registry</p>
+</div><h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AuthorizationData.html'
+                                  title='rusoto::ecr::AuthorizationData'>AuthorizationData</a></td>
+                           <td class='docblock-short'>
+                                <p>An object representing authorization data for an Amazon ECR registry.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.BatchCheckLayerAvailabilityRequest.html'
+                                  title='rusoto::ecr::BatchCheckLayerAvailabilityRequest'>BatchCheckLayerAvailabilityRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.BatchCheckLayerAvailabilityResponse.html'
+                                  title='rusoto::ecr::BatchCheckLayerAvailabilityResponse'>BatchCheckLayerAvailabilityResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.BatchDeleteImageRequest.html'
+                                  title='rusoto::ecr::BatchDeleteImageRequest'>BatchDeleteImageRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>Deletes specified images within a specified repository. Images are specified with either the <code>imageTag</code> or <code>imageDigest</code>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.BatchDeleteImageResponse.html'
+                                  title='rusoto::ecr::BatchDeleteImageResponse'>BatchDeleteImageResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.BatchGetImageRequest.html'
+                                  title='rusoto::ecr::BatchGetImageRequest'>BatchGetImageRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.BatchGetImageResponse.html'
+                                  title='rusoto::ecr::BatchGetImageResponse'>BatchGetImageResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CompleteLayerUploadRequest.html'
+                                  title='rusoto::ecr::CompleteLayerUploadRequest'>CompleteLayerUploadRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CompleteLayerUploadResponse.html'
+                                  title='rusoto::ecr::CompleteLayerUploadResponse'>CompleteLayerUploadResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateRepositoryRequest.html'
+                                  title='rusoto::ecr::CreateRepositoryRequest'>CreateRepositoryRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateRepositoryResponse.html'
+                                  title='rusoto::ecr::CreateRepositoryResponse'>CreateRepositoryResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteRepositoryPolicyRequest.html'
+                                  title='rusoto::ecr::DeleteRepositoryPolicyRequest'>DeleteRepositoryPolicyRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteRepositoryPolicyResponse.html'
+                                  title='rusoto::ecr::DeleteRepositoryPolicyResponse'>DeleteRepositoryPolicyResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteRepositoryRequest.html'
+                                  title='rusoto::ecr::DeleteRepositoryRequest'>DeleteRepositoryRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteRepositoryResponse.html'
+                                  title='rusoto::ecr::DeleteRepositoryResponse'>DeleteRepositoryResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeRepositoriesRequest.html'
+                                  title='rusoto::ecr::DescribeRepositoriesRequest'>DescribeRepositoriesRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeRepositoriesResponse.html'
+                                  title='rusoto::ecr::DescribeRepositoriesResponse'>DescribeRepositoriesResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.EcrClient.html'
+                                  title='rusoto::ecr::EcrClient'>EcrClient</a></td>
+                           <td class='docblock-short'>
+                                <p>A client for the Amazon ECR API.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetAuthorizationTokenRequest.html'
+                                  title='rusoto::ecr::GetAuthorizationTokenRequest'>GetAuthorizationTokenRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetAuthorizationTokenResponse.html'
+                                  title='rusoto::ecr::GetAuthorizationTokenResponse'>GetAuthorizationTokenResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetDownloadUrlForLayerRequest.html'
+                                  title='rusoto::ecr::GetDownloadUrlForLayerRequest'>GetDownloadUrlForLayerRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetDownloadUrlForLayerResponse.html'
+                                  title='rusoto::ecr::GetDownloadUrlForLayerResponse'>GetDownloadUrlForLayerResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetRepositoryPolicyRequest.html'
+                                  title='rusoto::ecr::GetRepositoryPolicyRequest'>GetRepositoryPolicyRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetRepositoryPolicyResponse.html'
+                                  title='rusoto::ecr::GetRepositoryPolicyResponse'>GetRepositoryPolicyResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Image.html'
+                                  title='rusoto::ecr::Image'>Image</a></td>
+                           <td class='docblock-short'>
+                                <p>An object representing an Amazon ECR image.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ImageFailure.html'
+                                  title='rusoto::ecr::ImageFailure'>ImageFailure</a></td>
+                           <td class='docblock-short'>
+                                <p>An object representing an Amazon ECR image failure.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ImageIdentifier.html'
+                                  title='rusoto::ecr::ImageIdentifier'>ImageIdentifier</a></td>
+                           <td class='docblock-short'>
+                                <p>An object with identifying information for an Amazon ECR image.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.InitiateLayerUploadRequest.html'
+                                  title='rusoto::ecr::InitiateLayerUploadRequest'>InitiateLayerUploadRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.InitiateLayerUploadResponse.html'
+                                  title='rusoto::ecr::InitiateLayerUploadResponse'>InitiateLayerUploadResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Layer.html'
+                                  title='rusoto::ecr::Layer'>Layer</a></td>
+                           <td class='docblock-short'>
+                                <p>An object representing an Amazon ECR image layer.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.LayerFailure.html'
+                                  title='rusoto::ecr::LayerFailure'>LayerFailure</a></td>
+                           <td class='docblock-short'>
+                                <p>An object representing an Amazon ECR image layer failure.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListImagesFilter.html'
+                                  title='rusoto::ecr::ListImagesFilter'>ListImagesFilter</a></td>
+                           <td class='docblock-short'>
+                                <p>An object representing a filter on a <a>ListImages</a> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListImagesRequest.html'
+                                  title='rusoto::ecr::ListImagesRequest'>ListImagesRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListImagesResponse.html'
+                                  title='rusoto::ecr::ListImagesResponse'>ListImagesResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.PutImageRequest.html'
+                                  title='rusoto::ecr::PutImageRequest'>PutImageRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.PutImageResponse.html'
+                                  title='rusoto::ecr::PutImageResponse'>PutImageResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Repository.html'
+                                  title='rusoto::ecr::Repository'>Repository</a></td>
+                           <td class='docblock-short'>
+                                <p>An object representing a repository.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SetRepositoryPolicyRequest.html'
+                                  title='rusoto::ecr::SetRepositoryPolicyRequest'>SetRepositoryPolicyRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SetRepositoryPolicyResponse.html'
+                                  title='rusoto::ecr::SetRepositoryPolicyResponse'>SetRepositoryPolicyResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UploadLayerPartRequest.html'
+                                  title='rusoto::ecr::UploadLayerPartRequest'>UploadLayerPartRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UploadLayerPartResponse.html'
+                                  title='rusoto::ecr::UploadLayerPartResponse'>UploadLayerPartResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr></table><h2 id='enums' class='section-header'><a href="#enums">Enums</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.BatchCheckLayerAvailabilityError.html'
+                                  title='rusoto::ecr::BatchCheckLayerAvailabilityError'>BatchCheckLayerAvailabilityError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.BatchDeleteImageError.html'
+                                  title='rusoto::ecr::BatchDeleteImageError'>BatchDeleteImageError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.BatchGetImageError.html'
+                                  title='rusoto::ecr::BatchGetImageError'>BatchGetImageError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.CompleteLayerUploadError.html'
+                                  title='rusoto::ecr::CompleteLayerUploadError'>CompleteLayerUploadError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.CreateRepositoryError.html'
+                                  title='rusoto::ecr::CreateRepositoryError'>CreateRepositoryError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DeleteRepositoryError.html'
+                                  title='rusoto::ecr::DeleteRepositoryError'>DeleteRepositoryError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DeleteRepositoryPolicyError.html'
+                                  title='rusoto::ecr::DeleteRepositoryPolicyError'>DeleteRepositoryPolicyError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeRepositoriesError.html'
+                                  title='rusoto::ecr::DescribeRepositoriesError'>DescribeRepositoriesError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.GetAuthorizationTokenError.html'
+                                  title='rusoto::ecr::GetAuthorizationTokenError'>GetAuthorizationTokenError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.GetDownloadUrlForLayerError.html'
+                                  title='rusoto::ecr::GetDownloadUrlForLayerError'>GetDownloadUrlForLayerError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.GetRepositoryPolicyError.html'
+                                  title='rusoto::ecr::GetRepositoryPolicyError'>GetRepositoryPolicyError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.InitiateLayerUploadError.html'
+                                  title='rusoto::ecr::InitiateLayerUploadError'>InitiateLayerUploadError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ListImagesError.html'
+                                  title='rusoto::ecr::ListImagesError'>ListImagesError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.PutImageError.html'
+                                  title='rusoto::ecr::PutImageError'>PutImageError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.SetRepositoryPolicyError.html'
+                                  title='rusoto::ecr::SetRepositoryPolicyError'>SetRepositoryPolicyError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.UploadLayerPartError.html'
+                                  title='rusoto::ecr::UploadLayerPartError'>UploadLayerPartError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr></table><h2 id='types' class='section-header'><a href="#types">Type Definitions</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Arn.html'
+                                  title='rusoto::ecr::Arn'>Arn</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AuthorizationDataList.html'
+                                  title='rusoto::ecr::AuthorizationDataList'>AuthorizationDataList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Base64.html'
+                                  title='rusoto::ecr::Base64'>Base64</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.BatchedOperationLayerDigest.html'
+                                  title='rusoto::ecr::BatchedOperationLayerDigest'>BatchedOperationLayerDigest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.BatchedOperationLayerDigestList.html'
+                                  title='rusoto::ecr::BatchedOperationLayerDigestList'>BatchedOperationLayerDigestList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ExceptionMessage.html'
+                                  title='rusoto::ecr::ExceptionMessage'>ExceptionMessage</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ExpirationTimestamp.html'
+                                  title='rusoto::ecr::ExpirationTimestamp'>ExpirationTimestamp</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ForceFlag.html'
+                                  title='rusoto::ecr::ForceFlag'>ForceFlag</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.GetAuthorizationTokenRegistryIdList.html'
+                                  title='rusoto::ecr::GetAuthorizationTokenRegistryIdList'>GetAuthorizationTokenRegistryIdList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ImageDigest.html'
+                                  title='rusoto::ecr::ImageDigest'>ImageDigest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ImageFailureCode.html'
+                                  title='rusoto::ecr::ImageFailureCode'>ImageFailureCode</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ImageFailureList.html'
+                                  title='rusoto::ecr::ImageFailureList'>ImageFailureList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ImageFailureReason.html'
+                                  title='rusoto::ecr::ImageFailureReason'>ImageFailureReason</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ImageIdentifierList.html'
+                                  title='rusoto::ecr::ImageIdentifierList'>ImageIdentifierList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ImageList.html'
+                                  title='rusoto::ecr::ImageList'>ImageList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ImageManifest.html'
+                                  title='rusoto::ecr::ImageManifest'>ImageManifest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ImageTag.html'
+                                  title='rusoto::ecr::ImageTag'>ImageTag</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.LayerAvailability.html'
+                                  title='rusoto::ecr::LayerAvailability'>LayerAvailability</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.LayerDigest.html'
+                                  title='rusoto::ecr::LayerDigest'>LayerDigest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.LayerDigestList.html'
+                                  title='rusoto::ecr::LayerDigestList'>LayerDigestList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.LayerFailureCode.html'
+                                  title='rusoto::ecr::LayerFailureCode'>LayerFailureCode</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.LayerFailureList.html'
+                                  title='rusoto::ecr::LayerFailureList'>LayerFailureList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.LayerFailureReason.html'
+                                  title='rusoto::ecr::LayerFailureReason'>LayerFailureReason</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.LayerList.html'
+                                  title='rusoto::ecr::LayerList'>LayerList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.LayerPartBlob.html'
+                                  title='rusoto::ecr::LayerPartBlob'>LayerPartBlob</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.LayerSizeInBytes.html'
+                                  title='rusoto::ecr::LayerSizeInBytes'>LayerSizeInBytes</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.MaxResults.html'
+                                  title='rusoto::ecr::MaxResults'>MaxResults</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.NextToken.html'
+                                  title='rusoto::ecr::NextToken'>NextToken</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.PartSize.html'
+                                  title='rusoto::ecr::PartSize'>PartSize</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ProxyEndpoint.html'
+                                  title='rusoto::ecr::ProxyEndpoint'>ProxyEndpoint</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.RegistryId.html'
+                                  title='rusoto::ecr::RegistryId'>RegistryId</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.RepositoryList.html'
+                                  title='rusoto::ecr::RepositoryList'>RepositoryList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.RepositoryName.html'
+                                  title='rusoto::ecr::RepositoryName'>RepositoryName</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.RepositoryNameList.html'
+                                  title='rusoto::ecr::RepositoryNameList'>RepositoryNameList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.RepositoryPolicyText.html'
+                                  title='rusoto::ecr::RepositoryPolicyText'>RepositoryPolicyText</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.TagStatus.html'
+                                  title='rusoto::ecr::TagStatus'>TagStatus</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.UploadId.html'
+                                  title='rusoto::ecr::UploadId'>UploadId</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Url.html'
+                                  title='rusoto::ecr::Url'>Url</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr></table></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "rusoto";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../../jquery.js"></script>
+    <script src="../../main.js"></script>
+    
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>

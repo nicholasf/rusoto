@@ -1,0 +1,1301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `config` mod in crate `rusoto`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, config">
+
+    <title>rusoto::config - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='../index.html'>rusoto</a></p><script>window.sidebarCurrent = {name: 'config', ty: 'mod', relpath: '../'};</script><script defer src="../sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content mod">
+<h1 class='fqn'><span class='in-band'>Module <a href='../index.html'>rusoto</a>::<wbr><a class='mod' href=''>config</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-56508' class='srclink' href='../../src/rusoto/src/config.rs.html#1-3' title='goto source code'>[src]</a></span></h1>
+<div class='docblock'><p>AWS Config</p>
+</div><h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Compliance.html'
+                                  title='rusoto::config::Compliance'>Compliance</a></td>
+                           <td class='docblock-short'>
+                                <p>Indicates whether an AWS resource or AWS Config rule is compliant and provides the number of contributors that affect the compliance.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ComplianceByConfigRule.html'
+                                  title='rusoto::config::ComplianceByConfigRule'>ComplianceByConfigRule</a></td>
+                           <td class='docblock-short'>
+                                <p>Indicates whether an AWS Config rule is compliant. A rule is compliant if all of the resources that the rule evaluated comply with it, and it is noncompliant if any of these resources do not comply. </p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ComplianceByResource.html'
+                                  title='rusoto::config::ComplianceByResource'>ComplianceByResource</a></td>
+                           <td class='docblock-short'>
+                                <p>Indicates whether an AWS resource that is evaluated according to one or more AWS Config rules is compliant. A resource is compliant if it complies with all of the rules that evaluate it, and it is noncompliant if it does not comply with one or more of these rules. </p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ComplianceContributorCount.html'
+                                  title='rusoto::config::ComplianceContributorCount'>ComplianceContributorCount</a></td>
+                           <td class='docblock-short'>
+                                <p>The number of AWS resources or AWS Config rules responsible for the current compliance of the item, up to a maximum number. </p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ComplianceSummary.html'
+                                  title='rusoto::config::ComplianceSummary'>ComplianceSummary</a></td>
+                           <td class='docblock-short'>
+                                <p>The number of AWS Config rules or AWS resources that are compliant and noncompliant, up to a maximum.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ComplianceSummaryByResourceType.html'
+                                  title='rusoto::config::ComplianceSummaryByResourceType'>ComplianceSummaryByResourceType</a></td>
+                           <td class='docblock-short'>
+                                <p>The number of AWS resources of a specific type that are compliant or noncompliant, up to a maximum of 100 for each compliance.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ConfigExportDeliveryInfo.html'
+                                  title='rusoto::config::ConfigExportDeliveryInfo'>ConfigExportDeliveryInfo</a></td>
+                           <td class='docblock-short'>
+                                <p>A list that contains the status of the delivery of either the snapshot or the configuration history to the specified Amazon S3 bucket.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ConfigRule.html'
+                                  title='rusoto::config::ConfigRule'>ConfigRule</a></td>
+                           <td class='docblock-short'>
+                                <p>An AWS Config rule represents an AWS Lambda function that you create for a custom rule or a predefined function for an AWS managed rule. The function evaluates configuration items to assess whether your AWS resources comply with your desired configurations. This function can run when AWS Config detects a configuration change to an AWS resource and at a periodic frequency that you choose (for example, every 24 hours).</p> <note> <p>You can use the AWS CLI and AWS SDKs if you want to create a rule that triggers evaluations for your resources when AWS Config delivers the configuration snapshot. For more information, see <a>ConfigSnapshotDeliveryProperties</a>.</p> </note> <p>For more information about developing and using AWS Config rules, see <a href="http://docs.aws.amazon.com/config/latest/developerguide/evaluate-config.html">Evaluating AWS Resource Configurations with AWS Config</a> in the <i>AWS Config Developer Guide</i>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ConfigRuleEvaluationStatus.html'
+                                  title='rusoto::config::ConfigRuleEvaluationStatus'>ConfigRuleEvaluationStatus</a></td>
+                           <td class='docblock-short'>
+                                <p>Status information for your AWS managed Config rules. The status includes information such as the last time the rule ran, the last time it failed, and the related error for the last failure.</p> <p>This action does not return status information about custom Config rules.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ConfigServiceClient.html'
+                                  title='rusoto::config::ConfigServiceClient'>ConfigServiceClient</a></td>
+                           <td class='docblock-short'>
+                                <p>A client for the Config Service API.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ConfigSnapshotDeliveryProperties.html'
+                                  title='rusoto::config::ConfigSnapshotDeliveryProperties'>ConfigSnapshotDeliveryProperties</a></td>
+                           <td class='docblock-short'>
+                                <p>Provides options for how often AWS Config delivers configuration snapshots to the Amazon S3 bucket in your delivery channel.</p> <note> <p>If you want to create a rule that triggers evaluations for your resources when AWS Config delivers the configuration snapshot, see the following:</p> </note> <p>The frequency for a rule that triggers evaluations for your resources when AWS Config delivers the configuration snapshot is set by one of two values, depending on which is less frequent:</p> <ul> <li> <p>The value for the <code>deliveryFrequency</code> parameter within the delivery channel configuration, which sets how often AWS Config delivers configuration snapshots. This value also sets how often AWS Config invokes evaluations for Config rules.</p> </li> <li> <p>The value for the <code>MaximumExecutionFrequency</code> parameter, which sets the maximum frequency with which AWS Config invokes evaluations for the rule. For more information, see <a>ConfigRule</a>.</p> </li> </ul> <p>If the <code>deliveryFrequency</code> value is less frequent than the <code>MaximumExecutionFrequency</code> value for a rule, AWS Config invokes the rule only as often as the <code>deliveryFrequency</code> value.</p> <ol> <li> <p>For example, you want your rule to run evaluations when AWS Config delivers the configuration snapshot. </p> </li> <li> <p>You specify the <code>MaximumExecutionFrequency</code> value for <code>Six_Hours</code>. </p> </li> <li> <p>You then specify the delivery channel <code>deliveryFrequency</code> value for <code>TwentyFour_Hours</code>. </p> </li> <li> <p>Because the value for <code>deliveryFrequency</code> is less frequent than <code>MaximumExecutionFrequency</code>, AWS Config invokes evaluations for the rule every 24 hours. </p> </li> </ol> <p>You should set the <code>MaximumExecutionFrequency</code> value to be at least as frequent as the <code>deliveryFrequency</code> value. You can view the <code>deliveryFrequency</code> value by using the <code>DescribeDeliveryChannnels</code> action.</p> <p>To update the <code>deliveryFrequency</code> with which AWS Config delivers your configuration snapshots, use the <code>PutDeliveryChannel</code> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ConfigStreamDeliveryInfo.html'
+                                  title='rusoto::config::ConfigStreamDeliveryInfo'>ConfigStreamDeliveryInfo</a></td>
+                           <td class='docblock-short'>
+                                <p>A list that contains the status of the delivery of the configuration stream notification to the Amazon SNS topic. </p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ConfigurationItem.html'
+                                  title='rusoto::config::ConfigurationItem'>ConfigurationItem</a></td>
+                           <td class='docblock-short'>
+                                <p><p>A list that contains detailed configurations of a specified resource.</p> <note> <p>Currently, the list does not contain information about non-AWS components (for example, applications on your Amazon EC2 instances).</p> </note></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ConfigurationRecorder.html'
+                                  title='rusoto::config::ConfigurationRecorder'>ConfigurationRecorder</a></td>
+                           <td class='docblock-short'>
+                                <p>An object that represents the recording of configuration changes of an AWS resource.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ConfigurationRecorderStatus.html'
+                                  title='rusoto::config::ConfigurationRecorderStatus'>ConfigurationRecorderStatus</a></td>
+                           <td class='docblock-short'>
+                                <p>The current status of the configuration recorder.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteConfigRuleRequest.html'
+                                  title='rusoto::config::DeleteConfigRuleRequest'>DeleteConfigRuleRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteConfigurationRecorderRequest.html'
+                                  title='rusoto::config::DeleteConfigurationRecorderRequest'>DeleteConfigurationRecorderRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The request object for the <code>DeleteConfigurationRecorder</code> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteDeliveryChannelRequest.html'
+                                  title='rusoto::config::DeleteDeliveryChannelRequest'>DeleteDeliveryChannelRequest</a></td>
+                           <td class='docblock-short'>
+                                <p> The input for the <a>DeleteDeliveryChannel</a> action. The action accepts the following data in JSON format. </p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteEvaluationResultsRequest.html'
+                                  title='rusoto::config::DeleteEvaluationResultsRequest'>DeleteEvaluationResultsRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteEvaluationResultsResponse.html'
+                                  title='rusoto::config::DeleteEvaluationResultsResponse'>DeleteEvaluationResultsResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The output when you delete the evaluation results for the specified Config rule.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeliverConfigSnapshotRequest.html'
+                                  title='rusoto::config::DeliverConfigSnapshotRequest'>DeliverConfigSnapshotRequest</a></td>
+                           <td class='docblock-short'>
+                                <p> The input for the <a>DeliverConfigSnapshot</a> action. </p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeliverConfigSnapshotResponse.html'
+                                  title='rusoto::config::DeliverConfigSnapshotResponse'>DeliverConfigSnapshotResponse</a></td>
+                           <td class='docblock-short'>
+                                <p> The output for the <a>DeliverConfigSnapshot</a> action in JSON format. </p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeliveryChannel.html'
+                                  title='rusoto::config::DeliveryChannel'>DeliveryChannel</a></td>
+                           <td class='docblock-short'>
+                                <p>The channel through which AWS Config delivers notifications and updated configuration states.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeliveryChannelStatus.html'
+                                  title='rusoto::config::DeliveryChannelStatus'>DeliveryChannelStatus</a></td>
+                           <td class='docblock-short'>
+                                <p>The status of a specified delivery channel.</p> <p>Valid values: <code>Success</code> | <code>Failure</code></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeComplianceByConfigRuleRequest.html'
+                                  title='rusoto::config::DescribeComplianceByConfigRuleRequest'>DescribeComplianceByConfigRuleRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeComplianceByConfigRuleResponse.html'
+                                  title='rusoto::config::DescribeComplianceByConfigRuleResponse'>DescribeComplianceByConfigRuleResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeComplianceByResourceRequest.html'
+                                  title='rusoto::config::DescribeComplianceByResourceRequest'>DescribeComplianceByResourceRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeComplianceByResourceResponse.html'
+                                  title='rusoto::config::DescribeComplianceByResourceResponse'>DescribeComplianceByResourceResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeConfigRuleEvaluationStatusRequest.html'
+                                  title='rusoto::config::DescribeConfigRuleEvaluationStatusRequest'>DescribeConfigRuleEvaluationStatusRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeConfigRuleEvaluationStatusResponse.html'
+                                  title='rusoto::config::DescribeConfigRuleEvaluationStatusResponse'>DescribeConfigRuleEvaluationStatusResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeConfigRulesRequest.html'
+                                  title='rusoto::config::DescribeConfigRulesRequest'>DescribeConfigRulesRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeConfigRulesResponse.html'
+                                  title='rusoto::config::DescribeConfigRulesResponse'>DescribeConfigRulesResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeConfigurationRecorderStatusRequest.html'
+                                  title='rusoto::config::DescribeConfigurationRecorderStatusRequest'>DescribeConfigurationRecorderStatusRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The input for the <a>DescribeConfigurationRecorderStatus</a> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeConfigurationRecorderStatusResponse.html'
+                                  title='rusoto::config::DescribeConfigurationRecorderStatusResponse'>DescribeConfigurationRecorderStatusResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The output for the <a>DescribeConfigurationRecorderStatus</a> action in JSON format.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeConfigurationRecordersRequest.html'
+                                  title='rusoto::config::DescribeConfigurationRecordersRequest'>DescribeConfigurationRecordersRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The input for the <a>DescribeConfigurationRecorders</a> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeConfigurationRecordersResponse.html'
+                                  title='rusoto::config::DescribeConfigurationRecordersResponse'>DescribeConfigurationRecordersResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The output for the <a>DescribeConfigurationRecorders</a> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeDeliveryChannelStatusRequest.html'
+                                  title='rusoto::config::DescribeDeliveryChannelStatusRequest'>DescribeDeliveryChannelStatusRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The input for the <a>DeliveryChannelStatus</a> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeDeliveryChannelStatusResponse.html'
+                                  title='rusoto::config::DescribeDeliveryChannelStatusResponse'>DescribeDeliveryChannelStatusResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The output for the <a>DescribeDeliveryChannelStatus</a> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeDeliveryChannelsRequest.html'
+                                  title='rusoto::config::DescribeDeliveryChannelsRequest'>DescribeDeliveryChannelsRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The input for the <a>DescribeDeliveryChannels</a> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeDeliveryChannelsResponse.html'
+                                  title='rusoto::config::DescribeDeliveryChannelsResponse'>DescribeDeliveryChannelsResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The output for the <a>DescribeDeliveryChannels</a> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Evaluation.html'
+                                  title='rusoto::config::Evaluation'>Evaluation</a></td>
+                           <td class='docblock-short'>
+                                <p>Identifies an AWS resource and indicates whether it complies with the AWS Config rule that it was evaluated against.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.EvaluationResult.html'
+                                  title='rusoto::config::EvaluationResult'>EvaluationResult</a></td>
+                           <td class='docblock-short'>
+                                <p>The details of an AWS Config evaluation. Provides the AWS resource that was evaluated, the compliance of the resource, related timestamps, and supplementary information. </p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.EvaluationResultIdentifier.html'
+                                  title='rusoto::config::EvaluationResultIdentifier'>EvaluationResultIdentifier</a></td>
+                           <td class='docblock-short'>
+                                <p>Uniquely identifies an evaluation result.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.EvaluationResultQualifier.html'
+                                  title='rusoto::config::EvaluationResultQualifier'>EvaluationResultQualifier</a></td>
+                           <td class='docblock-short'>
+                                <p>Identifies an AWS Config rule that evaluated an AWS resource, and provides the type and ID of the resource that the rule evaluated.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetComplianceDetailsByConfigRuleRequest.html'
+                                  title='rusoto::config::GetComplianceDetailsByConfigRuleRequest'>GetComplianceDetailsByConfigRuleRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetComplianceDetailsByConfigRuleResponse.html'
+                                  title='rusoto::config::GetComplianceDetailsByConfigRuleResponse'>GetComplianceDetailsByConfigRuleResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetComplianceDetailsByResourceRequest.html'
+                                  title='rusoto::config::GetComplianceDetailsByResourceRequest'>GetComplianceDetailsByResourceRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetComplianceDetailsByResourceResponse.html'
+                                  title='rusoto::config::GetComplianceDetailsByResourceResponse'>GetComplianceDetailsByResourceResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetComplianceSummaryByConfigRuleResponse.html'
+                                  title='rusoto::config::GetComplianceSummaryByConfigRuleResponse'>GetComplianceSummaryByConfigRuleResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetComplianceSummaryByResourceTypeRequest.html'
+                                  title='rusoto::config::GetComplianceSummaryByResourceTypeRequest'>GetComplianceSummaryByResourceTypeRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetComplianceSummaryByResourceTypeResponse.html'
+                                  title='rusoto::config::GetComplianceSummaryByResourceTypeResponse'>GetComplianceSummaryByResourceTypeResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetResourceConfigHistoryRequest.html'
+                                  title='rusoto::config::GetResourceConfigHistoryRequest'>GetResourceConfigHistoryRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The input for the <a>GetResourceConfigHistory</a> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetResourceConfigHistoryResponse.html'
+                                  title='rusoto::config::GetResourceConfigHistoryResponse'>GetResourceConfigHistoryResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The output for the <a>GetResourceConfigHistory</a> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListDiscoveredResourcesRequest.html'
+                                  title='rusoto::config::ListDiscoveredResourcesRequest'>ListDiscoveredResourcesRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListDiscoveredResourcesResponse.html'
+                                  title='rusoto::config::ListDiscoveredResourcesResponse'>ListDiscoveredResourcesResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.PutConfigRuleRequest.html'
+                                  title='rusoto::config::PutConfigRuleRequest'>PutConfigRuleRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.PutConfigurationRecorderRequest.html'
+                                  title='rusoto::config::PutConfigurationRecorderRequest'>PutConfigurationRecorderRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The input for the <a>PutConfigurationRecorder</a> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.PutDeliveryChannelRequest.html'
+                                  title='rusoto::config::PutDeliveryChannelRequest'>PutDeliveryChannelRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The input for the <a>PutDeliveryChannel</a> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.PutEvaluationsRequest.html'
+                                  title='rusoto::config::PutEvaluationsRequest'>PutEvaluationsRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.PutEvaluationsResponse.html'
+                                  title='rusoto::config::PutEvaluationsResponse'>PutEvaluationsResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RecordingGroup.html'
+                                  title='rusoto::config::RecordingGroup'>RecordingGroup</a></td>
+                           <td class='docblock-short'>
+                                <p>Specifies the types of AWS resource for which AWS Config records configuration changes.</p> <p>In the recording group, you specify whether all supported types or specific types of resources are recorded.</p> <p>By default, AWS Config records configuration changes for all supported types of regional resources that AWS Config discovers in the region in which it is running. Regional resources are tied to a region and can be used only in that region. Examples of regional resources are EC2 instances and EBS volumes.</p> <p>You can also have AWS Config record configuration changes for supported types of global resources (for example, IAM resources). Global resources are not tied to an individual region and can be used in all regions.</p> <important> <p>The configuration details for any global resource are the same in all regions. If you customize AWS Config in multiple regions to record global resources, it will create multiple configuration items each time a global resource changes: one configuration item for each region. These configuration items will contain identical data. To prevent duplicate configuration items, you should consider customizing AWS Config in only one region to record global resources, unless you want the configuration items to be available in multiple regions.</p> </important> <p>If you don't want AWS Config to record all resources, you can specify which types of resources it will record with the <code>resourceTypes</code> parameter.</p> <p>For a list of supported resource types, see <a href="http://docs.aws.amazon.com/config/latest/developerguide/resource-config-reference.html#supported-resources">Supported resource types</a>.</p> <p>For more information, see <a href="http://docs.aws.amazon.com/config/latest/developerguide/select-resources.html">Selecting Which Resources AWS Config Records</a>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Relationship.html'
+                                  title='rusoto::config::Relationship'>Relationship</a></td>
+                           <td class='docblock-short'>
+                                <p>The relationship of the related resource to the main resource.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ResourceIdentifier.html'
+                                  title='rusoto::config::ResourceIdentifier'>ResourceIdentifier</a></td>
+                           <td class='docblock-short'>
+                                <p>The details that identify a resource that is discovered by AWS Config, including the resource type, ID, and (if available) the custom resource name.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Scope.html'
+                                  title='rusoto::config::Scope'>Scope</a></td>
+                           <td class='docblock-short'>
+                                <p>Defines which resources trigger an evaluation for an AWS Config rule. The scope can include one or more resource types, a combination of a tag key and value, or a combination of one resource type and one resource ID. Specify a scope to constrain which resources trigger an evaluation for a rule. Otherwise, evaluations for the rule are triggered when any resource in your recording group changes in configuration. </p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Source.html'
+                                  title='rusoto::config::Source'>Source</a></td>
+                           <td class='docblock-short'>
+                                <p>Provides the AWS Config rule owner (AWS or customer), the rule identifier, and the events that trigger the evaluation of your AWS resources.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SourceDetail.html'
+                                  title='rusoto::config::SourceDetail'>SourceDetail</a></td>
+                           <td class='docblock-short'>
+                                <p>Provides the source and the message types that trigger AWS Config to evaluate your AWS resources against a rule. It also provides the frequency with which you want AWS Config to run evaluations for the rule if the trigger type is periodic. You can specify the parameter values for <code>SourceDetail</code> only for custom rules. </p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.StartConfigRulesEvaluationRequest.html'
+                                  title='rusoto::config::StartConfigRulesEvaluationRequest'>StartConfigRulesEvaluationRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.StartConfigRulesEvaluationResponse.html'
+                                  title='rusoto::config::StartConfigRulesEvaluationResponse'>StartConfigRulesEvaluationResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The output when you start the evaluation for the specified Config rule.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.StartConfigurationRecorderRequest.html'
+                                  title='rusoto::config::StartConfigurationRecorderRequest'>StartConfigurationRecorderRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The input for the <a>StartConfigurationRecorder</a> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.StopConfigurationRecorderRequest.html'
+                                  title='rusoto::config::StopConfigurationRecorderRequest'>StopConfigurationRecorderRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The input for the <a>StopConfigurationRecorder</a> action.</p>
+                           </td>
+                       </tr></table><h2 id='enums' class='section-header'><a href="#enums">Enums</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DeleteConfigRuleError.html'
+                                  title='rusoto::config::DeleteConfigRuleError'>DeleteConfigRuleError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DeleteConfigurationRecorderError.html'
+                                  title='rusoto::config::DeleteConfigurationRecorderError'>DeleteConfigurationRecorderError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DeleteDeliveryChannelError.html'
+                                  title='rusoto::config::DeleteDeliveryChannelError'>DeleteDeliveryChannelError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DeleteEvaluationResultsError.html'
+                                  title='rusoto::config::DeleteEvaluationResultsError'>DeleteEvaluationResultsError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DeliverConfigSnapshotError.html'
+                                  title='rusoto::config::DeliverConfigSnapshotError'>DeliverConfigSnapshotError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeComplianceByConfigRuleError.html'
+                                  title='rusoto::config::DescribeComplianceByConfigRuleError'>DescribeComplianceByConfigRuleError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeComplianceByResourceError.html'
+                                  title='rusoto::config::DescribeComplianceByResourceError'>DescribeComplianceByResourceError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeConfigRuleEvaluationStatusError.html'
+                                  title='rusoto::config::DescribeConfigRuleEvaluationStatusError'>DescribeConfigRuleEvaluationStatusError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeConfigRulesError.html'
+                                  title='rusoto::config::DescribeConfigRulesError'>DescribeConfigRulesError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeConfigurationRecorderStatusError.html'
+                                  title='rusoto::config::DescribeConfigurationRecorderStatusError'>DescribeConfigurationRecorderStatusError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeConfigurationRecordersError.html'
+                                  title='rusoto::config::DescribeConfigurationRecordersError'>DescribeConfigurationRecordersError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeDeliveryChannelStatusError.html'
+                                  title='rusoto::config::DescribeDeliveryChannelStatusError'>DescribeDeliveryChannelStatusError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeDeliveryChannelsError.html'
+                                  title='rusoto::config::DescribeDeliveryChannelsError'>DescribeDeliveryChannelsError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.GetComplianceDetailsByConfigRuleError.html'
+                                  title='rusoto::config::GetComplianceDetailsByConfigRuleError'>GetComplianceDetailsByConfigRuleError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.GetComplianceDetailsByResourceError.html'
+                                  title='rusoto::config::GetComplianceDetailsByResourceError'>GetComplianceDetailsByResourceError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.GetComplianceSummaryByConfigRuleError.html'
+                                  title='rusoto::config::GetComplianceSummaryByConfigRuleError'>GetComplianceSummaryByConfigRuleError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.GetComplianceSummaryByResourceTypeError.html'
+                                  title='rusoto::config::GetComplianceSummaryByResourceTypeError'>GetComplianceSummaryByResourceTypeError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.GetResourceConfigHistoryError.html'
+                                  title='rusoto::config::GetResourceConfigHistoryError'>GetResourceConfigHistoryError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ListDiscoveredResourcesError.html'
+                                  title='rusoto::config::ListDiscoveredResourcesError'>ListDiscoveredResourcesError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.PutConfigRuleError.html'
+                                  title='rusoto::config::PutConfigRuleError'>PutConfigRuleError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.PutConfigurationRecorderError.html'
+                                  title='rusoto::config::PutConfigurationRecorderError'>PutConfigurationRecorderError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.PutDeliveryChannelError.html'
+                                  title='rusoto::config::PutDeliveryChannelError'>PutDeliveryChannelError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.PutEvaluationsError.html'
+                                  title='rusoto::config::PutEvaluationsError'>PutEvaluationsError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.StartConfigRulesEvaluationError.html'
+                                  title='rusoto::config::StartConfigRulesEvaluationError'>StartConfigRulesEvaluationError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.StartConfigurationRecorderError.html'
+                                  title='rusoto::config::StartConfigurationRecorderError'>StartConfigurationRecorderError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.StopConfigurationRecorderError.html'
+                                  title='rusoto::config::StopConfigurationRecorderError'>StopConfigurationRecorderError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr></table><h2 id='types' class='section-header'><a href="#types">Type Definitions</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ARN.html'
+                                  title='rusoto::config::ARN'>ARN</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AccountId.html'
+                                  title='rusoto::config::AccountId'>AccountId</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AllSupported.html'
+                                  title='rusoto::config::AllSupported'>AllSupported</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AvailabilityZone.html'
+                                  title='rusoto::config::AvailabilityZone'>AvailabilityZone</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AwsRegion.html'
+                                  title='rusoto::config::AwsRegion'>AwsRegion</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Boolean.html'
+                                  title='rusoto::config::Boolean'>Boolean</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ChannelName.html'
+                                  title='rusoto::config::ChannelName'>ChannelName</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ChronologicalOrder.html'
+                                  title='rusoto::config::ChronologicalOrder'>ChronologicalOrder</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ComplianceByConfigRules.html'
+                                  title='rusoto::config::ComplianceByConfigRules'>ComplianceByConfigRules</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ComplianceByResources.html'
+                                  title='rusoto::config::ComplianceByResources'>ComplianceByResources</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ComplianceResourceTypes.html'
+                                  title='rusoto::config::ComplianceResourceTypes'>ComplianceResourceTypes</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ComplianceSummariesByResourceType.html'
+                                  title='rusoto::config::ComplianceSummariesByResourceType'>ComplianceSummariesByResourceType</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ComplianceType.html'
+                                  title='rusoto::config::ComplianceType'>ComplianceType</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ComplianceTypes.html'
+                                  title='rusoto::config::ComplianceTypes'>ComplianceTypes</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ConfigRuleEvaluationStatusList.html'
+                                  title='rusoto::config::ConfigRuleEvaluationStatusList'>ConfigRuleEvaluationStatusList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ConfigRuleNames.html'
+                                  title='rusoto::config::ConfigRuleNames'>ConfigRuleNames</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ConfigRuleState.html'
+                                  title='rusoto::config::ConfigRuleState'>ConfigRuleState</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ConfigRules.html'
+                                  title='rusoto::config::ConfigRules'>ConfigRules</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Configuration.html'
+                                  title='rusoto::config::Configuration'>Configuration</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ConfigurationItemCaptureTime.html'
+                                  title='rusoto::config::ConfigurationItemCaptureTime'>ConfigurationItemCaptureTime</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ConfigurationItemList.html'
+                                  title='rusoto::config::ConfigurationItemList'>ConfigurationItemList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ConfigurationItemMD5Hash.html'
+                                  title='rusoto::config::ConfigurationItemMD5Hash'>ConfigurationItemMD5Hash</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ConfigurationItemStatus.html'
+                                  title='rusoto::config::ConfigurationItemStatus'>ConfigurationItemStatus</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ConfigurationRecorderList.html'
+                                  title='rusoto::config::ConfigurationRecorderList'>ConfigurationRecorderList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ConfigurationRecorderNameList.html'
+                                  title='rusoto::config::ConfigurationRecorderNameList'>ConfigurationRecorderNameList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ConfigurationRecorderStatusList.html'
+                                  title='rusoto::config::ConfigurationRecorderStatusList'>ConfigurationRecorderStatusList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ConfigurationStateId.html'
+                                  title='rusoto::config::ConfigurationStateId'>ConfigurationStateId</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Date.html'
+                                  title='rusoto::config::Date'>Date</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.DeliveryChannelList.html'
+                                  title='rusoto::config::DeliveryChannelList'>DeliveryChannelList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.DeliveryChannelNameList.html'
+                                  title='rusoto::config::DeliveryChannelNameList'>DeliveryChannelNameList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.DeliveryChannelStatusList.html'
+                                  title='rusoto::config::DeliveryChannelStatusList'>DeliveryChannelStatusList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.DeliveryStatus.html'
+                                  title='rusoto::config::DeliveryStatus'>DeliveryStatus</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.EarlierTime.html'
+                                  title='rusoto::config::EarlierTime'>EarlierTime</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.EmptiableStringWithCharLimit256.html'
+                                  title='rusoto::config::EmptiableStringWithCharLimit256'>EmptiableStringWithCharLimit256</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.EvaluationResults.html'
+                                  title='rusoto::config::EvaluationResults'>EvaluationResults</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Evaluations.html'
+                                  title='rusoto::config::Evaluations'>Evaluations</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.EventSource.html'
+                                  title='rusoto::config::EventSource'>EventSource</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.IncludeGlobalResourceTypes.html'
+                                  title='rusoto::config::IncludeGlobalResourceTypes'>IncludeGlobalResourceTypes</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Integer.html'
+                                  title='rusoto::config::Integer'>Integer</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.LaterTime.html'
+                                  title='rusoto::config::LaterTime'>LaterTime</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Limit.html'
+                                  title='rusoto::config::Limit'>Limit</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.MaximumExecutionFrequency.html'
+                                  title='rusoto::config::MaximumExecutionFrequency'>MaximumExecutionFrequency</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.MessageType.html'
+                                  title='rusoto::config::MessageType'>MessageType</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Name.html'
+                                  title='rusoto::config::Name'>Name</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.NextToken.html'
+                                  title='rusoto::config::NextToken'>NextToken</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.OrderingTimestamp.html'
+                                  title='rusoto::config::OrderingTimestamp'>OrderingTimestamp</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Owner.html'
+                                  title='rusoto::config::Owner'>Owner</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.RecorderName.html'
+                                  title='rusoto::config::RecorderName'>RecorderName</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.RecorderStatus.html'
+                                  title='rusoto::config::RecorderStatus'>RecorderStatus</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ReevaluateConfigRuleNames.html'
+                                  title='rusoto::config::ReevaluateConfigRuleNames'>ReevaluateConfigRuleNames</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.RelatedEvent.html'
+                                  title='rusoto::config::RelatedEvent'>RelatedEvent</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.RelatedEventList.html'
+                                  title='rusoto::config::RelatedEventList'>RelatedEventList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.RelationshipList.html'
+                                  title='rusoto::config::RelationshipList'>RelationshipList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.RelationshipName.html'
+                                  title='rusoto::config::RelationshipName'>RelationshipName</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ResourceCreationTime.html'
+                                  title='rusoto::config::ResourceCreationTime'>ResourceCreationTime</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ResourceDeletionTime.html'
+                                  title='rusoto::config::ResourceDeletionTime'>ResourceDeletionTime</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ResourceId.html'
+                                  title='rusoto::config::ResourceId'>ResourceId</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ResourceIdList.html'
+                                  title='rusoto::config::ResourceIdList'>ResourceIdList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ResourceIdentifierList.html'
+                                  title='rusoto::config::ResourceIdentifierList'>ResourceIdentifierList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ResourceName.html'
+                                  title='rusoto::config::ResourceName'>ResourceName</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ResourceType.html'
+                                  title='rusoto::config::ResourceType'>ResourceType</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ResourceTypeList.html'
+                                  title='rusoto::config::ResourceTypeList'>ResourceTypeList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ResourceTypes.html'
+                                  title='rusoto::config::ResourceTypes'>ResourceTypes</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.SourceDetails.html'
+                                  title='rusoto::config::SourceDetails'>SourceDetails</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.StringWithCharLimit128.html'
+                                  title='rusoto::config::StringWithCharLimit128'>StringWithCharLimit128</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.StringWithCharLimit256.html'
+                                  title='rusoto::config::StringWithCharLimit256'>StringWithCharLimit256</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.StringWithCharLimit64.html'
+                                  title='rusoto::config::StringWithCharLimit64'>StringWithCharLimit64</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.SupplementaryConfiguration.html'
+                                  title='rusoto::config::SupplementaryConfiguration'>SupplementaryConfiguration</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.SupplementaryConfigurationName.html'
+                                  title='rusoto::config::SupplementaryConfigurationName'>SupplementaryConfigurationName</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.SupplementaryConfigurationValue.html'
+                                  title='rusoto::config::SupplementaryConfigurationValue'>SupplementaryConfigurationValue</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Tags.html'
+                                  title='rusoto::config::Tags'>Tags</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Value.html'
+                                  title='rusoto::config::Value'>Value</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Version.html'
+                                  title='rusoto::config::Version'>Version</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr></table></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "rusoto";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../../jquery.js"></script>
+    <script src="../../main.js"></script>
+    
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>

@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `route53domains` mod in crate `rusoto`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, route53domains">
+
+    <title>rusoto::route53domains - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='../index.html'>rusoto</a></p><script>window.sidebarCurrent = {name: 'route53domains', ty: 'mod', relpath: '../'};</script><script defer src="../sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content mod">
+<h1 class='fqn'><span class='in-band'>Module <a href='../index.html'>rusoto</a>::<wbr><a class='mod' href=''>route53domains</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-343725' class='srclink' href='../../src/rusoto/src/route53domains.rs.html#1-3' title='goto source code'>[src]</a></span></h1>
+<div class='docblock'><p>AWS Route 53 Domains</p>
+</div><h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.BillingRecord.html'
+                                  title='rusoto::route53domains::BillingRecord'>BillingRecord</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CheckDomainAvailabilityRequest.html'
+                                  title='rusoto::route53domains::CheckDomainAvailabilityRequest'>CheckDomainAvailabilityRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The CheckDomainAvailability request contains the following elements.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CheckDomainAvailabilityResponse.html'
+                                  title='rusoto::route53domains::CheckDomainAvailabilityResponse'>CheckDomainAvailabilityResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The CheckDomainAvailability response includes the following elements.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ContactDetail.html'
+                                  title='rusoto::route53domains::ContactDetail'>ContactDetail</a></td>
+                           <td class='docblock-short'>
+                                <p>ContactDetail includes the following elements.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteTagsForDomainRequest.html'
+                                  title='rusoto::route53domains::DeleteTagsForDomainRequest'>DeleteTagsForDomainRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The DeleteTagsForDomainRequest includes the following elements.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteTagsForDomainResponse.html'
+                                  title='rusoto::route53domains::DeleteTagsForDomainResponse'>DeleteTagsForDomainResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DisableDomainAutoRenewRequest.html'
+                                  title='rusoto::route53domains::DisableDomainAutoRenewRequest'>DisableDomainAutoRenewRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DisableDomainAutoRenewResponse.html'
+                                  title='rusoto::route53domains::DisableDomainAutoRenewResponse'>DisableDomainAutoRenewResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DisableDomainTransferLockRequest.html'
+                                  title='rusoto::route53domains::DisableDomainTransferLockRequest'>DisableDomainTransferLockRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The DisableDomainTransferLock request includes the following element.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DisableDomainTransferLockResponse.html'
+                                  title='rusoto::route53domains::DisableDomainTransferLockResponse'>DisableDomainTransferLockResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The DisableDomainTransferLock response includes the following element.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DomainSuggestion.html'
+                                  title='rusoto::route53domains::DomainSuggestion'>DomainSuggestion</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DomainSummary.html'
+                                  title='rusoto::route53domains::DomainSummary'>DomainSummary</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.EnableDomainAutoRenewRequest.html'
+                                  title='rusoto::route53domains::EnableDomainAutoRenewRequest'>EnableDomainAutoRenewRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.EnableDomainAutoRenewResponse.html'
+                                  title='rusoto::route53domains::EnableDomainAutoRenewResponse'>EnableDomainAutoRenewResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.EnableDomainTransferLockRequest.html'
+                                  title='rusoto::route53domains::EnableDomainTransferLockRequest'>EnableDomainTransferLockRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The EnableDomainTransferLock request includes the following element.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.EnableDomainTransferLockResponse.html'
+                                  title='rusoto::route53domains::EnableDomainTransferLockResponse'>EnableDomainTransferLockResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The EnableDomainTransferLock response includes the following elements.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ExtraParam.html'
+                                  title='rusoto::route53domains::ExtraParam'>ExtraParam</a></td>
+                           <td class='docblock-short'>
+                                <p>ExtraParam includes the following elements.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetContactReachabilityStatusRequest.html'
+                                  title='rusoto::route53domains::GetContactReachabilityStatusRequest'>GetContactReachabilityStatusRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetContactReachabilityStatusResponse.html'
+                                  title='rusoto::route53domains::GetContactReachabilityStatusResponse'>GetContactReachabilityStatusResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetDomainDetailRequest.html'
+                                  title='rusoto::route53domains::GetDomainDetailRequest'>GetDomainDetailRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The GetDomainDetail request includes the following element.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetDomainDetailResponse.html'
+                                  title='rusoto::route53domains::GetDomainDetailResponse'>GetDomainDetailResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The GetDomainDetail response includes the following elements.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetDomainSuggestionsRequest.html'
+                                  title='rusoto::route53domains::GetDomainSuggestionsRequest'>GetDomainSuggestionsRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetDomainSuggestionsResponse.html'
+                                  title='rusoto::route53domains::GetDomainSuggestionsResponse'>GetDomainSuggestionsResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetOperationDetailRequest.html'
+                                  title='rusoto::route53domains::GetOperationDetailRequest'>GetOperationDetailRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The GetOperationDetail request includes the following element.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetOperationDetailResponse.html'
+                                  title='rusoto::route53domains::GetOperationDetailResponse'>GetOperationDetailResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The GetOperationDetail response includes the following elements.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListDomainsRequest.html'
+                                  title='rusoto::route53domains::ListDomainsRequest'>ListDomainsRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The ListDomains request includes the following elements.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListDomainsResponse.html'
+                                  title='rusoto::route53domains::ListDomainsResponse'>ListDomainsResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The ListDomains response includes the following elements.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListOperationsRequest.html'
+                                  title='rusoto::route53domains::ListOperationsRequest'>ListOperationsRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The ListOperations request includes the following elements.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListOperationsResponse.html'
+                                  title='rusoto::route53domains::ListOperationsResponse'>ListOperationsResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The ListOperations response includes the following elements.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListTagsForDomainRequest.html'
+                                  title='rusoto::route53domains::ListTagsForDomainRequest'>ListTagsForDomainRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The ListTagsForDomainRequest includes the following elements.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListTagsForDomainResponse.html'
+                                  title='rusoto::route53domains::ListTagsForDomainResponse'>ListTagsForDomainResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The ListTagsForDomain response includes the following elements.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Nameserver.html'
+                                  title='rusoto::route53domains::Nameserver'>Nameserver</a></td>
+                           <td class='docblock-short'>
+                                <p>Nameserver includes the following elements.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.OperationSummary.html'
+                                  title='rusoto::route53domains::OperationSummary'>OperationSummary</a></td>
+                           <td class='docblock-short'>
+                                <p>OperationSummary includes the following elements.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RegisterDomainRequest.html'
+                                  title='rusoto::route53domains::RegisterDomainRequest'>RegisterDomainRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The RegisterDomain request includes the following elements.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RegisterDomainResponse.html'
+                                  title='rusoto::route53domains::RegisterDomainResponse'>RegisterDomainResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The RegisterDomain response includes the following element.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RenewDomainRequest.html'
+                                  title='rusoto::route53domains::RenewDomainRequest'>RenewDomainRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>A <code>RenewDomain</code> request includes the number of years that you want to renew for and the current expiration year.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RenewDomainResponse.html'
+                                  title='rusoto::route53domains::RenewDomainResponse'>RenewDomainResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ResendContactReachabilityEmailRequest.html'
+                                  title='rusoto::route53domains::ResendContactReachabilityEmailRequest'>ResendContactReachabilityEmailRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ResendContactReachabilityEmailResponse.html'
+                                  title='rusoto::route53domains::ResendContactReachabilityEmailResponse'>ResendContactReachabilityEmailResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RetrieveDomainAuthCodeRequest.html'
+                                  title='rusoto::route53domains::RetrieveDomainAuthCodeRequest'>RetrieveDomainAuthCodeRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The RetrieveDomainAuthCode request includes the following element.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RetrieveDomainAuthCodeResponse.html'
+                                  title='rusoto::route53domains::RetrieveDomainAuthCodeResponse'>RetrieveDomainAuthCodeResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The RetrieveDomainAuthCode response includes the following element.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Route53DomainsClient.html'
+                                  title='rusoto::route53domains::Route53DomainsClient'>Route53DomainsClient</a></td>
+                           <td class='docblock-short'>
+                                <p>A client for the Amazon Route 53 Domains API.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Tag.html'
+                                  title='rusoto::route53domains::Tag'>Tag</a></td>
+                           <td class='docblock-short'>
+                                <p>Each tag includes the following elements.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.TransferDomainRequest.html'
+                                  title='rusoto::route53domains::TransferDomainRequest'>TransferDomainRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The TransferDomain request includes the following elements.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.TransferDomainResponse.html'
+                                  title='rusoto::route53domains::TransferDomainResponse'>TransferDomainResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The TranserDomain response includes the following element.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UpdateDomainContactPrivacyRequest.html'
+                                  title='rusoto::route53domains::UpdateDomainContactPrivacyRequest'>UpdateDomainContactPrivacyRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The UpdateDomainContactPrivacy request includes the following elements.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UpdateDomainContactPrivacyResponse.html'
+                                  title='rusoto::route53domains::UpdateDomainContactPrivacyResponse'>UpdateDomainContactPrivacyResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The UpdateDomainContactPrivacy response includes the following element.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UpdateDomainContactRequest.html'
+                                  title='rusoto::route53domains::UpdateDomainContactRequest'>UpdateDomainContactRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The UpdateDomainContact request includes the following elements.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UpdateDomainContactResponse.html'
+                                  title='rusoto::route53domains::UpdateDomainContactResponse'>UpdateDomainContactResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The UpdateDomainContact response includes the following element.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UpdateDomainNameserversRequest.html'
+                                  title='rusoto::route53domains::UpdateDomainNameserversRequest'>UpdateDomainNameserversRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The UpdateDomainNameserver request includes the following elements.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UpdateDomainNameserversResponse.html'
+                                  title='rusoto::route53domains::UpdateDomainNameserversResponse'>UpdateDomainNameserversResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The UpdateDomainNameservers response includes the following element.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UpdateTagsForDomainRequest.html'
+                                  title='rusoto::route53domains::UpdateTagsForDomainRequest'>UpdateTagsForDomainRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The UpdateTagsForDomainRequest includes the following elements.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UpdateTagsForDomainResponse.html'
+                                  title='rusoto::route53domains::UpdateTagsForDomainResponse'>UpdateTagsForDomainResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ViewBillingRequest.html'
+                                  title='rusoto::route53domains::ViewBillingRequest'>ViewBillingRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The ViewBilling request includes the following elements.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ViewBillingResponse.html'
+                                  title='rusoto::route53domains::ViewBillingResponse'>ViewBillingResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The ViewBilling response includes the following elements.</p>
+                           </td>
+                       </tr></table><h2 id='enums' class='section-header'><a href="#enums">Enums</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.CheckDomainAvailabilityError.html'
+                                  title='rusoto::route53domains::CheckDomainAvailabilityError'>CheckDomainAvailabilityError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DeleteTagsForDomainError.html'
+                                  title='rusoto::route53domains::DeleteTagsForDomainError'>DeleteTagsForDomainError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DisableDomainAutoRenewError.html'
+                                  title='rusoto::route53domains::DisableDomainAutoRenewError'>DisableDomainAutoRenewError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DisableDomainTransferLockError.html'
+                                  title='rusoto::route53domains::DisableDomainTransferLockError'>DisableDomainTransferLockError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.EnableDomainAutoRenewError.html'
+                                  title='rusoto::route53domains::EnableDomainAutoRenewError'>EnableDomainAutoRenewError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.EnableDomainTransferLockError.html'
+                                  title='rusoto::route53domains::EnableDomainTransferLockError'>EnableDomainTransferLockError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.GetContactReachabilityStatusError.html'
+                                  title='rusoto::route53domains::GetContactReachabilityStatusError'>GetContactReachabilityStatusError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.GetDomainDetailError.html'
+                                  title='rusoto::route53domains::GetDomainDetailError'>GetDomainDetailError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.GetDomainSuggestionsError.html'
+                                  title='rusoto::route53domains::GetDomainSuggestionsError'>GetDomainSuggestionsError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.GetOperationDetailError.html'
+                                  title='rusoto::route53domains::GetOperationDetailError'>GetOperationDetailError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ListDomainsError.html'
+                                  title='rusoto::route53domains::ListDomainsError'>ListDomainsError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ListOperationsError.html'
+                                  title='rusoto::route53domains::ListOperationsError'>ListOperationsError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ListTagsForDomainError.html'
+                                  title='rusoto::route53domains::ListTagsForDomainError'>ListTagsForDomainError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.RegisterDomainError.html'
+                                  title='rusoto::route53domains::RegisterDomainError'>RegisterDomainError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.RenewDomainError.html'
+                                  title='rusoto::route53domains::RenewDomainError'>RenewDomainError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ResendContactReachabilityEmailError.html'
+                                  title='rusoto::route53domains::ResendContactReachabilityEmailError'>ResendContactReachabilityEmailError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.RetrieveDomainAuthCodeError.html'
+                                  title='rusoto::route53domains::RetrieveDomainAuthCodeError'>RetrieveDomainAuthCodeError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.TransferDomainError.html'
+                                  title='rusoto::route53domains::TransferDomainError'>TransferDomainError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.UpdateDomainContactError.html'
+                                  title='rusoto::route53domains::UpdateDomainContactError'>UpdateDomainContactError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.UpdateDomainContactPrivacyError.html'
+                                  title='rusoto::route53domains::UpdateDomainContactPrivacyError'>UpdateDomainContactPrivacyError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.UpdateDomainNameserversError.html'
+                                  title='rusoto::route53domains::UpdateDomainNameserversError'>UpdateDomainNameserversError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.UpdateTagsForDomainError.html'
+                                  title='rusoto::route53domains::UpdateTagsForDomainError'>UpdateTagsForDomainError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ViewBillingError.html'
+                                  title='rusoto::route53domains::ViewBillingError'>ViewBillingError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr></table><h2 id='types' class='section-header'><a href="#types">Type Definitions</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AddressLine.html'
+                                  title='rusoto::route53domains::AddressLine'>AddressLine</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.BillingRecords.html'
+                                  title='rusoto::route53domains::BillingRecords'>BillingRecords</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Boolean.html'
+                                  title='rusoto::route53domains::Boolean'>Boolean</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.City.html'
+                                  title='rusoto::route53domains::City'>City</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ContactName.html'
+                                  title='rusoto::route53domains::ContactName'>ContactName</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ContactNumber.html'
+                                  title='rusoto::route53domains::ContactNumber'>ContactNumber</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ContactType.html'
+                                  title='rusoto::route53domains::ContactType'>ContactType</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.CountryCode.html'
+                                  title='rusoto::route53domains::CountryCode'>CountryCode</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.CurrentExpiryYear.html'
+                                  title='rusoto::route53domains::CurrentExpiryYear'>CurrentExpiryYear</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.DNSSec.html'
+                                  title='rusoto::route53domains::DNSSec'>DNSSec</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.DomainAuthCode.html'
+                                  title='rusoto::route53domains::DomainAuthCode'>DomainAuthCode</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.DomainAvailability.html'
+                                  title='rusoto::route53domains::DomainAvailability'>DomainAvailability</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.DomainName.html'
+                                  title='rusoto::route53domains::DomainName'>DomainName</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.DomainStatus.html'
+                                  title='rusoto::route53domains::DomainStatus'>DomainStatus</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.DomainStatusList.html'
+                                  title='rusoto::route53domains::DomainStatusList'>DomainStatusList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.DomainSuggestionsList.html'
+                                  title='rusoto::route53domains::DomainSuggestionsList'>DomainSuggestionsList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.DomainSummaryList.html'
+                                  title='rusoto::route53domains::DomainSummaryList'>DomainSummaryList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.DurationInYears.html'
+                                  title='rusoto::route53domains::DurationInYears'>DurationInYears</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Email.html'
+                                  title='rusoto::route53domains::Email'>Email</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ErrorMessage.html'
+                                  title='rusoto::route53domains::ErrorMessage'>ErrorMessage</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ExtraParamList.html'
+                                  title='rusoto::route53domains::ExtraParamList'>ExtraParamList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ExtraParamName.html'
+                                  title='rusoto::route53domains::ExtraParamName'>ExtraParamName</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ExtraParamValue.html'
+                                  title='rusoto::route53domains::ExtraParamValue'>ExtraParamValue</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.FIAuthKey.html'
+                                  title='rusoto::route53domains::FIAuthKey'>FIAuthKey</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.GlueIp.html'
+                                  title='rusoto::route53domains::GlueIp'>GlueIp</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.GlueIpList.html'
+                                  title='rusoto::route53domains::GlueIpList'>GlueIpList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.HostName.html'
+                                  title='rusoto::route53domains::HostName'>HostName</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Integer.html'
+                                  title='rusoto::route53domains::Integer'>Integer</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.InvoiceId.html'
+                                  title='rusoto::route53domains::InvoiceId'>InvoiceId</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.LangCode.html'
+                                  title='rusoto::route53domains::LangCode'>LangCode</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.NameserverList.html'
+                                  title='rusoto::route53domains::NameserverList'>NameserverList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.OperationId.html'
+                                  title='rusoto::route53domains::OperationId'>OperationId</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.OperationStatus.html'
+                                  title='rusoto::route53domains::OperationStatus'>OperationStatus</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.OperationSummaryList.html'
+                                  title='rusoto::route53domains::OperationSummaryList'>OperationSummaryList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.OperationType.html'
+                                  title='rusoto::route53domains::OperationType'>OperationType</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.PageMarker.html'
+                                  title='rusoto::route53domains::PageMarker'>PageMarker</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.PageMaxItems.html'
+                                  title='rusoto::route53domains::PageMaxItems'>PageMaxItems</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Price.html'
+                                  title='rusoto::route53domains::Price'>Price</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ReachabilityStatus.html'
+                                  title='rusoto::route53domains::ReachabilityStatus'>ReachabilityStatus</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.RegistrarName.html'
+                                  title='rusoto::route53domains::RegistrarName'>RegistrarName</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.RegistrarUrl.html'
+                                  title='rusoto::route53domains::RegistrarUrl'>RegistrarUrl</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.RegistrarWhoIsServer.html'
+                                  title='rusoto::route53domains::RegistrarWhoIsServer'>RegistrarWhoIsServer</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.RegistryDomainId.html'
+                                  title='rusoto::route53domains::RegistryDomainId'>RegistryDomainId</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Reseller.html'
+                                  title='rusoto::route53domains::Reseller'>Reseller</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.State.html'
+                                  title='rusoto::route53domains::State'>State</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.TagKey.html'
+                                  title='rusoto::route53domains::TagKey'>TagKey</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.TagKeyList.html'
+                                  title='rusoto::route53domains::TagKeyList'>TagKeyList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.TagList.html'
+                                  title='rusoto::route53domains::TagList'>TagList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.TagValue.html'
+                                  title='rusoto::route53domains::TagValue'>TagValue</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Timestamp.html'
+                                  title='rusoto::route53domains::Timestamp'>Timestamp</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ZipCode.html'
+                                  title='rusoto::route53domains::ZipCode'>ZipCode</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr></table></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "rusoto";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../../jquery.js"></script>
+    <script src="../../main.js"></script>
+    
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>

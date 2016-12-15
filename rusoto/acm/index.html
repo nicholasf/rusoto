@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `acm` mod in crate `rusoto`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, acm">
+
+    <title>rusoto::acm - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='../index.html'>rusoto</a></p><script>window.sidebarCurrent = {name: 'acm', ty: 'mod', relpath: '../'};</script><script defer src="../sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content mod">
+<h1 class='fqn'><span class='in-band'>Module <a href='../index.html'>rusoto</a>::<wbr><a class='mod' href=''>acm</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-716' class='srclink' href='../../src/rusoto/src/acm.rs.html#1-3' title='goto source code'>[src]</a></span></h1>
+<div class='docblock'><p>AWS Certificate Manager</p>
+</div><h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AcmClient.html'
+                                  title='rusoto::acm::AcmClient'>AcmClient</a></td>
+                           <td class='docblock-short'>
+                                <p>A client for the ACM API.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AddTagsToCertificateRequest.html'
+                                  title='rusoto::acm::AddTagsToCertificateRequest'>AddTagsToCertificateRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CertificateDetail.html'
+                                  title='rusoto::acm::CertificateDetail'>CertificateDetail</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains detailed metadata about an ACM Certificate. This structure is returned in the response to a <a>DescribeCertificate</a> request.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CertificateSummary.html'
+                                  title='rusoto::acm::CertificateSummary'>CertificateSummary</a></td>
+                           <td class='docblock-short'>
+                                <p>This structure is returned in the response object of <a>ListCertificates</a> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteCertificateRequest.html'
+                                  title='rusoto::acm::DeleteCertificateRequest'>DeleteCertificateRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeCertificateRequest.html'
+                                  title='rusoto::acm::DescribeCertificateRequest'>DescribeCertificateRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeCertificateResponse.html'
+                                  title='rusoto::acm::DescribeCertificateResponse'>DescribeCertificateResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DomainValidation.html'
+                                  title='rusoto::acm::DomainValidation'>DomainValidation</a></td>
+                           <td class='docblock-short'>
+                                <p>Structure that contains the domain name, the base validation domain to which validation email is sent, and the email addresses used to validate the domain identity.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DomainValidationOption.html'
+                                  title='rusoto::acm::DomainValidationOption'>DomainValidationOption</a></td>
+                           <td class='docblock-short'>
+                                <p>This structure is used in the request object of the <a>RequestCertificate</a> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetCertificateRequest.html'
+                                  title='rusoto::acm::GetCertificateRequest'>GetCertificateRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetCertificateResponse.html'
+                                  title='rusoto::acm::GetCertificateResponse'>GetCertificateResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListCertificatesRequest.html'
+                                  title='rusoto::acm::ListCertificatesRequest'>ListCertificatesRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListCertificatesResponse.html'
+                                  title='rusoto::acm::ListCertificatesResponse'>ListCertificatesResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListTagsForCertificateRequest.html'
+                                  title='rusoto::acm::ListTagsForCertificateRequest'>ListTagsForCertificateRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListTagsForCertificateResponse.html'
+                                  title='rusoto::acm::ListTagsForCertificateResponse'>ListTagsForCertificateResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RemoveTagsFromCertificateRequest.html'
+                                  title='rusoto::acm::RemoveTagsFromCertificateRequest'>RemoveTagsFromCertificateRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RequestCertificateRequest.html'
+                                  title='rusoto::acm::RequestCertificateRequest'>RequestCertificateRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RequestCertificateResponse.html'
+                                  title='rusoto::acm::RequestCertificateResponse'>RequestCertificateResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ResendValidationEmailRequest.html'
+                                  title='rusoto::acm::ResendValidationEmailRequest'>ResendValidationEmailRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Tag.html'
+                                  title='rusoto::acm::Tag'>Tag</a></td>
+                           <td class='docblock-short'>
+                                <p>A key-value pair that identifies or specifies metadata about an ACM resource.</p>
+                           </td>
+                       </tr></table><h2 id='enums' class='section-header'><a href="#enums">Enums</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.AddTagsToCertificateError.html'
+                                  title='rusoto::acm::AddTagsToCertificateError'>AddTagsToCertificateError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DeleteCertificateError.html'
+                                  title='rusoto::acm::DeleteCertificateError'>DeleteCertificateError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeCertificateError.html'
+                                  title='rusoto::acm::DescribeCertificateError'>DescribeCertificateError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.GetCertificateError.html'
+                                  title='rusoto::acm::GetCertificateError'>GetCertificateError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ListCertificatesError.html'
+                                  title='rusoto::acm::ListCertificatesError'>ListCertificatesError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ListTagsForCertificateError.html'
+                                  title='rusoto::acm::ListTagsForCertificateError'>ListTagsForCertificateError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.RemoveTagsFromCertificateError.html'
+                                  title='rusoto::acm::RemoveTagsFromCertificateError'>RemoveTagsFromCertificateError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.RequestCertificateError.html'
+                                  title='rusoto::acm::RequestCertificateError'>RequestCertificateError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ResendValidationEmailError.html'
+                                  title='rusoto::acm::ResendValidationEmailError'>ResendValidationEmailError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr></table><h2 id='types' class='section-header'><a href="#types">Type Definitions</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Arn.html'
+                                  title='rusoto::acm::Arn'>Arn</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.CertificateBody.html'
+                                  title='rusoto::acm::CertificateBody'>CertificateBody</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.CertificateChain.html'
+                                  title='rusoto::acm::CertificateChain'>CertificateChain</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.CertificateStatus.html'
+                                  title='rusoto::acm::CertificateStatus'>CertificateStatus</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.CertificateStatuses.html'
+                                  title='rusoto::acm::CertificateStatuses'>CertificateStatuses</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.CertificateSummaryList.html'
+                                  title='rusoto::acm::CertificateSummaryList'>CertificateSummaryList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.DomainList.html'
+                                  title='rusoto::acm::DomainList'>DomainList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.DomainNameString.html'
+                                  title='rusoto::acm::DomainNameString'>DomainNameString</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.DomainValidationList.html'
+                                  title='rusoto::acm::DomainValidationList'>DomainValidationList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.DomainValidationOptionList.html'
+                                  title='rusoto::acm::DomainValidationOptionList'>DomainValidationOptionList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.FailureReason.html'
+                                  title='rusoto::acm::FailureReason'>FailureReason</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.IdempotencyToken.html'
+                                  title='rusoto::acm::IdempotencyToken'>IdempotencyToken</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.InUseList.html'
+                                  title='rusoto::acm::InUseList'>InUseList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.KeyAlgorithm.html'
+                                  title='rusoto::acm::KeyAlgorithm'>KeyAlgorithm</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.MaxItems.html'
+                                  title='rusoto::acm::MaxItems'>MaxItems</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.NextToken.html'
+                                  title='rusoto::acm::NextToken'>NextToken</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.RevocationReason.html'
+                                  title='rusoto::acm::RevocationReason'>RevocationReason</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.TStamp.html'
+                                  title='rusoto::acm::TStamp'>TStamp</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.TagKey.html'
+                                  title='rusoto::acm::TagKey'>TagKey</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.TagList.html'
+                                  title='rusoto::acm::TagList'>TagList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.TagValue.html'
+                                  title='rusoto::acm::TagValue'>TagValue</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ValidationEmailList.html'
+                                  title='rusoto::acm::ValidationEmailList'>ValidationEmailList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr></table></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "rusoto";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../../jquery.js"></script>
+    <script src="../../main.js"></script>
+    
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `SpotFleetRequestConfigData` struct in crate `rusoto`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, SpotFleetRequestConfigData">
+
+    <title>rusoto::ec2::SpotFleetRequestConfigData - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='../index.html'>rusoto</a>::<wbr><a href='index.html'>ec2</a></p><script>window.sidebarCurrent = {name: 'SpotFleetRequestConfigData', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content struct">
+<h1 class='fqn'><span class='in-band'>Struct <a href='../index.html'>rusoto</a>::<wbr><a href='index.html'>ec2</a>::<wbr><a class='struct' href=''>SpotFleetRequestConfigData</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-152992' class='srclink' href='../../src/rusoto/home/travis/build/rusoto/rusoto/target/debug/build/rusoto-61f21223a43ed2cb/out/ec2.rs.html#49260-49308' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct SpotFleetRequestConfigData {
+    pub allocation_strategy: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/ec2/type.AllocationStrategy.html' title='rusoto::ec2::AllocationStrategy'>AllocationStrategy</a>&gt;,
+    pub client_token: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub excess_capacity_termination_policy: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/ec2/type.ExcessCapacityTerminationPolicy.html' title='rusoto::ec2::ExcessCapacityTerminationPolicy'>ExcessCapacityTerminationPolicy</a>&gt;,
+    pub fulfilled_capacity: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/ec2/type.Double.html' title='rusoto::ec2::Double'>Double</a>&gt;,
+    pub iam_fleet_role: <a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>,
+    pub launch_specifications: <a class='type' href='../../rusoto/ec2/type.LaunchSpecsList.html' title='rusoto::ec2::LaunchSpecsList'>LaunchSpecsList</a>,
+    pub spot_price: <a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>,
+    pub target_capacity: <a class='type' href='../../rusoto/ec2/type.Integer.html' title='rusoto::ec2::Integer'>Integer</a>,
+    pub terminate_instances_with_expiration: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/ec2/type.Boolean.html' title='rusoto::ec2::Boolean'>Boolean</a>&gt;,
+    pub type_: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/ec2/type.FleetType.html' title='rusoto::ec2::FleetType'>FleetType</a>&gt;,
+    pub valid_from: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/ec2/type.DateTime.html' title='rusoto::ec2::DateTime'>DateTime</a>&gt;,
+    pub valid_until: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/ec2/type.DateTime.html' title='rusoto::ec2::DateTime'>DateTime</a>&gt;,
+}</pre><div class='docblock'><p>Describes the configuration of a Spot fleet request.</p>
+</div><h2 class='fields'>Fields</h2><span id='structfield.allocation_strategy' class='structfield'>
+                           <span id='allocation_strategy.v' class='invisible'>
+                           <code>allocation_strategy: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/ec2/type.AllocationStrategy.html' title='rusoto::ec2::AllocationStrategy'>AllocationStrategy</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>Indicates how to allocate the target capacity across the Spot pools specified by the Spot fleet request. The default is <code>lowestPrice</code>.</p>
+</div><span id='structfield.client_token' class='structfield'>
+                           <span id='client_token.v' class='invisible'>
+                           <code>client_token: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>A unique, case-sensitive identifier you provide to ensure idempotency of your listings. This helps avoid duplicate listings. For more information, see <a href="http://docs.aws.amazon.com/AWSEC2/latest/APIReference/Run_Instance_Idempotency.html">Ensuring Idempotency</a>.</p>
+</div><span id='structfield.excess_capacity_termination_policy' class='structfield'>
+                           <span id='excess_capacity_termination_policy.v' class='invisible'>
+                           <code>excess_capacity_termination_policy: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/ec2/type.ExcessCapacityTerminationPolicy.html' title='rusoto::ec2::ExcessCapacityTerminationPolicy'>ExcessCapacityTerminationPolicy</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>Indicates whether running Spot instances should be terminated if the target capacity of the Spot fleet request is decreased below the current size of the Spot fleet.</p>
+</div><span id='structfield.fulfilled_capacity' class='structfield'>
+                           <span id='fulfilled_capacity.v' class='invisible'>
+                           <code>fulfilled_capacity: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/ec2/type.Double.html' title='rusoto::ec2::Double'>Double</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>The number of units fulfilled by this request compared to the set target capacity.</p>
+</div><span id='structfield.iam_fleet_role' class='structfield'>
+                           <span id='iam_fleet_role.v' class='invisible'>
+                           <code>iam_fleet_role: <a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a></code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>Grants the Spot fleet permission to terminate Spot instances on your behalf when you cancel its Spot fleet request using <a>CancelSpotFleetRequests</a> or when the Spot fleet request expires, if you set <code>terminateInstancesWithExpiration</code>.</p>
+</div><span id='structfield.launch_specifications' class='structfield'>
+                           <span id='launch_specifications.v' class='invisible'>
+                           <code>launch_specifications: <a class='type' href='../../rusoto/ec2/type.LaunchSpecsList.html' title='rusoto::ec2::LaunchSpecsList'>LaunchSpecsList</a></code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>Information about the launch specifications for the Spot fleet request.</p>
+</div><span id='structfield.spot_price' class='structfield'>
+                           <span id='spot_price.v' class='invisible'>
+                           <code>spot_price: <a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a></code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>The bid price per unit hour.</p>
+</div><span id='structfield.target_capacity' class='structfield'>
+                           <span id='target_capacity.v' class='invisible'>
+                           <code>target_capacity: <a class='type' href='../../rusoto/ec2/type.Integer.html' title='rusoto::ec2::Integer'>Integer</a></code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>The number of units to request. You can choose to set the target capacity in terms of instances or a performance characteristic that is important to your application workload, such as vCPUs, memory, or I/O.</p>
+</div><span id='structfield.terminate_instances_with_expiration' class='structfield'>
+                           <span id='terminate_instances_with_expiration.v' class='invisible'>
+                           <code>terminate_instances_with_expiration: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/ec2/type.Boolean.html' title='rusoto::ec2::Boolean'>Boolean</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>Indicates whether running Spot instances should be terminated when the Spot fleet request expires.</p>
+</div><span id='structfield.type_' class='structfield'>
+                           <span id='type_.v' class='invisible'>
+                           <code>type_: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/ec2/type.FleetType.html' title='rusoto::ec2::FleetType'>FleetType</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>The type of request. Indicates whether the fleet will only <code>request</code> the target capacity or also attempt to <code>maintain</code> it. When you <code>request</code> a certain target capacity, the fleet will only place the required bids. It will not attempt to replenish Spot instances if capacity is diminished, nor will it submit bids in alternative Spot pools if capacity is not available. When you want to <code>maintain</code> a certain target capacity, fleet will place the required bids to meet this target capacity. It will also automatically replenish any interrupted instances. Default: <code>maintain</code>. </p>
+</div><span id='structfield.valid_from' class='structfield'>
+                           <span id='valid_from.v' class='invisible'>
+                           <code>valid_from: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/ec2/type.DateTime.html' title='rusoto::ec2::DateTime'>DateTime</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>The start date and time of the request, in UTC format (for example, <i>YYYY</i>-<i>MM</i>-<i>DD</i>T<i>HH</i>:<i>MM</i>:<i>SS</i>Z). The default is to start fulfilling the request immediately.</p>
+</div><span id='structfield.valid_until' class='structfield'>
+                           <span id='valid_until.v' class='invisible'>
+                           <code>valid_until: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/ec2/type.DateTime.html' title='rusoto::ec2::DateTime'>DateTime</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>The end date and time of the request, in UTC format (for example, <i>YYYY</i>-<i>MM</i>-<i>DD</i>T<i>HH</i>:<i>MM</i>:<i>SS</i>Z). At this point, no new Spot instance requests are placed or enabled to fulfill the request.</p>
+</div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../../rusoto/ec2/struct.SpotFleetRequestConfigData.html' title='rusoto::ec2::SpotFleetRequestConfigData'>SpotFleetRequestConfigData</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-153005' class='srclink' href='../../src/rusoto/home/travis/build/rusoto/rusoto/target/debug/build/rusoto-61f21223a43ed2cb/out/ec2.rs.html#49259' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.clone' class='method'><span id='clone.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../../rusoto/ec2/struct.SpotFleetRequestConfigData.html' title='rusoto::ec2::SpotFleetRequestConfigData'>SpotFleetRequestConfigData</a></code></span></h4>
+<div class='docblock'><p>Returns a copy of the value. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone">Read more</a></p>
+</div><h4 id='method.clone_from' class='method'><span id='clone_from.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div></span></h4>
+<div class='docblock'><p>Performs copy-assignment from <code>source</code>. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../../rusoto/ec2/struct.SpotFleetRequestConfigData.html' title='rusoto::ec2::SpotFleetRequestConfigData'>SpotFleetRequestConfigData</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-153020' class='srclink' href='../../src/rusoto/home/travis/build/rusoto/rusoto/target/debug/build/rusoto-61f21223a43ed2cb/out/ec2.rs.html#49259' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.default' class='method'><span id='default.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../../rusoto/ec2/struct.SpotFleetRequestConfigData.html' title='rusoto::ec2::SpotFleetRequestConfigData'>SpotFleetRequestConfigData</a></code></span></h4>
+<div class='docblock'><p>Returns the &quot;default value&quot; for a type. <a href="https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../../rusoto/ec2/struct.SpotFleetRequestConfigData.html' title='rusoto::ec2::SpotFleetRequestConfigData'>SpotFleetRequestConfigData</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-153022' class='srclink' href='../../src/rusoto/home/travis/build/rusoto/rusoto/target/debug/build/rusoto-61f21223a43ed2cb/out/ec2.rs.html#49259' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.fmt' class='method'><span id='fmt.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#tymethod.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></span></h4>
+<div class='docblock'><p>Formats the value using the given formatter.</p>
+</div></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "rusoto";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../../jquery.js"></script>
+    <script src="../../main.js"></script>
+    
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>

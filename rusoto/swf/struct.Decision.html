@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `Decision` struct in crate `rusoto`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, Decision">
+
+    <title>rusoto::swf::Decision - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='../index.html'>rusoto</a>::<wbr><a href='index.html'>swf</a></p><script>window.sidebarCurrent = {name: 'Decision', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content struct">
+<h1 class='fqn'><span class='in-band'>Struct <a href='../index.html'>rusoto</a>::<wbr><a href='index.html'>swf</a>::<wbr><a class='struct' href=''>Decision</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-402465' class='srclink' href='../../src/rusoto/home/travis/build/rusoto/rusoto/target/debug/build/rusoto-61f21223a43ed2cb/out/swf.rs.html#10128-10182' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct Decision {
+    pub cancel_timer_decision_attributes: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../../rusoto/swf/struct.CancelTimerDecisionAttributes.html' title='rusoto::swf::CancelTimerDecisionAttributes'>CancelTimerDecisionAttributes</a>&gt;,
+    pub cancel_workflow_execution_decision_attributes: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../../rusoto/swf/struct.CancelWorkflowExecutionDecisionAttributes.html' title='rusoto::swf::CancelWorkflowExecutionDecisionAttributes'>CancelWorkflowExecutionDecisionAttributes</a>&gt;,
+    pub complete_workflow_execution_decision_attributes: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../../rusoto/swf/struct.CompleteWorkflowExecutionDecisionAttributes.html' title='rusoto::swf::CompleteWorkflowExecutionDecisionAttributes'>CompleteWorkflowExecutionDecisionAttributes</a>&gt;,
+    pub continue_as_new_workflow_execution_decision_attributes: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../../rusoto/swf/struct.ContinueAsNewWorkflowExecutionDecisionAttributes.html' title='rusoto::swf::ContinueAsNewWorkflowExecutionDecisionAttributes'>ContinueAsNewWorkflowExecutionDecisionAttributes</a>&gt;,
+    pub decision_type: <a class='type' href='../../rusoto/swf/type.DecisionType.html' title='rusoto::swf::DecisionType'>DecisionType</a>,
+    pub fail_workflow_execution_decision_attributes: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../../rusoto/swf/struct.FailWorkflowExecutionDecisionAttributes.html' title='rusoto::swf::FailWorkflowExecutionDecisionAttributes'>FailWorkflowExecutionDecisionAttributes</a>&gt;,
+    pub record_marker_decision_attributes: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../../rusoto/swf/struct.RecordMarkerDecisionAttributes.html' title='rusoto::swf::RecordMarkerDecisionAttributes'>RecordMarkerDecisionAttributes</a>&gt;,
+    pub request_cancel_activity_task_decision_attributes: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../../rusoto/swf/struct.RequestCancelActivityTaskDecisionAttributes.html' title='rusoto::swf::RequestCancelActivityTaskDecisionAttributes'>RequestCancelActivityTaskDecisionAttributes</a>&gt;,
+    pub request_cancel_external_workflow_execution_decision_attributes: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../../rusoto/swf/struct.RequestCancelExternalWorkflowExecutionDecisionAttributes.html' title='rusoto::swf::RequestCancelExternalWorkflowExecutionDecisionAttributes'>RequestCancelExternalWorkflowExecutionDecisionAttributes</a>&gt;,
+    pub schedule_activity_task_decision_attributes: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../../rusoto/swf/struct.ScheduleActivityTaskDecisionAttributes.html' title='rusoto::swf::ScheduleActivityTaskDecisionAttributes'>ScheduleActivityTaskDecisionAttributes</a>&gt;,
+    pub schedule_lambda_function_decision_attributes: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../../rusoto/swf/struct.ScheduleLambdaFunctionDecisionAttributes.html' title='rusoto::swf::ScheduleLambdaFunctionDecisionAttributes'>ScheduleLambdaFunctionDecisionAttributes</a>&gt;,
+    pub signal_external_workflow_execution_decision_attributes: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../../rusoto/swf/struct.SignalExternalWorkflowExecutionDecisionAttributes.html' title='rusoto::swf::SignalExternalWorkflowExecutionDecisionAttributes'>SignalExternalWorkflowExecutionDecisionAttributes</a>&gt;,
+    pub start_child_workflow_execution_decision_attributes: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../../rusoto/swf/struct.StartChildWorkflowExecutionDecisionAttributes.html' title='rusoto::swf::StartChildWorkflowExecutionDecisionAttributes'>StartChildWorkflowExecutionDecisionAttributes</a>&gt;,
+    pub start_timer_decision_attributes: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../../rusoto/swf/struct.StartTimerDecisionAttributes.html' title='rusoto::swf::StartTimerDecisionAttributes'>StartTimerDecisionAttributes</a>&gt;,
+}</pre><div class='docblock'><p><p>Specifies a decision made by the decider. A decision can be one of these types:</p> <ul> <li> <b>CancelTimer</b>: cancels a previously started timer and records a <code>TimerCanceled</code> event in the history.</li> <li> <b>CancelWorkflowExecution</b>: closes the workflow execution and records a <code>WorkflowExecutionCanceled</code> event in the history.</li> <li> <b>CompleteWorkflowExecution</b>: closes the workflow execution and records a <code>WorkflowExecutionCompleted</code> event in the history .</li> <li> <b>ContinueAsNewWorkflowExecution</b>: closes the workflow execution and starts a new workflow execution of the same type using the same workflow ID and a unique run ID. A <code>WorkflowExecutionContinuedAsNew</code> event is recorded in the history.</li> <li> <b>FailWorkflowExecution</b>: closes the workflow execution and records a <code>WorkflowExecutionFailed</code> event in the history.</li> <li> <b>RecordMarker</b>: records a <code>MarkerRecorded</code> event in the history. Markers can be used for adding custom information in the history for instance to let deciders know that they do not need to look at the history beyond the marker event.</li> <li> <b>RequestCancelActivityTask</b>: attempts to cancel a previously scheduled activity task. If the activity task was scheduled but has not been assigned to a worker, then it will be canceled. If the activity task was already assigned to a worker, then the worker will be informed that cancellation has been requested in the response to <a>RecordActivityTaskHeartbeat</a>.</li> <li> <b>RequestCancelExternalWorkflowExecution</b>: requests that a request be made to cancel the specified external workflow execution and records a <code>RequestCancelExternalWorkflowExecutionInitiated</code> event in the history.</li> <li> <b>ScheduleActivityTask</b>: schedules an activity task.</li> <li> <b>ScheduleLambdaFunction</b>: schedules a AWS Lambda function.</li> <li> <b>SignalExternalWorkflowExecution</b>: requests a signal to be delivered to the specified external workflow execution and records a <code>SignalExternalWorkflowExecutionInitiated</code> event in the history.</li> <li> <b>StartChildWorkflowExecution</b>: requests that a child workflow execution be started and records a <code>StartChildWorkflowExecutionInitiated</code> event in the history. The child workflow execution is a separate workflow execution with its own history.</li> <li> <b>StartTimer</b>: starts a timer for this workflow execution and records a <code>TimerStarted</code> event in the history. This timer will fire after the specified delay and record a <code>TimerFired</code> event.</li> </ul> <p><b>Access Control</b></p> <p>If you grant permission to use <code>RespondDecisionTaskCompleted</code>, you can use IAM policies to express permissions for the list of decisions returned by this action as if they were members of the API. Treating decisions as a pseudo API maintains a uniform conceptual model and helps keep policies readable. For details and example IAM policies, see <a href="http://docs.aws.amazon.com/amazonswf/latest/developerguide/swf-dev-iam.html">Using IAM to Manage Access to Amazon SWF Workflows</a>.</p> <p><b>Decision Failure</b></p> <p>Decisions can fail for several reasons</p> <ul> <li>The ordering of decisions should follow a logical flow. Some decisions might not make sense in the current context of the workflow execution and will therefore fail.</li> <li>A limit on your account was reached.</li> <li>The decision lacks sufficient permissions.</li> </ul> <p>One of the following events might be added to the history to indicate an error. The event attribute&#39;s <b>cause</b> parameter indicates the cause. If <b>cause</b> is set to OPERATION_NOT_PERMITTED, the decision failed because it lacked sufficient permissions. For details and example IAM policies, see <a href="http://docs.aws.amazon.com/amazonswf/latest/developerguide/swf-dev-iam.html">Using IAM to Manage Access to Amazon SWF Workflows</a>.</p> <ul> <li> <b>ScheduleActivityTaskFailed</b>: a ScheduleActivityTask decision failed. This could happen if the activity type specified in the decision is not registered, is in a deprecated state, or the decision is not properly configured.</li> <li> <b>ScheduleLambdaFunctionFailed</b>: a ScheduleLambdaFunctionFailed decision failed. This could happen if the AWS Lambda function specified in the decision does not exist, or the AWS Lambda service&#39;s limits are exceeded.</li> <li> <b>RequestCancelActivityTaskFailed</b>: a RequestCancelActivityTask decision failed. This could happen if there is no open activity task with the specified activityId.</li> <li> <b>StartTimerFailed</b>: a StartTimer decision failed. This could happen if there is another open timer with the same timerId.</li> <li> <b>CancelTimerFailed</b>: a CancelTimer decision failed. This could happen if there is no open timer with the specified timerId.</li> <li> <b>StartChildWorkflowExecutionFailed</b>: a StartChildWorkflowExecution decision failed. This could happen if the workflow type specified is not registered, is deprecated, or the decision is not properly configured.</li> <li> <b>SignalExternalWorkflowExecutionFailed</b>: a SignalExternalWorkflowExecution decision failed. This could happen if the <code>workflowID</code> specified in the decision was incorrect.</li> <li> <b>RequestCancelExternalWorkflowExecutionFailed</b>: a RequestCancelExternalWorkflowExecution decision failed. This could happen if the <code>workflowID</code> specified in the decision was incorrect.</li> <li> <b>CancelWorkflowExecutionFailed</b>: a CancelWorkflowExecution decision failed. This could happen if there is an unhandled decision task pending in the workflow execution.</li> <li> <b>CompleteWorkflowExecutionFailed</b>: a CompleteWorkflowExecution decision failed. This could happen if there is an unhandled decision task pending in the workflow execution.</li> <li> <b>ContinueAsNewWorkflowExecutionFailed</b>: a ContinueAsNewWorkflowExecution decision failed. This could happen if there is an unhandled decision task pending in the workflow execution or the ContinueAsNewWorkflowExecution decision was not configured correctly.</li> <li> <b>FailWorkflowExecutionFailed</b>: a FailWorkflowExecution decision failed. This could happen if there is an unhandled decision task pending in the workflow execution.</li> </ul> <p>The preceding error events might occur due to an error in the decider logic, which might put the workflow execution in an unstable state The cause field in the event structure for the error event indicates the cause of the error.</p> <note>A workflow execution may be closed by the decider by returning one of the following decisions when completing a decision task: <code>CompleteWorkflowExecution</code>, <code>FailWorkflowExecution</code>, <code>CancelWorkflowExecution</code> and <code>ContinueAsNewWorkflowExecution</code>. An UnhandledDecision fault will be returned if a workflow closing decision is specified and a signal or activity event had been added to the history while the decision task was being performed by the decider. Unlike the above situations which are logic issues, this fault is always possible because of race conditions in a distributed system. The right action here is to call <a>RespondDecisionTaskCompleted</a> without any decisions. This would result in another decision task with these new events included in the history. The decider should handle the new events and may decide to close the workflow execution.</note> <p><b>How to code a decision</b></p> <p>You code a decision by first setting the decision type field to one of the above decision values, and then set the corresponding attributes field shown below:</p> <ul> <li> <a>ScheduleActivityTaskDecisionAttributes</a> </li> <li> <a>ScheduleLambdaFunctionDecisionAttributes</a> </li> <li> <a>RequestCancelActivityTaskDecisionAttributes</a> </li> <li> <a>CompleteWorkflowExecutionDecisionAttributes</a> </li> <li> <a>FailWorkflowExecutionDecisionAttributes</a> </li> <li> <a>CancelWorkflowExecutionDecisionAttributes</a> </li> <li> <a>ContinueAsNewWorkflowExecutionDecisionAttributes</a> </li> <li> <a>RecordMarkerDecisionAttributes</a> </li> <li> <a>StartTimerDecisionAttributes</a> </li> <li> <a>CancelTimerDecisionAttributes</a> </li> <li> <a>SignalExternalWorkflowExecutionDecisionAttributes</a> </li> <li> <a>RequestCancelExternalWorkflowExecutionDecisionAttributes</a> </li> <li> <a>StartChildWorkflowExecutionDecisionAttributes</a> </li> </ul></p>
+</div><h2 class='fields'>Fields</h2><span id='structfield.cancel_timer_decision_attributes' class='structfield'>
+                           <span id='cancel_timer_decision_attributes.v' class='invisible'>
+                           <code>cancel_timer_decision_attributes: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../../rusoto/swf/struct.CancelTimerDecisionAttributes.html' title='rusoto::swf::CancelTimerDecisionAttributes'>CancelTimerDecisionAttributes</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>Provides details of the <code>CancelTimer</code> decision. It is not set for other decision types.</p>
+</div><span id='structfield.cancel_workflow_execution_decision_attributes' class='structfield'>
+                           <span id='cancel_workflow_execution_decision_attributes.v' class='invisible'>
+                           <code>cancel_workflow_execution_decision_attributes: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../../rusoto/swf/struct.CancelWorkflowExecutionDecisionAttributes.html' title='rusoto::swf::CancelWorkflowExecutionDecisionAttributes'>CancelWorkflowExecutionDecisionAttributes</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>Provides details of the <code>CancelWorkflowExecution</code> decision. It is not set for other decision types.</p>
+</div><span id='structfield.complete_workflow_execution_decision_attributes' class='structfield'>
+                           <span id='complete_workflow_execution_decision_attributes.v' class='invisible'>
+                           <code>complete_workflow_execution_decision_attributes: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../../rusoto/swf/struct.CompleteWorkflowExecutionDecisionAttributes.html' title='rusoto::swf::CompleteWorkflowExecutionDecisionAttributes'>CompleteWorkflowExecutionDecisionAttributes</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>Provides details of the <code>CompleteWorkflowExecution</code> decision. It is not set for other decision types.</p>
+</div><span id='structfield.continue_as_new_workflow_execution_decision_attributes' class='structfield'>
+                           <span id='continue_as_new_workflow_execution_decision_attributes.v' class='invisible'>
+                           <code>continue_as_new_workflow_execution_decision_attributes: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../../rusoto/swf/struct.ContinueAsNewWorkflowExecutionDecisionAttributes.html' title='rusoto::swf::ContinueAsNewWorkflowExecutionDecisionAttributes'>ContinueAsNewWorkflowExecutionDecisionAttributes</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>Provides details of the <code>ContinueAsNewWorkflowExecution</code> decision. It is not set for other decision types.</p>
+</div><span id='structfield.decision_type' class='structfield'>
+                           <span id='decision_type.v' class='invisible'>
+                           <code>decision_type: <a class='type' href='../../rusoto/swf/type.DecisionType.html' title='rusoto::swf::DecisionType'>DecisionType</a></code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>Specifies the type of the decision.</p>
+</div><span id='structfield.fail_workflow_execution_decision_attributes' class='structfield'>
+                           <span id='fail_workflow_execution_decision_attributes.v' class='invisible'>
+                           <code>fail_workflow_execution_decision_attributes: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../../rusoto/swf/struct.FailWorkflowExecutionDecisionAttributes.html' title='rusoto::swf::FailWorkflowExecutionDecisionAttributes'>FailWorkflowExecutionDecisionAttributes</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>Provides details of the <code>FailWorkflowExecution</code> decision. It is not set for other decision types.</p>
+</div><span id='structfield.record_marker_decision_attributes' class='structfield'>
+                           <span id='record_marker_decision_attributes.v' class='invisible'>
+                           <code>record_marker_decision_attributes: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../../rusoto/swf/struct.RecordMarkerDecisionAttributes.html' title='rusoto::swf::RecordMarkerDecisionAttributes'>RecordMarkerDecisionAttributes</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>Provides details of the <code>RecordMarker</code> decision. It is not set for other decision types.</p>
+</div><span id='structfield.request_cancel_activity_task_decision_attributes' class='structfield'>
+                           <span id='request_cancel_activity_task_decision_attributes.v' class='invisible'>
+                           <code>request_cancel_activity_task_decision_attributes: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../../rusoto/swf/struct.RequestCancelActivityTaskDecisionAttributes.html' title='rusoto::swf::RequestCancelActivityTaskDecisionAttributes'>RequestCancelActivityTaskDecisionAttributes</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>Provides details of the <code>RequestCancelActivityTask</code> decision. It is not set for other decision types.</p>
+</div><span id='structfield.request_cancel_external_workflow_execution_decision_attributes' class='structfield'>
+                           <span id='request_cancel_external_workflow_execution_decision_attributes.v' class='invisible'>
+                           <code>request_cancel_external_workflow_execution_decision_attributes: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../../rusoto/swf/struct.RequestCancelExternalWorkflowExecutionDecisionAttributes.html' title='rusoto::swf::RequestCancelExternalWorkflowExecutionDecisionAttributes'>RequestCancelExternalWorkflowExecutionDecisionAttributes</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>Provides details of the <code>RequestCancelExternalWorkflowExecution</code> decision. It is not set for other decision types.</p>
+</div><span id='structfield.schedule_activity_task_decision_attributes' class='structfield'>
+                           <span id='schedule_activity_task_decision_attributes.v' class='invisible'>
+                           <code>schedule_activity_task_decision_attributes: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../../rusoto/swf/struct.ScheduleActivityTaskDecisionAttributes.html' title='rusoto::swf::ScheduleActivityTaskDecisionAttributes'>ScheduleActivityTaskDecisionAttributes</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>Provides details of the <code>ScheduleActivityTask</code> decision. It is not set for other decision types.</p>
+</div><span id='structfield.schedule_lambda_function_decision_attributes' class='structfield'>
+                           <span id='schedule_lambda_function_decision_attributes.v' class='invisible'>
+                           <code>schedule_lambda_function_decision_attributes: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../../rusoto/swf/struct.ScheduleLambdaFunctionDecisionAttributes.html' title='rusoto::swf::ScheduleLambdaFunctionDecisionAttributes'>ScheduleLambdaFunctionDecisionAttributes</a>&gt;</code>
+                           </span></span><span class='stab '></span><span id='structfield.signal_external_workflow_execution_decision_attributes' class='structfield'>
+                           <span id='signal_external_workflow_execution_decision_attributes.v' class='invisible'>
+                           <code>signal_external_workflow_execution_decision_attributes: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../../rusoto/swf/struct.SignalExternalWorkflowExecutionDecisionAttributes.html' title='rusoto::swf::SignalExternalWorkflowExecutionDecisionAttributes'>SignalExternalWorkflowExecutionDecisionAttributes</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>Provides details of the <code>SignalExternalWorkflowExecution</code> decision. It is not set for other decision types.</p>
+</div><span id='structfield.start_child_workflow_execution_decision_attributes' class='structfield'>
+                           <span id='start_child_workflow_execution_decision_attributes.v' class='invisible'>
+                           <code>start_child_workflow_execution_decision_attributes: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../../rusoto/swf/struct.StartChildWorkflowExecutionDecisionAttributes.html' title='rusoto::swf::StartChildWorkflowExecutionDecisionAttributes'>StartChildWorkflowExecutionDecisionAttributes</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>Provides details of the <code>StartChildWorkflowExecution</code> decision. It is not set for other decision types.</p>
+</div><span id='structfield.start_timer_decision_attributes' class='structfield'>
+                           <span id='start_timer_decision_attributes.v' class='invisible'>
+                           <code>start_timer_decision_attributes: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../../rusoto/swf/struct.StartTimerDecisionAttributes.html' title='rusoto::swf::StartTimerDecisionAttributes'>StartTimerDecisionAttributes</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>Provides details of the <code>StartTimer</code> decision. It is not set for other decision types.</p>
+</div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../../rusoto/swf/struct.Decision.html' title='rusoto::swf::Decision'>Decision</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-402480' class='srclink' href='../../src/rusoto/home/travis/build/rusoto/rusoto/target/debug/build/rusoto-61f21223a43ed2cb/out/swf.rs.html#10127' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.clone' class='method'><span id='clone.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../../rusoto/swf/struct.Decision.html' title='rusoto::swf::Decision'>Decision</a></code></span></h4>
+<div class='docblock'><p>Returns a copy of the value. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone">Read more</a></p>
+</div><h4 id='method.clone_from' class='method'><span id='clone_from.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div></span></h4>
+<div class='docblock'><p>Performs copy-assignment from <code>source</code>. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../../rusoto/swf/struct.Decision.html' title='rusoto::swf::Decision'>Decision</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-402497' class='srclink' href='../../src/rusoto/home/travis/build/rusoto/rusoto/target/debug/build/rusoto-61f21223a43ed2cb/out/swf.rs.html#10127' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.fmt' class='method'><span id='fmt.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#tymethod.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></span></h4>
+<div class='docblock'><p>Formats the value using the given formatter.</p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../../rusoto/swf/struct.Decision.html' title='rusoto::swf::Decision'>Decision</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-402516' class='srclink' href='../../src/rusoto/home/travis/build/rusoto/rusoto/target/debug/build/rusoto-61f21223a43ed2cb/out/swf.rs.html#10127' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.default' class='method'><span id='default.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../../rusoto/swf/struct.Decision.html' title='rusoto::swf::Decision'>Decision</a></code></span></h4>
+<div class='docblock'><p>Returns the &quot;default value&quot; for a type. <a href="https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default">Read more</a></p>
+</div></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "rusoto";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../../jquery.js"></script>
+    <script src="../../main.js"></script>
+    
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>

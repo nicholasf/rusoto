@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `GenerateDataSetRequest` struct in crate `rusoto`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, GenerateDataSetRequest">
+
+    <title>rusoto::marketplacecommerceanalytics::GenerateDataSetRequest - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='../index.html'>rusoto</a>::<wbr><a href='index.html'>marketplacecommerceanalytics</a></p><script>window.sidebarCurrent = {name: 'GenerateDataSetRequest', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content struct">
+<h1 class='fqn'><span class='in-band'>Struct <a href='../index.html'>rusoto</a>::<wbr><a href='index.html'>marketplacecommerceanalytics</a>::<wbr><a class='struct' href=''>GenerateDataSetRequest</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-322419' class='srclink' href='../../src/rusoto/home/travis/build/rusoto/rusoto/target/debug/build/rusoto-61f21223a43ed2cb/out/marketplacecommerceanalytics.rs.html#97-125' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct GenerateDataSetRequest {
+    pub customer_defined_values: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/marketplacecommerceanalytics/type.CustomerDefinedValues.html' title='rusoto::marketplacecommerceanalytics::CustomerDefinedValues'>CustomerDefinedValues</a>&gt;,
+    pub data_set_publication_date: <a class='type' href='../../rusoto/marketplacecommerceanalytics/type.DataSetPublicationDate.html' title='rusoto::marketplacecommerceanalytics::DataSetPublicationDate'>DataSetPublicationDate</a>,
+    pub data_set_type: <a class='type' href='../../rusoto/marketplacecommerceanalytics/type.DataSetType.html' title='rusoto::marketplacecommerceanalytics::DataSetType'>DataSetType</a>,
+    pub destination_s3_bucket_name: <a class='type' href='../../rusoto/marketplacecommerceanalytics/type.DestinationS3BucketName.html' title='rusoto::marketplacecommerceanalytics::DestinationS3BucketName'>DestinationS3BucketName</a>,
+    pub destination_s3_prefix: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/marketplacecommerceanalytics/type.DestinationS3Prefix.html' title='rusoto::marketplacecommerceanalytics::DestinationS3Prefix'>DestinationS3Prefix</a>&gt;,
+    pub role_name_arn: <a class='type' href='../../rusoto/marketplacecommerceanalytics/type.RoleNameArn.html' title='rusoto::marketplacecommerceanalytics::RoleNameArn'>RoleNameArn</a>,
+    pub sns_topic_arn: <a class='type' href='../../rusoto/marketplacecommerceanalytics/type.SnsTopicArn.html' title='rusoto::marketplacecommerceanalytics::SnsTopicArn'>SnsTopicArn</a>,
+}</pre><div class='docblock'><p>Container for the parameters to the GenerateDataSet operation.</p>
+</div><h2 class='fields'>Fields</h2><span id='structfield.customer_defined_values' class='structfield'>
+                           <span id='customer_defined_values.v' class='invisible'>
+                           <code>customer_defined_values: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/marketplacecommerceanalytics/type.CustomerDefinedValues.html' title='rusoto::marketplacecommerceanalytics::CustomerDefinedValues'>CustomerDefinedValues</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>(Optional) Key-value pairs which will be returned, unmodified, in the Amazon SNS notification message and the data set metadata file. These key-value pairs can be used to correlated responses with tracking information from other systems.</p>
+</div><span id='structfield.data_set_publication_date' class='structfield'>
+                           <span id='data_set_publication_date.v' class='invisible'>
+                           <code>data_set_publication_date: <a class='type' href='../../rusoto/marketplacecommerceanalytics/type.DataSetPublicationDate.html' title='rusoto::marketplacecommerceanalytics::DataSetPublicationDate'>DataSetPublicationDate</a></code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>The date a data set was published. For daily data sets, provide a date with day-level granularity for the desired day. For weekly data sets, provide a date with day-level granularity within the desired week (the day value will be ignored). For monthly data sets, provide a date with month-level granularity for the desired month (the day value will be ignored).</p>
+</div><span id='structfield.data_set_type' class='structfield'>
+                           <span id='data_set_type.v' class='invisible'>
+                           <code>data_set_type: <a class='type' href='../../rusoto/marketplacecommerceanalytics/type.DataSetType.html' title='rusoto::marketplacecommerceanalytics::DataSetType'>DataSetType</a></code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>The desired data set type.</p> <p> <ul> <li><i>customer_subscriber_hourly_monthly_subscriptions</i> - Available daily by 5:00 PM Pacific Time since 2014-07-21.</li> <li><i>customer_subscriber_annual_subscriptions</i> - Available daily by 5:00 PM Pacific Time since 2014-07-21.</li> <li><i>daily_business_usage_by_instance_type</i> - Available daily by 5:00 PM Pacific Time since 2015-01-26.</li> <li><i>daily_business_fees</i> - Available daily by 5:00 PM Pacific Time since 2015-01-26.</li> <li><i>daily_business_free_trial_conversions</i> - Available daily by 5:00 PM Pacific Time since 2015-01-26.</li> <li><i>daily_business_new_instances</i> - Available daily by 5:00 PM Pacific Time since 2015-01-26.</li> <li><i>daily_business_new_product_subscribers</i> - Available daily by 5:00 PM Pacific Time since 2015-01-26.</li> <li><i>daily_business_canceled_product_subscribers</i> - Available daily by 5:00 PM Pacific Time since 2015-01-26.</li> <li><i>monthly_revenue_billing_and_revenue_data</i> - Available monthly on the 4th day of the month by 5:00 PM Pacific Time since 2015-02.</li> <li><i>monthly_revenue_annual_subscriptions</i> - Available monthly on the 4th day of the month by 5:00 PM Pacific Time since 2015-02.</li> <li><i>disbursed_amount_by_product</i> - Available every 30 days by 5:00 PM Pacific Time since 2015-01-26.</li> <li><i>disbursed_amount_by_product_with_uncollected_funds</i> -This data set is only available from 2012-04-19 until 2015-01-25. After 2015-01-25, this data set was split into three data sets: disbursed_amount_by_product, disbursed_amount_by_age_of_uncollected_funds, and disbursed_amount_by_age_of_disbursed_funds. </li> <li><i>disbursed_amount_by_customer_geo</i> - Available every 30 days by 5:00 PM Pacific Time since 2012-04-19.</li> <li><i>disbursed_amount_by_age_of_uncollected_funds</i> - Available every 30 days by 5:00 PM Pacific Time since 2015-01-26.</li> <li><i>disbursed_amount_by_age_of_disbursed_funds</i> - Available every 30 days by 5:00 PM Pacific Time since 2015-01-26.</li> <li><i>customer_profile_by_industry</i> - Available daily by 5:00 PM Pacific Time since 2015-10-01.</li> <li><i>customer_profile_by_revenue</i> - Available daily by 5:00 PM Pacific Time since 2015-10-01.</li> <li><i>customer_profile_by_geography</i> - Available daily by 5:00 PM Pacific Time since 2015-10-01.</li> </ul> </p>
+</div><span id='structfield.destination_s3_bucket_name' class='structfield'>
+                           <span id='destination_s3_bucket_name.v' class='invisible'>
+                           <code>destination_s3_bucket_name: <a class='type' href='../../rusoto/marketplacecommerceanalytics/type.DestinationS3BucketName.html' title='rusoto::marketplacecommerceanalytics::DestinationS3BucketName'>DestinationS3BucketName</a></code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>The name (friendly name, not ARN) of the destination S3 bucket.</p>
+</div><span id='structfield.destination_s3_prefix' class='structfield'>
+                           <span id='destination_s3_prefix.v' class='invisible'>
+                           <code>destination_s3_prefix: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/marketplacecommerceanalytics/type.DestinationS3Prefix.html' title='rusoto::marketplacecommerceanalytics::DestinationS3Prefix'>DestinationS3Prefix</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>(Optional) The desired S3 prefix for the published data set, similar to a directory path in standard file systems. For example, if given the bucket name &quot;mybucket&quot; and the prefix &quot;myprefix/mydatasets&quot;, the output file &quot;outputfile&quot; would be published to &quot;s3://mybucket/myprefix/mydatasets/outputfile&quot;. If the prefix directory structure does not exist, it will be created. If no prefix is provided, the data set will be published to the S3 bucket root.</p>
+</div><span id='structfield.role_name_arn' class='structfield'>
+                           <span id='role_name_arn.v' class='invisible'>
+                           <code>role_name_arn: <a class='type' href='../../rusoto/marketplacecommerceanalytics/type.RoleNameArn.html' title='rusoto::marketplacecommerceanalytics::RoleNameArn'>RoleNameArn</a></code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>The Amazon Resource Name (ARN) of the Role with an attached permissions policy to interact with the provided AWS services.</p>
+</div><span id='structfield.sns_topic_arn' class='structfield'>
+                           <span id='sns_topic_arn.v' class='invisible'>
+                           <code>sns_topic_arn: <a class='type' href='../../rusoto/marketplacecommerceanalytics/type.SnsTopicArn.html' title='rusoto::marketplacecommerceanalytics::SnsTopicArn'>SnsTopicArn</a></code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>Amazon Resource Name (ARN) for the SNS Topic that will be notified when the data set has been published or if an error has occurred.</p>
+</div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../../rusoto/marketplacecommerceanalytics/struct.GenerateDataSetRequest.html' title='rusoto::marketplacecommerceanalytics::GenerateDataSetRequest'>GenerateDataSetRequest</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-322427' class='srclink' href='../../src/rusoto/home/travis/build/rusoto/rusoto/target/debug/build/rusoto-61f21223a43ed2cb/out/marketplacecommerceanalytics.rs.html#96' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.default' class='method'><span id='default.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../../rusoto/marketplacecommerceanalytics/struct.GenerateDataSetRequest.html' title='rusoto::marketplacecommerceanalytics::GenerateDataSetRequest'>GenerateDataSetRequest</a></code></span></h4>
+<div class='docblock'><p>Returns the &quot;default value&quot; for a type. <a href="https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default">Read more</a></p>
+</div></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "rusoto";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../../jquery.js"></script>
+    <script src="../../main.js"></script>
+    
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>

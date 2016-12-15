@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `TransferDomainRequest` struct in crate `rusoto`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, TransferDomainRequest">
+
+    <title>rusoto::route53domains::TransferDomainRequest - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='../index.html'>rusoto</a>::<wbr><a href='index.html'>route53domains</a></p><script>window.sidebarCurrent = {name: 'TransferDomainRequest', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content struct">
+<h1 class='fqn'><span class='in-band'>Struct <a href='../index.html'>rusoto</a>::<wbr><a href='index.html'>route53domains</a>::<wbr><a class='struct' href=''>TransferDomainRequest</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-347231' class='srclink' href='../../src/rusoto/home/travis/build/rusoto/rusoto/target/debug/build/rusoto-61f21223a43ed2cb/out/route53domains.rs.html#6406-6454' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct TransferDomainRequest {
+    pub admin_contact: <a class='struct' href='../../rusoto/route53domains/struct.ContactDetail.html' title='rusoto::route53domains::ContactDetail'>ContactDetail</a>,
+    pub auth_code: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/route53domains/type.DomainAuthCode.html' title='rusoto::route53domains::DomainAuthCode'>DomainAuthCode</a>&gt;,
+    pub auto_renew: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/route53domains/type.Boolean.html' title='rusoto::route53domains::Boolean'>Boolean</a>&gt;,
+    pub domain_name: <a class='type' href='../../rusoto/route53domains/type.DomainName.html' title='rusoto::route53domains::DomainName'>DomainName</a>,
+    pub duration_in_years: <a class='type' href='../../rusoto/route53domains/type.DurationInYears.html' title='rusoto::route53domains::DurationInYears'>DurationInYears</a>,
+    pub idn_lang_code: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/route53domains/type.LangCode.html' title='rusoto::route53domains::LangCode'>LangCode</a>&gt;,
+    pub nameservers: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/route53domains/type.NameserverList.html' title='rusoto::route53domains::NameserverList'>NameserverList</a>&gt;,
+    pub privacy_protect_admin_contact: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/route53domains/type.Boolean.html' title='rusoto::route53domains::Boolean'>Boolean</a>&gt;,
+    pub privacy_protect_registrant_contact: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/route53domains/type.Boolean.html' title='rusoto::route53domains::Boolean'>Boolean</a>&gt;,
+    pub privacy_protect_tech_contact: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/route53domains/type.Boolean.html' title='rusoto::route53domains::Boolean'>Boolean</a>&gt;,
+    pub registrant_contact: <a class='struct' href='../../rusoto/route53domains/struct.ContactDetail.html' title='rusoto::route53domains::ContactDetail'>ContactDetail</a>,
+    pub tech_contact: <a class='struct' href='../../rusoto/route53domains/struct.ContactDetail.html' title='rusoto::route53domains::ContactDetail'>ContactDetail</a>,
+}</pre><div class='docblock'><p>The TransferDomain request includes the following elements.</p>
+</div><h2 class='fields'>Fields</h2><span id='structfield.admin_contact' class='structfield'>
+                           <span id='admin_contact.v' class='invisible'>
+                           <code>admin_contact: <a class='struct' href='../../rusoto/route53domains/struct.ContactDetail.html' title='rusoto::route53domains::ContactDetail'>ContactDetail</a></code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>Provides detailed contact information.</p> <p>Type: Complex</p> <p>Children: <code>FirstName</code>, <code>MiddleName</code>, <code>LastName</code>, <code>ContactType</code>, <code>OrganizationName</code>, <code>AddressLine1</code>, <code>AddressLine2</code>, <code>City</code>, <code>State</code>, <code>CountryCode</code>, <code>ZipCode</code>, <code>PhoneNumber</code>, <code>Email</code>, <code>Fax</code>, <code>ExtraParams</code></p> <p>Required: Yes</p>
+</div><span id='structfield.auth_code' class='structfield'>
+                           <span id='auth_code.v' class='invisible'>
+                           <code>auth_code: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/route53domains/type.DomainAuthCode.html' title='rusoto::route53domains::DomainAuthCode'>DomainAuthCode</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>The authorization code for the domain. You get this value from the current registrar.</p> <p>Type: String</p> <p>Required: Yes</p>
+</div><span id='structfield.auto_renew' class='structfield'>
+                           <span id='auto_renew.v' class='invisible'>
+                           <code>auto_renew: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/route53domains/type.Boolean.html' title='rusoto::route53domains::Boolean'>Boolean</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>Indicates whether the domain will be automatically renewed (true) or not (false). Autorenewal only takes effect after the account is charged.</p> <p>Type: Boolean</p> <p>Valid values: <code>true</code> | <code>false</code></p> <p>Default: true</p> <p>Required: No</p>
+</div><span id='structfield.domain_name' class='structfield'>
+                           <span id='domain_name.v' class='invisible'>
+                           <code>domain_name: <a class='type' href='../../rusoto/route53domains/type.DomainName.html' title='rusoto::route53domains::DomainName'>DomainName</a></code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>The name of a domain.</p> <p>Type: String</p> <p>Default: None</p> <p>Constraints: The domain name can contain only the letters a through z, the numbers 0 through 9, and hyphen (-). Internationalized Domain Names are not supported.</p> <p>Required: Yes</p>
+</div><span id='structfield.duration_in_years' class='structfield'>
+                           <span id='duration_in_years.v' class='invisible'>
+                           <code>duration_in_years: <a class='type' href='../../rusoto/route53domains/type.DurationInYears.html' title='rusoto::route53domains::DurationInYears'>DurationInYears</a></code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>The number of years the domain will be registered. Domains are registered for a minimum of one year. The maximum period depends on the top-level domain.</p> <p>Type: Integer</p> <p>Default: 1</p> <p>Valid values: Integer from 1 to 10</p> <p>Required: Yes</p>
+</div><span id='structfield.idn_lang_code' class='structfield'>
+                           <span id='idn_lang_code.v' class='invisible'>
+                           <code>idn_lang_code: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/route53domains/type.LangCode.html' title='rusoto::route53domains::LangCode'>LangCode</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>Reserved for future use.</p>
+</div><span id='structfield.nameservers' class='structfield'>
+                           <span id='nameservers.v' class='invisible'>
+                           <code>nameservers: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/route53domains/type.NameserverList.html' title='rusoto::route53domains::NameserverList'>NameserverList</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>Contains details for the host and glue IP addresses.</p> <p>Type: Complex</p> <p>Children: <code>GlueIps</code>, <code>Name</code></p> <p>Required: No</p>
+</div><span id='structfield.privacy_protect_admin_contact' class='structfield'>
+                           <span id='privacy_protect_admin_contact.v' class='invisible'>
+                           <code>privacy_protect_admin_contact: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/route53domains/type.Boolean.html' title='rusoto::route53domains::Boolean'>Boolean</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>Whether you want to conceal contact information from WHOIS queries. If you specify true, WHOIS ("who is") queries will return contact information for our registrar partner, Gandi, instead of the contact information that you enter.</p> <p>Type: Boolean</p> <p>Default: <code>true</code></p> <p>Valid values: <code>true</code> | <code>false</code></p> <p>Required: No</p>
+</div><span id='structfield.privacy_protect_registrant_contact' class='structfield'>
+                           <span id='privacy_protect_registrant_contact.v' class='invisible'>
+                           <code>privacy_protect_registrant_contact: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/route53domains/type.Boolean.html' title='rusoto::route53domains::Boolean'>Boolean</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>Whether you want to conceal contact information from WHOIS queries. If you specify true, WHOIS ("who is") queries will return contact information for our registrar partner, Gandi, instead of the contact information that you enter.</p> <p>Type: Boolean</p> <p>Default: <code>true</code></p> <p>Valid values: <code>true</code> | <code>false</code></p> <p>Required: No</p>
+</div><span id='structfield.privacy_protect_tech_contact' class='structfield'>
+                           <span id='privacy_protect_tech_contact.v' class='invisible'>
+                           <code>privacy_protect_tech_contact: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/route53domains/type.Boolean.html' title='rusoto::route53domains::Boolean'>Boolean</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>Whether you want to conceal contact information from WHOIS queries. If you specify true, WHOIS ("who is") queries will return contact information for our registrar partner, Gandi, instead of the contact information that you enter.</p> <p>Type: Boolean</p> <p>Default: <code>true</code></p> <p>Valid values: <code>true</code> | <code>false</code></p> <p>Required: No</p>
+</div><span id='structfield.registrant_contact' class='structfield'>
+                           <span id='registrant_contact.v' class='invisible'>
+                           <code>registrant_contact: <a class='struct' href='../../rusoto/route53domains/struct.ContactDetail.html' title='rusoto::route53domains::ContactDetail'>ContactDetail</a></code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>Provides detailed contact information.</p> <p>Type: Complex</p> <p>Children: <code>FirstName</code>, <code>MiddleName</code>, <code>LastName</code>, <code>ContactType</code>, <code>OrganizationName</code>, <code>AddressLine1</code>, <code>AddressLine2</code>, <code>City</code>, <code>State</code>, <code>CountryCode</code>, <code>ZipCode</code>, <code>PhoneNumber</code>, <code>Email</code>, <code>Fax</code>, <code>ExtraParams</code></p> <p>Required: Yes</p>
+</div><span id='structfield.tech_contact' class='structfield'>
+                           <span id='tech_contact.v' class='invisible'>
+                           <code>tech_contact: <a class='struct' href='../../rusoto/route53domains/struct.ContactDetail.html' title='rusoto::route53domains::ContactDetail'>ContactDetail</a></code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>Provides detailed contact information.</p> <p>Type: Complex</p> <p>Children: <code>FirstName</code>, <code>MiddleName</code>, <code>LastName</code>, <code>ContactType</code>, <code>OrganizationName</code>, <code>AddressLine1</code>, <code>AddressLine2</code>, <code>City</code>, <code>State</code>, <code>CountryCode</code>, <code>ZipCode</code>, <code>PhoneNumber</code>, <code>Email</code>, <code>Fax</code>, <code>ExtraParams</code></p> <p>Required: Yes</p>
+</div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../../rusoto/route53domains/struct.TransferDomainRequest.html' title='rusoto::route53domains::TransferDomainRequest'>TransferDomainRequest</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-347244' class='srclink' href='../../src/rusoto/home/travis/build/rusoto/rusoto/target/debug/build/rusoto-61f21223a43ed2cb/out/route53domains.rs.html#6405' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.default' class='method'><span id='default.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../../rusoto/route53domains/struct.TransferDomainRequest.html' title='rusoto::route53domains::TransferDomainRequest'>TransferDomainRequest</a></code></span></h4>
+<div class='docblock'><p>Returns the &quot;default value&quot; for a type. <a href="https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default">Read more</a></p>
+</div></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "rusoto";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../../jquery.js"></script>
+    <script src="../../main.js"></script>
+    
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>

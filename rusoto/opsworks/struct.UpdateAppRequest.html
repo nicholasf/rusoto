@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `UpdateAppRequest` struct in crate `rusoto`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, UpdateAppRequest">
+
+    <title>rusoto::opsworks::UpdateAppRequest - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='../index.html'>rusoto</a>::<wbr><a href='index.html'>opsworks</a></p><script>window.sidebarCurrent = {name: 'UpdateAppRequest', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content struct">
+<h1 class='fqn'><span class='in-band'>Struct <a href='../index.html'>rusoto</a>::<wbr><a href='index.html'>opsworks</a>::<wbr><a class='struct' href=''>UpdateAppRequest</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-335508' class='srclink' href='../../src/rusoto/home/travis/build/rusoto/rusoto/target/debug/build/rusoto-61f21223a43ed2cb/out/opsworks.rs.html#22871-22910' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct UpdateAppRequest {
+    pub app_id: <a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>,
+    pub app_source: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../../rusoto/opsworks/struct.Source.html' title='rusoto::opsworks::Source'>Source</a>&gt;,
+    pub attributes: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/opsworks/type.AppAttributes.html' title='rusoto::opsworks::AppAttributes'>AppAttributes</a>&gt;,
+    pub data_sources: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/opsworks/type.DataSources.html' title='rusoto::opsworks::DataSources'>DataSources</a>&gt;,
+    pub description: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub domains: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/opsworks/type.Strings.html' title='rusoto::opsworks::Strings'>Strings</a>&gt;,
+    pub enable_ssl: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/opsworks/type.Boolean.html' title='rusoto::opsworks::Boolean'>Boolean</a>&gt;,
+    pub environment: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/opsworks/type.EnvironmentVariables.html' title='rusoto::opsworks::EnvironmentVariables'>EnvironmentVariables</a>&gt;,
+    pub name: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub ssl_configuration: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../../rusoto/opsworks/struct.SslConfiguration.html' title='rusoto::opsworks::SslConfiguration'>SslConfiguration</a>&gt;,
+    pub type_: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/opsworks/type.AppType.html' title='rusoto::opsworks::AppType'>AppType</a>&gt;,
+}</pre><h2 class='fields'>Fields</h2><span id='structfield.app_id' class='structfield'>
+                           <span id='app_id.v' class='invisible'>
+                           <code>app_id: <a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a></code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>The app ID.</p>
+</div><span id='structfield.app_source' class='structfield'>
+                           <span id='app_source.v' class='invisible'>
+                           <code>app_source: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../../rusoto/opsworks/struct.Source.html' title='rusoto::opsworks::Source'>Source</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>A <code>Source</code> object that specifies the app repository.</p>
+</div><span id='structfield.attributes' class='structfield'>
+                           <span id='attributes.v' class='invisible'>
+                           <code>attributes: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/opsworks/type.AppAttributes.html' title='rusoto::opsworks::AppAttributes'>AppAttributes</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>One or more user-defined key/value pairs to be added to the stack attributes.</p>
+</div><span id='structfield.data_sources' class='structfield'>
+                           <span id='data_sources.v' class='invisible'>
+                           <code>data_sources: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/opsworks/type.DataSources.html' title='rusoto::opsworks::DataSources'>DataSources</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>The app's data sources.</p>
+</div><span id='structfield.description' class='structfield'>
+                           <span id='description.v' class='invisible'>
+                           <code>description: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>A description of the app.</p>
+</div><span id='structfield.domains' class='structfield'>
+                           <span id='domains.v' class='invisible'>
+                           <code>domains: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/opsworks/type.Strings.html' title='rusoto::opsworks::Strings'>Strings</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>The app's virtual host settings, with multiple domains separated by commas. For example: <code>'www.example.com, example.com'</code> </p>
+</div><span id='structfield.enable_ssl' class='structfield'>
+                           <span id='enable_ssl.v' class='invisible'>
+                           <code>enable_ssl: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/opsworks/type.Boolean.html' title='rusoto::opsworks::Boolean'>Boolean</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>Whether SSL is enabled for the app.</p>
+</div><span id='structfield.environment' class='structfield'>
+                           <span id='environment.v' class='invisible'>
+                           <code>environment: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/opsworks/type.EnvironmentVariables.html' title='rusoto::opsworks::EnvironmentVariables'>EnvironmentVariables</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p><p>An array of <code>EnvironmentVariable</code> objects that specify environment variables to be associated with the app. After you deploy the app, these variables are defined on the associated app server instances.For more information, see <a href="http://docs.aws.amazon.com/opsworks/latest/userguide/workingapps-creating.html#workingapps-creating-environment"> Environment Variables</a>.</p> <p>There is no specific limit on the number of environment variables. However, the size of the associated data structure - which includes the variables&#39; names, values, and protected flag values - cannot exceed 10 KB (10240 Bytes). This limit should accommodate most if not all use cases. Exceeding it will cause an exception with the message, &quot;Environment: is too large (maximum is 10KB).&quot;</p> <note> <p>This parameter is supported only by Chef 11.10 stacks. If you have specified one or more environment variables, you cannot modify the stack&#39;s Chef version.</p> </note></p>
+</div><span id='structfield.name' class='structfield'>
+                           <span id='name.v' class='invisible'>
+                           <code>name: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>The app name.</p>
+</div><span id='structfield.ssl_configuration' class='structfield'>
+                           <span id='ssl_configuration.v' class='invisible'>
+                           <code>ssl_configuration: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../../rusoto/opsworks/struct.SslConfiguration.html' title='rusoto::opsworks::SslConfiguration'>SslConfiguration</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>An <code>SslConfiguration</code> object with the SSL configuration.</p>
+</div><span id='structfield.type_' class='structfield'>
+                           <span id='type_.v' class='invisible'>
+                           <code>type_: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/opsworks/type.AppType.html' title='rusoto::opsworks::AppType'>AppType</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>The app type.</p>
+</div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../../rusoto/opsworks/struct.UpdateAppRequest.html' title='rusoto::opsworks::UpdateAppRequest'>UpdateAppRequest</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-335520' class='srclink' href='../../src/rusoto/home/travis/build/rusoto/rusoto/target/debug/build/rusoto-61f21223a43ed2cb/out/opsworks.rs.html#22870' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.default' class='method'><span id='default.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../../rusoto/opsworks/struct.UpdateAppRequest.html' title='rusoto::opsworks::UpdateAppRequest'>UpdateAppRequest</a></code></span></h4>
+<div class='docblock'><p>Returns the &quot;default value&quot; for a type. <a href="https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default">Read more</a></p>
+</div></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "rusoto";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../../jquery.js"></script>
+    <script src="../../main.js"></script>
+    
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>

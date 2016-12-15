@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `Run` struct in crate `rusoto`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, Run">
+
+    <title>rusoto::devicefarm::Run - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='../index.html'>rusoto</a>::<wbr><a href='index.html'>devicefarm</a></p><script>window.sidebarCurrent = {name: 'Run', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content struct">
+<h1 class='fqn'><span class='in-band'>Struct <a href='../index.html'>rusoto</a>::<wbr><a href='index.html'>devicefarm</a>::<wbr><a class='struct' href=''>Run</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-82840' class='srclink' href='../../src/rusoto/home/travis/build/rusoto/rusoto/target/debug/build/rusoto-61f21223a43ed2cb/out/devicefarm.rs.html#15056-15108' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct Run {
+    pub arn: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/devicefarm/type.AmazonResourceName.html' title='rusoto::devicefarm::AmazonResourceName'>AmazonResourceName</a>&gt;,
+    pub billing_method: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/devicefarm/type.BillingMethod.html' title='rusoto::devicefarm::BillingMethod'>BillingMethod</a>&gt;,
+    pub completed_jobs: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/devicefarm/type.Integer.html' title='rusoto::devicefarm::Integer'>Integer</a>&gt;,
+    pub counters: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../../rusoto/devicefarm/struct.Counters.html' title='rusoto::devicefarm::Counters'>Counters</a>&gt;,
+    pub created: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/devicefarm/type.DateTime.html' title='rusoto::devicefarm::DateTime'>DateTime</a>&gt;,
+    pub device_minutes: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../../rusoto/devicefarm/struct.DeviceMinutes.html' title='rusoto::devicefarm::DeviceMinutes'>DeviceMinutes</a>&gt;,
+    pub message: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/devicefarm/type.Message.html' title='rusoto::devicefarm::Message'>Message</a>&gt;,
+    pub name: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/devicefarm/type.Name.html' title='rusoto::devicefarm::Name'>Name</a>&gt;,
+    pub platform: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/devicefarm/type.DevicePlatform.html' title='rusoto::devicefarm::DevicePlatform'>DevicePlatform</a>&gt;,
+    pub result: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/devicefarm/type.ExecutionResult.html' title='rusoto::devicefarm::ExecutionResult'>ExecutionResult</a>&gt;,
+    pub started: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/devicefarm/type.DateTime.html' title='rusoto::devicefarm::DateTime'>DateTime</a>&gt;,
+    pub status: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/devicefarm/type.ExecutionStatus.html' title='rusoto::devicefarm::ExecutionStatus'>ExecutionStatus</a>&gt;,
+    pub stopped: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/devicefarm/type.DateTime.html' title='rusoto::devicefarm::DateTime'>DateTime</a>&gt;,
+    pub total_jobs: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/devicefarm/type.Integer.html' title='rusoto::devicefarm::Integer'>Integer</a>&gt;,
+    pub type_: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/devicefarm/type.TestType.html' title='rusoto::devicefarm::TestType'>TestType</a>&gt;,
+}</pre><div class='docblock'><p>Represents an app on a set of devices with a specific test and configuration.</p>
+</div><h2 class='fields'>Fields</h2><span id='structfield.arn' class='structfield'>
+                           <span id='arn.v' class='invisible'>
+                           <code>arn: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/devicefarm/type.AmazonResourceName.html' title='rusoto::devicefarm::AmazonResourceName'>AmazonResourceName</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>The run's ARN.</p>
+</div><span id='structfield.billing_method' class='structfield'>
+                           <span id='billing_method.v' class='invisible'>
+                           <code>billing_method: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/devicefarm/type.BillingMethod.html' title='rusoto::devicefarm::BillingMethod'>BillingMethod</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>Specifies the billing method for a test run: <code>metered</code> or <code>unmetered</code>. If the parameter is not specified, the default value is <code>unmetered</code>.</p>
+</div><span id='structfield.completed_jobs' class='structfield'>
+                           <span id='completed_jobs.v' class='invisible'>
+                           <code>completed_jobs: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/devicefarm/type.Integer.html' title='rusoto::devicefarm::Integer'>Integer</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>The total number of completed jobs.</p>
+</div><span id='structfield.counters' class='structfield'>
+                           <span id='counters.v' class='invisible'>
+                           <code>counters: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../../rusoto/devicefarm/struct.Counters.html' title='rusoto::devicefarm::Counters'>Counters</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>The run's result counters.</p>
+</div><span id='structfield.created' class='structfield'>
+                           <span id='created.v' class='invisible'>
+                           <code>created: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/devicefarm/type.DateTime.html' title='rusoto::devicefarm::DateTime'>DateTime</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>When the run was created.</p>
+</div><span id='structfield.device_minutes' class='structfield'>
+                           <span id='device_minutes.v' class='invisible'>
+                           <code>device_minutes: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../../rusoto/devicefarm/struct.DeviceMinutes.html' title='rusoto::devicefarm::DeviceMinutes'>DeviceMinutes</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>Represents the total (metered or unmetered) minutes used by the test run.</p>
+</div><span id='structfield.message' class='structfield'>
+                           <span id='message.v' class='invisible'>
+                           <code>message: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/devicefarm/type.Message.html' title='rusoto::devicefarm::Message'>Message</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>A message about the run's result.</p>
+</div><span id='structfield.name' class='structfield'>
+                           <span id='name.v' class='invisible'>
+                           <code>name: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/devicefarm/type.Name.html' title='rusoto::devicefarm::Name'>Name</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>The run's name.</p>
+</div><span id='structfield.platform' class='structfield'>
+                           <span id='platform.v' class='invisible'>
+                           <code>platform: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/devicefarm/type.DevicePlatform.html' title='rusoto::devicefarm::DevicePlatform'>DevicePlatform</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p><p>The run&#39;s platform.</p> <p>Allowed values include:</p> <ul> <li><p>ANDROID: The Android platform.</p></li> <li><p>IOS: The iOS platform.</p></li> </ul></p>
+</div><span id='structfield.result' class='structfield'>
+                           <span id='result.v' class='invisible'>
+                           <code>result: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/devicefarm/type.ExecutionResult.html' title='rusoto::devicefarm::ExecutionResult'>ExecutionResult</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p><p>The run&#39;s result.</p> <p>Allowed values include:</p> <ul> <li><p>PENDING: A pending condition.</p></li> <li><p>PASSED: A passing condition.</p></li> <li><p>WARNED: A warning condition.</p></li> <li><p>FAILED: A failed condition.</p></li> <li><p>SKIPPED: A skipped condition.</p></li> <li><p>ERRORED: An error condition.</p></li> <li><p>STOPPED: A stopped condition.</p></li> </ul></p>
+</div><span id='structfield.started' class='structfield'>
+                           <span id='started.v' class='invisible'>
+                           <code>started: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/devicefarm/type.DateTime.html' title='rusoto::devicefarm::DateTime'>DateTime</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>The run's start time.</p>
+</div><span id='structfield.status' class='structfield'>
+                           <span id='status.v' class='invisible'>
+                           <code>status: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/devicefarm/type.ExecutionStatus.html' title='rusoto::devicefarm::ExecutionStatus'>ExecutionStatus</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p><p>The run&#39;s status.</p> <p>Allowed values include:</p> <ul> <li><p>PENDING: A pending status.</p></li> <li><p>PENDING_CONCURRENCY: A pending concurrency status.</p></li> <li><p>PENDING_DEVICE: A pending device status.</p></li> <li><p>PROCESSING: A processing status.</p></li> <li><p>SCHEDULING: A scheduling status.</p></li> <li><p>PREPARING: A preparing status.</p></li> <li><p>RUNNING: A running status.</p></li> <li><p>COMPLETED: A completed status.</p></li> <li><p>STOPPING: A stopping status.</p></li> </ul></p>
+</div><span id='structfield.stopped' class='structfield'>
+                           <span id='stopped.v' class='invisible'>
+                           <code>stopped: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/devicefarm/type.DateTime.html' title='rusoto::devicefarm::DateTime'>DateTime</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>The run's stop time.</p>
+</div><span id='structfield.total_jobs' class='structfield'>
+                           <span id='total_jobs.v' class='invisible'>
+                           <code>total_jobs: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/devicefarm/type.Integer.html' title='rusoto::devicefarm::Integer'>Integer</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>The total number of jobs for the run.</p>
+</div><span id='structfield.type_' class='structfield'>
+                           <span id='type_.v' class='invisible'>
+                           <code>type_: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/devicefarm/type.TestType.html' title='rusoto::devicefarm::TestType'>TestType</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p><p>The run&#39;s type.</p> <p>Must be one of the following values:</p> <ul> <li><p>BUILTIN_FUZZ: The built-in fuzz type.</p></li> <li><p>BUILTIN_EXPLORER: For Android, an app explorer that will traverse an Android app, interacting with it and capturing screenshots at the same time.</p></li> <li><p>APPIUM_JAVA_JUNIT: The Appium Java JUnit type.</p></li> <li><p>APPIUM_JAVA_TESTNG: The Appium Java TestNG type.</p></li> <li><p>APPIUM_PYTHON: The Appium Python type.</p></li> <li><p>APPIUM_WEB_JAVA_JUNIT: The Appium Java JUnit type for Web apps.</p></li> <li><p>APPIUM_WEB_JAVA_TESTNG: The Appium Java TestNG type for Web apps.</p></li> <li><p>APPIUM_WEB_PYTHON: The Appium Python type for Web apps.</p></li> <li><p>CALABASH: The Calabash type.</p></li> <li><p>INSTRUMENTATION: The Instrumentation type.</p></li> <li><p>UIAUTOMATION: The uiautomation type.</p></li> <li><p>UIAUTOMATOR: The uiautomator type.</p></li> <li><p>XCTEST: The XCode test type.</p></li> <li><p>XCTEST_UI: The XCode UI test type.</p></li> </ul></p>
+</div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../../rusoto/devicefarm/struct.Run.html' title='rusoto::devicefarm::Run'>Run</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-82856' class='srclink' href='../../src/rusoto/home/travis/build/rusoto/rusoto/target/debug/build/rusoto-61f21223a43ed2cb/out/devicefarm.rs.html#15055' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.clone' class='method'><span id='clone.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../../rusoto/devicefarm/struct.Run.html' title='rusoto::devicefarm::Run'>Run</a></code></span></h4>
+<div class='docblock'><p>Returns a copy of the value. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone">Read more</a></p>
+</div><h4 id='method.clone_from' class='method'><span id='clone_from.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div></span></h4>
+<div class='docblock'><p>Performs copy-assignment from <code>source</code>. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../../rusoto/devicefarm/struct.Run.html' title='rusoto::devicefarm::Run'>Run</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-82874' class='srclink' href='../../src/rusoto/home/travis/build/rusoto/rusoto/target/debug/build/rusoto-61f21223a43ed2cb/out/devicefarm.rs.html#15055' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.fmt' class='method'><span id='fmt.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#tymethod.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></span></h4>
+<div class='docblock'><p>Formats the value using the given formatter.</p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../../rusoto/devicefarm/struct.Run.html' title='rusoto::devicefarm::Run'>Run</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-82894' class='srclink' href='../../src/rusoto/home/travis/build/rusoto/rusoto/target/debug/build/rusoto-61f21223a43ed2cb/out/devicefarm.rs.html#15055' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.default' class='method'><span id='default.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../../rusoto/devicefarm/struct.Run.html' title='rusoto::devicefarm::Run'>Run</a></code></span></h4>
+<div class='docblock'><p>Returns the &quot;default value&quot; for a type. <a href="https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default">Read more</a></p>
+</div></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "rusoto";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../../jquery.js"></script>
+    <script src="../../main.js"></script>
+    
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>

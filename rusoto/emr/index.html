@@ -1,0 +1,1245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `emr` mod in crate `rusoto`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, emr">
+
+    <title>rusoto::emr - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='../index.html'>rusoto</a></p><script>window.sidebarCurrent = {name: 'emr', ty: 'mod', relpath: '../'};</script><script defer src="../sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content mod">
+<h1 class='fqn'><span class='in-band'>Module <a href='../index.html'>rusoto</a>::<wbr><a class='mod' href=''>emr</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-193474' class='srclink' href='../../src/rusoto/src/emr.rs.html#1-3' title='goto source code'>[src]</a></span></h1>
+<div class='docblock'><p>Amazon Elastic MapReduce</p>
+</div><h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AddInstanceGroupsInput.html'
+                                  title='rusoto::emr::AddInstanceGroupsInput'>AddInstanceGroupsInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Input to an AddInstanceGroups call.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AddInstanceGroupsOutput.html'
+                                  title='rusoto::emr::AddInstanceGroupsOutput'>AddInstanceGroupsOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>Output from an AddInstanceGroups call.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AddJobFlowStepsInput.html'
+                                  title='rusoto::emr::AddJobFlowStepsInput'>AddJobFlowStepsInput</a></td>
+                           <td class='docblock-short'>
+                                <p> The input argument to the <a>AddJobFlowSteps</a> operation. </p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AddJobFlowStepsOutput.html'
+                                  title='rusoto::emr::AddJobFlowStepsOutput'>AddJobFlowStepsOutput</a></td>
+                           <td class='docblock-short'>
+                                <p> The output for the <a>AddJobFlowSteps</a> operation. </p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AddTagsInput.html'
+                                  title='rusoto::emr::AddTagsInput'>AddTagsInput</a></td>
+                           <td class='docblock-short'>
+                                <p>This input identifies a cluster and a list of tags to attach.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AddTagsOutput.html'
+                                  title='rusoto::emr::AddTagsOutput'>AddTagsOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>This output indicates the result of adding tags to a resource.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Application.html'
+                                  title='rusoto::emr::Application'>Application</a></td>
+                           <td class='docblock-short'>
+                                <p><p>An application is any Amazon or third-party software that you can add to the cluster. This structure contains a list of strings that indicates the software to use with the cluster and accepts a user argument list. Amazon EMR accepts and forwards the argument list to the corresponding installation script as bootstrap action argument. For more information, see <a href="http://docs.aws.amazon.com/ElasticMapReduce/latest/DeveloperGuide/emr-mapr.html">Launch a Job Flow on the MapR Distribution for Hadoop</a>. Currently supported values are:</p> <ul> <li> <p>&quot;mapr-m3&quot; - launch the job flow using MapR M3 Edition.</p> </li> <li> <p>&quot;mapr-m5&quot; - launch the job flow using MapR M5 Edition.</p> </li> <li> <p>&quot;mapr&quot; with the user arguments specifying &quot;--edition,m3&quot; or &quot;--edition,m5&quot; - launch the job flow using MapR M3 or M5 Edition, respectively.</p> </li> </ul> <note> <p>In Amazon EMR releases 4.0 and greater, the only accepted parameter is the application name. To pass arguments to applications, you supply a configuration for each application.</p> </note></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.BootstrapActionConfig.html'
+                                  title='rusoto::emr::BootstrapActionConfig'>BootstrapActionConfig</a></td>
+                           <td class='docblock-short'>
+                                <p>Configuration of a bootstrap action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.BootstrapActionDetail.html'
+                                  title='rusoto::emr::BootstrapActionDetail'>BootstrapActionDetail</a></td>
+                           <td class='docblock-short'>
+                                <p>Reports the configuration of a bootstrap action in a job flow.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Cluster.html'
+                                  title='rusoto::emr::Cluster'>Cluster</a></td>
+                           <td class='docblock-short'>
+                                <p>The detailed description of the cluster.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ClusterStateChangeReason.html'
+                                  title='rusoto::emr::ClusterStateChangeReason'>ClusterStateChangeReason</a></td>
+                           <td class='docblock-short'>
+                                <p>The reason that the cluster changed to its current state.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ClusterStatus.html'
+                                  title='rusoto::emr::ClusterStatus'>ClusterStatus</a></td>
+                           <td class='docblock-short'>
+                                <p>The detailed status of the cluster.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ClusterSummary.html'
+                                  title='rusoto::emr::ClusterSummary'>ClusterSummary</a></td>
+                           <td class='docblock-short'>
+                                <p>The summary description of the cluster.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ClusterTimeline.html'
+                                  title='rusoto::emr::ClusterTimeline'>ClusterTimeline</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the timeline of the cluster's lifecycle.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Command.html'
+                                  title='rusoto::emr::Command'>Command</a></td>
+                           <td class='docblock-short'>
+                                <p>An entity describing an executable that runs on a cluster.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Configuration.html'
+                                  title='rusoto::emr::Configuration'>Configuration</a></td>
+                           <td class='docblock-short'>
+                                <p><note> <p>Amazon EMR releases 4.x or later.</p> </note> <p>Specifies a hardware and software configuration of the EMR cluster. This includes configurations for applications and software bundled with Amazon EMR. The Configuration object is a JSON object which is defined by a classification and a set of properties. Configurations can be nested, so a configuration may have its own Configuration objects listed.</p></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeClusterInput.html'
+                                  title='rusoto::emr::DescribeClusterInput'>DescribeClusterInput</a></td>
+                           <td class='docblock-short'>
+                                <p>This input determines which cluster to describe.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeClusterOutput.html'
+                                  title='rusoto::emr::DescribeClusterOutput'>DescribeClusterOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>This output contains the description of the cluster.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeJobFlowsInput.html'
+                                  title='rusoto::emr::DescribeJobFlowsInput'>DescribeJobFlowsInput</a></td>
+                           <td class='docblock-short'>
+                                <p> The input for the <a>DescribeJobFlows</a> operation. </p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeJobFlowsOutput.html'
+                                  title='rusoto::emr::DescribeJobFlowsOutput'>DescribeJobFlowsOutput</a></td>
+                           <td class='docblock-short'>
+                                <p> The output for the <a>DescribeJobFlows</a> operation. </p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeStepInput.html'
+                                  title='rusoto::emr::DescribeStepInput'>DescribeStepInput</a></td>
+                           <td class='docblock-short'>
+                                <p>This input determines which step to describe.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeStepOutput.html'
+                                  title='rusoto::emr::DescribeStepOutput'>DescribeStepOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>This output contains the description of the cluster step.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.EbsBlockDevice.html'
+                                  title='rusoto::emr::EbsBlockDevice'>EbsBlockDevice</a></td>
+                           <td class='docblock-short'>
+                                <p>Configuration of requested EBS block device associated with the instance group.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.EbsBlockDeviceConfig.html'
+                                  title='rusoto::emr::EbsBlockDeviceConfig'>EbsBlockDeviceConfig</a></td>
+                           <td class='docblock-short'>
+                                <p>Configuration of requested EBS block device associated with the instance group with count of volumes that will be associated to every instance.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.EbsConfiguration.html'
+                                  title='rusoto::emr::EbsConfiguration'>EbsConfiguration</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.EbsVolume.html'
+                                  title='rusoto::emr::EbsVolume'>EbsVolume</a></td>
+                           <td class='docblock-short'>
+                                <p>EBS block device that's attached to an EC2 instance.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Ec2InstanceAttributes.html'
+                                  title='rusoto::emr::Ec2InstanceAttributes'>Ec2InstanceAttributes</a></td>
+                           <td class='docblock-short'>
+                                <p>Provides information about the EC2 instances in a cluster grouped by category. For example, key name, subnet ID, IAM instance profile, and so on.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.EmrClient.html'
+                                  title='rusoto::emr::EmrClient'>EmrClient</a></td>
+                           <td class='docblock-short'>
+                                <p>A client for the Amazon EMR API.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.FailureDetails.html'
+                                  title='rusoto::emr::FailureDetails'>FailureDetails</a></td>
+                           <td class='docblock-short'>
+                                <p>The details of the step failure. The service attempts to detect the root cause for many common failures.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.HadoopJarStepConfig.html'
+                                  title='rusoto::emr::HadoopJarStepConfig'>HadoopJarStepConfig</a></td>
+                           <td class='docblock-short'>
+                                <p>A job flow step consisting of a JAR file whose main function will be executed. The main function submits a job for Hadoop to execute and waits for the job to finish or fail.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.HadoopStepConfig.html'
+                                  title='rusoto::emr::HadoopStepConfig'>HadoopStepConfig</a></td>
+                           <td class='docblock-short'>
+                                <p>A cluster step consisting of a JAR file whose main function will be executed. The main function submits a job for Hadoop to execute and waits for the job to finish or fail.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Instance.html'
+                                  title='rusoto::emr::Instance'>Instance</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents an EC2 instance provisioned as part of cluster.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.InstanceGroup.html'
+                                  title='rusoto::emr::InstanceGroup'>InstanceGroup</a></td>
+                           <td class='docblock-short'>
+                                <p>This entity represents an instance group, which is a group of instances that have common purpose. For example, CORE instance group is used for HDFS.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.InstanceGroupConfig.html'
+                                  title='rusoto::emr::InstanceGroupConfig'>InstanceGroupConfig</a></td>
+                           <td class='docblock-short'>
+                                <p>Configuration defining a new instance group.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.InstanceGroupDetail.html'
+                                  title='rusoto::emr::InstanceGroupDetail'>InstanceGroupDetail</a></td>
+                           <td class='docblock-short'>
+                                <p>Detailed information about an instance group.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.InstanceGroupModifyConfig.html'
+                                  title='rusoto::emr::InstanceGroupModifyConfig'>InstanceGroupModifyConfig</a></td>
+                           <td class='docblock-short'>
+                                <p>Modify an instance group size.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.InstanceGroupStateChangeReason.html'
+                                  title='rusoto::emr::InstanceGroupStateChangeReason'>InstanceGroupStateChangeReason</a></td>
+                           <td class='docblock-short'>
+                                <p>The status change reason details for the instance group.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.InstanceGroupStatus.html'
+                                  title='rusoto::emr::InstanceGroupStatus'>InstanceGroupStatus</a></td>
+                           <td class='docblock-short'>
+                                <p>The details of the instance group status.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.InstanceGroupTimeline.html'
+                                  title='rusoto::emr::InstanceGroupTimeline'>InstanceGroupTimeline</a></td>
+                           <td class='docblock-short'>
+                                <p>The timeline of the instance group lifecycle.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.InstanceResizePolicy.html'
+                                  title='rusoto::emr::InstanceResizePolicy'>InstanceResizePolicy</a></td>
+                           <td class='docblock-short'>
+                                <p>Custom policy for requesting termination protection or termination of specific instances when shrinking an instance group.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.InstanceStateChangeReason.html'
+                                  title='rusoto::emr::InstanceStateChangeReason'>InstanceStateChangeReason</a></td>
+                           <td class='docblock-short'>
+                                <p>The details of the status change reason for the instance.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.InstanceStatus.html'
+                                  title='rusoto::emr::InstanceStatus'>InstanceStatus</a></td>
+                           <td class='docblock-short'>
+                                <p>The instance status details.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.InstanceTimeline.html'
+                                  title='rusoto::emr::InstanceTimeline'>InstanceTimeline</a></td>
+                           <td class='docblock-short'>
+                                <p>The timeline of the instance lifecycle.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.JobFlowDetail.html'
+                                  title='rusoto::emr::JobFlowDetail'>JobFlowDetail</a></td>
+                           <td class='docblock-short'>
+                                <p>A description of a job flow.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.JobFlowExecutionStatusDetail.html'
+                                  title='rusoto::emr::JobFlowExecutionStatusDetail'>JobFlowExecutionStatusDetail</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes the status of the job flow.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.JobFlowInstancesConfig.html'
+                                  title='rusoto::emr::JobFlowInstancesConfig'>JobFlowInstancesConfig</a></td>
+                           <td class='docblock-short'>
+                                <p>A description of the Amazon EC2 instance running the job flow. A valid JobFlowInstancesConfig must contain at least InstanceGroups, which is the recommended configuration. However, a valid alternative is to have MasterInstanceType, SlaveInstanceType, and InstanceCount (all three must be present).</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.JobFlowInstancesDetail.html'
+                                  title='rusoto::emr::JobFlowInstancesDetail'>JobFlowInstancesDetail</a></td>
+                           <td class='docblock-short'>
+                                <p>Specify the type of Amazon EC2 instances to run the job flow on.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.KeyValue.html'
+                                  title='rusoto::emr::KeyValue'>KeyValue</a></td>
+                           <td class='docblock-short'>
+                                <p>A key value pair.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListBootstrapActionsInput.html'
+                                  title='rusoto::emr::ListBootstrapActionsInput'>ListBootstrapActionsInput</a></td>
+                           <td class='docblock-short'>
+                                <p>This input determines which bootstrap actions to retrieve.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListBootstrapActionsOutput.html'
+                                  title='rusoto::emr::ListBootstrapActionsOutput'>ListBootstrapActionsOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>This output contains the boostrap actions detail .</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListClustersInput.html'
+                                  title='rusoto::emr::ListClustersInput'>ListClustersInput</a></td>
+                           <td class='docblock-short'>
+                                <p>This input determines how the ListClusters action filters the list of clusters that it returns.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListClustersOutput.html'
+                                  title='rusoto::emr::ListClustersOutput'>ListClustersOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>This contains a ClusterSummaryList with the cluster details; for example, the cluster IDs, names, and status.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListInstanceGroupsInput.html'
+                                  title='rusoto::emr::ListInstanceGroupsInput'>ListInstanceGroupsInput</a></td>
+                           <td class='docblock-short'>
+                                <p>This input determines which instance groups to retrieve.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListInstanceGroupsOutput.html'
+                                  title='rusoto::emr::ListInstanceGroupsOutput'>ListInstanceGroupsOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>This input determines which instance groups to retrieve.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListInstancesInput.html'
+                                  title='rusoto::emr::ListInstancesInput'>ListInstancesInput</a></td>
+                           <td class='docblock-short'>
+                                <p>This input determines which instances to list.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListInstancesOutput.html'
+                                  title='rusoto::emr::ListInstancesOutput'>ListInstancesOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>This output contains the list of instances.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListStepsInput.html'
+                                  title='rusoto::emr::ListStepsInput'>ListStepsInput</a></td>
+                           <td class='docblock-short'>
+                                <p>This input determines which steps to list.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListStepsOutput.html'
+                                  title='rusoto::emr::ListStepsOutput'>ListStepsOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>This output contains the list of steps returned in reverse order. This means that the last step is the first element in the list.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ModifyInstanceGroupsInput.html'
+                                  title='rusoto::emr::ModifyInstanceGroupsInput'>ModifyInstanceGroupsInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Change the size of some instance groups.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.PlacementType.html'
+                                  title='rusoto::emr::PlacementType'>PlacementType</a></td>
+                           <td class='docblock-short'>
+                                <p>The Amazon EC2 location for the job flow.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RemoveTagsInput.html'
+                                  title='rusoto::emr::RemoveTagsInput'>RemoveTagsInput</a></td>
+                           <td class='docblock-short'>
+                                <p>This input identifies a cluster and a list of tags to remove.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RemoveTagsOutput.html'
+                                  title='rusoto::emr::RemoveTagsOutput'>RemoveTagsOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>This output indicates the result of removing tags from a resource.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RunJobFlowInput.html'
+                                  title='rusoto::emr::RunJobFlowInput'>RunJobFlowInput</a></td>
+                           <td class='docblock-short'>
+                                <p> Input to the <a>RunJobFlow</a> operation. </p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RunJobFlowOutput.html'
+                                  title='rusoto::emr::RunJobFlowOutput'>RunJobFlowOutput</a></td>
+                           <td class='docblock-short'>
+                                <p> The result of the <a>RunJobFlow</a> operation. </p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ScriptBootstrapActionConfig.html'
+                                  title='rusoto::emr::ScriptBootstrapActionConfig'>ScriptBootstrapActionConfig</a></td>
+                           <td class='docblock-short'>
+                                <p>Configuration of the script to run during a bootstrap action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SetTerminationProtectionInput.html'
+                                  title='rusoto::emr::SetTerminationProtectionInput'>SetTerminationProtectionInput</a></td>
+                           <td class='docblock-short'>
+                                <p> The input argument to the <a>TerminationProtection</a> operation. </p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SetVisibleToAllUsersInput.html'
+                                  title='rusoto::emr::SetVisibleToAllUsersInput'>SetVisibleToAllUsersInput</a></td>
+                           <td class='docblock-short'>
+                                <p>The input to the SetVisibleToAllUsers action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ShrinkPolicy.html'
+                                  title='rusoto::emr::ShrinkPolicy'>ShrinkPolicy</a></td>
+                           <td class='docblock-short'>
+                                <p>Policy for customizing shrink operations. Allows configuration of decommissioning timeout and targeted instance shrinking.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Step.html'
+                                  title='rusoto::emr::Step'>Step</a></td>
+                           <td class='docblock-short'>
+                                <p>This represents a step in a cluster.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.StepConfig.html'
+                                  title='rusoto::emr::StepConfig'>StepConfig</a></td>
+                           <td class='docblock-short'>
+                                <p>Specification of a job flow step.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.StepDetail.html'
+                                  title='rusoto::emr::StepDetail'>StepDetail</a></td>
+                           <td class='docblock-short'>
+                                <p>Combines the execution state and configuration of a step.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.StepExecutionStatusDetail.html'
+                                  title='rusoto::emr::StepExecutionStatusDetail'>StepExecutionStatusDetail</a></td>
+                           <td class='docblock-short'>
+                                <p>The execution state of a step.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.StepStateChangeReason.html'
+                                  title='rusoto::emr::StepStateChangeReason'>StepStateChangeReason</a></td>
+                           <td class='docblock-short'>
+                                <p>The details of the step state change reason.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.StepStatus.html'
+                                  title='rusoto::emr::StepStatus'>StepStatus</a></td>
+                           <td class='docblock-short'>
+                                <p>The execution status details of the cluster step.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.StepSummary.html'
+                                  title='rusoto::emr::StepSummary'>StepSummary</a></td>
+                           <td class='docblock-short'>
+                                <p>The summary of the cluster step.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.StepTimeline.html'
+                                  title='rusoto::emr::StepTimeline'>StepTimeline</a></td>
+                           <td class='docblock-short'>
+                                <p>The timeline of the cluster step lifecycle.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SupportedProductConfig.html'
+                                  title='rusoto::emr::SupportedProductConfig'>SupportedProductConfig</a></td>
+                           <td class='docblock-short'>
+                                <p>The list of supported product configurations which allow user-supplied arguments. EMR accepts these arguments and forwards them to the corresponding installation script as bootstrap action arguments.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Tag.html'
+                                  title='rusoto::emr::Tag'>Tag</a></td>
+                           <td class='docblock-short'>
+                                <p>A key/value pair containing user-defined metadata that you can associate with an Amazon EMR resource. Tags make it easier to associate clusters in various ways, such as grouping clu\ sters to track your Amazon EMR resource allocation costs. For more information, see <a href="http://docs.aws.amazon.com/ElasticMapReduce/latest/DeveloperGuide/emr-plan-tags.html">Tagging Amazon EMR Resources</a>. </p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.TerminateJobFlowsInput.html'
+                                  title='rusoto::emr::TerminateJobFlowsInput'>TerminateJobFlowsInput</a></td>
+                           <td class='docblock-short'>
+                                <p> Input to the <a>TerminateJobFlows</a> operation. </p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.VolumeSpecification.html'
+                                  title='rusoto::emr::VolumeSpecification'>VolumeSpecification</a></td>
+                           <td class='docblock-short'>
+                                <p>EBS volume specifications such as volume type, IOPS, and size(GiB) that will be requested for the EBS volume attached to an EC2 instance in the cluster.</p>
+                           </td>
+                       </tr></table><h2 id='enums' class='section-header'><a href="#enums">Enums</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.AddInstanceGroupsError.html'
+                                  title='rusoto::emr::AddInstanceGroupsError'>AddInstanceGroupsError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.AddJobFlowStepsError.html'
+                                  title='rusoto::emr::AddJobFlowStepsError'>AddJobFlowStepsError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.AddTagsError.html'
+                                  title='rusoto::emr::AddTagsError'>AddTagsError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeClusterError.html'
+                                  title='rusoto::emr::DescribeClusterError'>DescribeClusterError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeJobFlowsError.html'
+                                  title='rusoto::emr::DescribeJobFlowsError'>DescribeJobFlowsError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeStepError.html'
+                                  title='rusoto::emr::DescribeStepError'>DescribeStepError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ListBootstrapActionsError.html'
+                                  title='rusoto::emr::ListBootstrapActionsError'>ListBootstrapActionsError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ListClustersError.html'
+                                  title='rusoto::emr::ListClustersError'>ListClustersError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ListInstanceGroupsError.html'
+                                  title='rusoto::emr::ListInstanceGroupsError'>ListInstanceGroupsError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ListInstancesError.html'
+                                  title='rusoto::emr::ListInstancesError'>ListInstancesError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ListStepsError.html'
+                                  title='rusoto::emr::ListStepsError'>ListStepsError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ModifyInstanceGroupsError.html'
+                                  title='rusoto::emr::ModifyInstanceGroupsError'>ModifyInstanceGroupsError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.RemoveTagsError.html'
+                                  title='rusoto::emr::RemoveTagsError'>RemoveTagsError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.RunJobFlowError.html'
+                                  title='rusoto::emr::RunJobFlowError'>RunJobFlowError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.SetTerminationProtectionError.html'
+                                  title='rusoto::emr::SetTerminationProtectionError'>SetTerminationProtectionError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.SetVisibleToAllUsersError.html'
+                                  title='rusoto::emr::SetVisibleToAllUsersError'>SetVisibleToAllUsersError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.TerminateJobFlowsError.html'
+                                  title='rusoto::emr::TerminateJobFlowsError'>TerminateJobFlowsError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr></table><h2 id='types' class='section-header'><a href="#types">Type Definitions</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ActionOnFailure.html'
+                                  title='rusoto::emr::ActionOnFailure'>ActionOnFailure</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ApplicationList.html'
+                                  title='rusoto::emr::ApplicationList'>ApplicationList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Boolean.html'
+                                  title='rusoto::emr::Boolean'>Boolean</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.BooleanObject.html'
+                                  title='rusoto::emr::BooleanObject'>BooleanObject</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.BootstrapActionConfigList.html'
+                                  title='rusoto::emr::BootstrapActionConfigList'>BootstrapActionConfigList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.BootstrapActionDetailList.html'
+                                  title='rusoto::emr::BootstrapActionDetailList'>BootstrapActionDetailList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ClusterId.html'
+                                  title='rusoto::emr::ClusterId'>ClusterId</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ClusterState.html'
+                                  title='rusoto::emr::ClusterState'>ClusterState</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ClusterStateChangeReasonCode.html'
+                                  title='rusoto::emr::ClusterStateChangeReasonCode'>ClusterStateChangeReasonCode</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ClusterStateList.html'
+                                  title='rusoto::emr::ClusterStateList'>ClusterStateList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ClusterSummaryList.html'
+                                  title='rusoto::emr::ClusterSummaryList'>ClusterSummaryList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.CommandList.html'
+                                  title='rusoto::emr::CommandList'>CommandList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ConfigurationList.html'
+                                  title='rusoto::emr::ConfigurationList'>ConfigurationList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Date.html'
+                                  title='rusoto::emr::Date'>Date</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.EC2InstanceIdsList.html'
+                                  title='rusoto::emr::EC2InstanceIdsList'>EC2InstanceIdsList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.EC2InstanceIdsToTerminateList.html'
+                                  title='rusoto::emr::EC2InstanceIdsToTerminateList'>EC2InstanceIdsToTerminateList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.EbsBlockDeviceConfigList.html'
+                                  title='rusoto::emr::EbsBlockDeviceConfigList'>EbsBlockDeviceConfigList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.EbsBlockDeviceList.html'
+                                  title='rusoto::emr::EbsBlockDeviceList'>EbsBlockDeviceList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.EbsVolumeList.html'
+                                  title='rusoto::emr::EbsVolumeList'>EbsVolumeList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ErrorCode.html'
+                                  title='rusoto::emr::ErrorCode'>ErrorCode</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ErrorMessage.html'
+                                  title='rusoto::emr::ErrorMessage'>ErrorMessage</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.InstanceGroupConfigList.html'
+                                  title='rusoto::emr::InstanceGroupConfigList'>InstanceGroupConfigList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.InstanceGroupDetailList.html'
+                                  title='rusoto::emr::InstanceGroupDetailList'>InstanceGroupDetailList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.InstanceGroupId.html'
+                                  title='rusoto::emr::InstanceGroupId'>InstanceGroupId</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.InstanceGroupIdsList.html'
+                                  title='rusoto::emr::InstanceGroupIdsList'>InstanceGroupIdsList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.InstanceGroupList.html'
+                                  title='rusoto::emr::InstanceGroupList'>InstanceGroupList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.InstanceGroupModifyConfigList.html'
+                                  title='rusoto::emr::InstanceGroupModifyConfigList'>InstanceGroupModifyConfigList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.InstanceGroupState.html'
+                                  title='rusoto::emr::InstanceGroupState'>InstanceGroupState</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.InstanceGroupStateChangeReasonCode.html'
+                                  title='rusoto::emr::InstanceGroupStateChangeReasonCode'>InstanceGroupStateChangeReasonCode</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.InstanceGroupType.html'
+                                  title='rusoto::emr::InstanceGroupType'>InstanceGroupType</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.InstanceGroupTypeList.html'
+                                  title='rusoto::emr::InstanceGroupTypeList'>InstanceGroupTypeList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.InstanceId.html'
+                                  title='rusoto::emr::InstanceId'>InstanceId</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.InstanceList.html'
+                                  title='rusoto::emr::InstanceList'>InstanceList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.InstanceRoleType.html'
+                                  title='rusoto::emr::InstanceRoleType'>InstanceRoleType</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.InstanceState.html'
+                                  title='rusoto::emr::InstanceState'>InstanceState</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.InstanceStateChangeReasonCode.html'
+                                  title='rusoto::emr::InstanceStateChangeReasonCode'>InstanceStateChangeReasonCode</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.InstanceStateList.html'
+                                  title='rusoto::emr::InstanceStateList'>InstanceStateList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.InstanceType.html'
+                                  title='rusoto::emr::InstanceType'>InstanceType</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Integer.html'
+                                  title='rusoto::emr::Integer'>Integer</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.JobFlowDetailList.html'
+                                  title='rusoto::emr::JobFlowDetailList'>JobFlowDetailList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.JobFlowExecutionState.html'
+                                  title='rusoto::emr::JobFlowExecutionState'>JobFlowExecutionState</a></td>
+                           <td class='docblock-short'>
+                                <p>The type of instance.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.JobFlowExecutionStateList.html'
+                                  title='rusoto::emr::JobFlowExecutionStateList'>JobFlowExecutionStateList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.KeyValueList.html'
+                                  title='rusoto::emr::KeyValueList'>KeyValueList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Marker.html'
+                                  title='rusoto::emr::Marker'>Marker</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.MarketType.html'
+                                  title='rusoto::emr::MarketType'>MarketType</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.NewSupportedProductsList.html'
+                                  title='rusoto::emr::NewSupportedProductsList'>NewSupportedProductsList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ResourceId.html'
+                                  title='rusoto::emr::ResourceId'>ResourceId</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.SecurityGroupsList.html'
+                                  title='rusoto::emr::SecurityGroupsList'>SecurityGroupsList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.StepConfigList.html'
+                                  title='rusoto::emr::StepConfigList'>StepConfigList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.StepDetailList.html'
+                                  title='rusoto::emr::StepDetailList'>StepDetailList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.StepExecutionState.html'
+                                  title='rusoto::emr::StepExecutionState'>StepExecutionState</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.StepId.html'
+                                  title='rusoto::emr::StepId'>StepId</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.StepIdsList.html'
+                                  title='rusoto::emr::StepIdsList'>StepIdsList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.StepState.html'
+                                  title='rusoto::emr::StepState'>StepState</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.StepStateChangeReasonCode.html'
+                                  title='rusoto::emr::StepStateChangeReasonCode'>StepStateChangeReasonCode</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.StepStateList.html'
+                                  title='rusoto::emr::StepStateList'>StepStateList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.StepSummaryList.html'
+                                  title='rusoto::emr::StepSummaryList'>StepSummaryList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.StringList.html'
+                                  title='rusoto::emr::StringList'>StringList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.StringMap.html'
+                                  title='rusoto::emr::StringMap'>StringMap</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.SupportedProductsList.html'
+                                  title='rusoto::emr::SupportedProductsList'>SupportedProductsList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.TagList.html'
+                                  title='rusoto::emr::TagList'>TagList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.XmlString.html'
+                                  title='rusoto::emr::XmlString'>XmlString</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.XmlStringList.html'
+                                  title='rusoto::emr::XmlStringList'>XmlStringList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.XmlStringMaxLen256.html'
+                                  title='rusoto::emr::XmlStringMaxLen256'>XmlStringMaxLen256</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr></table></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "rusoto";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../../jquery.js"></script>
+    <script src="../../main.js"></script>
+    
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>

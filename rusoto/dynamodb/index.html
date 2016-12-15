@@ -1,0 +1,1175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `dynamodb` mod in crate `rusoto`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, dynamodb">
+
+    <title>rusoto::dynamodb - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='../index.html'>rusoto</a></p><script>window.sidebarCurrent = {name: 'dynamodb', ty: 'mod', relpath: '../'};</script><script defer src="../sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content mod">
+<h1 class='fqn'><span class='in-band'>Module <a href='../index.html'>rusoto</a>::<wbr><a class='mod' href=''>dynamodb</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-107692' class='srclink' href='../../src/rusoto/src/dynamodb.rs.html#1-3' title='goto source code'>[src]</a></span></h1>
+<div class='docblock'><p>Amazon DynamoDB</p>
+</div><h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AttributeDefinition.html'
+                                  title='rusoto::dynamodb::AttributeDefinition'>AttributeDefinition</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents an attribute for describing the key schema for the table and indexes.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AttributeValue.html'
+                                  title='rusoto::dynamodb::AttributeValue'>AttributeValue</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the data for an attribute. You can set one, and only one, of the elements.</p> <p>Each attribute in an item is a name-value pair. An attribute can be single-valued or multi-valued set. For example, a book item can have title and authors attributes. Each book has one title but can have many authors. The multi-valued attribute is a set; duplicate values are not allowed.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AttributeValueUpdate.html'
+                                  title='rusoto::dynamodb::AttributeValueUpdate'>AttributeValueUpdate</a></td>
+                           <td class='docblock-short'>
+                                <p>For the <i>UpdateItem</i> operation, represents the attributes to be modified, the action to perform on each, and the new value for each.</p> <note> <p>You cannot use <i>UpdateItem</i> to update any primary key attributes. Instead, you will need to delete the item, and then use <i>PutItem</i> to create a new item with new attributes.</p> </note> <p>Attribute values cannot be null; string and binary type attributes must have lengths greater than zero; and set type attributes must not be empty. Requests with empty values will be rejected with a <i>ValidationException</i> exception.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.BatchGetItemInput.html'
+                                  title='rusoto::dynamodb::BatchGetItemInput'>BatchGetItemInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input of a <i>BatchGetItem</i> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.BatchGetItemOutput.html'
+                                  title='rusoto::dynamodb::BatchGetItemOutput'>BatchGetItemOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the output of a <i>BatchGetItem</i> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.BatchWriteItemInput.html'
+                                  title='rusoto::dynamodb::BatchWriteItemInput'>BatchWriteItemInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input of a <i>BatchWriteItem</i> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.BatchWriteItemOutput.html'
+                                  title='rusoto::dynamodb::BatchWriteItemOutput'>BatchWriteItemOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the output of a <i>BatchWriteItem</i> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Capacity.html'
+                                  title='rusoto::dynamodb::Capacity'>Capacity</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the amount of provisioned throughput capacity consumed on a table or an index.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Condition.html'
+                                  title='rusoto::dynamodb::Condition'>Condition</a></td>
+                           <td class='docblock-short'>
+                                <p><p>Represents the selection criteria for a <i>Query</i> or <i>Scan</i> operation:</p> <ul> <li> <p>For a <i>Query</i> operation, <i>Condition</i> is used for specifying the <i>KeyConditions</i> to use when querying a table or an index. For <i>KeyConditions</i>, only the following comparison operators are supported:</p> <p> <code>EQ | LE | LT | GE | GT | BEGINS_WITH | BETWEEN</code> </p> <p> <i>Condition</i> is also used in a <i>QueryFilter</i>, which evaluates the query results and returns only the desired values.</p> </li> <li> <p>For a <i>Scan</i> operation, <i>Condition</i> is used in a <i>ScanFilter</i>, which evaluates the scan results and returns only the desired values.</p> </li> </ul></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ConsumedCapacity.html'
+                                  title='rusoto::dynamodb::ConsumedCapacity'>ConsumedCapacity</a></td>
+                           <td class='docblock-short'>
+                                <p>The capacity units consumed by an operation. The data returned includes the total provisioned throughput consumed, along with statistics for the table and any indexes involved in the operation. <i>ConsumedCapacity</i> is only returned if the request asked for it. For more information, see <a href="http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ProvisionedThroughputIntro.html">Provisioned Throughput</a> in the <i>Amazon DynamoDB Developer Guide</i>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateGlobalSecondaryIndexAction.html'
+                                  title='rusoto::dynamodb::CreateGlobalSecondaryIndexAction'>CreateGlobalSecondaryIndexAction</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents a new global secondary index to be added to an existing table.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateTableInput.html'
+                                  title='rusoto::dynamodb::CreateTableInput'>CreateTableInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input of a <i>CreateTable</i> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateTableOutput.html'
+                                  title='rusoto::dynamodb::CreateTableOutput'>CreateTableOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the output of a <i>CreateTable</i> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteGlobalSecondaryIndexAction.html'
+                                  title='rusoto::dynamodb::DeleteGlobalSecondaryIndexAction'>DeleteGlobalSecondaryIndexAction</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents a global secondary index to be deleted from an existing table.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteItemInput.html'
+                                  title='rusoto::dynamodb::DeleteItemInput'>DeleteItemInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input of a <i>DeleteItem</i> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteItemOutput.html'
+                                  title='rusoto::dynamodb::DeleteItemOutput'>DeleteItemOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the output of a <i>DeleteItem</i> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteRequest.html'
+                                  title='rusoto::dynamodb::DeleteRequest'>DeleteRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents a request to perform a <i>DeleteItem</i> operation on an item.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteTableInput.html'
+                                  title='rusoto::dynamodb::DeleteTableInput'>DeleteTableInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input of a <i>DeleteTable</i> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteTableOutput.html'
+                                  title='rusoto::dynamodb::DeleteTableOutput'>DeleteTableOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the output of a <i>DeleteTable</i> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeLimitsInput.html'
+                                  title='rusoto::dynamodb::DescribeLimitsInput'>DescribeLimitsInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input of a <i>DescribeLimits</i> operation. Has no content.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeLimitsOutput.html'
+                                  title='rusoto::dynamodb::DescribeLimitsOutput'>DescribeLimitsOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the output of a <i>DescribeLimits</i> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeTableInput.html'
+                                  title='rusoto::dynamodb::DescribeTableInput'>DescribeTableInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input of a <i>DescribeTable</i> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeTableOutput.html'
+                                  title='rusoto::dynamodb::DescribeTableOutput'>DescribeTableOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the output of a <i>DescribeTable</i> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DynamoDbClient.html'
+                                  title='rusoto::dynamodb::DynamoDbClient'>DynamoDbClient</a></td>
+                           <td class='docblock-short'>
+                                <p>A client for the DynamoDB API.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ExpectedAttributeValue.html'
+                                  title='rusoto::dynamodb::ExpectedAttributeValue'>ExpectedAttributeValue</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents a condition to be compared with an attribute value. This condition can be used with <i>DeleteItem</i>, <i>PutItem</i> or <i>UpdateItem</i> operations; if the comparison evaluates to true, the operation succeeds; if not, the operation fails. You can use <i>ExpectedAttributeValue</i> in one of two different ways:</p> <ul> <li> <p>Use <i>AttributeValueList</i> to specify one or more values to compare against an attribute. Use <i>ComparisonOperator</i> to specify how you want to perform the comparison. If the comparison evaluates to true, then the conditional operation succeeds.</p> </li> <li> <p>Use <i>Value</i> to specify a value that DynamoDB will compare against an attribute. If the values match, then <i>ExpectedAttributeValue</i> evaluates to true and the conditional operation succeeds. Optionally, you can also set <i>Exists</i> to false, indicating that you <i>do not</i> expect to find the attribute value in the table. In this case, the conditional operation succeeds only if the comparison evaluates to false.</p> </li> </ul> <p> <i>Value</i> and <i>Exists</i> are incompatible with <i>AttributeValueList</i> and <i>ComparisonOperator</i>. Note that if you use both sets of parameters at once, DynamoDB will return a <i>ValidationException</i> exception.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetItemInput.html'
+                                  title='rusoto::dynamodb::GetItemInput'>GetItemInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input of a <i>GetItem</i> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetItemOutput.html'
+                                  title='rusoto::dynamodb::GetItemOutput'>GetItemOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the output of a <i>GetItem</i> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GlobalSecondaryIndex.html'
+                                  title='rusoto::dynamodb::GlobalSecondaryIndex'>GlobalSecondaryIndex</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the properties of a global secondary index.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GlobalSecondaryIndexDescription.html'
+                                  title='rusoto::dynamodb::GlobalSecondaryIndexDescription'>GlobalSecondaryIndexDescription</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the properties of a global secondary index.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GlobalSecondaryIndexUpdate.html'
+                                  title='rusoto::dynamodb::GlobalSecondaryIndexUpdate'>GlobalSecondaryIndexUpdate</a></td>
+                           <td class='docblock-short'>
+                                <p><p>Represents one of the following:</p> <ul> <li> <p>A new global secondary index to be added to an existing table.</p> </li> <li> <p>New provisioned throughput parameters for an existing global secondary index.</p> </li> <li> <p>An existing global secondary index to be removed from an existing table.</p> </li> </ul></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ItemCollectionMetrics.html'
+                                  title='rusoto::dynamodb::ItemCollectionMetrics'>ItemCollectionMetrics</a></td>
+                           <td class='docblock-short'>
+                                <p>Information about item collections, if any, that were affected by the operation. <i>ItemCollectionMetrics</i> is only returned if the request asked for it. If the table does not have any local secondary indexes, this information is not returned in the response.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.KeySchemaElement.html'
+                                  title='rusoto::dynamodb::KeySchemaElement'>KeySchemaElement</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents <i>a single element</i> of a key schema. A key schema specifies the attributes that make up the primary key of a table, or the key attributes of an index.</p> <p>A <i>KeySchemaElement</i> represents exactly one attribute of the primary key. For example, a simple primary key would be represented by one <i>KeySchemaElement</i> (for the partition key). A composite primary key would require one <i>KeySchemaElement</i> for the partition key, and another <i>KeySchemaElement</i> for the sort key.</p> <p>A <i>KeySchemaElement</i> must be a scalar, top-level attribute (not a nested attribute). The data type must be one of String, Number, or Binary. The attribute cannot be nested within a List or a Map.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.KeysAndAttributes.html'
+                                  title='rusoto::dynamodb::KeysAndAttributes'>KeysAndAttributes</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents a set of primary keys and, for each key, the attributes to retrieve from the table.</p> <p>For each primary key, you must provide <i>all</i> of the key attributes. For example, with a simple primary key, you only need to provide the partition key. For a composite primary key, you must provide <i>both</i> the partition key and the sort key.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListTablesInput.html'
+                                  title='rusoto::dynamodb::ListTablesInput'>ListTablesInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input of a <i>ListTables</i> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListTablesOutput.html'
+                                  title='rusoto::dynamodb::ListTablesOutput'>ListTablesOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the output of a <i>ListTables</i> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.LocalSecondaryIndex.html'
+                                  title='rusoto::dynamodb::LocalSecondaryIndex'>LocalSecondaryIndex</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the properties of a local secondary index.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.LocalSecondaryIndexDescription.html'
+                                  title='rusoto::dynamodb::LocalSecondaryIndexDescription'>LocalSecondaryIndexDescription</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the properties of a local secondary index.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Projection.html'
+                                  title='rusoto::dynamodb::Projection'>Projection</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents attributes that are copied (projected) from the table into an index. These are in addition to the primary key attributes and index key attributes, which are automatically projected.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ProvisionedThroughput.html'
+                                  title='rusoto::dynamodb::ProvisionedThroughput'>ProvisionedThroughput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the provisioned throughput settings for a specified table or index. The settings can be modified using the <i>UpdateTable</i> operation.</p> <p>For current minimum and maximum provisioned throughput values, see <a href="http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Limits.html">Limits</a> in the <i>Amazon DynamoDB Developer Guide</i>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ProvisionedThroughputDescription.html'
+                                  title='rusoto::dynamodb::ProvisionedThroughputDescription'>ProvisionedThroughputDescription</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the provisioned throughput settings for the table, consisting of read and write capacity units, along with data about increases and decreases.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.PutItemInput.html'
+                                  title='rusoto::dynamodb::PutItemInput'>PutItemInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input of a <i>PutItem</i> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.PutItemOutput.html'
+                                  title='rusoto::dynamodb::PutItemOutput'>PutItemOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the output of a <i>PutItem</i> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.PutRequest.html'
+                                  title='rusoto::dynamodb::PutRequest'>PutRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents a request to perform a <i>PutItem</i> operation on an item.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.QueryInput.html'
+                                  title='rusoto::dynamodb::QueryInput'>QueryInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input of a <i>Query</i> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.QueryOutput.html'
+                                  title='rusoto::dynamodb::QueryOutput'>QueryOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the output of a <i>Query</i> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ScanInput.html'
+                                  title='rusoto::dynamodb::ScanInput'>ScanInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input of a <i>Scan</i> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ScanOutput.html'
+                                  title='rusoto::dynamodb::ScanOutput'>ScanOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the output of a <i>Scan</i> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.StreamSpecification.html'
+                                  title='rusoto::dynamodb::StreamSpecification'>StreamSpecification</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the DynamoDB Streams configuration for a table in DynamoDB.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.TableDescription.html'
+                                  title='rusoto::dynamodb::TableDescription'>TableDescription</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the properties of a table.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UpdateGlobalSecondaryIndexAction.html'
+                                  title='rusoto::dynamodb::UpdateGlobalSecondaryIndexAction'>UpdateGlobalSecondaryIndexAction</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the new provisioned throughput settings to be applied to a global secondary index.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UpdateItemInput.html'
+                                  title='rusoto::dynamodb::UpdateItemInput'>UpdateItemInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input of an <i>UpdateItem</i> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UpdateItemOutput.html'
+                                  title='rusoto::dynamodb::UpdateItemOutput'>UpdateItemOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the output of an <i>UpdateItem</i> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UpdateTableInput.html'
+                                  title='rusoto::dynamodb::UpdateTableInput'>UpdateTableInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input of an <i>UpdateTable</i> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UpdateTableOutput.html'
+                                  title='rusoto::dynamodb::UpdateTableOutput'>UpdateTableOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the output of an <i>UpdateTable</i> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.WriteRequest.html'
+                                  title='rusoto::dynamodb::WriteRequest'>WriteRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents an operation to perform - either <i>DeleteItem</i> or <i>PutItem</i>. You can only request one of these operations, not both, in a single <i>WriteRequest</i>. If you do need to perform both of these operations, you will need to provide two separate <i>WriteRequest</i> objects.</p>
+                           </td>
+                       </tr></table><h2 id='enums' class='section-header'><a href="#enums">Enums</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.BatchGetItemError.html'
+                                  title='rusoto::dynamodb::BatchGetItemError'>BatchGetItemError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.BatchWriteItemError.html'
+                                  title='rusoto::dynamodb::BatchWriteItemError'>BatchWriteItemError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.CreateTableError.html'
+                                  title='rusoto::dynamodb::CreateTableError'>CreateTableError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DeleteItemError.html'
+                                  title='rusoto::dynamodb::DeleteItemError'>DeleteItemError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DeleteTableError.html'
+                                  title='rusoto::dynamodb::DeleteTableError'>DeleteTableError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeLimitsError.html'
+                                  title='rusoto::dynamodb::DescribeLimitsError'>DescribeLimitsError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeTableError.html'
+                                  title='rusoto::dynamodb::DescribeTableError'>DescribeTableError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.GetItemError.html'
+                                  title='rusoto::dynamodb::GetItemError'>GetItemError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ListTablesError.html'
+                                  title='rusoto::dynamodb::ListTablesError'>ListTablesError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.PutItemError.html'
+                                  title='rusoto::dynamodb::PutItemError'>PutItemError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.QueryError.html'
+                                  title='rusoto::dynamodb::QueryError'>QueryError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ScanError.html'
+                                  title='rusoto::dynamodb::ScanError'>ScanError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.UpdateItemError.html'
+                                  title='rusoto::dynamodb::UpdateItemError'>UpdateItemError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.UpdateTableError.html'
+                                  title='rusoto::dynamodb::UpdateTableError'>UpdateTableError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr></table><h2 id='types' class='section-header'><a href="#types">Type Definitions</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AttributeAction.html'
+                                  title='rusoto::dynamodb::AttributeAction'>AttributeAction</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AttributeDefinitions.html'
+                                  title='rusoto::dynamodb::AttributeDefinitions'>AttributeDefinitions</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AttributeMap.html'
+                                  title='rusoto::dynamodb::AttributeMap'>AttributeMap</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AttributeName.html'
+                                  title='rusoto::dynamodb::AttributeName'>AttributeName</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AttributeNameList.html'
+                                  title='rusoto::dynamodb::AttributeNameList'>AttributeNameList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AttributeUpdates.html'
+                                  title='rusoto::dynamodb::AttributeUpdates'>AttributeUpdates</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AttributeValueList.html'
+                                  title='rusoto::dynamodb::AttributeValueList'>AttributeValueList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Backfilling.html'
+                                  title='rusoto::dynamodb::Backfilling'>Backfilling</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.BatchGetRequestMap.html'
+                                  title='rusoto::dynamodb::BatchGetRequestMap'>BatchGetRequestMap</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.BatchGetResponseMap.html'
+                                  title='rusoto::dynamodb::BatchGetResponseMap'>BatchGetResponseMap</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.BatchWriteItemRequestMap.html'
+                                  title='rusoto::dynamodb::BatchWriteItemRequestMap'>BatchWriteItemRequestMap</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.BinaryAttributeValue.html'
+                                  title='rusoto::dynamodb::BinaryAttributeValue'>BinaryAttributeValue</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.BinarySetAttributeValue.html'
+                                  title='rusoto::dynamodb::BinarySetAttributeValue'>BinarySetAttributeValue</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.BooleanAttributeValue.html'
+                                  title='rusoto::dynamodb::BooleanAttributeValue'>BooleanAttributeValue</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.BooleanObject.html'
+                                  title='rusoto::dynamodb::BooleanObject'>BooleanObject</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ComparisonOperator.html'
+                                  title='rusoto::dynamodb::ComparisonOperator'>ComparisonOperator</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ConditionExpression.html'
+                                  title='rusoto::dynamodb::ConditionExpression'>ConditionExpression</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ConditionalOperator.html'
+                                  title='rusoto::dynamodb::ConditionalOperator'>ConditionalOperator</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ConsistentRead.html'
+                                  title='rusoto::dynamodb::ConsistentRead'>ConsistentRead</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ConsumedCapacityMultiple.html'
+                                  title='rusoto::dynamodb::ConsumedCapacityMultiple'>ConsumedCapacityMultiple</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ConsumedCapacityUnits.html'
+                                  title='rusoto::dynamodb::ConsumedCapacityUnits'>ConsumedCapacityUnits</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Date.html'
+                                  title='rusoto::dynamodb::Date'>Date</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ErrorMessage.html'
+                                  title='rusoto::dynamodb::ErrorMessage'>ErrorMessage</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ExpectedAttributeMap.html'
+                                  title='rusoto::dynamodb::ExpectedAttributeMap'>ExpectedAttributeMap</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ExpressionAttributeNameMap.html'
+                                  title='rusoto::dynamodb::ExpressionAttributeNameMap'>ExpressionAttributeNameMap</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ExpressionAttributeNameVariable.html'
+                                  title='rusoto::dynamodb::ExpressionAttributeNameVariable'>ExpressionAttributeNameVariable</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ExpressionAttributeValueMap.html'
+                                  title='rusoto::dynamodb::ExpressionAttributeValueMap'>ExpressionAttributeValueMap</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ExpressionAttributeValueVariable.html'
+                                  title='rusoto::dynamodb::ExpressionAttributeValueVariable'>ExpressionAttributeValueVariable</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.FilterConditionMap.html'
+                                  title='rusoto::dynamodb::FilterConditionMap'>FilterConditionMap</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.GlobalSecondaryIndexDescriptionList.html'
+                                  title='rusoto::dynamodb::GlobalSecondaryIndexDescriptionList'>GlobalSecondaryIndexDescriptionList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.GlobalSecondaryIndexList.html'
+                                  title='rusoto::dynamodb::GlobalSecondaryIndexList'>GlobalSecondaryIndexList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.GlobalSecondaryIndexUpdateList.html'
+                                  title='rusoto::dynamodb::GlobalSecondaryIndexUpdateList'>GlobalSecondaryIndexUpdateList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.IndexName.html'
+                                  title='rusoto::dynamodb::IndexName'>IndexName</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.IndexStatus.html'
+                                  title='rusoto::dynamodb::IndexStatus'>IndexStatus</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Integer.html'
+                                  title='rusoto::dynamodb::Integer'>Integer</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ItemCollectionKeyAttributeMap.html'
+                                  title='rusoto::dynamodb::ItemCollectionKeyAttributeMap'>ItemCollectionKeyAttributeMap</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ItemCollectionMetricsMultiple.html'
+                                  title='rusoto::dynamodb::ItemCollectionMetricsMultiple'>ItemCollectionMetricsMultiple</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ItemCollectionMetricsPerTable.html'
+                                  title='rusoto::dynamodb::ItemCollectionMetricsPerTable'>ItemCollectionMetricsPerTable</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ItemCollectionSizeEstimateBound.html'
+                                  title='rusoto::dynamodb::ItemCollectionSizeEstimateBound'>ItemCollectionSizeEstimateBound</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ItemCollectionSizeEstimateRange.html'
+                                  title='rusoto::dynamodb::ItemCollectionSizeEstimateRange'>ItemCollectionSizeEstimateRange</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ItemList.html'
+                                  title='rusoto::dynamodb::ItemList'>ItemList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Key.html'
+                                  title='rusoto::dynamodb::Key'>Key</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.KeyConditions.html'
+                                  title='rusoto::dynamodb::KeyConditions'>KeyConditions</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.KeyExpression.html'
+                                  title='rusoto::dynamodb::KeyExpression'>KeyExpression</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.KeyList.html'
+                                  title='rusoto::dynamodb::KeyList'>KeyList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.KeySchema.html'
+                                  title='rusoto::dynamodb::KeySchema'>KeySchema</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.KeySchemaAttributeName.html'
+                                  title='rusoto::dynamodb::KeySchemaAttributeName'>KeySchemaAttributeName</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.KeyType.html'
+                                  title='rusoto::dynamodb::KeyType'>KeyType</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ListAttributeValue.html'
+                                  title='rusoto::dynamodb::ListAttributeValue'>ListAttributeValue</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ListTablesInputLimit.html'
+                                  title='rusoto::dynamodb::ListTablesInputLimit'>ListTablesInputLimit</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.LocalSecondaryIndexDescriptionList.html'
+                                  title='rusoto::dynamodb::LocalSecondaryIndexDescriptionList'>LocalSecondaryIndexDescriptionList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.LocalSecondaryIndexList.html'
+                                  title='rusoto::dynamodb::LocalSecondaryIndexList'>LocalSecondaryIndexList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Long.html'
+                                  title='rusoto::dynamodb::Long'>Long</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.MapAttributeValue.html'
+                                  title='rusoto::dynamodb::MapAttributeValue'>MapAttributeValue</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.NonKeyAttributeName.html'
+                                  title='rusoto::dynamodb::NonKeyAttributeName'>NonKeyAttributeName</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.NonKeyAttributeNameList.html'
+                                  title='rusoto::dynamodb::NonKeyAttributeNameList'>NonKeyAttributeNameList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.NullAttributeValue.html'
+                                  title='rusoto::dynamodb::NullAttributeValue'>NullAttributeValue</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.NumberAttributeValue.html'
+                                  title='rusoto::dynamodb::NumberAttributeValue'>NumberAttributeValue</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.NumberSetAttributeValue.html'
+                                  title='rusoto::dynamodb::NumberSetAttributeValue'>NumberSetAttributeValue</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.PositiveIntegerObject.html'
+                                  title='rusoto::dynamodb::PositiveIntegerObject'>PositiveIntegerObject</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.PositiveLongObject.html'
+                                  title='rusoto::dynamodb::PositiveLongObject'>PositiveLongObject</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ProjectionExpression.html'
+                                  title='rusoto::dynamodb::ProjectionExpression'>ProjectionExpression</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ProjectionType.html'
+                                  title='rusoto::dynamodb::ProjectionType'>ProjectionType</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.PutItemInputAttributeMap.html'
+                                  title='rusoto::dynamodb::PutItemInputAttributeMap'>PutItemInputAttributeMap</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ReturnConsumedCapacity.html'
+                                  title='rusoto::dynamodb::ReturnConsumedCapacity'>ReturnConsumedCapacity</a></td>
+                           <td class='docblock-short'>
+                                <p><p>Determines the level of detail about provisioned throughput consumption that is returned in the response:</p> <ul> <li> <p> <i>INDEXES</i> - The response includes the aggregate <i>ConsumedCapacity</i> for the operation, together with <i>ConsumedCapacity</i> for each table and secondary index that was accessed.</p> <p>Note that some operations, such as <i>GetItem</i> and <i>BatchGetItem</i>, do not access any indexes at all. In these cases, specifying <i>INDEXES</i> will only return <i>ConsumedCapacity</i> information for table(s).</p> </li> <li> <p> <i>TOTAL</i> - The response includes only the aggregate <i>ConsumedCapacity</i> for the operation.</p> </li> <li> <p> <i>NONE</i> - No <i>ConsumedCapacity</i> details are included in the response.</p> </li> </ul></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ReturnItemCollectionMetrics.html'
+                                  title='rusoto::dynamodb::ReturnItemCollectionMetrics'>ReturnItemCollectionMetrics</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ReturnValue.html'
+                                  title='rusoto::dynamodb::ReturnValue'>ReturnValue</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ScalarAttributeType.html'
+                                  title='rusoto::dynamodb::ScalarAttributeType'>ScalarAttributeType</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ScanSegment.html'
+                                  title='rusoto::dynamodb::ScanSegment'>ScanSegment</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ScanTotalSegments.html'
+                                  title='rusoto::dynamodb::ScanTotalSegments'>ScanTotalSegments</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.SecondaryIndexesCapacityMap.html'
+                                  title='rusoto::dynamodb::SecondaryIndexesCapacityMap'>SecondaryIndexesCapacityMap</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Select.html'
+                                  title='rusoto::dynamodb::Select'>Select</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.StreamArn.html'
+                                  title='rusoto::dynamodb::StreamArn'>StreamArn</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.StreamEnabled.html'
+                                  title='rusoto::dynamodb::StreamEnabled'>StreamEnabled</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.StreamViewType.html'
+                                  title='rusoto::dynamodb::StreamViewType'>StreamViewType</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.StringAttributeValue.html'
+                                  title='rusoto::dynamodb::StringAttributeValue'>StringAttributeValue</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.StringSetAttributeValue.html'
+                                  title='rusoto::dynamodb::StringSetAttributeValue'>StringSetAttributeValue</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.TableName.html'
+                                  title='rusoto::dynamodb::TableName'>TableName</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.TableNameList.html'
+                                  title='rusoto::dynamodb::TableNameList'>TableNameList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.TableStatus.html'
+                                  title='rusoto::dynamodb::TableStatus'>TableStatus</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.UpdateExpression.html'
+                                  title='rusoto::dynamodb::UpdateExpression'>UpdateExpression</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.WriteRequests.html'
+                                  title='rusoto::dynamodb::WriteRequests'>WriteRequests</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr></table></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "rusoto";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../../jquery.js"></script>
+    <script src="../../main.js"></script>
+    
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>

@@ -1,0 +1,1581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `waf` mod in crate `rusoto`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, waf">
+
+    <title>rusoto::waf - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='../index.html'>rusoto</a></p><script>window.sidebarCurrent = {name: 'waf', ty: 'mod', relpath: '../'};</script><script defer src="../sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content mod">
+<h1 class='fqn'><span class='in-band'>Module <a href='../index.html'>rusoto</a>::<wbr><a class='mod' href=''>waf</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-422380' class='srclink' href='../../src/rusoto/src/waf.rs.html#1-2' title='goto source code'>[src]</a></span></h1>
+<div class='docblock'><p>AWS Web Application Firewall</p>
+</div><h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ActivatedRule.html'
+                                  title='rusoto::waf::ActivatedRule'>ActivatedRule</a></td>
+                           <td class='docblock-short'>
+                                <p>The <code>ActivatedRule</code> object in an <a>UpdateWebACL</a> request specifies a <code>Rule</code> that you want to insert or delete, the priority of the <code>Rule</code> in the <code>WebACL</code>, and the action that you want AWS WAF to take when a web request matches the <code>Rule</code> (<code>ALLOW</code>, <code>BLOCK</code>, or <code>COUNT</code>).</p> <p>To specify whether to insert or delete a <code>Rule</code>, use the <code>Action</code> parameter in the <a>WebACLUpdate</a> data type.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ByteMatchSet.html'
+                                  title='rusoto::waf::ByteMatchSet'>ByteMatchSet</a></td>
+                           <td class='docblock-short'>
+                                <p>In a <a>GetByteMatchSet</a> request, <code>ByteMatchSet</code> is a complex type that contains the <code>ByteMatchSetId</code> and <code>Name</code> of a <code>ByteMatchSet</code>, and the values that you specified when you updated the <code>ByteMatchSet</code>. </p> <p>A complex type that contains <code>ByteMatchTuple</code> objects, which specify the parts of web requests that you want AWS WAF to inspect and the values that you want AWS WAF to search for. If a <code>ByteMatchSet</code> contains more than one <code>ByteMatchTuple</code> object, a request needs to match the settings in only one <code>ByteMatchTuple</code> to be considered a match.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ByteMatchSetSummary.html'
+                                  title='rusoto::waf::ByteMatchSetSummary'>ByteMatchSetSummary</a></td>
+                           <td class='docblock-short'>
+                                <p>Returned by <a>ListByteMatchSets</a>. Each <code>ByteMatchSetSummary</code> object includes the <code>Name</code> and <code>ByteMatchSetId</code> for one <a>ByteMatchSet</a>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ByteMatchSetUpdate.html'
+                                  title='rusoto::waf::ByteMatchSetUpdate'>ByteMatchSetUpdate</a></td>
+                           <td class='docblock-short'>
+                                <p>In an <a>UpdateByteMatchSet</a> request, <code>ByteMatchSetUpdate</code> specifies whether to insert or delete a <a>ByteMatchTuple</a> and includes the settings for the <code>ByteMatchTuple</code>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ByteMatchTuple.html'
+                                  title='rusoto::waf::ByteMatchTuple'>ByteMatchTuple</a></td>
+                           <td class='docblock-short'>
+                                <p>The bytes (typically a string that corresponds with ASCII characters) that you want AWS WAF to search for in web requests, the location in requests that you want AWS WAF to search, and other settings.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateByteMatchSetRequest.html'
+                                  title='rusoto::waf::CreateByteMatchSetRequest'>CreateByteMatchSetRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateByteMatchSetResponse.html'
+                                  title='rusoto::waf::CreateByteMatchSetResponse'>CreateByteMatchSetResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateIPSetRequest.html'
+                                  title='rusoto::waf::CreateIPSetRequest'>CreateIPSetRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateIPSetResponse.html'
+                                  title='rusoto::waf::CreateIPSetResponse'>CreateIPSetResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateRuleRequest.html'
+                                  title='rusoto::waf::CreateRuleRequest'>CreateRuleRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateRuleResponse.html'
+                                  title='rusoto::waf::CreateRuleResponse'>CreateRuleResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateSizeConstraintSetRequest.html'
+                                  title='rusoto::waf::CreateSizeConstraintSetRequest'>CreateSizeConstraintSetRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateSizeConstraintSetResponse.html'
+                                  title='rusoto::waf::CreateSizeConstraintSetResponse'>CreateSizeConstraintSetResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateSqlInjectionMatchSetRequest.html'
+                                  title='rusoto::waf::CreateSqlInjectionMatchSetRequest'>CreateSqlInjectionMatchSetRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>A request to create a <a>SqlInjectionMatchSet</a>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateSqlInjectionMatchSetResponse.html'
+                                  title='rusoto::waf::CreateSqlInjectionMatchSetResponse'>CreateSqlInjectionMatchSetResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The response to a <code>CreateSqlInjectionMatchSet</code> request.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateWebACLRequest.html'
+                                  title='rusoto::waf::CreateWebACLRequest'>CreateWebACLRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateWebACLResponse.html'
+                                  title='rusoto::waf::CreateWebACLResponse'>CreateWebACLResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateXssMatchSetRequest.html'
+                                  title='rusoto::waf::CreateXssMatchSetRequest'>CreateXssMatchSetRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>A request to create an <a>XssMatchSet</a>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateXssMatchSetResponse.html'
+                                  title='rusoto::waf::CreateXssMatchSetResponse'>CreateXssMatchSetResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The response to a <code>CreateXssMatchSet</code> request.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteByteMatchSetRequest.html'
+                                  title='rusoto::waf::DeleteByteMatchSetRequest'>DeleteByteMatchSetRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteByteMatchSetResponse.html'
+                                  title='rusoto::waf::DeleteByteMatchSetResponse'>DeleteByteMatchSetResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteIPSetRequest.html'
+                                  title='rusoto::waf::DeleteIPSetRequest'>DeleteIPSetRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteIPSetResponse.html'
+                                  title='rusoto::waf::DeleteIPSetResponse'>DeleteIPSetResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteRuleRequest.html'
+                                  title='rusoto::waf::DeleteRuleRequest'>DeleteRuleRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteRuleResponse.html'
+                                  title='rusoto::waf::DeleteRuleResponse'>DeleteRuleResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteSizeConstraintSetRequest.html'
+                                  title='rusoto::waf::DeleteSizeConstraintSetRequest'>DeleteSizeConstraintSetRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteSizeConstraintSetResponse.html'
+                                  title='rusoto::waf::DeleteSizeConstraintSetResponse'>DeleteSizeConstraintSetResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteSqlInjectionMatchSetRequest.html'
+                                  title='rusoto::waf::DeleteSqlInjectionMatchSetRequest'>DeleteSqlInjectionMatchSetRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>A request to delete a <a>SqlInjectionMatchSet</a> from AWS WAF.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteSqlInjectionMatchSetResponse.html'
+                                  title='rusoto::waf::DeleteSqlInjectionMatchSetResponse'>DeleteSqlInjectionMatchSetResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The response to a request to delete a <a>SqlInjectionMatchSet</a> from AWS WAF.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteWebACLRequest.html'
+                                  title='rusoto::waf::DeleteWebACLRequest'>DeleteWebACLRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteWebACLResponse.html'
+                                  title='rusoto::waf::DeleteWebACLResponse'>DeleteWebACLResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteXssMatchSetRequest.html'
+                                  title='rusoto::waf::DeleteXssMatchSetRequest'>DeleteXssMatchSetRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>A request to delete an <a>XssMatchSet</a> from AWS WAF.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteXssMatchSetResponse.html'
+                                  title='rusoto::waf::DeleteXssMatchSetResponse'>DeleteXssMatchSetResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The response to a request to delete an <a>XssMatchSet</a> from AWS WAF.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.FieldToMatch.html'
+                                  title='rusoto::waf::FieldToMatch'>FieldToMatch</a></td>
+                           <td class='docblock-short'>
+                                <p>Specifies where in a web request to look for <code>TargetString</code>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetByteMatchSetRequest.html'
+                                  title='rusoto::waf::GetByteMatchSetRequest'>GetByteMatchSetRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetByteMatchSetResponse.html'
+                                  title='rusoto::waf::GetByteMatchSetResponse'>GetByteMatchSetResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetChangeTokenRequest.html'
+                                  title='rusoto::waf::GetChangeTokenRequest'>GetChangeTokenRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetChangeTokenResponse.html'
+                                  title='rusoto::waf::GetChangeTokenResponse'>GetChangeTokenResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetChangeTokenStatusRequest.html'
+                                  title='rusoto::waf::GetChangeTokenStatusRequest'>GetChangeTokenStatusRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetChangeTokenStatusResponse.html'
+                                  title='rusoto::waf::GetChangeTokenStatusResponse'>GetChangeTokenStatusResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetIPSetRequest.html'
+                                  title='rusoto::waf::GetIPSetRequest'>GetIPSetRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetIPSetResponse.html'
+                                  title='rusoto::waf::GetIPSetResponse'>GetIPSetResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetRuleRequest.html'
+                                  title='rusoto::waf::GetRuleRequest'>GetRuleRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetRuleResponse.html'
+                                  title='rusoto::waf::GetRuleResponse'>GetRuleResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetSampledRequestsRequest.html'
+                                  title='rusoto::waf::GetSampledRequestsRequest'>GetSampledRequestsRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetSampledRequestsResponse.html'
+                                  title='rusoto::waf::GetSampledRequestsResponse'>GetSampledRequestsResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetSizeConstraintSetRequest.html'
+                                  title='rusoto::waf::GetSizeConstraintSetRequest'>GetSizeConstraintSetRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetSizeConstraintSetResponse.html'
+                                  title='rusoto::waf::GetSizeConstraintSetResponse'>GetSizeConstraintSetResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetSqlInjectionMatchSetRequest.html'
+                                  title='rusoto::waf::GetSqlInjectionMatchSetRequest'>GetSqlInjectionMatchSetRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>A request to get a <a>SqlInjectionMatchSet</a>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetSqlInjectionMatchSetResponse.html'
+                                  title='rusoto::waf::GetSqlInjectionMatchSetResponse'>GetSqlInjectionMatchSetResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The response to a <a>GetSqlInjectionMatchSet</a> request.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetWebACLRequest.html'
+                                  title='rusoto::waf::GetWebACLRequest'>GetWebACLRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetWebACLResponse.html'
+                                  title='rusoto::waf::GetWebACLResponse'>GetWebACLResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetXssMatchSetRequest.html'
+                                  title='rusoto::waf::GetXssMatchSetRequest'>GetXssMatchSetRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>A request to get an <a>XssMatchSet</a>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetXssMatchSetResponse.html'
+                                  title='rusoto::waf::GetXssMatchSetResponse'>GetXssMatchSetResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The response to a <a>GetXssMatchSet</a> request.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.HTTPHeader.html'
+                                  title='rusoto::waf::HTTPHeader'>HTTPHeader</a></td>
+                           <td class='docblock-short'>
+                                <p>The response from a <a>GetSampledRequests</a> request includes an <code>HTTPHeader</code> complex type that appears as <code>Headers</code> in the response syntax. <code>HTTPHeader</code> contains the names and values of all of the headers that appear in one of the web requests that were returned by <code>GetSampledRequests</code>. </p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.HTTPRequest.html'
+                                  title='rusoto::waf::HTTPRequest'>HTTPRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The response from a <a>GetSampledRequests</a> request includes an <code>HTTPRequest</code> complex type that appears as <code>Request</code> in the response syntax. <code>HTTPRequest</code> contains information about one of the web requests that were returned by <code>GetSampledRequests</code>. </p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.IPSet.html'
+                                  title='rusoto::waf::IPSet'>IPSet</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains one or more IP addresses or blocks of IP addresses specified in Classless Inter-Domain Routing (CIDR) notation. To specify an individual IP address, you specify the four-part IP address followed by a <code>/32</code>, for example, 192.0.2.0/31. To block a range of IP addresses, you can specify a <code>/24</code>, a <code>/16</code>, or a <code>/8</code> CIDR. For more information about CIDR notation, perform an Internet search on <code>cidr notation</code>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.IPSetDescriptor.html'
+                                  title='rusoto::waf::IPSetDescriptor'>IPSetDescriptor</a></td>
+                           <td class='docblock-short'>
+                                <p>Specifies the IP address type (<code>IPV4</code>) and the IP address range (in CIDR format) that web requests originate from.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.IPSetSummary.html'
+                                  title='rusoto::waf::IPSetSummary'>IPSetSummary</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains the identifier and the name of the <code>IPSet</code>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.IPSetUpdate.html'
+                                  title='rusoto::waf::IPSetUpdate'>IPSetUpdate</a></td>
+                           <td class='docblock-short'>
+                                <p>Specifies the type of update to perform to an <a>IPSet</a> with <a>UpdateIPSet</a>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListByteMatchSetsRequest.html'
+                                  title='rusoto::waf::ListByteMatchSetsRequest'>ListByteMatchSetsRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListByteMatchSetsResponse.html'
+                                  title='rusoto::waf::ListByteMatchSetsResponse'>ListByteMatchSetsResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListIPSetsRequest.html'
+                                  title='rusoto::waf::ListIPSetsRequest'>ListIPSetsRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListIPSetsResponse.html'
+                                  title='rusoto::waf::ListIPSetsResponse'>ListIPSetsResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListRulesRequest.html'
+                                  title='rusoto::waf::ListRulesRequest'>ListRulesRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListRulesResponse.html'
+                                  title='rusoto::waf::ListRulesResponse'>ListRulesResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListSizeConstraintSetsRequest.html'
+                                  title='rusoto::waf::ListSizeConstraintSetsRequest'>ListSizeConstraintSetsRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListSizeConstraintSetsResponse.html'
+                                  title='rusoto::waf::ListSizeConstraintSetsResponse'>ListSizeConstraintSetsResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListSqlInjectionMatchSetsRequest.html'
+                                  title='rusoto::waf::ListSqlInjectionMatchSetsRequest'>ListSqlInjectionMatchSetsRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>A request to list the <a>SqlInjectionMatchSet</a> objects created by the current AWS account.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListSqlInjectionMatchSetsResponse.html'
+                                  title='rusoto::waf::ListSqlInjectionMatchSetsResponse'>ListSqlInjectionMatchSetsResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The response to a <a>ListSqlInjectionMatchSets</a> request.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListWebACLsRequest.html'
+                                  title='rusoto::waf::ListWebACLsRequest'>ListWebACLsRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListWebACLsResponse.html'
+                                  title='rusoto::waf::ListWebACLsResponse'>ListWebACLsResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListXssMatchSetsRequest.html'
+                                  title='rusoto::waf::ListXssMatchSetsRequest'>ListXssMatchSetsRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>A request to list the <a>XssMatchSet</a> objects created by the current AWS account.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListXssMatchSetsResponse.html'
+                                  title='rusoto::waf::ListXssMatchSetsResponse'>ListXssMatchSetsResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The response to a <a>ListXssMatchSets</a> request.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Predicate.html'
+                                  title='rusoto::waf::Predicate'>Predicate</a></td>
+                           <td class='docblock-short'>
+                                <p>Specifies the <a>ByteMatchSet</a>, <a>IPSet</a>, <a>SqlInjectionMatchSet</a>, <a>XssMatchSet</a>, and <a>SizeConstraintSet</a> objects that you want to add to a <code>Rule</code> and, for each object, indicates whether you want to negate the settings, for example, requests that do NOT originate from the IP address 192.0.2.44. </p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Rule.html'
+                                  title='rusoto::waf::Rule'>Rule</a></td>
+                           <td class='docblock-short'>
+                                <p>A combination of <a>ByteMatchSet</a>, <a>IPSet</a>, and/or <a>SqlInjectionMatchSet</a> objects that identify the web requests that you want to allow, block, or count. For example, you might create a <code>Rule</code> that includes the following predicates:</p> <ul> <li>An <code>IPSet</code> that causes AWS WAF to search for web requests that originate from the IP address <code>192.0.2.44</code></li> <li>A <code>ByteMatchSet</code> that causes AWS WAF to search for web requests for which the value of the <code>User-Agent</code> header is <code>BadBot</code>.</li> </ul> <p>To match the settings in this <code>Rule</code>, a request must originate from <code>192.0.2.44</code> AND include a <code>User-Agent</code> header for which the value is <code>BadBot</code>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RuleSummary.html'
+                                  title='rusoto::waf::RuleSummary'>RuleSummary</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains the identifier and the friendly name or description of the <code>Rule</code>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RuleUpdate.html'
+                                  title='rusoto::waf::RuleUpdate'>RuleUpdate</a></td>
+                           <td class='docblock-short'>
+                                <p>Specifies a <code>Predicate</code> (such as an <code>IPSet</code>) and indicates whether you want to add it to a <code>Rule</code> or delete it from a <code>Rule</code>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SampledHTTPRequest.html'
+                                  title='rusoto::waf::SampledHTTPRequest'>SampledHTTPRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The response from a <a>GetSampledRequests</a> request includes a <code>SampledHTTPRequests</code> complex type that appears as <code>SampledRequests</code> in the response syntax. <code>SampledHTTPRequests</code> contains one <code>SampledHTTPRequest</code> object for each web request that is returned by <code>GetSampledRequests</code>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SizeConstraint.html'
+                                  title='rusoto::waf::SizeConstraint'>SizeConstraint</a></td>
+                           <td class='docblock-short'>
+                                <p>Specifies a constraint on the size of a part of the web request. AWS WAF uses the <code>Size</code>, <code>ComparisonOperator</code>, and <code>FieldToMatch</code> to build an expression in the form of "<code>Size</code> <code>ComparisonOperator</code> size in bytes of <code>FieldToMatch</code>". If that expression is true, the <code>SizeConstraint</code> is considered to match.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SizeConstraintSet.html'
+                                  title='rusoto::waf::SizeConstraintSet'>SizeConstraintSet</a></td>
+                           <td class='docblock-short'>
+                                <p>A complex type that contains <code>SizeConstraint</code> objects, which specify the parts of web requests that you want AWS WAF to inspect the size of. If a <code>SizeConstraintSet</code> contains more than one <code>SizeConstraint</code> object, a request only needs to match one constraint to be considered a match.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SizeConstraintSetSummary.html'
+                                  title='rusoto::waf::SizeConstraintSetSummary'>SizeConstraintSetSummary</a></td>
+                           <td class='docblock-short'>
+                                <p>The <code>Id</code> and <code>Name</code> of a <code>SizeConstraintSet</code>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SizeConstraintSetUpdate.html'
+                                  title='rusoto::waf::SizeConstraintSetUpdate'>SizeConstraintSetUpdate</a></td>
+                           <td class='docblock-short'>
+                                <p>Specifies the part of a web request that you want to inspect the size of and indicates whether you want to add the specification to a <a>SizeConstraintSet</a> or delete it from a <code>SizeConstraintSet</code>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SqlInjectionMatchSet.html'
+                                  title='rusoto::waf::SqlInjectionMatchSet'>SqlInjectionMatchSet</a></td>
+                           <td class='docblock-short'>
+                                <p>A complex type that contains <code>SqlInjectionMatchTuple</code> objects, which specify the parts of web requests that you want AWS WAF to inspect for snippets of malicious SQL code and, if you want AWS WAF to inspect a header, the name of the header. If a <code>SqlInjectionMatchSet</code> contains more than one <code>SqlInjectionMatchTuple</code> object, a request needs to include snippets of SQL code in only one of the specified parts of the request to be considered a match.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SqlInjectionMatchSetSummary.html'
+                                  title='rusoto::waf::SqlInjectionMatchSetSummary'>SqlInjectionMatchSetSummary</a></td>
+                           <td class='docblock-short'>
+                                <p>The <code>Id</code> and <code>Name</code> of a <code>SqlInjectionMatchSet</code>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SqlInjectionMatchSetUpdate.html'
+                                  title='rusoto::waf::SqlInjectionMatchSetUpdate'>SqlInjectionMatchSetUpdate</a></td>
+                           <td class='docblock-short'>
+                                <p>Specifies the part of a web request that you want to inspect for snippets of malicious SQL code and indicates whether you want to add the specification to a <a>SqlInjectionMatchSet</a> or delete it from a <code>SqlInjectionMatchSet</code>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SqlInjectionMatchTuple.html'
+                                  title='rusoto::waf::SqlInjectionMatchTuple'>SqlInjectionMatchTuple</a></td>
+                           <td class='docblock-short'>
+                                <p>Specifies the part of a web request that you want AWS WAF to inspect for snippets of malicious SQL code and, if you want AWS WAF to inspect a header, the name of the header.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.TimeWindow.html'
+                                  title='rusoto::waf::TimeWindow'>TimeWindow</a></td>
+                           <td class='docblock-short'>
+                                <p>In a <a>GetSampledRequests</a> request, the <code>StartTime</code> and <code>EndTime</code> objects specify the time range for which you want AWS WAF to return a sample of web requests.</p> <p>In a <a>GetSampledRequests</a> response, the <code>StartTime</code> and <code>EndTime</code> objects specify the time range for which AWS WAF actually returned a sample of web requests. AWS WAF gets the specified number of requests from among the first 5,000 requests that your AWS resource receives during the specified time period. If your resource receives more than 5,000 requests during that period, AWS WAF stops sampling after the 5,000th request. In that case, <code>EndTime</code> is the time that AWS WAF received the 5,000th request. </p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UpdateByteMatchSetRequest.html'
+                                  title='rusoto::waf::UpdateByteMatchSetRequest'>UpdateByteMatchSetRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UpdateByteMatchSetResponse.html'
+                                  title='rusoto::waf::UpdateByteMatchSetResponse'>UpdateByteMatchSetResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UpdateIPSetRequest.html'
+                                  title='rusoto::waf::UpdateIPSetRequest'>UpdateIPSetRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UpdateIPSetResponse.html'
+                                  title='rusoto::waf::UpdateIPSetResponse'>UpdateIPSetResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UpdateRuleRequest.html'
+                                  title='rusoto::waf::UpdateRuleRequest'>UpdateRuleRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UpdateRuleResponse.html'
+                                  title='rusoto::waf::UpdateRuleResponse'>UpdateRuleResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UpdateSizeConstraintSetRequest.html'
+                                  title='rusoto::waf::UpdateSizeConstraintSetRequest'>UpdateSizeConstraintSetRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UpdateSizeConstraintSetResponse.html'
+                                  title='rusoto::waf::UpdateSizeConstraintSetResponse'>UpdateSizeConstraintSetResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UpdateSqlInjectionMatchSetRequest.html'
+                                  title='rusoto::waf::UpdateSqlInjectionMatchSetRequest'>UpdateSqlInjectionMatchSetRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>A request to update a <a>SqlInjectionMatchSet</a>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UpdateSqlInjectionMatchSetResponse.html'
+                                  title='rusoto::waf::UpdateSqlInjectionMatchSetResponse'>UpdateSqlInjectionMatchSetResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The response to an <a>UpdateSqlInjectionMatchSets</a> request.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UpdateWebACLRequest.html'
+                                  title='rusoto::waf::UpdateWebACLRequest'>UpdateWebACLRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UpdateWebACLResponse.html'
+                                  title='rusoto::waf::UpdateWebACLResponse'>UpdateWebACLResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UpdateXssMatchSetRequest.html'
+                                  title='rusoto::waf::UpdateXssMatchSetRequest'>UpdateXssMatchSetRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>A request to update an <a>XssMatchSet</a>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UpdateXssMatchSetResponse.html'
+                                  title='rusoto::waf::UpdateXssMatchSetResponse'>UpdateXssMatchSetResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The response to an <a>UpdateXssMatchSets</a> request.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.WafAction.html'
+                                  title='rusoto::waf::WafAction'>WafAction</a></td>
+                           <td class='docblock-short'>
+                                <p>For the action that is associated with a rule in a <code>WebACL</code>, specifies the action that you want AWS WAF to perform when a web request matches all of the conditions in a rule. For the default action in a <code>WebACL</code>, specifies the action that you want AWS WAF to take when a web request doesn't match all of the conditions in any of the rules in a <code>WebACL</code>. </p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.WafClient.html'
+                                  title='rusoto::waf::WafClient'>WafClient</a></td>
+                           <td class='docblock-short'>
+                                <p>A client for the WAF API.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.WebACL.html'
+                                  title='rusoto::waf::WebACL'>WebACL</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains the <code>Rules</code> that identify the requests that you want to allow, block, or count. In a <code>WebACL</code>, you also specify a default action (<code>ALLOW</code> or <code>BLOCK</code>), and the action for each <code>Rule</code> that you add to a <code>WebACL</code>, for example, block requests from specified IP addresses or block requests from specified referrers. You also associate the <code>WebACL</code> with a CloudFront distribution to identify the requests that you want AWS WAF to filter. If you add more than one <code>Rule</code> to a <code>WebACL</code>, a request needs to match only one of the specifications to be allowed, blocked, or counted. For more information, see <a>UpdateWebACL</a>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.WebACLSummary.html'
+                                  title='rusoto::waf::WebACLSummary'>WebACLSummary</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains the identifier and the name or description of the <a>WebACL</a>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.WebACLUpdate.html'
+                                  title='rusoto::waf::WebACLUpdate'>WebACLUpdate</a></td>
+                           <td class='docblock-short'>
+                                <p>Specifies whether to insert a <code>Rule</code> into or delete a <code>Rule</code> from a <code>WebACL</code>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.XssMatchSet.html'
+                                  title='rusoto::waf::XssMatchSet'>XssMatchSet</a></td>
+                           <td class='docblock-short'>
+                                <p>A complex type that contains <code>XssMatchTuple</code> objects, which specify the parts of web requests that you want AWS WAF to inspect for cross-site scripting attacks and, if you want AWS WAF to inspect a header, the name of the header. If a <code>XssMatchSet</code> contains more than one <code>XssMatchTuple</code> object, a request needs to include cross-site scripting attacks in only one of the specified parts of the request to be considered a match.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.XssMatchSetSummary.html'
+                                  title='rusoto::waf::XssMatchSetSummary'>XssMatchSetSummary</a></td>
+                           <td class='docblock-short'>
+                                <p>The <code>Id</code> and <code>Name</code> of an <code>XssMatchSet</code>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.XssMatchSetUpdate.html'
+                                  title='rusoto::waf::XssMatchSetUpdate'>XssMatchSetUpdate</a></td>
+                           <td class='docblock-short'>
+                                <p>Specifies the part of a web request that you want to inspect for cross-site scripting attacks and indicates whether you want to add the specification to an <a>XssMatchSet</a> or delete it from an <code>XssMatchSet</code>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.XssMatchTuple.html'
+                                  title='rusoto::waf::XssMatchTuple'>XssMatchTuple</a></td>
+                           <td class='docblock-short'>
+                                <p>Specifies the part of a web request that you want AWS WAF to inspect for cross-site scripting attacks and, if you want AWS WAF to inspect a header, the name of the header.</p>
+                           </td>
+                       </tr></table><h2 id='enums' class='section-header'><a href="#enums">Enums</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.CreateByteMatchSetError.html'
+                                  title='rusoto::waf::CreateByteMatchSetError'>CreateByteMatchSetError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.CreateIPSetError.html'
+                                  title='rusoto::waf::CreateIPSetError'>CreateIPSetError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.CreateRuleError.html'
+                                  title='rusoto::waf::CreateRuleError'>CreateRuleError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.CreateSizeConstraintSetError.html'
+                                  title='rusoto::waf::CreateSizeConstraintSetError'>CreateSizeConstraintSetError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.CreateSqlInjectionMatchSetError.html'
+                                  title='rusoto::waf::CreateSqlInjectionMatchSetError'>CreateSqlInjectionMatchSetError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.CreateWebACLError.html'
+                                  title='rusoto::waf::CreateWebACLError'>CreateWebACLError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.CreateXssMatchSetError.html'
+                                  title='rusoto::waf::CreateXssMatchSetError'>CreateXssMatchSetError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DeleteByteMatchSetError.html'
+                                  title='rusoto::waf::DeleteByteMatchSetError'>DeleteByteMatchSetError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DeleteIPSetError.html'
+                                  title='rusoto::waf::DeleteIPSetError'>DeleteIPSetError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DeleteRuleError.html'
+                                  title='rusoto::waf::DeleteRuleError'>DeleteRuleError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DeleteSizeConstraintSetError.html'
+                                  title='rusoto::waf::DeleteSizeConstraintSetError'>DeleteSizeConstraintSetError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DeleteSqlInjectionMatchSetError.html'
+                                  title='rusoto::waf::DeleteSqlInjectionMatchSetError'>DeleteSqlInjectionMatchSetError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DeleteWebACLError.html'
+                                  title='rusoto::waf::DeleteWebACLError'>DeleteWebACLError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DeleteXssMatchSetError.html'
+                                  title='rusoto::waf::DeleteXssMatchSetError'>DeleteXssMatchSetError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.GetByteMatchSetError.html'
+                                  title='rusoto::waf::GetByteMatchSetError'>GetByteMatchSetError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.GetChangeTokenError.html'
+                                  title='rusoto::waf::GetChangeTokenError'>GetChangeTokenError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.GetChangeTokenStatusError.html'
+                                  title='rusoto::waf::GetChangeTokenStatusError'>GetChangeTokenStatusError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.GetIPSetError.html'
+                                  title='rusoto::waf::GetIPSetError'>GetIPSetError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.GetRuleError.html'
+                                  title='rusoto::waf::GetRuleError'>GetRuleError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.GetSampledRequestsError.html'
+                                  title='rusoto::waf::GetSampledRequestsError'>GetSampledRequestsError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.GetSizeConstraintSetError.html'
+                                  title='rusoto::waf::GetSizeConstraintSetError'>GetSizeConstraintSetError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.GetSqlInjectionMatchSetError.html'
+                                  title='rusoto::waf::GetSqlInjectionMatchSetError'>GetSqlInjectionMatchSetError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.GetWebACLError.html'
+                                  title='rusoto::waf::GetWebACLError'>GetWebACLError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.GetXssMatchSetError.html'
+                                  title='rusoto::waf::GetXssMatchSetError'>GetXssMatchSetError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ListByteMatchSetsError.html'
+                                  title='rusoto::waf::ListByteMatchSetsError'>ListByteMatchSetsError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ListIPSetsError.html'
+                                  title='rusoto::waf::ListIPSetsError'>ListIPSetsError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ListRulesError.html'
+                                  title='rusoto::waf::ListRulesError'>ListRulesError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ListSizeConstraintSetsError.html'
+                                  title='rusoto::waf::ListSizeConstraintSetsError'>ListSizeConstraintSetsError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ListSqlInjectionMatchSetsError.html'
+                                  title='rusoto::waf::ListSqlInjectionMatchSetsError'>ListSqlInjectionMatchSetsError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ListWebACLsError.html'
+                                  title='rusoto::waf::ListWebACLsError'>ListWebACLsError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ListXssMatchSetsError.html'
+                                  title='rusoto::waf::ListXssMatchSetsError'>ListXssMatchSetsError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.UpdateByteMatchSetError.html'
+                                  title='rusoto::waf::UpdateByteMatchSetError'>UpdateByteMatchSetError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.UpdateIPSetError.html'
+                                  title='rusoto::waf::UpdateIPSetError'>UpdateIPSetError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.UpdateRuleError.html'
+                                  title='rusoto::waf::UpdateRuleError'>UpdateRuleError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.UpdateSizeConstraintSetError.html'
+                                  title='rusoto::waf::UpdateSizeConstraintSetError'>UpdateSizeConstraintSetError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.UpdateSqlInjectionMatchSetError.html'
+                                  title='rusoto::waf::UpdateSqlInjectionMatchSetError'>UpdateSqlInjectionMatchSetError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.UpdateWebACLError.html'
+                                  title='rusoto::waf::UpdateWebACLError'>UpdateWebACLError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.UpdateXssMatchSetError.html'
+                                  title='rusoto::waf::UpdateXssMatchSetError'>UpdateXssMatchSetError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr></table><h2 id='types' class='section-header'><a href="#types">Type Definitions</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Action.html'
+                                  title='rusoto::waf::Action'>Action</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ActivatedRules.html'
+                                  title='rusoto::waf::ActivatedRules'>ActivatedRules</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ByteMatchSetSummaries.html'
+                                  title='rusoto::waf::ByteMatchSetSummaries'>ByteMatchSetSummaries</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ByteMatchSetUpdates.html'
+                                  title='rusoto::waf::ByteMatchSetUpdates'>ByteMatchSetUpdates</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ByteMatchTargetString.html'
+                                  title='rusoto::waf::ByteMatchTargetString'>ByteMatchTargetString</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ByteMatchTuples.html'
+                                  title='rusoto::waf::ByteMatchTuples'>ByteMatchTuples</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ChangeAction.html'
+                                  title='rusoto::waf::ChangeAction'>ChangeAction</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ChangeToken.html'
+                                  title='rusoto::waf::ChangeToken'>ChangeToken</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ChangeTokenStatus.html'
+                                  title='rusoto::waf::ChangeTokenStatus'>ChangeTokenStatus</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ComparisonOperator.html'
+                                  title='rusoto::waf::ComparisonOperator'>ComparisonOperator</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Country.html'
+                                  title='rusoto::waf::Country'>Country</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ErrorMessage.html'
+                                  title='rusoto::waf::ErrorMessage'>ErrorMessage</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.HTTPHeaders.html'
+                                  title='rusoto::waf::HTTPHeaders'>HTTPHeaders</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.HTTPMethod.html'
+                                  title='rusoto::waf::HTTPMethod'>HTTPMethod</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.HTTPVersion.html'
+                                  title='rusoto::waf::HTTPVersion'>HTTPVersion</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.HeaderName.html'
+                                  title='rusoto::waf::HeaderName'>HeaderName</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.HeaderValue.html'
+                                  title='rusoto::waf::HeaderValue'>HeaderValue</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.IPSetDescriptorType.html'
+                                  title='rusoto::waf::IPSetDescriptorType'>IPSetDescriptorType</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.IPSetDescriptorValue.html'
+                                  title='rusoto::waf::IPSetDescriptorValue'>IPSetDescriptorValue</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.IPSetDescriptors.html'
+                                  title='rusoto::waf::IPSetDescriptors'>IPSetDescriptors</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.IPSetSummaries.html'
+                                  title='rusoto::waf::IPSetSummaries'>IPSetSummaries</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.IPSetUpdates.html'
+                                  title='rusoto::waf::IPSetUpdates'>IPSetUpdates</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.IPString.html'
+                                  title='rusoto::waf::IPString'>IPString</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ListMaxItems.html'
+                                  title='rusoto::waf::ListMaxItems'>ListMaxItems</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.MatchFieldData.html'
+                                  title='rusoto::waf::MatchFieldData'>MatchFieldData</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.MatchFieldType.html'
+                                  title='rusoto::waf::MatchFieldType'>MatchFieldType</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.MetricName.html'
+                                  title='rusoto::waf::MetricName'>MetricName</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Negated.html'
+                                  title='rusoto::waf::Negated'>Negated</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.NextMarker.html'
+                                  title='rusoto::waf::NextMarker'>NextMarker</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.PaginationLimit.html'
+                                  title='rusoto::waf::PaginationLimit'>PaginationLimit</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ParameterExceptionField.html'
+                                  title='rusoto::waf::ParameterExceptionField'>ParameterExceptionField</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ParameterExceptionParameter.html'
+                                  title='rusoto::waf::ParameterExceptionParameter'>ParameterExceptionParameter</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ParameterExceptionReason.html'
+                                  title='rusoto::waf::ParameterExceptionReason'>ParameterExceptionReason</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.PopulationSize.html'
+                                  title='rusoto::waf::PopulationSize'>PopulationSize</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.PositionalConstraint.html'
+                                  title='rusoto::waf::PositionalConstraint'>PositionalConstraint</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.PredicateType.html'
+                                  title='rusoto::waf::PredicateType'>PredicateType</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Predicates.html'
+                                  title='rusoto::waf::Predicates'>Predicates</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ResourceId.html'
+                                  title='rusoto::waf::ResourceId'>ResourceId</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ResourceName.html'
+                                  title='rusoto::waf::ResourceName'>ResourceName</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.RulePriority.html'
+                                  title='rusoto::waf::RulePriority'>RulePriority</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.RuleSummaries.html'
+                                  title='rusoto::waf::RuleSummaries'>RuleSummaries</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.RuleUpdates.html'
+                                  title='rusoto::waf::RuleUpdates'>RuleUpdates</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.SampleWeight.html'
+                                  title='rusoto::waf::SampleWeight'>SampleWeight</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.SampledHTTPRequests.html'
+                                  title='rusoto::waf::SampledHTTPRequests'>SampledHTTPRequests</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Size.html'
+                                  title='rusoto::waf::Size'>Size</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.SizeConstraintSetSummaries.html'
+                                  title='rusoto::waf::SizeConstraintSetSummaries'>SizeConstraintSetSummaries</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.SizeConstraintSetUpdates.html'
+                                  title='rusoto::waf::SizeConstraintSetUpdates'>SizeConstraintSetUpdates</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.SizeConstraints.html'
+                                  title='rusoto::waf::SizeConstraints'>SizeConstraints</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.SqlInjectionMatchSetSummaries.html'
+                                  title='rusoto::waf::SqlInjectionMatchSetSummaries'>SqlInjectionMatchSetSummaries</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.SqlInjectionMatchSetUpdates.html'
+                                  title='rusoto::waf::SqlInjectionMatchSetUpdates'>SqlInjectionMatchSetUpdates</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.SqlInjectionMatchTuples.html'
+                                  title='rusoto::waf::SqlInjectionMatchTuples'>SqlInjectionMatchTuples</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.TextTransformation.html'
+                                  title='rusoto::waf::TextTransformation'>TextTransformation</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Timestamp.html'
+                                  title='rusoto::waf::Timestamp'>Timestamp</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.URIString.html'
+                                  title='rusoto::waf::URIString'>URIString</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.WafActionType.html'
+                                  title='rusoto::waf::WafActionType'>WafActionType</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.WebACLSummaries.html'
+                                  title='rusoto::waf::WebACLSummaries'>WebACLSummaries</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.WebACLUpdates.html'
+                                  title='rusoto::waf::WebACLUpdates'>WebACLUpdates</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.XssMatchSetSummaries.html'
+                                  title='rusoto::waf::XssMatchSetSummaries'>XssMatchSetSummaries</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.XssMatchSetUpdates.html'
+                                  title='rusoto::waf::XssMatchSetUpdates'>XssMatchSetUpdates</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.XssMatchTuples.html'
+                                  title='rusoto::waf::XssMatchTuples'>XssMatchTuples</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr></table></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "rusoto";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../../jquery.js"></script>
+    <script src="../../main.js"></script>
+    
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>

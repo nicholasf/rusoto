@@ -1,0 +1,2001 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `storagegateway` mod in crate `rusoto`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, storagegateway">
+
+    <title>rusoto::storagegateway - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='../index.html'>rusoto</a></p><script>window.sidebarCurrent = {name: 'storagegateway', ty: 'mod', relpath: '../'};</script><script defer src="../sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content mod">
+<h1 class='fqn'><span class='in-band'>Module <a href='../index.html'>rusoto</a>::<wbr><a class='mod' href=''>storagegateway</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-375186' class='srclink' href='../../src/rusoto/src/storagegateway.rs.html#1-3' title='goto source code'>[src]</a></span></h1>
+<div class='docblock'><p>Amazon Storage Gateway</p>
+</div><h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ActivateGatewayInput.html'
+                                  title='rusoto::storagegateway::ActivateGatewayInput'>ActivateGatewayInput</a></td>
+                           <td class='docblock-short'>
+                                <p><p>A JSON object containing one or more of the following fields:</p> <ul> <li> <p> <a>ActivateGatewayInput$ActivationKey</a> </p> </li> <li> <p> <a>ActivateGatewayInput$GatewayName</a> </p> </li> <li> <p> <a>ActivateGatewayInput$GatewayRegion</a> </p> </li> <li> <p> <a>ActivateGatewayInput$GatewayTimezone</a> </p> </li> <li> <p> <a>ActivateGatewayInput$GatewayType</a> </p> </li> <li> <p> <a>ActivateGatewayInput$TapeDriveType</a> </p> </li> <li> <p> <a>ActivateGatewayInput$MediumChangerType</a> </p> </li> </ul></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ActivateGatewayOutput.html'
+                                  title='rusoto::storagegateway::ActivateGatewayOutput'>ActivateGatewayOutput</a></td>
+                           <td class='docblock-short'>
+                                <p><p>AWS Storage Gateway returns the Amazon Resource Name (ARN) of the activated gateway. It is a string made of information such as your account, gateway name, and region. This ARN is used to reference the gateway in other API operations as well as resource-based authorization.</p> <note><p>For gateways activated prior to September 02, 2015 the gateway ARN contains the gateway name rather than the gateway id. Changing the name of the gateway has no effect on the gateway ARN.</p> </note></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AddCacheInput.html'
+                                  title='rusoto::storagegateway::AddCacheInput'>AddCacheInput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AddCacheOutput.html'
+                                  title='rusoto::storagegateway::AddCacheOutput'>AddCacheOutput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AddTagsToResourceInput.html'
+                                  title='rusoto::storagegateway::AddTagsToResourceInput'>AddTagsToResourceInput</a></td>
+                           <td class='docblock-short'>
+                                <p>AddTagsToResourceInput</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AddTagsToResourceOutput.html'
+                                  title='rusoto::storagegateway::AddTagsToResourceOutput'>AddTagsToResourceOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>AddTagsToResourceOutput</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AddUploadBufferInput.html'
+                                  title='rusoto::storagegateway::AddUploadBufferInput'>AddUploadBufferInput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AddUploadBufferOutput.html'
+                                  title='rusoto::storagegateway::AddUploadBufferOutput'>AddUploadBufferOutput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AddWorkingStorageInput.html'
+                                  title='rusoto::storagegateway::AddWorkingStorageInput'>AddWorkingStorageInput</a></td>
+                           <td class='docblock-short'>
+                                <p><p>A JSON object containing one or more of the following fields:</p> <ul> <li> <p> <a>AddWorkingStorageInput$DiskIds</a> </p> </li> </ul></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AddWorkingStorageOutput.html'
+                                  title='rusoto::storagegateway::AddWorkingStorageOutput'>AddWorkingStorageOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>A JSON object containing the of the gateway for which working storage was configured.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CachediSCSIVolume.html'
+                                  title='rusoto::storagegateway::CachediSCSIVolume'>CachediSCSIVolume</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CancelArchivalInput.html'
+                                  title='rusoto::storagegateway::CancelArchivalInput'>CancelArchivalInput</a></td>
+                           <td class='docblock-short'>
+                                <p>CancelArchivalInput</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CancelArchivalOutput.html'
+                                  title='rusoto::storagegateway::CancelArchivalOutput'>CancelArchivalOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>CancelArchivalOutput</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CancelRetrievalInput.html'
+                                  title='rusoto::storagegateway::CancelRetrievalInput'>CancelRetrievalInput</a></td>
+                           <td class='docblock-short'>
+                                <p>CancelRetrievalInput</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CancelRetrievalOutput.html'
+                                  title='rusoto::storagegateway::CancelRetrievalOutput'>CancelRetrievalOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>CancelRetrievalOutput</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ChapInfo.html'
+                                  title='rusoto::storagegateway::ChapInfo'>ChapInfo</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes Challenge-Handshake Authentication Protocol (CHAP) information that supports authentication between your gateway and iSCSI initiators.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateCachediSCSIVolumeInput.html'
+                                  title='rusoto::storagegateway::CreateCachediSCSIVolumeInput'>CreateCachediSCSIVolumeInput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateCachediSCSIVolumeOutput.html'
+                                  title='rusoto::storagegateway::CreateCachediSCSIVolumeOutput'>CreateCachediSCSIVolumeOutput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateSnapshotFromVolumeRecoveryPointInput.html'
+                                  title='rusoto::storagegateway::CreateSnapshotFromVolumeRecoveryPointInput'>CreateSnapshotFromVolumeRecoveryPointInput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateSnapshotFromVolumeRecoveryPointOutput.html'
+                                  title='rusoto::storagegateway::CreateSnapshotFromVolumeRecoveryPointOutput'>CreateSnapshotFromVolumeRecoveryPointOutput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateSnapshotInput.html'
+                                  title='rusoto::storagegateway::CreateSnapshotInput'>CreateSnapshotInput</a></td>
+                           <td class='docblock-short'>
+                                <p><p>A JSON object containing one or more of the following fields:</p> <ul> <li> <p> <a>CreateSnapshotInput$SnapshotDescription</a> </p> </li> <li> <p> <a>CreateSnapshotInput$VolumeARN</a> </p> </li> </ul></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateSnapshotOutput.html'
+                                  title='rusoto::storagegateway::CreateSnapshotOutput'>CreateSnapshotOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>A JSON object containing the following fields:</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateStorediSCSIVolumeInput.html'
+                                  title='rusoto::storagegateway::CreateStorediSCSIVolumeInput'>CreateStorediSCSIVolumeInput</a></td>
+                           <td class='docblock-short'>
+                                <p><p>A JSON object containing one or more of the following fields:</p> <ul> <li> <p> <a>CreateStorediSCSIVolumeInput$DiskId</a> </p> </li> <li> <p> <a>CreateStorediSCSIVolumeInput$NetworkInterfaceId</a> </p> </li> <li> <p> <a>CreateStorediSCSIVolumeInput$PreserveExistingData</a> </p> </li> <li> <p> <a>CreateStorediSCSIVolumeInput$SnapshotId</a> </p> </li> <li> <p> <a>CreateStorediSCSIVolumeInput$TargetName</a> </p> </li> </ul></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateStorediSCSIVolumeOutput.html'
+                                  title='rusoto::storagegateway::CreateStorediSCSIVolumeOutput'>CreateStorediSCSIVolumeOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>A JSON object containing the following fields:</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateTapeWithBarcodeInput.html'
+                                  title='rusoto::storagegateway::CreateTapeWithBarcodeInput'>CreateTapeWithBarcodeInput</a></td>
+                           <td class='docblock-short'>
+                                <p>CreateTapeWithBarcodeInput</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateTapeWithBarcodeOutput.html'
+                                  title='rusoto::storagegateway::CreateTapeWithBarcodeOutput'>CreateTapeWithBarcodeOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>CreateTapeOutput</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateTapesInput.html'
+                                  title='rusoto::storagegateway::CreateTapesInput'>CreateTapesInput</a></td>
+                           <td class='docblock-short'>
+                                <p>CreateTapesInput</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateTapesOutput.html'
+                                  title='rusoto::storagegateway::CreateTapesOutput'>CreateTapesOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>CreateTapeOutput</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteBandwidthRateLimitInput.html'
+                                  title='rusoto::storagegateway::DeleteBandwidthRateLimitInput'>DeleteBandwidthRateLimitInput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteBandwidthRateLimitOutput.html'
+                                  title='rusoto::storagegateway::DeleteBandwidthRateLimitOutput'>DeleteBandwidthRateLimitOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>A JSON object containing the of the gateway whose bandwidth rate information was deleted.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteChapCredentialsInput.html'
+                                  title='rusoto::storagegateway::DeleteChapCredentialsInput'>DeleteChapCredentialsInput</a></td>
+                           <td class='docblock-short'>
+                                <p><p>A JSON object containing one or more of the following fields:</p> <ul> <li> <p> <a>DeleteChapCredentialsInput$InitiatorName</a> </p> </li> <li> <p> <a>DeleteChapCredentialsInput$TargetARN</a> </p> </li> </ul></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteChapCredentialsOutput.html'
+                                  title='rusoto::storagegateway::DeleteChapCredentialsOutput'>DeleteChapCredentialsOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>A JSON object containing the following fields:</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteGatewayInput.html'
+                                  title='rusoto::storagegateway::DeleteGatewayInput'>DeleteGatewayInput</a></td>
+                           <td class='docblock-short'>
+                                <p>A JSON object containing the id of the gateway to delete.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteGatewayOutput.html'
+                                  title='rusoto::storagegateway::DeleteGatewayOutput'>DeleteGatewayOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>A JSON object containing the id of the deleted gateway.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteSnapshotScheduleInput.html'
+                                  title='rusoto::storagegateway::DeleteSnapshotScheduleInput'>DeleteSnapshotScheduleInput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteSnapshotScheduleOutput.html'
+                                  title='rusoto::storagegateway::DeleteSnapshotScheduleOutput'>DeleteSnapshotScheduleOutput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteTapeArchiveInput.html'
+                                  title='rusoto::storagegateway::DeleteTapeArchiveInput'>DeleteTapeArchiveInput</a></td>
+                           <td class='docblock-short'>
+                                <p>DeleteTapeArchiveInput</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteTapeArchiveOutput.html'
+                                  title='rusoto::storagegateway::DeleteTapeArchiveOutput'>DeleteTapeArchiveOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>DeleteTapeArchiveOutput</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteTapeInput.html'
+                                  title='rusoto::storagegateway::DeleteTapeInput'>DeleteTapeInput</a></td>
+                           <td class='docblock-short'>
+                                <p>DeleteTapeInput</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteTapeOutput.html'
+                                  title='rusoto::storagegateway::DeleteTapeOutput'>DeleteTapeOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>DeleteTapeOutput</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteVolumeInput.html'
+                                  title='rusoto::storagegateway::DeleteVolumeInput'>DeleteVolumeInput</a></td>
+                           <td class='docblock-short'>
+                                <p>A JSON object containing the <a>DeleteVolumeInput$VolumeARN</a> to delete.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteVolumeOutput.html'
+                                  title='rusoto::storagegateway::DeleteVolumeOutput'>DeleteVolumeOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>A JSON object containing the of the storage volume that was deleted</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeBandwidthRateLimitInput.html'
+                                  title='rusoto::storagegateway::DescribeBandwidthRateLimitInput'>DescribeBandwidthRateLimitInput</a></td>
+                           <td class='docblock-short'>
+                                <p>A JSON object containing the of the gateway.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeBandwidthRateLimitOutput.html'
+                                  title='rusoto::storagegateway::DescribeBandwidthRateLimitOutput'>DescribeBandwidthRateLimitOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>A JSON object containing the following fields:</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeCacheInput.html'
+                                  title='rusoto::storagegateway::DescribeCacheInput'>DescribeCacheInput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeCacheOutput.html'
+                                  title='rusoto::storagegateway::DescribeCacheOutput'>DescribeCacheOutput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeCachediSCSIVolumesInput.html'
+                                  title='rusoto::storagegateway::DescribeCachediSCSIVolumesInput'>DescribeCachediSCSIVolumesInput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeCachediSCSIVolumesOutput.html'
+                                  title='rusoto::storagegateway::DescribeCachediSCSIVolumesOutput'>DescribeCachediSCSIVolumesOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>A JSON object containing the following fields:</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeChapCredentialsInput.html'
+                                  title='rusoto::storagegateway::DescribeChapCredentialsInput'>DescribeChapCredentialsInput</a></td>
+                           <td class='docblock-short'>
+                                <p>A JSON object containing the Amazon Resource Name (ARN) of the iSCSI volume target.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeChapCredentialsOutput.html'
+                                  title='rusoto::storagegateway::DescribeChapCredentialsOutput'>DescribeChapCredentialsOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>A JSON object containing a .</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeGatewayInformationInput.html'
+                                  title='rusoto::storagegateway::DescribeGatewayInformationInput'>DescribeGatewayInformationInput</a></td>
+                           <td class='docblock-short'>
+                                <p>A JSON object containing the id of the gateway.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeGatewayInformationOutput.html'
+                                  title='rusoto::storagegateway::DescribeGatewayInformationOutput'>DescribeGatewayInformationOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>A JSON object containing the following fields:</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeMaintenanceStartTimeInput.html'
+                                  title='rusoto::storagegateway::DescribeMaintenanceStartTimeInput'>DescribeMaintenanceStartTimeInput</a></td>
+                           <td class='docblock-short'>
+                                <p>A JSON object containing the of the gateway.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeMaintenanceStartTimeOutput.html'
+                                  title='rusoto::storagegateway::DescribeMaintenanceStartTimeOutput'>DescribeMaintenanceStartTimeOutput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeSnapshotScheduleInput.html'
+                                  title='rusoto::storagegateway::DescribeSnapshotScheduleInput'>DescribeSnapshotScheduleInput</a></td>
+                           <td class='docblock-short'>
+                                <p>A JSON object containing the <a>DescribeSnapshotScheduleInput$VolumeARN</a> of the volume.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeSnapshotScheduleOutput.html'
+                                  title='rusoto::storagegateway::DescribeSnapshotScheduleOutput'>DescribeSnapshotScheduleOutput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeStorediSCSIVolumesInput.html'
+                                  title='rusoto::storagegateway::DescribeStorediSCSIVolumesInput'>DescribeStorediSCSIVolumesInput</a></td>
+                           <td class='docblock-short'>
+                                <p>A JSON object containing a list of <a>DescribeStorediSCSIVolumesInput$VolumeARNs</a>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeStorediSCSIVolumesOutput.html'
+                                  title='rusoto::storagegateway::DescribeStorediSCSIVolumesOutput'>DescribeStorediSCSIVolumesOutput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeTapeArchivesInput.html'
+                                  title='rusoto::storagegateway::DescribeTapeArchivesInput'>DescribeTapeArchivesInput</a></td>
+                           <td class='docblock-short'>
+                                <p>DescribeTapeArchivesInput</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeTapeArchivesOutput.html'
+                                  title='rusoto::storagegateway::DescribeTapeArchivesOutput'>DescribeTapeArchivesOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>DescribeTapeArchivesOutput</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeTapeRecoveryPointsInput.html'
+                                  title='rusoto::storagegateway::DescribeTapeRecoveryPointsInput'>DescribeTapeRecoveryPointsInput</a></td>
+                           <td class='docblock-short'>
+                                <p>DescribeTapeRecoveryPointsInput</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeTapeRecoveryPointsOutput.html'
+                                  title='rusoto::storagegateway::DescribeTapeRecoveryPointsOutput'>DescribeTapeRecoveryPointsOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>DescribeTapeRecoveryPointsOutput</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeTapesInput.html'
+                                  title='rusoto::storagegateway::DescribeTapesInput'>DescribeTapesInput</a></td>
+                           <td class='docblock-short'>
+                                <p>DescribeTapesInput</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeTapesOutput.html'
+                                  title='rusoto::storagegateway::DescribeTapesOutput'>DescribeTapesOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>DescribeTapesOutput</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeUploadBufferInput.html'
+                                  title='rusoto::storagegateway::DescribeUploadBufferInput'>DescribeUploadBufferInput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeUploadBufferOutput.html'
+                                  title='rusoto::storagegateway::DescribeUploadBufferOutput'>DescribeUploadBufferOutput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeVTLDevicesInput.html'
+                                  title='rusoto::storagegateway::DescribeVTLDevicesInput'>DescribeVTLDevicesInput</a></td>
+                           <td class='docblock-short'>
+                                <p>DescribeVTLDevicesInput</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeVTLDevicesOutput.html'
+                                  title='rusoto::storagegateway::DescribeVTLDevicesOutput'>DescribeVTLDevicesOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>DescribeVTLDevicesOutput</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeWorkingStorageInput.html'
+                                  title='rusoto::storagegateway::DescribeWorkingStorageInput'>DescribeWorkingStorageInput</a></td>
+                           <td class='docblock-short'>
+                                <p>A JSON object containing the of the gateway.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeWorkingStorageOutput.html'
+                                  title='rusoto::storagegateway::DescribeWorkingStorageOutput'>DescribeWorkingStorageOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>A JSON object containing the following fields:</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeviceiSCSIAttributes.html'
+                                  title='rusoto::storagegateway::DeviceiSCSIAttributes'>DeviceiSCSIAttributes</a></td>
+                           <td class='docblock-short'>
+                                <p>Lists iSCSI information about a VTL device.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DisableGatewayInput.html'
+                                  title='rusoto::storagegateway::DisableGatewayInput'>DisableGatewayInput</a></td>
+                           <td class='docblock-short'>
+                                <p>DisableGatewayInput</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DisableGatewayOutput.html'
+                                  title='rusoto::storagegateway::DisableGatewayOutput'>DisableGatewayOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>DisableGatewayOutput</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Disk.html'
+                                  title='rusoto::storagegateway::Disk'>Disk</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GatewayInfo.html'
+                                  title='rusoto::storagegateway::GatewayInfo'>GatewayInfo</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes a gateway object.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListGatewaysInput.html'
+                                  title='rusoto::storagegateway::ListGatewaysInput'>ListGatewaysInput</a></td>
+                           <td class='docblock-short'>
+                                <p><p>A JSON object containing zero or more of the following fields:</p> <ul> <li> <p> <a>ListGatewaysInput$Limit</a> </p> </li> <li> <p> <a>ListGatewaysInput$Marker</a> </p> </li> </ul></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListGatewaysOutput.html'
+                                  title='rusoto::storagegateway::ListGatewaysOutput'>ListGatewaysOutput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListLocalDisksInput.html'
+                                  title='rusoto::storagegateway::ListLocalDisksInput'>ListLocalDisksInput</a></td>
+                           <td class='docblock-short'>
+                                <p>A JSON object containing the of the gateway.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListLocalDisksOutput.html'
+                                  title='rusoto::storagegateway::ListLocalDisksOutput'>ListLocalDisksOutput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListTagsForResourceInput.html'
+                                  title='rusoto::storagegateway::ListTagsForResourceInput'>ListTagsForResourceInput</a></td>
+                           <td class='docblock-short'>
+                                <p>ListTagsForResourceInput</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListTagsForResourceOutput.html'
+                                  title='rusoto::storagegateway::ListTagsForResourceOutput'>ListTagsForResourceOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>ListTagsForResourceOutput</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListTapesInput.html'
+                                  title='rusoto::storagegateway::ListTapesInput'>ListTapesInput</a></td>
+                           <td class='docblock-short'>
+                                <p><p>A JSON object that contains one or more of the following fields:</p> <ul> <li> <p> <a>ListTapesInput$Limit</a> </p> </li> <li> <p> <a>ListTapesInput$Marker</a> </p> </li> <li> <p> <a>ListTapesInput$TapeARNs</a> </p> </li> </ul></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListTapesOutput.html'
+                                  title='rusoto::storagegateway::ListTapesOutput'>ListTapesOutput</a></td>
+                           <td class='docblock-short'>
+                                <p><p>A JSON object containing the following fields:</p> <ul> <li> <p> <a>ListTapesOutput$Marker</a> </p> </li> <li> <p> <a>ListTapesOutput$VolumeInfos</a> </p> </li> </ul></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListVolumeInitiatorsInput.html'
+                                  title='rusoto::storagegateway::ListVolumeInitiatorsInput'>ListVolumeInitiatorsInput</a></td>
+                           <td class='docblock-short'>
+                                <p>ListVolumeInitiatorsInput</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListVolumeInitiatorsOutput.html'
+                                  title='rusoto::storagegateway::ListVolumeInitiatorsOutput'>ListVolumeInitiatorsOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>ListVolumeInitiatorsOutput</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListVolumeRecoveryPointsInput.html'
+                                  title='rusoto::storagegateway::ListVolumeRecoveryPointsInput'>ListVolumeRecoveryPointsInput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListVolumeRecoveryPointsOutput.html'
+                                  title='rusoto::storagegateway::ListVolumeRecoveryPointsOutput'>ListVolumeRecoveryPointsOutput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListVolumesInput.html'
+                                  title='rusoto::storagegateway::ListVolumesInput'>ListVolumesInput</a></td>
+                           <td class='docblock-short'>
+                                <p><p>A JSON object that contains one or more of the following fields:</p> <ul> <li> <p> <a>ListVolumesInput$Limit</a> </p> </li> <li> <p> <a>ListVolumesInput$Marker</a> </p> </li> </ul></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListVolumesOutput.html'
+                                  title='rusoto::storagegateway::ListVolumesOutput'>ListVolumesOutput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.NetworkInterface.html'
+                                  title='rusoto::storagegateway::NetworkInterface'>NetworkInterface</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes a gateway's network interface.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RemoveTagsFromResourceInput.html'
+                                  title='rusoto::storagegateway::RemoveTagsFromResourceInput'>RemoveTagsFromResourceInput</a></td>
+                           <td class='docblock-short'>
+                                <p>RemoveTagsFromResourceInput</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RemoveTagsFromResourceOutput.html'
+                                  title='rusoto::storagegateway::RemoveTagsFromResourceOutput'>RemoveTagsFromResourceOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>RemoveTagsFromResourceOutput</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ResetCacheInput.html'
+                                  title='rusoto::storagegateway::ResetCacheInput'>ResetCacheInput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ResetCacheOutput.html'
+                                  title='rusoto::storagegateway::ResetCacheOutput'>ResetCacheOutput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RetrieveTapeArchiveInput.html'
+                                  title='rusoto::storagegateway::RetrieveTapeArchiveInput'>RetrieveTapeArchiveInput</a></td>
+                           <td class='docblock-short'>
+                                <p>RetrieveTapeArchiveInput</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RetrieveTapeArchiveOutput.html'
+                                  title='rusoto::storagegateway::RetrieveTapeArchiveOutput'>RetrieveTapeArchiveOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>RetrieveTapeArchiveOutput</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RetrieveTapeRecoveryPointInput.html'
+                                  title='rusoto::storagegateway::RetrieveTapeRecoveryPointInput'>RetrieveTapeRecoveryPointInput</a></td>
+                           <td class='docblock-short'>
+                                <p>RetrieveTapeRecoveryPointInput</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RetrieveTapeRecoveryPointOutput.html'
+                                  title='rusoto::storagegateway::RetrieveTapeRecoveryPointOutput'>RetrieveTapeRecoveryPointOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>RetrieveTapeRecoveryPointOutput</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SetLocalConsolePasswordInput.html'
+                                  title='rusoto::storagegateway::SetLocalConsolePasswordInput'>SetLocalConsolePasswordInput</a></td>
+                           <td class='docblock-short'>
+                                <p>SetLocalConsolePasswordInput</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SetLocalConsolePasswordOutput.html'
+                                  title='rusoto::storagegateway::SetLocalConsolePasswordOutput'>SetLocalConsolePasswordOutput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ShutdownGatewayInput.html'
+                                  title='rusoto::storagegateway::ShutdownGatewayInput'>ShutdownGatewayInput</a></td>
+                           <td class='docblock-short'>
+                                <p>A JSON object containing the of the gateway to shut down.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ShutdownGatewayOutput.html'
+                                  title='rusoto::storagegateway::ShutdownGatewayOutput'>ShutdownGatewayOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>A JSON object containing the of the gateway that was shut down.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.StartGatewayInput.html'
+                                  title='rusoto::storagegateway::StartGatewayInput'>StartGatewayInput</a></td>
+                           <td class='docblock-short'>
+                                <p>A JSON object containing the of the gateway to start.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.StartGatewayOutput.html'
+                                  title='rusoto::storagegateway::StartGatewayOutput'>StartGatewayOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>A JSON object containing the of the gateway that was restarted.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.StorageGatewayClient.html'
+                                  title='rusoto::storagegateway::StorageGatewayClient'>StorageGatewayClient</a></td>
+                           <td class='docblock-short'>
+                                <p>A client for the AWS Storage Gateway API.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.StorageGatewayError.html'
+                                  title='rusoto::storagegateway::StorageGatewayError'>StorageGatewayError</a></td>
+                           <td class='docblock-short'>
+                                <p>Provides additional information about an error that was returned by the service as an or. See the <code>errorCode</code> and <code>errorDetails</code> members for more information about the error.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.StorediSCSIVolume.html'
+                                  title='rusoto::storagegateway::StorediSCSIVolume'>StorediSCSIVolume</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Tag.html'
+                                  title='rusoto::storagegateway::Tag'>Tag</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Tape.html'
+                                  title='rusoto::storagegateway::Tape'>Tape</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes a virtual tape object.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.TapeArchive.html'
+                                  title='rusoto::storagegateway::TapeArchive'>TapeArchive</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents a virtual tape that is archived in the virtual tape shelf (VTS).</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.TapeInfo.html'
+                                  title='rusoto::storagegateway::TapeInfo'>TapeInfo</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes a virtual tape.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.TapeRecoveryPointInfo.html'
+                                  title='rusoto::storagegateway::TapeRecoveryPointInfo'>TapeRecoveryPointInfo</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes a recovery point.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UpdateBandwidthRateLimitInput.html'
+                                  title='rusoto::storagegateway::UpdateBandwidthRateLimitInput'>UpdateBandwidthRateLimitInput</a></td>
+                           <td class='docblock-short'>
+                                <p><p>A JSON object containing one or more of the following fields:</p> <ul> <li> <p> <a>UpdateBandwidthRateLimitInput$AverageDownloadRateLimitInBitsPerSec</a> </p> </li> <li> <p> <a>UpdateBandwidthRateLimitInput$AverageUploadRateLimitInBitsPerSec</a> </p> </li> </ul></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UpdateBandwidthRateLimitOutput.html'
+                                  title='rusoto::storagegateway::UpdateBandwidthRateLimitOutput'>UpdateBandwidthRateLimitOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>A JSON object containing the of the gateway whose throttle information was updated.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UpdateChapCredentialsInput.html'
+                                  title='rusoto::storagegateway::UpdateChapCredentialsInput'>UpdateChapCredentialsInput</a></td>
+                           <td class='docblock-short'>
+                                <p><p>A JSON object containing one or more of the following fields:</p> <ul> <li> <p> <a>UpdateChapCredentialsInput$InitiatorName</a> </p> </li> <li> <p> <a>UpdateChapCredentialsInput$SecretToAuthenticateInitiator</a> </p> </li> <li> <p> <a>UpdateChapCredentialsInput$SecretToAuthenticateTarget</a> </p> </li> <li> <p> <a>UpdateChapCredentialsInput$TargetARN</a> </p> </li> </ul></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UpdateChapCredentialsOutput.html'
+                                  title='rusoto::storagegateway::UpdateChapCredentialsOutput'>UpdateChapCredentialsOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>A JSON object containing the following fields:</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UpdateGatewayInformationInput.html'
+                                  title='rusoto::storagegateway::UpdateGatewayInformationInput'>UpdateGatewayInformationInput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UpdateGatewayInformationOutput.html'
+                                  title='rusoto::storagegateway::UpdateGatewayInformationOutput'>UpdateGatewayInformationOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>A JSON object containing the ARN of the gateway that was updated.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UpdateGatewaySoftwareNowInput.html'
+                                  title='rusoto::storagegateway::UpdateGatewaySoftwareNowInput'>UpdateGatewaySoftwareNowInput</a></td>
+                           <td class='docblock-short'>
+                                <p>A JSON object containing the of the gateway to update.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UpdateGatewaySoftwareNowOutput.html'
+                                  title='rusoto::storagegateway::UpdateGatewaySoftwareNowOutput'>UpdateGatewaySoftwareNowOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>A JSON object containing the of the gateway that was updated.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UpdateMaintenanceStartTimeInput.html'
+                                  title='rusoto::storagegateway::UpdateMaintenanceStartTimeInput'>UpdateMaintenanceStartTimeInput</a></td>
+                           <td class='docblock-short'>
+                                <p><p>A JSON object containing the following fields:</p> <ul> <li> <p> <a>UpdateMaintenanceStartTimeInput$DayOfWeek</a> </p> </li> <li> <p> <a>UpdateMaintenanceStartTimeInput$HourOfDay</a> </p> </li> <li> <p> <a>UpdateMaintenanceStartTimeInput$MinuteOfHour</a> </p> </li> </ul></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UpdateMaintenanceStartTimeOutput.html'
+                                  title='rusoto::storagegateway::UpdateMaintenanceStartTimeOutput'>UpdateMaintenanceStartTimeOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>A JSON object containing the of the gateway whose maintenance start time is updated.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UpdateSnapshotScheduleInput.html'
+                                  title='rusoto::storagegateway::UpdateSnapshotScheduleInput'>UpdateSnapshotScheduleInput</a></td>
+                           <td class='docblock-short'>
+                                <p><p>A JSON object containing one or more of the following fields:</p> <ul> <li> <p> <a>UpdateSnapshotScheduleInput$Description</a> </p> </li> <li> <p> <a>UpdateSnapshotScheduleInput$RecurrenceInHours</a> </p> </li> <li> <p> <a>UpdateSnapshotScheduleInput$StartAt</a> </p> </li> <li> <p> <a>UpdateSnapshotScheduleInput$VolumeARN</a> </p> </li> </ul></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UpdateSnapshotScheduleOutput.html'
+                                  title='rusoto::storagegateway::UpdateSnapshotScheduleOutput'>UpdateSnapshotScheduleOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>A JSON object containing the of the updated storage volume.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UpdateVTLDeviceTypeInput.html'
+                                  title='rusoto::storagegateway::UpdateVTLDeviceTypeInput'>UpdateVTLDeviceTypeInput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UpdateVTLDeviceTypeOutput.html'
+                                  title='rusoto::storagegateway::UpdateVTLDeviceTypeOutput'>UpdateVTLDeviceTypeOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>UpdateVTLDeviceTypeOutput</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.VTLDevice.html'
+                                  title='rusoto::storagegateway::VTLDevice'>VTLDevice</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents a device object associated with a gateway-VTL.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.VolumeInfo.html'
+                                  title='rusoto::storagegateway::VolumeInfo'>VolumeInfo</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes a storage volume object.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.VolumeRecoveryPointInfo.html'
+                                  title='rusoto::storagegateway::VolumeRecoveryPointInfo'>VolumeRecoveryPointInfo</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.VolumeiSCSIAttributes.html'
+                                  title='rusoto::storagegateway::VolumeiSCSIAttributes'>VolumeiSCSIAttributes</a></td>
+                           <td class='docblock-short'>
+                                <p>Lists iSCSI information about a volume.</p>
+                           </td>
+                       </tr></table><h2 id='enums' class='section-header'><a href="#enums">Enums</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ActivateGatewayError.html'
+                                  title='rusoto::storagegateway::ActivateGatewayError'>ActivateGatewayError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.AddCacheError.html'
+                                  title='rusoto::storagegateway::AddCacheError'>AddCacheError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.AddTagsToResourceError.html'
+                                  title='rusoto::storagegateway::AddTagsToResourceError'>AddTagsToResourceError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.AddUploadBufferError.html'
+                                  title='rusoto::storagegateway::AddUploadBufferError'>AddUploadBufferError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.AddWorkingStorageError.html'
+                                  title='rusoto::storagegateway::AddWorkingStorageError'>AddWorkingStorageError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.CancelArchivalError.html'
+                                  title='rusoto::storagegateway::CancelArchivalError'>CancelArchivalError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.CancelRetrievalError.html'
+                                  title='rusoto::storagegateway::CancelRetrievalError'>CancelRetrievalError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.CreateCachediSCSIVolumeError.html'
+                                  title='rusoto::storagegateway::CreateCachediSCSIVolumeError'>CreateCachediSCSIVolumeError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.CreateSnapshotError.html'
+                                  title='rusoto::storagegateway::CreateSnapshotError'>CreateSnapshotError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.CreateSnapshotFromVolumeRecoveryPointError.html'
+                                  title='rusoto::storagegateway::CreateSnapshotFromVolumeRecoveryPointError'>CreateSnapshotFromVolumeRecoveryPointError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.CreateStorediSCSIVolumeError.html'
+                                  title='rusoto::storagegateway::CreateStorediSCSIVolumeError'>CreateStorediSCSIVolumeError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.CreateTapeWithBarcodeError.html'
+                                  title='rusoto::storagegateway::CreateTapeWithBarcodeError'>CreateTapeWithBarcodeError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.CreateTapesError.html'
+                                  title='rusoto::storagegateway::CreateTapesError'>CreateTapesError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DeleteBandwidthRateLimitError.html'
+                                  title='rusoto::storagegateway::DeleteBandwidthRateLimitError'>DeleteBandwidthRateLimitError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DeleteChapCredentialsError.html'
+                                  title='rusoto::storagegateway::DeleteChapCredentialsError'>DeleteChapCredentialsError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DeleteGatewayError.html'
+                                  title='rusoto::storagegateway::DeleteGatewayError'>DeleteGatewayError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DeleteSnapshotScheduleError.html'
+                                  title='rusoto::storagegateway::DeleteSnapshotScheduleError'>DeleteSnapshotScheduleError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DeleteTapeArchiveError.html'
+                                  title='rusoto::storagegateway::DeleteTapeArchiveError'>DeleteTapeArchiveError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DeleteTapeError.html'
+                                  title='rusoto::storagegateway::DeleteTapeError'>DeleteTapeError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DeleteVolumeError.html'
+                                  title='rusoto::storagegateway::DeleteVolumeError'>DeleteVolumeError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeBandwidthRateLimitError.html'
+                                  title='rusoto::storagegateway::DescribeBandwidthRateLimitError'>DescribeBandwidthRateLimitError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeCacheError.html'
+                                  title='rusoto::storagegateway::DescribeCacheError'>DescribeCacheError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeCachediSCSIVolumesError.html'
+                                  title='rusoto::storagegateway::DescribeCachediSCSIVolumesError'>DescribeCachediSCSIVolumesError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeChapCredentialsError.html'
+                                  title='rusoto::storagegateway::DescribeChapCredentialsError'>DescribeChapCredentialsError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeGatewayInformationError.html'
+                                  title='rusoto::storagegateway::DescribeGatewayInformationError'>DescribeGatewayInformationError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeMaintenanceStartTimeError.html'
+                                  title='rusoto::storagegateway::DescribeMaintenanceStartTimeError'>DescribeMaintenanceStartTimeError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeSnapshotScheduleError.html'
+                                  title='rusoto::storagegateway::DescribeSnapshotScheduleError'>DescribeSnapshotScheduleError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeStorediSCSIVolumesError.html'
+                                  title='rusoto::storagegateway::DescribeStorediSCSIVolumesError'>DescribeStorediSCSIVolumesError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeTapeArchivesError.html'
+                                  title='rusoto::storagegateway::DescribeTapeArchivesError'>DescribeTapeArchivesError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeTapeRecoveryPointsError.html'
+                                  title='rusoto::storagegateway::DescribeTapeRecoveryPointsError'>DescribeTapeRecoveryPointsError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeTapesError.html'
+                                  title='rusoto::storagegateway::DescribeTapesError'>DescribeTapesError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeUploadBufferError.html'
+                                  title='rusoto::storagegateway::DescribeUploadBufferError'>DescribeUploadBufferError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeVTLDevicesError.html'
+                                  title='rusoto::storagegateway::DescribeVTLDevicesError'>DescribeVTLDevicesError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeWorkingStorageError.html'
+                                  title='rusoto::storagegateway::DescribeWorkingStorageError'>DescribeWorkingStorageError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DisableGatewayError.html'
+                                  title='rusoto::storagegateway::DisableGatewayError'>DisableGatewayError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ListGatewaysError.html'
+                                  title='rusoto::storagegateway::ListGatewaysError'>ListGatewaysError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ListLocalDisksError.html'
+                                  title='rusoto::storagegateway::ListLocalDisksError'>ListLocalDisksError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ListTagsForResourceError.html'
+                                  title='rusoto::storagegateway::ListTagsForResourceError'>ListTagsForResourceError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ListTapesError.html'
+                                  title='rusoto::storagegateway::ListTapesError'>ListTapesError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ListVolumeInitiatorsError.html'
+                                  title='rusoto::storagegateway::ListVolumeInitiatorsError'>ListVolumeInitiatorsError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ListVolumeRecoveryPointsError.html'
+                                  title='rusoto::storagegateway::ListVolumeRecoveryPointsError'>ListVolumeRecoveryPointsError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ListVolumesError.html'
+                                  title='rusoto::storagegateway::ListVolumesError'>ListVolumesError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.RemoveTagsFromResourceError.html'
+                                  title='rusoto::storagegateway::RemoveTagsFromResourceError'>RemoveTagsFromResourceError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ResetCacheError.html'
+                                  title='rusoto::storagegateway::ResetCacheError'>ResetCacheError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.RetrieveTapeArchiveError.html'
+                                  title='rusoto::storagegateway::RetrieveTapeArchiveError'>RetrieveTapeArchiveError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.RetrieveTapeRecoveryPointError.html'
+                                  title='rusoto::storagegateway::RetrieveTapeRecoveryPointError'>RetrieveTapeRecoveryPointError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.SetLocalConsolePasswordError.html'
+                                  title='rusoto::storagegateway::SetLocalConsolePasswordError'>SetLocalConsolePasswordError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ShutdownGatewayError.html'
+                                  title='rusoto::storagegateway::ShutdownGatewayError'>ShutdownGatewayError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.StartGatewayError.html'
+                                  title='rusoto::storagegateway::StartGatewayError'>StartGatewayError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.UpdateBandwidthRateLimitError.html'
+                                  title='rusoto::storagegateway::UpdateBandwidthRateLimitError'>UpdateBandwidthRateLimitError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.UpdateChapCredentialsError.html'
+                                  title='rusoto::storagegateway::UpdateChapCredentialsError'>UpdateChapCredentialsError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.UpdateGatewayInformationError.html'
+                                  title='rusoto::storagegateway::UpdateGatewayInformationError'>UpdateGatewayInformationError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.UpdateGatewaySoftwareNowError.html'
+                                  title='rusoto::storagegateway::UpdateGatewaySoftwareNowError'>UpdateGatewaySoftwareNowError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.UpdateMaintenanceStartTimeError.html'
+                                  title='rusoto::storagegateway::UpdateMaintenanceStartTimeError'>UpdateMaintenanceStartTimeError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.UpdateSnapshotScheduleError.html'
+                                  title='rusoto::storagegateway::UpdateSnapshotScheduleError'>UpdateSnapshotScheduleError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.UpdateVTLDeviceTypeError.html'
+                                  title='rusoto::storagegateway::UpdateVTLDeviceTypeError'>UpdateVTLDeviceTypeError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr></table><h2 id='types' class='section-header'><a href="#types">Type Definitions</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ActivationKey.html'
+                                  title='rusoto::storagegateway::ActivationKey'>ActivationKey</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.BandwidthDownloadRateLimit.html'
+                                  title='rusoto::storagegateway::BandwidthDownloadRateLimit'>BandwidthDownloadRateLimit</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.BandwidthType.html'
+                                  title='rusoto::storagegateway::BandwidthType'>BandwidthType</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.BandwidthUploadRateLimit.html'
+                                  title='rusoto::storagegateway::BandwidthUploadRateLimit'>BandwidthUploadRateLimit</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Boolean.html'
+                                  title='rusoto::storagegateway::Boolean'>Boolean</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.CachediSCSIVolumes.html'
+                                  title='rusoto::storagegateway::CachediSCSIVolumes'>CachediSCSIVolumes</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ChapCredentials.html'
+                                  title='rusoto::storagegateway::ChapCredentials'>ChapCredentials</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ChapSecret.html'
+                                  title='rusoto::storagegateway::ChapSecret'>ChapSecret</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ClientToken.html'
+                                  title='rusoto::storagegateway::ClientToken'>ClientToken</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.DayOfWeek.html'
+                                  title='rusoto::storagegateway::DayOfWeek'>DayOfWeek</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Description.html'
+                                  title='rusoto::storagegateway::Description'>Description</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.DeviceType.html'
+                                  title='rusoto::storagegateway::DeviceType'>DeviceType</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.DiskAllocationType.html'
+                                  title='rusoto::storagegateway::DiskAllocationType'>DiskAllocationType</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.DiskId.html'
+                                  title='rusoto::storagegateway::DiskId'>DiskId</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.DiskIds.html'
+                                  title='rusoto::storagegateway::DiskIds'>DiskIds</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Disks.html'
+                                  title='rusoto::storagegateway::Disks'>Disks</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Double.html'
+                                  title='rusoto::storagegateway::Double'>Double</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.DoubleObject.html'
+                                  title='rusoto::storagegateway::DoubleObject'>DoubleObject</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ErrorCode.html'
+                                  title='rusoto::storagegateway::ErrorCode'>ErrorCode</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ErrorDetails.html'
+                                  title='rusoto::storagegateway::ErrorDetails'>ErrorDetails</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.GatewayARN.html'
+                                  title='rusoto::storagegateway::GatewayARN'>GatewayARN</a></td>
+                           <td class='docblock-short'>
+                                <p>The Amazon Resource Name (ARN) of the gateway. Use the <a>ListGateways</a> operation to return a list of gateways for your account and region.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.GatewayId.html'
+                                  title='rusoto::storagegateway::GatewayId'>GatewayId</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.GatewayName.html'
+                                  title='rusoto::storagegateway::GatewayName'>GatewayName</a></td>
+                           <td class='docblock-short'>
+                                <p>The name you configured for your gateway.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.GatewayNetworkInterfaces.html'
+                                  title='rusoto::storagegateway::GatewayNetworkInterfaces'>GatewayNetworkInterfaces</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.GatewayOperationalState.html'
+                                  title='rusoto::storagegateway::GatewayOperationalState'>GatewayOperationalState</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.GatewayState.html'
+                                  title='rusoto::storagegateway::GatewayState'>GatewayState</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.GatewayTimezone.html'
+                                  title='rusoto::storagegateway::GatewayTimezone'>GatewayTimezone</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.GatewayType.html'
+                                  title='rusoto::storagegateway::GatewayType'>GatewayType</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Gateways.html'
+                                  title='rusoto::storagegateway::Gateways'>Gateways</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.HourOfDay.html'
+                                  title='rusoto::storagegateway::HourOfDay'>HourOfDay</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Initiator.html'
+                                  title='rusoto::storagegateway::Initiator'>Initiator</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Initiators.html'
+                                  title='rusoto::storagegateway::Initiators'>Initiators</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Integer.html'
+                                  title='rusoto::storagegateway::Integer'>Integer</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.IqnName.html'
+                                  title='rusoto::storagegateway::IqnName'>IqnName</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.LastSoftwareUpdate.html'
+                                  title='rusoto::storagegateway::LastSoftwareUpdate'>LastSoftwareUpdate</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.LocalConsolePassword.html'
+                                  title='rusoto::storagegateway::LocalConsolePassword'>LocalConsolePassword</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Long.html'
+                                  title='rusoto::storagegateway::Long'>Long</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Marker.html'
+                                  title='rusoto::storagegateway::Marker'>Marker</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.MediumChangerType.html'
+                                  title='rusoto::storagegateway::MediumChangerType'>MediumChangerType</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.MinuteOfHour.html'
+                                  title='rusoto::storagegateway::MinuteOfHour'>MinuteOfHour</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.NetworkInterfaceId.html'
+                                  title='rusoto::storagegateway::NetworkInterfaceId'>NetworkInterfaceId</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.NextUpdateAvailabilityDate.html'
+                                  title='rusoto::storagegateway::NextUpdateAvailabilityDate'>NextUpdateAvailabilityDate</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.NumTapesToCreate.html'
+                                  title='rusoto::storagegateway::NumTapesToCreate'>NumTapesToCreate</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.PositiveIntObject.html'
+                                  title='rusoto::storagegateway::PositiveIntObject'>PositiveIntObject</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.RecurrenceInHours.html'
+                                  title='rusoto::storagegateway::RecurrenceInHours'>RecurrenceInHours</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.RegionId.html'
+                                  title='rusoto::storagegateway::RegionId'>RegionId</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ResourceARN.html'
+                                  title='rusoto::storagegateway::ResourceARN'>ResourceARN</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.SnapshotDescription.html'
+                                  title='rusoto::storagegateway::SnapshotDescription'>SnapshotDescription</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.SnapshotId.html'
+                                  title='rusoto::storagegateway::SnapshotId'>SnapshotId</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.StorediSCSIVolumes.html'
+                                  title='rusoto::storagegateway::StorediSCSIVolumes'>StorediSCSIVolumes</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.TagKey.html'
+                                  title='rusoto::storagegateway::TagKey'>TagKey</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.TagKeys.html'
+                                  title='rusoto::storagegateway::TagKeys'>TagKeys</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.TagValue.html'
+                                  title='rusoto::storagegateway::TagValue'>TagValue</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Tags.html'
+                                  title='rusoto::storagegateway::Tags'>Tags</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.TapeARN.html'
+                                  title='rusoto::storagegateway::TapeARN'>TapeARN</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.TapeARNs.html'
+                                  title='rusoto::storagegateway::TapeARNs'>TapeARNs</a></td>
+                           <td class='docblock-short'>
+                                <p>The Amazon Resource Name (ARN) of each of the tapes you want to list. If you don't specify a tape ARN, the response lists all tapes in both your VTL and VTS.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.TapeArchiveStatus.html'
+                                  title='rusoto::storagegateway::TapeArchiveStatus'>TapeArchiveStatus</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.TapeArchives.html'
+                                  title='rusoto::storagegateway::TapeArchives'>TapeArchives</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.TapeBarcode.html'
+                                  title='rusoto::storagegateway::TapeBarcode'>TapeBarcode</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.TapeBarcodePrefix.html'
+                                  title='rusoto::storagegateway::TapeBarcodePrefix'>TapeBarcodePrefix</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.TapeDriveType.html'
+                                  title='rusoto::storagegateway::TapeDriveType'>TapeDriveType</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.TapeInfos.html'
+                                  title='rusoto::storagegateway::TapeInfos'>TapeInfos</a></td>
+                           <td class='docblock-short'>
+                                <p>An array of <a>TapeInfo</a> objects, where each object describes an a single tape. If there not tapes in the tape library or VTS, then the <code>TapeInfos</code> is an empty array.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.TapeRecoveryPointInfos.html'
+                                  title='rusoto::storagegateway::TapeRecoveryPointInfos'>TapeRecoveryPointInfos</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.TapeRecoveryPointStatus.html'
+                                  title='rusoto::storagegateway::TapeRecoveryPointStatus'>TapeRecoveryPointStatus</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.TapeSize.html'
+                                  title='rusoto::storagegateway::TapeSize'>TapeSize</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.TapeStatus.html'
+                                  title='rusoto::storagegateway::TapeStatus'>TapeStatus</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Tapes.html'
+                                  title='rusoto::storagegateway::Tapes'>Tapes</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.TargetARN.html'
+                                  title='rusoto::storagegateway::TargetARN'>TargetARN</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.TargetName.html'
+                                  title='rusoto::storagegateway::TargetName'>TargetName</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Time.html'
+                                  title='rusoto::storagegateway::Time'>Time</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.VTLDeviceARN.html'
+                                  title='rusoto::storagegateway::VTLDeviceARN'>VTLDeviceARN</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.VTLDeviceARNs.html'
+                                  title='rusoto::storagegateway::VTLDeviceARNs'>VTLDeviceARNs</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.VTLDeviceProductIdentifier.html'
+                                  title='rusoto::storagegateway::VTLDeviceProductIdentifier'>VTLDeviceProductIdentifier</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.VTLDeviceType.html'
+                                  title='rusoto::storagegateway::VTLDeviceType'>VTLDeviceType</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.VTLDeviceVendor.html'
+                                  title='rusoto::storagegateway::VTLDeviceVendor'>VTLDeviceVendor</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.VTLDevices.html'
+                                  title='rusoto::storagegateway::VTLDevices'>VTLDevices</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.VolumeARN.html'
+                                  title='rusoto::storagegateway::VolumeARN'>VolumeARN</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.VolumeARNs.html'
+                                  title='rusoto::storagegateway::VolumeARNs'>VolumeARNs</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.VolumeId.html'
+                                  title='rusoto::storagegateway::VolumeId'>VolumeId</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.VolumeInfos.html'
+                                  title='rusoto::storagegateway::VolumeInfos'>VolumeInfos</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.VolumeRecoveryPointInfos.html'
+                                  title='rusoto::storagegateway::VolumeRecoveryPointInfos'>VolumeRecoveryPointInfos</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.VolumeStatus.html'
+                                  title='rusoto::storagegateway::VolumeStatus'>VolumeStatus</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.VolumeType.html'
+                                  title='rusoto::storagegateway::VolumeType'>VolumeType</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr></table></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "rusoto";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../../jquery.js"></script>
+    <script src="../../main.js"></script>
+    
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>

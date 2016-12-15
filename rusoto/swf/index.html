@@ -1,0 +1,1770 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `swf` mod in crate `rusoto`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, swf">
+
+    <title>rusoto::swf - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='../index.html'>rusoto</a></p><script>window.sidebarCurrent = {name: 'swf', ty: 'mod', relpath: '../'};</script><script defer src="../sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content mod">
+<h1 class='fqn'><span class='in-band'>Module <a href='../index.html'>rusoto</a>::<wbr><a class='mod' href=''>swf</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-397263' class='srclink' href='../../src/rusoto/src/swf.rs.html#1-2' title='goto source code'>[src]</a></span></h1>
+<div class='docblock'><p>Amazon Simple Workflow Service</p>
+</div><h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ActivityTask.html'
+                                  title='rusoto::swf::ActivityTask'>ActivityTask</a></td>
+                           <td class='docblock-short'>
+                                <p>Unit of work sent to an activity worker.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ActivityTaskCancelRequestedEventAttributes.html'
+                                  title='rusoto::swf::ActivityTaskCancelRequestedEventAttributes'>ActivityTaskCancelRequestedEventAttributes</a></td>
+                           <td class='docblock-short'>
+                                <p>Provides details of the <code>ActivityTaskCancelRequested</code> event.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ActivityTaskCanceledEventAttributes.html'
+                                  title='rusoto::swf::ActivityTaskCanceledEventAttributes'>ActivityTaskCanceledEventAttributes</a></td>
+                           <td class='docblock-short'>
+                                <p>Provides details of the <code>ActivityTaskCanceled</code> event.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ActivityTaskCompletedEventAttributes.html'
+                                  title='rusoto::swf::ActivityTaskCompletedEventAttributes'>ActivityTaskCompletedEventAttributes</a></td>
+                           <td class='docblock-short'>
+                                <p>Provides details of the <code>ActivityTaskCompleted</code> event.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ActivityTaskFailedEventAttributes.html'
+                                  title='rusoto::swf::ActivityTaskFailedEventAttributes'>ActivityTaskFailedEventAttributes</a></td>
+                           <td class='docblock-short'>
+                                <p>Provides details of the <code>ActivityTaskFailed</code> event.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ActivityTaskScheduledEventAttributes.html'
+                                  title='rusoto::swf::ActivityTaskScheduledEventAttributes'>ActivityTaskScheduledEventAttributes</a></td>
+                           <td class='docblock-short'>
+                                <p>Provides details of the <code>ActivityTaskScheduled</code> event.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ActivityTaskStartedEventAttributes.html'
+                                  title='rusoto::swf::ActivityTaskStartedEventAttributes'>ActivityTaskStartedEventAttributes</a></td>
+                           <td class='docblock-short'>
+                                <p>Provides details of the <code>ActivityTaskStarted</code> event.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ActivityTaskStatus.html'
+                                  title='rusoto::swf::ActivityTaskStatus'>ActivityTaskStatus</a></td>
+                           <td class='docblock-short'>
+                                <p>Status information about an activity task.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ActivityTaskTimedOutEventAttributes.html'
+                                  title='rusoto::swf::ActivityTaskTimedOutEventAttributes'>ActivityTaskTimedOutEventAttributes</a></td>
+                           <td class='docblock-short'>
+                                <p>Provides details of the <code>ActivityTaskTimedOut</code> event.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ActivityType.html'
+                                  title='rusoto::swf::ActivityType'>ActivityType</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents an activity type.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ActivityTypeConfiguration.html'
+                                  title='rusoto::swf::ActivityTypeConfiguration'>ActivityTypeConfiguration</a></td>
+                           <td class='docblock-short'>
+                                <p>Configuration settings registered with the activity type.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ActivityTypeDetail.html'
+                                  title='rusoto::swf::ActivityTypeDetail'>ActivityTypeDetail</a></td>
+                           <td class='docblock-short'>
+                                <p>Detailed information about an activity type.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ActivityTypeInfo.html'
+                                  title='rusoto::swf::ActivityTypeInfo'>ActivityTypeInfo</a></td>
+                           <td class='docblock-short'>
+                                <p>Detailed information about an activity type.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ActivityTypeInfos.html'
+                                  title='rusoto::swf::ActivityTypeInfos'>ActivityTypeInfos</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains a paginated list of activity type information structures.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CancelTimerDecisionAttributes.html'
+                                  title='rusoto::swf::CancelTimerDecisionAttributes'>CancelTimerDecisionAttributes</a></td>
+                           <td class='docblock-short'>
+                                <p>Provides details of the <code>CancelTimer</code> decision.</p> <p><b>Access Control</b></p> <p>You can use IAM policies to control this decision's access to Amazon SWF resources as follows:</p> <ul> <li>Use a <code>Resource</code> element with the domain name to limit the action to only specified domains.</li> <li>Use an <code>Action</code> element to allow or deny permission to call this action.</li> <li>You cannot use an IAM policy to constrain this action's parameters.</li> </ul> <p>If the caller does not have sufficient permissions to invoke the action, or the parameter values fall outside the specified constraints, the action fails. The associated event attribute's <b>cause</b> parameter will be set to OPERATION_NOT_PERMITTED. For details and example IAM policies, see <a href="http://docs.aws.amazon.com/amazonswf/latest/developerguide/swf-dev-iam.html">Using IAM to Manage Access to Amazon SWF Workflows</a>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CancelTimerFailedEventAttributes.html'
+                                  title='rusoto::swf::CancelTimerFailedEventAttributes'>CancelTimerFailedEventAttributes</a></td>
+                           <td class='docblock-short'>
+                                <p>Provides details of the <code>CancelTimerFailed</code> event.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CancelWorkflowExecutionDecisionAttributes.html'
+                                  title='rusoto::swf::CancelWorkflowExecutionDecisionAttributes'>CancelWorkflowExecutionDecisionAttributes</a></td>
+                           <td class='docblock-short'>
+                                <p>Provides details of the <code>CancelWorkflowExecution</code> decision.</p> <p><b>Access Control</b></p> <p>You can use IAM policies to control this decision's access to Amazon SWF resources as follows:</p> <ul> <li>Use a <code>Resource</code> element with the domain name to limit the action to only specified domains.</li> <li>Use an <code>Action</code> element to allow or deny permission to call this action.</li> <li>You cannot use an IAM policy to constrain this action's parameters.</li> </ul> <p>If the caller does not have sufficient permissions to invoke the action, or the parameter values fall outside the specified constraints, the action fails. The associated event attribute's <b>cause</b> parameter will be set to OPERATION_NOT_PERMITTED. For details and example IAM policies, see <a href="http://docs.aws.amazon.com/amazonswf/latest/developerguide/swf-dev-iam.html">Using IAM to Manage Access to Amazon SWF Workflows</a>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CancelWorkflowExecutionFailedEventAttributes.html'
+                                  title='rusoto::swf::CancelWorkflowExecutionFailedEventAttributes'>CancelWorkflowExecutionFailedEventAttributes</a></td>
+                           <td class='docblock-short'>
+                                <p>Provides details of the <code>CancelWorkflowExecutionFailed</code> event.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ChildWorkflowExecutionCanceledEventAttributes.html'
+                                  title='rusoto::swf::ChildWorkflowExecutionCanceledEventAttributes'>ChildWorkflowExecutionCanceledEventAttributes</a></td>
+                           <td class='docblock-short'>
+                                <p>Provide details of the <code>ChildWorkflowExecutionCanceled</code> event.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ChildWorkflowExecutionCompletedEventAttributes.html'
+                                  title='rusoto::swf::ChildWorkflowExecutionCompletedEventAttributes'>ChildWorkflowExecutionCompletedEventAttributes</a></td>
+                           <td class='docblock-short'>
+                                <p>Provides details of the <code>ChildWorkflowExecutionCompleted</code> event.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ChildWorkflowExecutionFailedEventAttributes.html'
+                                  title='rusoto::swf::ChildWorkflowExecutionFailedEventAttributes'>ChildWorkflowExecutionFailedEventAttributes</a></td>
+                           <td class='docblock-short'>
+                                <p>Provides details of the <code>ChildWorkflowExecutionFailed</code> event.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ChildWorkflowExecutionStartedEventAttributes.html'
+                                  title='rusoto::swf::ChildWorkflowExecutionStartedEventAttributes'>ChildWorkflowExecutionStartedEventAttributes</a></td>
+                           <td class='docblock-short'>
+                                <p>Provides details of the <code>ChildWorkflowExecutionStarted</code> event.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ChildWorkflowExecutionTerminatedEventAttributes.html'
+                                  title='rusoto::swf::ChildWorkflowExecutionTerminatedEventAttributes'>ChildWorkflowExecutionTerminatedEventAttributes</a></td>
+                           <td class='docblock-short'>
+                                <p>Provides details of the <code>ChildWorkflowExecutionTerminated</code> event.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ChildWorkflowExecutionTimedOutEventAttributes.html'
+                                  title='rusoto::swf::ChildWorkflowExecutionTimedOutEventAttributes'>ChildWorkflowExecutionTimedOutEventAttributes</a></td>
+                           <td class='docblock-short'>
+                                <p>Provides details of the <code>ChildWorkflowExecutionTimedOut</code> event.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CloseStatusFilter.html'
+                                  title='rusoto::swf::CloseStatusFilter'>CloseStatusFilter</a></td>
+                           <td class='docblock-short'>
+                                <p>Used to filter the closed workflow executions in visibility APIs by their close status.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CompleteWorkflowExecutionDecisionAttributes.html'
+                                  title='rusoto::swf::CompleteWorkflowExecutionDecisionAttributes'>CompleteWorkflowExecutionDecisionAttributes</a></td>
+                           <td class='docblock-short'>
+                                <p>Provides details of the <code>CompleteWorkflowExecution</code> decision.</p> <p><b>Access Control</b></p> <p>You can use IAM policies to control this decision's access to Amazon SWF resources as follows:</p> <ul> <li>Use a <code>Resource</code> element with the domain name to limit the action to only specified domains.</li> <li>Use an <code>Action</code> element to allow or deny permission to call this action.</li> <li>You cannot use an IAM policy to constrain this action's parameters.</li> </ul> <p>If the caller does not have sufficient permissions to invoke the action, or the parameter values fall outside the specified constraints, the action fails. The associated event attribute's <b>cause</b> parameter will be set to OPERATION_NOT_PERMITTED. For details and example IAM policies, see <a href="http://docs.aws.amazon.com/amazonswf/latest/developerguide/swf-dev-iam.html">Using IAM to Manage Access to Amazon SWF Workflows</a>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CompleteWorkflowExecutionFailedEventAttributes.html'
+                                  title='rusoto::swf::CompleteWorkflowExecutionFailedEventAttributes'>CompleteWorkflowExecutionFailedEventAttributes</a></td>
+                           <td class='docblock-short'>
+                                <p>Provides details of the <code>CompleteWorkflowExecutionFailed</code> event.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ContinueAsNewWorkflowExecutionDecisionAttributes.html'
+                                  title='rusoto::swf::ContinueAsNewWorkflowExecutionDecisionAttributes'>ContinueAsNewWorkflowExecutionDecisionAttributes</a></td>
+                           <td class='docblock-short'>
+                                <p>Provides details of the <code>ContinueAsNewWorkflowExecution</code> decision.</p> <p><b>Access Control</b></p> <p>You can use IAM policies to control this decision's access to Amazon SWF resources as follows:</p> <ul> <li>Use a <code>Resource</code> element with the domain name to limit the action to only specified domains.</li> <li>Use an <code>Action</code> element to allow or deny permission to call this action.</li> <li>Constrain the following parameters by using a <code>Condition</code> element with the appropriate keys. <ul> <li> <code>tag</code>: <i>Optional.</i>. A tag used to identify the workflow execution</li> <li><code>taskList</code>: String constraint. The key is <code>swf:taskList.name</code>.</li> <li><code>workflowType.version</code>: String constraint. The key is <code>swf:workflowType.version</code>.</li> </ul> </li> </ul> <p>If the caller does not have sufficient permissions to invoke the action, or the parameter values fall outside the specified constraints, the action fails. The associated event attribute's <b>cause</b> parameter will be set to OPERATION_NOT_PERMITTED. For details and example IAM policies, see <a href="http://docs.aws.amazon.com/amazonswf/latest/developerguide/swf-dev-iam.html">Using IAM to Manage Access to Amazon SWF Workflows</a>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ContinueAsNewWorkflowExecutionFailedEventAttributes.html'
+                                  title='rusoto::swf::ContinueAsNewWorkflowExecutionFailedEventAttributes'>ContinueAsNewWorkflowExecutionFailedEventAttributes</a></td>
+                           <td class='docblock-short'>
+                                <p>Provides details of the <code>ContinueAsNewWorkflowExecutionFailed</code> event.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CountClosedWorkflowExecutionsInput.html'
+                                  title='rusoto::swf::CountClosedWorkflowExecutionsInput'>CountClosedWorkflowExecutionsInput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CountOpenWorkflowExecutionsInput.html'
+                                  title='rusoto::swf::CountOpenWorkflowExecutionsInput'>CountOpenWorkflowExecutionsInput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CountPendingActivityTasksInput.html'
+                                  title='rusoto::swf::CountPendingActivityTasksInput'>CountPendingActivityTasksInput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CountPendingDecisionTasksInput.html'
+                                  title='rusoto::swf::CountPendingDecisionTasksInput'>CountPendingDecisionTasksInput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Decision.html'
+                                  title='rusoto::swf::Decision'>Decision</a></td>
+                           <td class='docblock-short'>
+                                <p><p>Specifies a decision made by the decider. A decision can be one of these types:</p> <ul> <li> <b>CancelTimer</b>: cancels a previously started timer and records a <code>TimerCanceled</code> event in the history.</li> <li> <b>CancelWorkflowExecution</b>: closes the workflow execution and records a <code>WorkflowExecutionCanceled</code> event in the history.</li> <li> <b>CompleteWorkflowExecution</b>: closes the workflow execution and records a <code>WorkflowExecutionCompleted</code> event in the history .</li> <li> <b>ContinueAsNewWorkflowExecution</b>: closes the workflow execution and starts a new workflow execution of the same type using the same workflow ID and a unique run ID. A <code>WorkflowExecutionContinuedAsNew</code> event is recorded in the history.</li> <li> <b>FailWorkflowExecution</b>: closes the workflow execution and records a <code>WorkflowExecutionFailed</code> event in the history.</li> <li> <b>RecordMarker</b>: records a <code>MarkerRecorded</code> event in the history. Markers can be used for adding custom information in the history for instance to let deciders know that they do not need to look at the history beyond the marker event.</li> <li> <b>RequestCancelActivityTask</b>: attempts to cancel a previously scheduled activity task. If the activity task was scheduled but has not been assigned to a worker, then it will be canceled. If the activity task was already assigned to a worker, then the worker will be informed that cancellation has been requested in the response to <a>RecordActivityTaskHeartbeat</a>.</li> <li> <b>RequestCancelExternalWorkflowExecution</b>: requests that a request be made to cancel the specified external workflow execution and records a <code>RequestCancelExternalWorkflowExecutionInitiated</code> event in the history.</li> <li> <b>ScheduleActivityTask</b>: schedules an activity task.</li> <li> <b>ScheduleLambdaFunction</b>: schedules a AWS Lambda function.</li> <li> <b>SignalExternalWorkflowExecution</b>: requests a signal to be delivered to the specified external workflow execution and records a <code>SignalExternalWorkflowExecutionInitiated</code> event in the history.</li> <li> <b>StartChildWorkflowExecution</b>: requests that a child workflow execution be started and records a <code>StartChildWorkflowExecutionInitiated</code> event in the history. The child workflow execution is a separate workflow execution with its own history.</li> <li> <b>StartTimer</b>: starts a timer for this workflow execution and records a <code>TimerStarted</code> event in the history. This timer will fire after the specified delay and record a <code>TimerFired</code> event.</li> </ul> <p><b>Access Control</b></p> <p>If you grant permission to use <code>RespondDecisionTaskCompleted</code>, you can use IAM policies to express permissions for the list of decisions returned by this action as if they were members of the API. Treating decisions as a pseudo API maintains a uniform conceptual model and helps keep policies readable. For details and example IAM policies, see <a href="http://docs.aws.amazon.com/amazonswf/latest/developerguide/swf-dev-iam.html">Using IAM to Manage Access to Amazon SWF Workflows</a>.</p> <p><b>Decision Failure</b></p> <p>Decisions can fail for several reasons</p> <ul> <li>The ordering of decisions should follow a logical flow. Some decisions might not make sense in the current context of the workflow execution and will therefore fail.</li> <li>A limit on your account was reached.</li> <li>The decision lacks sufficient permissions.</li> </ul> <p>One of the following events might be added to the history to indicate an error. The event attribute&#39;s <b>cause</b> parameter indicates the cause. If <b>cause</b> is set to OPERATION_NOT_PERMITTED, the decision failed because it lacked sufficient permissions. For details and example IAM policies, see <a href="http://docs.aws.amazon.com/amazonswf/latest/developerguide/swf-dev-iam.html">Using IAM to Manage Access to Amazon SWF Workflows</a>.</p> <ul> <li> <b>ScheduleActivityTaskFailed</b>: a ScheduleActivityTask decision failed. This could happen if the activity type specified in the decision is not registered, is in a deprecated state, or the decision is not properly configured.</li> <li> <b>ScheduleLambdaFunctionFailed</b>: a ScheduleLambdaFunctionFailed decision failed. This could happen if the AWS Lambda function specified in the decision does not exist, or the AWS Lambda service&#39;s limits are exceeded.</li> <li> <b>RequestCancelActivityTaskFailed</b>: a RequestCancelActivityTask decision failed. This could happen if there is no open activity task with the specified activityId.</li> <li> <b>StartTimerFailed</b>: a StartTimer decision failed. This could happen if there is another open timer with the same timerId.</li> <li> <b>CancelTimerFailed</b>: a CancelTimer decision failed. This could happen if there is no open timer with the specified timerId.</li> <li> <b>StartChildWorkflowExecutionFailed</b>: a StartChildWorkflowExecution decision failed. This could happen if the workflow type specified is not registered, is deprecated, or the decision is not properly configured.</li> <li> <b>SignalExternalWorkflowExecutionFailed</b>: a SignalExternalWorkflowExecution decision failed. This could happen if the <code>workflowID</code> specified in the decision was incorrect.</li> <li> <b>RequestCancelExternalWorkflowExecutionFailed</b>: a RequestCancelExternalWorkflowExecution decision failed. This could happen if the <code>workflowID</code> specified in the decision was incorrect.</li> <li> <b>CancelWorkflowExecutionFailed</b>: a CancelWorkflowExecution decision failed. This could happen if there is an unhandled decision task pending in the workflow execution.</li> <li> <b>CompleteWorkflowExecutionFailed</b>: a CompleteWorkflowExecution decision failed. This could happen if there is an unhandled decision task pending in the workflow execution.</li> <li> <b>ContinueAsNewWorkflowExecutionFailed</b>: a ContinueAsNewWorkflowExecution decision failed. This could happen if there is an unhandled decision task pending in the workflow execution or the ContinueAsNewWorkflowExecution decision was not configured correctly.</li> <li> <b>FailWorkflowExecutionFailed</b>: a FailWorkflowExecution decision failed. This could happen if there is an unhandled decision task pending in the workflow execution.</li> </ul> <p>The preceding error events might occur due to an error in the decider logic, which might put the workflow execution in an unstable state The cause field in the event structure for the error event indicates the cause of the error.</p> <note>A workflow execution may be closed by the decider by returning one of the following decisions when completing a decision task: <code>CompleteWorkflowExecution</code>, <code>FailWorkflowExecution</code>, <code>CancelWorkflowExecution</code> and <code>ContinueAsNewWorkflowExecution</code>. An UnhandledDecision fault will be returned if a workflow closing decision is specified and a signal or activity event had been added to the history while the decision task was being performed by the decider. Unlike the above situations which are logic issues, this fault is always possible because of race conditions in a distributed system. The right action here is to call <a>RespondDecisionTaskCompleted</a> without any decisions. This would result in another decision task with these new events included in the history. The decider should handle the new events and may decide to close the workflow execution.</note> <p><b>How to code a decision</b></p> <p>You code a decision by first setting the decision type field to one of the above decision values, and then set the corresponding attributes field shown below:</p> <ul> <li> <a>ScheduleActivityTaskDecisionAttributes</a> </li> <li> <a>ScheduleLambdaFunctionDecisionAttributes</a> </li> <li> <a>RequestCancelActivityTaskDecisionAttributes</a> </li> <li> <a>CompleteWorkflowExecutionDecisionAttributes</a> </li> <li> <a>FailWorkflowExecutionDecisionAttributes</a> </li> <li> <a>CancelWorkflowExecutionDecisionAttributes</a> </li> <li> <a>ContinueAsNewWorkflowExecutionDecisionAttributes</a> </li> <li> <a>RecordMarkerDecisionAttributes</a> </li> <li> <a>StartTimerDecisionAttributes</a> </li> <li> <a>CancelTimerDecisionAttributes</a> </li> <li> <a>SignalExternalWorkflowExecutionDecisionAttributes</a> </li> <li> <a>RequestCancelExternalWorkflowExecutionDecisionAttributes</a> </li> <li> <a>StartChildWorkflowExecutionDecisionAttributes</a> </li> </ul></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DecisionTask.html'
+                                  title='rusoto::swf::DecisionTask'>DecisionTask</a></td>
+                           <td class='docblock-short'>
+                                <p>A structure that represents a decision task. Decision tasks are sent to deciders in order for them to make decisions.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DecisionTaskCompletedEventAttributes.html'
+                                  title='rusoto::swf::DecisionTaskCompletedEventAttributes'>DecisionTaskCompletedEventAttributes</a></td>
+                           <td class='docblock-short'>
+                                <p>Provides details of the <code>DecisionTaskCompleted</code> event.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DecisionTaskScheduledEventAttributes.html'
+                                  title='rusoto::swf::DecisionTaskScheduledEventAttributes'>DecisionTaskScheduledEventAttributes</a></td>
+                           <td class='docblock-short'>
+                                <p>Provides details about the <code>DecisionTaskScheduled</code> event.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DecisionTaskStartedEventAttributes.html'
+                                  title='rusoto::swf::DecisionTaskStartedEventAttributes'>DecisionTaskStartedEventAttributes</a></td>
+                           <td class='docblock-short'>
+                                <p>Provides details of the <code>DecisionTaskStarted</code> event.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DecisionTaskTimedOutEventAttributes.html'
+                                  title='rusoto::swf::DecisionTaskTimedOutEventAttributes'>DecisionTaskTimedOutEventAttributes</a></td>
+                           <td class='docblock-short'>
+                                <p>Provides details of the <code>DecisionTaskTimedOut</code> event.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeprecateActivityTypeInput.html'
+                                  title='rusoto::swf::DeprecateActivityTypeInput'>DeprecateActivityTypeInput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeprecateDomainInput.html'
+                                  title='rusoto::swf::DeprecateDomainInput'>DeprecateDomainInput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeprecateWorkflowTypeInput.html'
+                                  title='rusoto::swf::DeprecateWorkflowTypeInput'>DeprecateWorkflowTypeInput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeActivityTypeInput.html'
+                                  title='rusoto::swf::DescribeActivityTypeInput'>DescribeActivityTypeInput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeDomainInput.html'
+                                  title='rusoto::swf::DescribeDomainInput'>DescribeDomainInput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeWorkflowExecutionInput.html'
+                                  title='rusoto::swf::DescribeWorkflowExecutionInput'>DescribeWorkflowExecutionInput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeWorkflowTypeInput.html'
+                                  title='rusoto::swf::DescribeWorkflowTypeInput'>DescribeWorkflowTypeInput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DomainConfiguration.html'
+                                  title='rusoto::swf::DomainConfiguration'>DomainConfiguration</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains the configuration settings of a domain.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DomainDetail.html'
+                                  title='rusoto::swf::DomainDetail'>DomainDetail</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains details of a domain.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DomainInfo.html'
+                                  title='rusoto::swf::DomainInfo'>DomainInfo</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains general information about a domain.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DomainInfos.html'
+                                  title='rusoto::swf::DomainInfos'>DomainInfos</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains a paginated collection of DomainInfo structures.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ExecutionTimeFilter.html'
+                                  title='rusoto::swf::ExecutionTimeFilter'>ExecutionTimeFilter</a></td>
+                           <td class='docblock-short'>
+                                <p>Used to filter the workflow executions in visibility APIs by various time-based rules. Each parameter, if specified, defines a rule that must be satisfied by each returned query result. The parameter values are in the <a href="https://en.wikipedia.org/wiki/Unix_time">Unix Time format</a>. For example: <code>"oldestDate": 1325376070.</code></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ExternalWorkflowExecutionCancelRequestedEventAttributes.html'
+                                  title='rusoto::swf::ExternalWorkflowExecutionCancelRequestedEventAttributes'>ExternalWorkflowExecutionCancelRequestedEventAttributes</a></td>
+                           <td class='docblock-short'>
+                                <p>Provides details of the <code>ExternalWorkflowExecutionCancelRequested</code> event.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ExternalWorkflowExecutionSignaledEventAttributes.html'
+                                  title='rusoto::swf::ExternalWorkflowExecutionSignaledEventAttributes'>ExternalWorkflowExecutionSignaledEventAttributes</a></td>
+                           <td class='docblock-short'>
+                                <p> Provides details of the <code>ExternalWorkflowExecutionSignaled</code> event.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.FailWorkflowExecutionDecisionAttributes.html'
+                                  title='rusoto::swf::FailWorkflowExecutionDecisionAttributes'>FailWorkflowExecutionDecisionAttributes</a></td>
+                           <td class='docblock-short'>
+                                <p>Provides details of the <code>FailWorkflowExecution</code> decision.</p> <p><b>Access Control</b></p> <p>You can use IAM policies to control this decision's access to Amazon SWF resources as follows:</p> <ul> <li>Use a <code>Resource</code> element with the domain name to limit the action to only specified domains.</li> <li>Use an <code>Action</code> element to allow or deny permission to call this action.</li> <li>You cannot use an IAM policy to constrain this action's parameters.</li> </ul> <p>If the caller does not have sufficient permissions to invoke the action, or the parameter values fall outside the specified constraints, the action fails. The associated event attribute's <b>cause</b> parameter will be set to OPERATION_NOT_PERMITTED. For details and example IAM policies, see <a href="http://docs.aws.amazon.com/amazonswf/latest/developerguide/swf-dev-iam.html">Using IAM to Manage Access to Amazon SWF Workflows</a>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.FailWorkflowExecutionFailedEventAttributes.html'
+                                  title='rusoto::swf::FailWorkflowExecutionFailedEventAttributes'>FailWorkflowExecutionFailedEventAttributes</a></td>
+                           <td class='docblock-short'>
+                                <p>Provides details of the <code>FailWorkflowExecutionFailed</code> event.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetWorkflowExecutionHistoryInput.html'
+                                  title='rusoto::swf::GetWorkflowExecutionHistoryInput'>GetWorkflowExecutionHistoryInput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.History.html'
+                                  title='rusoto::swf::History'>History</a></td>
+                           <td class='docblock-short'>
+                                <p>Paginated representation of a workflow history for a workflow execution. This is the up to date, complete and authoritative record of the events related to all tasks and events in the life of the workflow execution.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.HistoryEvent.html'
+                                  title='rusoto::swf::HistoryEvent'>HistoryEvent</a></td>
+                           <td class='docblock-short'>
+                                <p><p>Event within a workflow execution. A history event can be one of these types:</p> <ul> <li> <b>WorkflowExecutionStarted</b>: The workflow execution was started.</li> <li> <b>WorkflowExecutionCompleted</b>: The workflow execution was closed due to successful completion.</li> <li> <b>WorkflowExecutionFailed</b>: The workflow execution closed due to a failure.</li> <li> <b>WorkflowExecutionTimedOut</b>: The workflow execution was closed because a time out was exceeded.</li> <li> <b>WorkflowExecutionCanceled</b>: The workflow execution was successfully canceled and closed.</li> <li> <b>WorkflowExecutionTerminated</b>: The workflow execution was terminated.</li> <li> <b>WorkflowExecutionContinuedAsNew</b>: The workflow execution was closed and a new execution of the same type was created with the same workflowId.</li> <li> <b>WorkflowExecutionCancelRequested</b>: A request to cancel this workflow execution was made.</li> <li> <b>DecisionTaskScheduled</b>: A decision task was scheduled for the workflow execution.</li> <li> <b>DecisionTaskStarted</b>: The decision task was dispatched to a decider.</li> <li> <b>DecisionTaskCompleted</b>: The decider successfully completed a decision task by calling <a>RespondDecisionTaskCompleted</a>.</li> <li> <b>DecisionTaskTimedOut</b>: The decision task timed out.</li> <li> <b>ActivityTaskScheduled</b>: An activity task was scheduled for execution.</li> <li> <b>ScheduleActivityTaskFailed</b>: Failed to process ScheduleActivityTask decision. This happens when the decision is not configured properly, for example the activity type specified is not registered.</li> <li> <b>ActivityTaskStarted</b>: The scheduled activity task was dispatched to a worker.</li> <li> <b>ActivityTaskCompleted</b>: An activity worker successfully completed an activity task by calling <a>RespondActivityTaskCompleted</a>.</li> <li> <b>ActivityTaskFailed</b>: An activity worker failed an activity task by calling <a>RespondActivityTaskFailed</a>.</li> <li> <b>ActivityTaskTimedOut</b>: The activity task timed out.</li> <li> <b>ActivityTaskCanceled</b>: The activity task was successfully canceled.</li> <li> <b>ActivityTaskCancelRequested</b>: A <code>RequestCancelActivityTask</code> decision was received by the system.</li> <li> <b>RequestCancelActivityTaskFailed</b>: Failed to process RequestCancelActivityTask decision. This happens when the decision is not configured properly.</li> <li> <b>WorkflowExecutionSignaled</b>: An external signal was received for the workflow execution.</li> <li> <b>MarkerRecorded</b>: A marker was recorded in the workflow history as the result of a <code>RecordMarker</code> decision.</li> <li> <b>TimerStarted</b>: A timer was started for the workflow execution due to a <code>StartTimer</code> decision.</li> <li> <b>StartTimerFailed</b>: Failed to process StartTimer decision. This happens when the decision is not configured properly, for example a timer already exists with the specified timer ID.</li> <li> <b>TimerFired</b>: A timer, previously started for this workflow execution, fired.</li> <li> <b>TimerCanceled</b>: A timer, previously started for this workflow execution, was successfully canceled.</li> <li> <b>CancelTimerFailed</b>: Failed to process CancelTimer decision. This happens when the decision is not configured properly, for example no timer exists with the specified timer ID.</li> <li> <b>StartChildWorkflowExecutionInitiated</b>: A request was made to start a child workflow execution.</li> <li> <b>StartChildWorkflowExecutionFailed</b>: Failed to process StartChildWorkflowExecution decision. This happens when the decision is not configured properly, for example the workflow type specified is not registered.</li> <li> <b>ChildWorkflowExecutionStarted</b>: A child workflow execution was successfully started.</li> <li> <b>ChildWorkflowExecutionCompleted</b>: A child workflow execution, started by this workflow execution, completed successfully and was closed.</li> <li> <b>ChildWorkflowExecutionFailed</b>: A child workflow execution, started by this workflow execution, failed to complete successfully and was closed.</li> <li> <b>ChildWorkflowExecutionTimedOut</b>: A child workflow execution, started by this workflow execution, timed out and was closed.</li> <li> <b>ChildWorkflowExecutionCanceled</b>: A child workflow execution, started by this workflow execution, was canceled and closed.</li> <li> <b>ChildWorkflowExecutionTerminated</b>: A child workflow execution, started by this workflow execution, was terminated.</li> <li> <b>SignalExternalWorkflowExecutionInitiated</b>: A request to signal an external workflow was made.</li> <li> <b>ExternalWorkflowExecutionSignaled</b>: A signal, requested by this workflow execution, was successfully delivered to the target external workflow execution.</li> <li> <b>SignalExternalWorkflowExecutionFailed</b>: The request to signal an external workflow execution failed.</li> <li> <b>RequestCancelExternalWorkflowExecutionInitiated</b>: A request was made to request the cancellation of an external workflow execution.</li> <li> <b>ExternalWorkflowExecutionCancelRequested</b>: Request to cancel an external workflow execution was successfully delivered to the target execution.</li> <li> <b>RequestCancelExternalWorkflowExecutionFailed</b>: Request to cancel an external workflow execution failed.</li> <li> <b>LambdaFunctionScheduled</b>: An AWS Lambda function was scheduled for execution.</li> <li> <b>LambdaFunctionStarted</b>: The scheduled function was invoked in the AWS Lambda service.</li> <li> <b>LambdaFunctionCompleted</b>: The AWS Lambda function successfully completed.</li> <li> <b>LambdaFunctionFailed</b>: The AWS Lambda function execution failed.</li> <li> <b>LambdaFunctionTimedOut</b>: The AWS Lambda function execution timed out.</li> <li> <b>ScheduleLambdaFunctionFailed</b>: Failed to process ScheduleLambdaFunction decision. This happens when the workflow execution does not have the proper IAM role attached to invoke AWS Lambda functions.</li> <li> <b>StartLambdaFunctionFailed</b>: Failed to invoke the scheduled function in the AWS Lambda service. This happens when the AWS Lambda service is not available in the current region, or received too many requests.</li> </ul></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.LambdaFunctionCompletedEventAttributes.html'
+                                  title='rusoto::swf::LambdaFunctionCompletedEventAttributes'>LambdaFunctionCompletedEventAttributes</a></td>
+                           <td class='docblock-short'>
+                                <p>Provides details for the <code>LambdaFunctionCompleted</code> event.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.LambdaFunctionFailedEventAttributes.html'
+                                  title='rusoto::swf::LambdaFunctionFailedEventAttributes'>LambdaFunctionFailedEventAttributes</a></td>
+                           <td class='docblock-short'>
+                                <p>Provides details for the <code>LambdaFunctionFailed</code> event.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.LambdaFunctionScheduledEventAttributes.html'
+                                  title='rusoto::swf::LambdaFunctionScheduledEventAttributes'>LambdaFunctionScheduledEventAttributes</a></td>
+                           <td class='docblock-short'>
+                                <p>Provides details for the <code>LambdaFunctionScheduled</code> event.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.LambdaFunctionStartedEventAttributes.html'
+                                  title='rusoto::swf::LambdaFunctionStartedEventAttributes'>LambdaFunctionStartedEventAttributes</a></td>
+                           <td class='docblock-short'>
+                                <p>Provides details for the <code>LambdaFunctionStarted</code> event.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.LambdaFunctionTimedOutEventAttributes.html'
+                                  title='rusoto::swf::LambdaFunctionTimedOutEventAttributes'>LambdaFunctionTimedOutEventAttributes</a></td>
+                           <td class='docblock-short'>
+                                <p>Provides details for the <code>LambdaFunctionTimedOut</code> event.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListActivityTypesInput.html'
+                                  title='rusoto::swf::ListActivityTypesInput'>ListActivityTypesInput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListClosedWorkflowExecutionsInput.html'
+                                  title='rusoto::swf::ListClosedWorkflowExecutionsInput'>ListClosedWorkflowExecutionsInput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListDomainsInput.html'
+                                  title='rusoto::swf::ListDomainsInput'>ListDomainsInput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListOpenWorkflowExecutionsInput.html'
+                                  title='rusoto::swf::ListOpenWorkflowExecutionsInput'>ListOpenWorkflowExecutionsInput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListWorkflowTypesInput.html'
+                                  title='rusoto::swf::ListWorkflowTypesInput'>ListWorkflowTypesInput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.MarkerRecordedEventAttributes.html'
+                                  title='rusoto::swf::MarkerRecordedEventAttributes'>MarkerRecordedEventAttributes</a></td>
+                           <td class='docblock-short'>
+                                <p>Provides details of the <code>MarkerRecorded</code> event.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.PendingTaskCount.html'
+                                  title='rusoto::swf::PendingTaskCount'>PendingTaskCount</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains the count of tasks in a task list.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.PollForActivityTaskInput.html'
+                                  title='rusoto::swf::PollForActivityTaskInput'>PollForActivityTaskInput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.PollForDecisionTaskInput.html'
+                                  title='rusoto::swf::PollForDecisionTaskInput'>PollForDecisionTaskInput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RecordActivityTaskHeartbeatInput.html'
+                                  title='rusoto::swf::RecordActivityTaskHeartbeatInput'>RecordActivityTaskHeartbeatInput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RecordMarkerDecisionAttributes.html'
+                                  title='rusoto::swf::RecordMarkerDecisionAttributes'>RecordMarkerDecisionAttributes</a></td>
+                           <td class='docblock-short'>
+                                <p>Provides details of the <code>RecordMarker</code> decision.</p> <p><b>Access Control</b></p> <p>You can use IAM policies to control this decision's access to Amazon SWF resources as follows:</p> <ul> <li>Use a <code>Resource</code> element with the domain name to limit the action to only specified domains.</li> <li>Use an <code>Action</code> element to allow or deny permission to call this action.</li> <li>You cannot use an IAM policy to constrain this action's parameters.</li> </ul> <p>If the caller does not have sufficient permissions to invoke the action, or the parameter values fall outside the specified constraints, the action fails. The associated event attribute's <b>cause</b> parameter will be set to OPERATION_NOT_PERMITTED. For details and example IAM policies, see <a href="http://docs.aws.amazon.com/amazonswf/latest/developerguide/swf-dev-iam.html">Using IAM to Manage Access to Amazon SWF Workflows</a>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RecordMarkerFailedEventAttributes.html'
+                                  title='rusoto::swf::RecordMarkerFailedEventAttributes'>RecordMarkerFailedEventAttributes</a></td>
+                           <td class='docblock-short'>
+                                <p>Provides details of the <code>RecordMarkerFailed</code> event.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RegisterActivityTypeInput.html'
+                                  title='rusoto::swf::RegisterActivityTypeInput'>RegisterActivityTypeInput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RegisterDomainInput.html'
+                                  title='rusoto::swf::RegisterDomainInput'>RegisterDomainInput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RegisterWorkflowTypeInput.html'
+                                  title='rusoto::swf::RegisterWorkflowTypeInput'>RegisterWorkflowTypeInput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RequestCancelActivityTaskDecisionAttributes.html'
+                                  title='rusoto::swf::RequestCancelActivityTaskDecisionAttributes'>RequestCancelActivityTaskDecisionAttributes</a></td>
+                           <td class='docblock-short'>
+                                <p>Provides details of the <code>RequestCancelActivityTask</code> decision.</p> <p><b>Access Control</b></p> <p>You can use IAM policies to control this decision's access to Amazon SWF resources as follows:</p> <ul> <li>Use a <code>Resource</code> element with the domain name to limit the action to only specified domains.</li> <li>Use an <code>Action</code> element to allow or deny permission to call this action.</li> <li>You cannot use an IAM policy to constrain this action's parameters.</li> </ul> <p>If the caller does not have sufficient permissions to invoke the action, or the parameter values fall outside the specified constraints, the action fails. The associated event attribute's <b>cause</b> parameter will be set to OPERATION_NOT_PERMITTED. For details and example IAM policies, see <a href="http://docs.aws.amazon.com/amazonswf/latest/developerguide/swf-dev-iam.html">Using IAM to Manage Access to Amazon SWF Workflows</a>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RequestCancelActivityTaskFailedEventAttributes.html'
+                                  title='rusoto::swf::RequestCancelActivityTaskFailedEventAttributes'>RequestCancelActivityTaskFailedEventAttributes</a></td>
+                           <td class='docblock-short'>
+                                <p>Provides details of the <code>RequestCancelActivityTaskFailed</code> event.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RequestCancelExternalWorkflowExecutionDecisionAttributes.html'
+                                  title='rusoto::swf::RequestCancelExternalWorkflowExecutionDecisionAttributes'>RequestCancelExternalWorkflowExecutionDecisionAttributes</a></td>
+                           <td class='docblock-short'>
+                                <p>Provides details of the <code>RequestCancelExternalWorkflowExecution</code> decision.</p> <p><b>Access Control</b></p> <p>You can use IAM policies to control this decision's access to Amazon SWF resources as follows:</p> <ul> <li>Use a <code>Resource</code> element with the domain name to limit the action to only specified domains.</li> <li>Use an <code>Action</code> element to allow or deny permission to call this action.</li> <li>You cannot use an IAM policy to constrain this action's parameters.</li> </ul> <p>If the caller does not have sufficient permissions to invoke the action, or the parameter values fall outside the specified constraints, the action fails. The associated event attribute's <b>cause</b> parameter will be set to OPERATION_NOT_PERMITTED. For details and example IAM policies, see <a href="http://docs.aws.amazon.com/amazonswf/latest/developerguide/swf-dev-iam.html">Using IAM to Manage Access to Amazon SWF Workflows</a>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RequestCancelExternalWorkflowExecutionFailedEventAttributes.html'
+                                  title='rusoto::swf::RequestCancelExternalWorkflowExecutionFailedEventAttributes'>RequestCancelExternalWorkflowExecutionFailedEventAttributes</a></td>
+                           <td class='docblock-short'>
+                                <p>Provides details of the <code>RequestCancelExternalWorkflowExecutionFailed</code> event.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RequestCancelExternalWorkflowExecutionInitiatedEventAttributes.html'
+                                  title='rusoto::swf::RequestCancelExternalWorkflowExecutionInitiatedEventAttributes'>RequestCancelExternalWorkflowExecutionInitiatedEventAttributes</a></td>
+                           <td class='docblock-short'>
+                                <p>Provides details of the <code>RequestCancelExternalWorkflowExecutionInitiated</code> event.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RequestCancelWorkflowExecutionInput.html'
+                                  title='rusoto::swf::RequestCancelWorkflowExecutionInput'>RequestCancelWorkflowExecutionInput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RespondActivityTaskCanceledInput.html'
+                                  title='rusoto::swf::RespondActivityTaskCanceledInput'>RespondActivityTaskCanceledInput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RespondActivityTaskCompletedInput.html'
+                                  title='rusoto::swf::RespondActivityTaskCompletedInput'>RespondActivityTaskCompletedInput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RespondActivityTaskFailedInput.html'
+                                  title='rusoto::swf::RespondActivityTaskFailedInput'>RespondActivityTaskFailedInput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RespondDecisionTaskCompletedInput.html'
+                                  title='rusoto::swf::RespondDecisionTaskCompletedInput'>RespondDecisionTaskCompletedInput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Run.html'
+                                  title='rusoto::swf::Run'>Run</a></td>
+                           <td class='docblock-short'>
+                                <p>Specifies the <code>runId</code> of a workflow execution.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ScheduleActivityTaskDecisionAttributes.html'
+                                  title='rusoto::swf::ScheduleActivityTaskDecisionAttributes'>ScheduleActivityTaskDecisionAttributes</a></td>
+                           <td class='docblock-short'>
+                                <p>Provides details of the <code>ScheduleActivityTask</code> decision.</p> <p><b>Access Control</b></p> <p>You can use IAM policies to control this decision's access to Amazon SWF resources as follows:</p> <ul> <li>Use a <code>Resource</code> element with the domain name to limit the action to only specified domains.</li> <li>Use an <code>Action</code> element to allow or deny permission to call this action.</li> <li>Constrain the following parameters by using a <code>Condition</code> element with the appropriate keys. <ul> <li><code>activityType.name</code>: String constraint. The key is <code>swf:activityType.name</code>.</li> <li><code>activityType.version</code>: String constraint. The key is <code>swf:activityType.version</code>.</li> <li><code>taskList</code>: String constraint. The key is <code>swf:taskList.name</code>.</li> </ul> </li> </ul> <p>If the caller does not have sufficient permissions to invoke the action, or the parameter values fall outside the specified constraints, the action fails. The associated event attribute's <b>cause</b> parameter will be set to OPERATION_NOT_PERMITTED. For details and example IAM policies, see <a href="http://docs.aws.amazon.com/amazonswf/latest/developerguide/swf-dev-iam.html">Using IAM to Manage Access to Amazon SWF Workflows</a>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ScheduleActivityTaskFailedEventAttributes.html'
+                                  title='rusoto::swf::ScheduleActivityTaskFailedEventAttributes'>ScheduleActivityTaskFailedEventAttributes</a></td>
+                           <td class='docblock-short'>
+                                <p>Provides details of the <code>ScheduleActivityTaskFailed</code> event.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ScheduleLambdaFunctionDecisionAttributes.html'
+                                  title='rusoto::swf::ScheduleLambdaFunctionDecisionAttributes'>ScheduleLambdaFunctionDecisionAttributes</a></td>
+                           <td class='docblock-short'>
+                                <p>Provides details of the <code>ScheduleLambdaFunction</code> decision.</p> <p><b>Access Control</b></p> <p>You can use IAM policies to control this decision's access to Amazon SWF resources as follows:</p> <ul> <li>Use a <code>Resource</code> element with the domain name to limit the action to only specified domains.</li> <li>Use an <code>Action</code> element to allow or deny permission to call this action.</li> <li>Constrain the following parameters by using a <code>Condition</code> element with the appropriate keys. <ul> <li><code>activityType.name</code>: String constraint. The key is <code>swf:activityType.name</code>.</li> <li><code>activityType.version</code>: String constraint. The key is <code>swf:activityType.version</code>.</li> <li><code>taskList</code>: String constraint. The key is <code>swf:taskList.name</code>.</li> </ul> </li> </ul> <p>If the caller does not have sufficient permissions to invoke the action, or the parameter values fall outside the specified constraints, the action fails. The associated event attribute's <b>cause</b> parameter will be set to OPERATION_NOT_PERMITTED. For details and example IAM policies, see <a href="http://docs.aws.amazon.com/amazonswf/latest/developerguide/swf-dev-iam.html">Using IAM to Manage Access to Amazon SWF Workflows</a>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ScheduleLambdaFunctionFailedEventAttributes.html'
+                                  title='rusoto::swf::ScheduleLambdaFunctionFailedEventAttributes'>ScheduleLambdaFunctionFailedEventAttributes</a></td>
+                           <td class='docblock-short'>
+                                <p>Provides details for the <code>ScheduleLambdaFunctionFailed</code> event.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SignalExternalWorkflowExecutionDecisionAttributes.html'
+                                  title='rusoto::swf::SignalExternalWorkflowExecutionDecisionAttributes'>SignalExternalWorkflowExecutionDecisionAttributes</a></td>
+                           <td class='docblock-short'>
+                                <p>Provides details of the <code>SignalExternalWorkflowExecution</code> decision.</p> <p><b>Access Control</b></p> <p>You can use IAM policies to control this decision's access to Amazon SWF resources as follows:</p> <ul> <li>Use a <code>Resource</code> element with the domain name to limit the action to only specified domains.</li> <li>Use an <code>Action</code> element to allow or deny permission to call this action.</li> <li>You cannot use an IAM policy to constrain this action's parameters.</li> </ul> <p>If the caller does not have sufficient permissions to invoke the action, or the parameter values fall outside the specified constraints, the action fails. The associated event attribute's <b>cause</b> parameter will be set to OPERATION_NOT_PERMITTED. For details and example IAM policies, see <a href="http://docs.aws.amazon.com/amazonswf/latest/developerguide/swf-dev-iam.html">Using IAM to Manage Access to Amazon SWF Workflows</a>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SignalExternalWorkflowExecutionFailedEventAttributes.html'
+                                  title='rusoto::swf::SignalExternalWorkflowExecutionFailedEventAttributes'>SignalExternalWorkflowExecutionFailedEventAttributes</a></td>
+                           <td class='docblock-short'>
+                                <p>Provides details of the <code>SignalExternalWorkflowExecutionFailed</code> event.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SignalExternalWorkflowExecutionInitiatedEventAttributes.html'
+                                  title='rusoto::swf::SignalExternalWorkflowExecutionInitiatedEventAttributes'>SignalExternalWorkflowExecutionInitiatedEventAttributes</a></td>
+                           <td class='docblock-short'>
+                                <p>Provides details of the <code>SignalExternalWorkflowExecutionInitiated</code> event.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SignalWorkflowExecutionInput.html'
+                                  title='rusoto::swf::SignalWorkflowExecutionInput'>SignalWorkflowExecutionInput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.StartChildWorkflowExecutionDecisionAttributes.html'
+                                  title='rusoto::swf::StartChildWorkflowExecutionDecisionAttributes'>StartChildWorkflowExecutionDecisionAttributes</a></td>
+                           <td class='docblock-short'>
+                                <p>Provides details of the <code>StartChildWorkflowExecution</code> decision.</p> <p><b>Access Control</b></p> <p>You can use IAM policies to control this decision's access to Amazon SWF resources as follows:</p> <ul> <li>Use a <code>Resource</code> element with the domain name to limit the action to only specified domains.</li> <li>Use an <code>Action</code> element to allow or deny permission to call this action.</li> <li>Constrain the following parameters by using a <code>Condition</code> element with the appropriate keys. <ul> <li> <code>tagList.member.N</code>: The key is "swf:tagList.N" where N is the tag number from 0 to 4, inclusive.</li> <li><code>taskList</code>: String constraint. The key is <code>swf:taskList.name</code>.</li> <li><code>workflowType.name</code>: String constraint. The key is <code>swf:workflowType.name</code>.</li> <li><code>workflowType.version</code>: String constraint. The key is <code>swf:workflowType.version</code>.</li> </ul> </li> </ul> <p>If the caller does not have sufficient permissions to invoke the action, or the parameter values fall outside the specified constraints, the action fails. The associated event attribute's <b>cause</b> parameter will be set to OPERATION_NOT_PERMITTED. For details and example IAM policies, see <a href="http://docs.aws.amazon.com/amazonswf/latest/developerguide/swf-dev-iam.html">Using IAM to Manage Access to Amazon SWF Workflows</a>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.StartChildWorkflowExecutionFailedEventAttributes.html'
+                                  title='rusoto::swf::StartChildWorkflowExecutionFailedEventAttributes'>StartChildWorkflowExecutionFailedEventAttributes</a></td>
+                           <td class='docblock-short'>
+                                <p>Provides details of the <code>StartChildWorkflowExecutionFailed</code> event.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.StartChildWorkflowExecutionInitiatedEventAttributes.html'
+                                  title='rusoto::swf::StartChildWorkflowExecutionInitiatedEventAttributes'>StartChildWorkflowExecutionInitiatedEventAttributes</a></td>
+                           <td class='docblock-short'>
+                                <p>Provides details of the <code>StartChildWorkflowExecutionInitiated</code> event.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.StartLambdaFunctionFailedEventAttributes.html'
+                                  title='rusoto::swf::StartLambdaFunctionFailedEventAttributes'>StartLambdaFunctionFailedEventAttributes</a></td>
+                           <td class='docblock-short'>
+                                <p>Provides details for the <code>StartLambdaFunctionFailed</code> event.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.StartTimerDecisionAttributes.html'
+                                  title='rusoto::swf::StartTimerDecisionAttributes'>StartTimerDecisionAttributes</a></td>
+                           <td class='docblock-short'>
+                                <p>Provides details of the <code>StartTimer</code> decision.</p> <p><b>Access Control</b></p> <p>You can use IAM policies to control this decision's access to Amazon SWF resources as follows:</p> <ul> <li>Use a <code>Resource</code> element with the domain name to limit the action to only specified domains.</li> <li>Use an <code>Action</code> element to allow or deny permission to call this action.</li> <li>You cannot use an IAM policy to constrain this action's parameters.</li> </ul> <p>If the caller does not have sufficient permissions to invoke the action, or the parameter values fall outside the specified constraints, the action fails. The associated event attribute's <b>cause</b> parameter will be set to OPERATION_NOT_PERMITTED. For details and example IAM policies, see <a href="http://docs.aws.amazon.com/amazonswf/latest/developerguide/swf-dev-iam.html">Using IAM to Manage Access to Amazon SWF Workflows</a>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.StartTimerFailedEventAttributes.html'
+                                  title='rusoto::swf::StartTimerFailedEventAttributes'>StartTimerFailedEventAttributes</a></td>
+                           <td class='docblock-short'>
+                                <p>Provides details of the <code>StartTimerFailed</code> event.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.StartWorkflowExecutionInput.html'
+                                  title='rusoto::swf::StartWorkflowExecutionInput'>StartWorkflowExecutionInput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SwfClient.html'
+                                  title='rusoto::swf::SwfClient'>SwfClient</a></td>
+                           <td class='docblock-short'>
+                                <p>A client for the Amazon SWF API.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.TagFilter.html'
+                                  title='rusoto::swf::TagFilter'>TagFilter</a></td>
+                           <td class='docblock-short'>
+                                <p>Used to filter the workflow executions in visibility APIs based on a tag.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.TaskList.html'
+                                  title='rusoto::swf::TaskList'>TaskList</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents a task list.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.TerminateWorkflowExecutionInput.html'
+                                  title='rusoto::swf::TerminateWorkflowExecutionInput'>TerminateWorkflowExecutionInput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.TimerCanceledEventAttributes.html'
+                                  title='rusoto::swf::TimerCanceledEventAttributes'>TimerCanceledEventAttributes</a></td>
+                           <td class='docblock-short'>
+                                <p> Provides details of the <code>TimerCanceled</code> event. </p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.TimerFiredEventAttributes.html'
+                                  title='rusoto::swf::TimerFiredEventAttributes'>TimerFiredEventAttributes</a></td>
+                           <td class='docblock-short'>
+                                <p>Provides details of the <code>TimerFired</code> event.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.TimerStartedEventAttributes.html'
+                                  title='rusoto::swf::TimerStartedEventAttributes'>TimerStartedEventAttributes</a></td>
+                           <td class='docblock-short'>
+                                <p>Provides details of the <code>TimerStarted</code> event.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.WorkflowExecution.html'
+                                  title='rusoto::swf::WorkflowExecution'>WorkflowExecution</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents a workflow execution.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.WorkflowExecutionCancelRequestedEventAttributes.html'
+                                  title='rusoto::swf::WorkflowExecutionCancelRequestedEventAttributes'>WorkflowExecutionCancelRequestedEventAttributes</a></td>
+                           <td class='docblock-short'>
+                                <p>Provides details of the <code>WorkflowExecutionCancelRequested</code> event.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.WorkflowExecutionCanceledEventAttributes.html'
+                                  title='rusoto::swf::WorkflowExecutionCanceledEventAttributes'>WorkflowExecutionCanceledEventAttributes</a></td>
+                           <td class='docblock-short'>
+                                <p>Provides details of the <code>WorkflowExecutionCanceled</code> event.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.WorkflowExecutionCompletedEventAttributes.html'
+                                  title='rusoto::swf::WorkflowExecutionCompletedEventAttributes'>WorkflowExecutionCompletedEventAttributes</a></td>
+                           <td class='docblock-short'>
+                                <p>Provides details of the <code>WorkflowExecutionCompleted</code> event.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.WorkflowExecutionConfiguration.html'
+                                  title='rusoto::swf::WorkflowExecutionConfiguration'>WorkflowExecutionConfiguration</a></td>
+                           <td class='docblock-short'>
+                                <p>The configuration settings for a workflow execution including timeout values, tasklist etc. These configuration settings are determined from the defaults specified when registering the workflow type and those specified when starting the workflow execution.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.WorkflowExecutionContinuedAsNewEventAttributes.html'
+                                  title='rusoto::swf::WorkflowExecutionContinuedAsNewEventAttributes'>WorkflowExecutionContinuedAsNewEventAttributes</a></td>
+                           <td class='docblock-short'>
+                                <p>Provides details of the <code>WorkflowExecutionContinuedAsNew</code> event.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.WorkflowExecutionCount.html'
+                                  title='rusoto::swf::WorkflowExecutionCount'>WorkflowExecutionCount</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains the count of workflow executions returned from <a>CountOpenWorkflowExecutions</a> or <a>CountClosedWorkflowExecutions</a></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.WorkflowExecutionDetail.html'
+                                  title='rusoto::swf::WorkflowExecutionDetail'>WorkflowExecutionDetail</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains details about a workflow execution.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.WorkflowExecutionFailedEventAttributes.html'
+                                  title='rusoto::swf::WorkflowExecutionFailedEventAttributes'>WorkflowExecutionFailedEventAttributes</a></td>
+                           <td class='docblock-short'>
+                                <p>Provides details of the <code>WorkflowExecutionFailed</code> event.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.WorkflowExecutionFilter.html'
+                                  title='rusoto::swf::WorkflowExecutionFilter'>WorkflowExecutionFilter</a></td>
+                           <td class='docblock-short'>
+                                <p>Used to filter the workflow executions in visibility APIs by their <code>workflowId</code>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.WorkflowExecutionInfo.html'
+                                  title='rusoto::swf::WorkflowExecutionInfo'>WorkflowExecutionInfo</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains information about a workflow execution. </p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.WorkflowExecutionInfos.html'
+                                  title='rusoto::swf::WorkflowExecutionInfos'>WorkflowExecutionInfos</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains a paginated list of information about workflow executions.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.WorkflowExecutionOpenCounts.html'
+                                  title='rusoto::swf::WorkflowExecutionOpenCounts'>WorkflowExecutionOpenCounts</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains the counts of open tasks, child workflow executions and timers for a workflow execution.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.WorkflowExecutionSignaledEventAttributes.html'
+                                  title='rusoto::swf::WorkflowExecutionSignaledEventAttributes'>WorkflowExecutionSignaledEventAttributes</a></td>
+                           <td class='docblock-short'>
+                                <p>Provides details of the <code>WorkflowExecutionSignaled</code> event.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.WorkflowExecutionStartedEventAttributes.html'
+                                  title='rusoto::swf::WorkflowExecutionStartedEventAttributes'>WorkflowExecutionStartedEventAttributes</a></td>
+                           <td class='docblock-short'>
+                                <p>Provides details of <code>WorkflowExecutionStarted</code> event.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.WorkflowExecutionTerminatedEventAttributes.html'
+                                  title='rusoto::swf::WorkflowExecutionTerminatedEventAttributes'>WorkflowExecutionTerminatedEventAttributes</a></td>
+                           <td class='docblock-short'>
+                                <p>Provides details of the <code>WorkflowExecutionTerminated</code> event.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.WorkflowExecutionTimedOutEventAttributes.html'
+                                  title='rusoto::swf::WorkflowExecutionTimedOutEventAttributes'>WorkflowExecutionTimedOutEventAttributes</a></td>
+                           <td class='docblock-short'>
+                                <p>Provides details of the <code>WorkflowExecutionTimedOut</code> event.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.WorkflowType.html'
+                                  title='rusoto::swf::WorkflowType'>WorkflowType</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents a workflow type.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.WorkflowTypeConfiguration.html'
+                                  title='rusoto::swf::WorkflowTypeConfiguration'>WorkflowTypeConfiguration</a></td>
+                           <td class='docblock-short'>
+                                <p>The configuration settings of a workflow type.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.WorkflowTypeDetail.html'
+                                  title='rusoto::swf::WorkflowTypeDetail'>WorkflowTypeDetail</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains details about a workflow type.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.WorkflowTypeFilter.html'
+                                  title='rusoto::swf::WorkflowTypeFilter'>WorkflowTypeFilter</a></td>
+                           <td class='docblock-short'>
+                                <p>Used to filter workflow execution query results by type. Each parameter, if specified, defines a rule that must be satisfied by each returned result.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.WorkflowTypeInfo.html'
+                                  title='rusoto::swf::WorkflowTypeInfo'>WorkflowTypeInfo</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains information about a workflow type.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.WorkflowTypeInfos.html'
+                                  title='rusoto::swf::WorkflowTypeInfos'>WorkflowTypeInfos</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains a paginated list of information structures about workflow types.</p>
+                           </td>
+                       </tr></table><h2 id='enums' class='section-header'><a href="#enums">Enums</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.CountClosedWorkflowExecutionsError.html'
+                                  title='rusoto::swf::CountClosedWorkflowExecutionsError'>CountClosedWorkflowExecutionsError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.CountOpenWorkflowExecutionsError.html'
+                                  title='rusoto::swf::CountOpenWorkflowExecutionsError'>CountOpenWorkflowExecutionsError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.CountPendingActivityTasksError.html'
+                                  title='rusoto::swf::CountPendingActivityTasksError'>CountPendingActivityTasksError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.CountPendingDecisionTasksError.html'
+                                  title='rusoto::swf::CountPendingDecisionTasksError'>CountPendingDecisionTasksError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DeprecateActivityTypeError.html'
+                                  title='rusoto::swf::DeprecateActivityTypeError'>DeprecateActivityTypeError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DeprecateDomainError.html'
+                                  title='rusoto::swf::DeprecateDomainError'>DeprecateDomainError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DeprecateWorkflowTypeError.html'
+                                  title='rusoto::swf::DeprecateWorkflowTypeError'>DeprecateWorkflowTypeError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeActivityTypeError.html'
+                                  title='rusoto::swf::DescribeActivityTypeError'>DescribeActivityTypeError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeDomainError.html'
+                                  title='rusoto::swf::DescribeDomainError'>DescribeDomainError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeWorkflowExecutionError.html'
+                                  title='rusoto::swf::DescribeWorkflowExecutionError'>DescribeWorkflowExecutionError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeWorkflowTypeError.html'
+                                  title='rusoto::swf::DescribeWorkflowTypeError'>DescribeWorkflowTypeError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.GetWorkflowExecutionHistoryError.html'
+                                  title='rusoto::swf::GetWorkflowExecutionHistoryError'>GetWorkflowExecutionHistoryError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ListActivityTypesError.html'
+                                  title='rusoto::swf::ListActivityTypesError'>ListActivityTypesError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ListClosedWorkflowExecutionsError.html'
+                                  title='rusoto::swf::ListClosedWorkflowExecutionsError'>ListClosedWorkflowExecutionsError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ListDomainsError.html'
+                                  title='rusoto::swf::ListDomainsError'>ListDomainsError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ListOpenWorkflowExecutionsError.html'
+                                  title='rusoto::swf::ListOpenWorkflowExecutionsError'>ListOpenWorkflowExecutionsError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ListWorkflowTypesError.html'
+                                  title='rusoto::swf::ListWorkflowTypesError'>ListWorkflowTypesError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.PollForActivityTaskError.html'
+                                  title='rusoto::swf::PollForActivityTaskError'>PollForActivityTaskError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.PollForDecisionTaskError.html'
+                                  title='rusoto::swf::PollForDecisionTaskError'>PollForDecisionTaskError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.RecordActivityTaskHeartbeatError.html'
+                                  title='rusoto::swf::RecordActivityTaskHeartbeatError'>RecordActivityTaskHeartbeatError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.RegisterActivityTypeError.html'
+                                  title='rusoto::swf::RegisterActivityTypeError'>RegisterActivityTypeError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.RegisterDomainError.html'
+                                  title='rusoto::swf::RegisterDomainError'>RegisterDomainError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.RegisterWorkflowTypeError.html'
+                                  title='rusoto::swf::RegisterWorkflowTypeError'>RegisterWorkflowTypeError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.RequestCancelWorkflowExecutionError.html'
+                                  title='rusoto::swf::RequestCancelWorkflowExecutionError'>RequestCancelWorkflowExecutionError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.RespondActivityTaskCanceledError.html'
+                                  title='rusoto::swf::RespondActivityTaskCanceledError'>RespondActivityTaskCanceledError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.RespondActivityTaskCompletedError.html'
+                                  title='rusoto::swf::RespondActivityTaskCompletedError'>RespondActivityTaskCompletedError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.RespondActivityTaskFailedError.html'
+                                  title='rusoto::swf::RespondActivityTaskFailedError'>RespondActivityTaskFailedError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.RespondDecisionTaskCompletedError.html'
+                                  title='rusoto::swf::RespondDecisionTaskCompletedError'>RespondDecisionTaskCompletedError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.SignalWorkflowExecutionError.html'
+                                  title='rusoto::swf::SignalWorkflowExecutionError'>SignalWorkflowExecutionError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.StartWorkflowExecutionError.html'
+                                  title='rusoto::swf::StartWorkflowExecutionError'>StartWorkflowExecutionError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.TerminateWorkflowExecutionError.html'
+                                  title='rusoto::swf::TerminateWorkflowExecutionError'>TerminateWorkflowExecutionError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr></table><h2 id='types' class='section-header'><a href="#types">Type Definitions</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ActivityId.html'
+                                  title='rusoto::swf::ActivityId'>ActivityId</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ActivityTaskTimeoutType.html'
+                                  title='rusoto::swf::ActivityTaskTimeoutType'>ActivityTaskTimeoutType</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ActivityTypeInfoList.html'
+                                  title='rusoto::swf::ActivityTypeInfoList'>ActivityTypeInfoList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Arn.html'
+                                  title='rusoto::swf::Arn'>Arn</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.CancelTimerFailedCause.html'
+                                  title='rusoto::swf::CancelTimerFailedCause'>CancelTimerFailedCause</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.CancelWorkflowExecutionFailedCause.html'
+                                  title='rusoto::swf::CancelWorkflowExecutionFailedCause'>CancelWorkflowExecutionFailedCause</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Canceled.html'
+                                  title='rusoto::swf::Canceled'>Canceled</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.CauseMessage.html'
+                                  title='rusoto::swf::CauseMessage'>CauseMessage</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ChildPolicy.html'
+                                  title='rusoto::swf::ChildPolicy'>ChildPolicy</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.CloseStatus.html'
+                                  title='rusoto::swf::CloseStatus'>CloseStatus</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.CompleteWorkflowExecutionFailedCause.html'
+                                  title='rusoto::swf::CompleteWorkflowExecutionFailedCause'>CompleteWorkflowExecutionFailedCause</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ContinueAsNewWorkflowExecutionFailedCause.html'
+                                  title='rusoto::swf::ContinueAsNewWorkflowExecutionFailedCause'>ContinueAsNewWorkflowExecutionFailedCause</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Count.html'
+                                  title='rusoto::swf::Count'>Count</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Data.html'
+                                  title='rusoto::swf::Data'>Data</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.DecisionList.html'
+                                  title='rusoto::swf::DecisionList'>DecisionList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.DecisionTaskTimeoutType.html'
+                                  title='rusoto::swf::DecisionTaskTimeoutType'>DecisionTaskTimeoutType</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.DecisionType.html'
+                                  title='rusoto::swf::DecisionType'>DecisionType</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Description.html'
+                                  title='rusoto::swf::Description'>Description</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.DomainInfoList.html'
+                                  title='rusoto::swf::DomainInfoList'>DomainInfoList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.DomainName.html'
+                                  title='rusoto::swf::DomainName'>DomainName</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.DurationInDays.html'
+                                  title='rusoto::swf::DurationInDays'>DurationInDays</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.DurationInSeconds.html'
+                                  title='rusoto::swf::DurationInSeconds'>DurationInSeconds</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.DurationInSecondsOptional.html'
+                                  title='rusoto::swf::DurationInSecondsOptional'>DurationInSecondsOptional</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ErrorMessage.html'
+                                  title='rusoto::swf::ErrorMessage'>ErrorMessage</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.EventId.html'
+                                  title='rusoto::swf::EventId'>EventId</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.EventType.html'
+                                  title='rusoto::swf::EventType'>EventType</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ExecutionStatus.html'
+                                  title='rusoto::swf::ExecutionStatus'>ExecutionStatus</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.FailWorkflowExecutionFailedCause.html'
+                                  title='rusoto::swf::FailWorkflowExecutionFailedCause'>FailWorkflowExecutionFailedCause</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.FailureReason.html'
+                                  title='rusoto::swf::FailureReason'>FailureReason</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.FunctionId.html'
+                                  title='rusoto::swf::FunctionId'>FunctionId</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.FunctionInput.html'
+                                  title='rusoto::swf::FunctionInput'>FunctionInput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.FunctionName.html'
+                                  title='rusoto::swf::FunctionName'>FunctionName</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.HistoryEventList.html'
+                                  title='rusoto::swf::HistoryEventList'>HistoryEventList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Identity.html'
+                                  title='rusoto::swf::Identity'>Identity</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.LambdaFunctionTimeoutType.html'
+                                  title='rusoto::swf::LambdaFunctionTimeoutType'>LambdaFunctionTimeoutType</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.LimitedData.html'
+                                  title='rusoto::swf::LimitedData'>LimitedData</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.MarkerName.html'
+                                  title='rusoto::swf::MarkerName'>MarkerName</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Name.html'
+                                  title='rusoto::swf::Name'>Name</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.OpenDecisionTasksCount.html'
+                                  title='rusoto::swf::OpenDecisionTasksCount'>OpenDecisionTasksCount</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.PageSize.html'
+                                  title='rusoto::swf::PageSize'>PageSize</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.PageToken.html'
+                                  title='rusoto::swf::PageToken'>PageToken</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.RecordMarkerFailedCause.html'
+                                  title='rusoto::swf::RecordMarkerFailedCause'>RecordMarkerFailedCause</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.RegistrationStatus.html'
+                                  title='rusoto::swf::RegistrationStatus'>RegistrationStatus</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.RequestCancelActivityTaskFailedCause.html'
+                                  title='rusoto::swf::RequestCancelActivityTaskFailedCause'>RequestCancelActivityTaskFailedCause</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.RequestCancelExternalWorkflowExecutionFailedCause.html'
+                                  title='rusoto::swf::RequestCancelExternalWorkflowExecutionFailedCause'>RequestCancelExternalWorkflowExecutionFailedCause</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ReverseOrder.html'
+                                  title='rusoto::swf::ReverseOrder'>ReverseOrder</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.RunId.html'
+                                  title='rusoto::swf::RunId'>RunId</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.RunIdOptional.html'
+                                  title='rusoto::swf::RunIdOptional'>RunIdOptional</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ScheduleActivityTaskFailedCause.html'
+                                  title='rusoto::swf::ScheduleActivityTaskFailedCause'>ScheduleActivityTaskFailedCause</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ScheduleLambdaFunctionFailedCause.html'
+                                  title='rusoto::swf::ScheduleLambdaFunctionFailedCause'>ScheduleLambdaFunctionFailedCause</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.SignalExternalWorkflowExecutionFailedCause.html'
+                                  title='rusoto::swf::SignalExternalWorkflowExecutionFailedCause'>SignalExternalWorkflowExecutionFailedCause</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.SignalName.html'
+                                  title='rusoto::swf::SignalName'>SignalName</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.StartChildWorkflowExecutionFailedCause.html'
+                                  title='rusoto::swf::StartChildWorkflowExecutionFailedCause'>StartChildWorkflowExecutionFailedCause</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.StartLambdaFunctionFailedCause.html'
+                                  title='rusoto::swf::StartLambdaFunctionFailedCause'>StartLambdaFunctionFailedCause</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.StartTimerFailedCause.html'
+                                  title='rusoto::swf::StartTimerFailedCause'>StartTimerFailedCause</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Tag.html'
+                                  title='rusoto::swf::Tag'>Tag</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.TagList.html'
+                                  title='rusoto::swf::TagList'>TagList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.TaskPriority.html'
+                                  title='rusoto::swf::TaskPriority'>TaskPriority</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.TaskToken.html'
+                                  title='rusoto::swf::TaskToken'>TaskToken</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.TerminateReason.html'
+                                  title='rusoto::swf::TerminateReason'>TerminateReason</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.TimerId.html'
+                                  title='rusoto::swf::TimerId'>TimerId</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Timestamp.html'
+                                  title='rusoto::swf::Timestamp'>Timestamp</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Truncated.html'
+                                  title='rusoto::swf::Truncated'>Truncated</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Version.html'
+                                  title='rusoto::swf::Version'>Version</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.VersionOptional.html'
+                                  title='rusoto::swf::VersionOptional'>VersionOptional</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.WorkflowExecutionCancelRequestedCause.html'
+                                  title='rusoto::swf::WorkflowExecutionCancelRequestedCause'>WorkflowExecutionCancelRequestedCause</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.WorkflowExecutionInfoList.html'
+                                  title='rusoto::swf::WorkflowExecutionInfoList'>WorkflowExecutionInfoList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.WorkflowExecutionTerminatedCause.html'
+                                  title='rusoto::swf::WorkflowExecutionTerminatedCause'>WorkflowExecutionTerminatedCause</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.WorkflowExecutionTimeoutType.html'
+                                  title='rusoto::swf::WorkflowExecutionTimeoutType'>WorkflowExecutionTimeoutType</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.WorkflowId.html'
+                                  title='rusoto::swf::WorkflowId'>WorkflowId</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.WorkflowTypeInfoList.html'
+                                  title='rusoto::swf::WorkflowTypeInfoList'>WorkflowTypeInfoList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr></table></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "rusoto";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../../jquery.js"></script>
+    <script src="../../main.js"></script>
+    
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>

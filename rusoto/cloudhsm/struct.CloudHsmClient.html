@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `CloudHsmClient` struct in crate `rusoto`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, CloudHsmClient">
+
+    <title>rusoto::cloudhsm::CloudHsmClient - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='../index.html'>rusoto</a>::<wbr><a href='index.html'>cloudhsm</a></p><script>window.sidebarCurrent = {name: 'CloudHsmClient', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content struct">
+<h1 class='fqn'><span class='in-band'>Struct <a href='../index.html'>rusoto</a>::<wbr><a href='index.html'>cloudhsm</a>::<wbr><a class='struct' href=''>CloudHsmClient</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-8295' class='srclink' href='../../src/rusoto/home/travis/build/rusoto/rusoto/target/debug/build/rusoto-61f21223a43ed2cb/out/cloudhsm.rs.html#6697-6702' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct CloudHsmClient&lt;P,&nbsp;D&gt; <span class='where'>where P: <a class='trait' href='../../rusoto/trait.ProvideAwsCredentials.html' title='rusoto::ProvideAwsCredentials'>ProvideAwsCredentials</a>, D: <a class='trait' href='../../rusoto/trait.DispatchSignedRequest.html' title='rusoto::DispatchSignedRequest'>DispatchSignedRequest</a></span> { /* fields omitted */ }</pre><div class='docblock'><p>A client for the CloudHSM API.</p>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;P&gt; <a class='struct' href='../../rusoto/cloudhsm/struct.CloudHsmClient.html' title='rusoto::cloudhsm::CloudHsmClient'>CloudHsmClient</a>&lt;P,&nbsp;<a class='struct' href='https://hyperium.github.io/hyper/hyper/client/struct.Client.html' title='hyper::client::Client'>Client</a>&gt; <span class='where'>where P: <a class='trait' href='../../rusoto/trait.ProvideAwsCredentials.html' title='rusoto::ProvideAwsCredentials'>ProvideAwsCredentials</a></span></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-8301' class='srclink' href='../../src/rusoto/home/travis/build/rusoto/rusoto/target/debug/build/rusoto-61f21223a43ed2cb/out/cloudhsm.rs.html#6703-6710' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.new' class='method'><span id='new.v' class='invisible'><code>fn <a href='#method.new' class='fnname'>new</a>(credentials_provider: P, region: <a class='enum' href='../../rusoto/enum.Region.html' title='rusoto::Region'>Region</a>) -&gt; Self</code></span></h4>
+</div><h3 class='impl'><span class='in-band'><code>impl&lt;P,&nbsp;D&gt; <a class='struct' href='../../rusoto/cloudhsm/struct.CloudHsmClient.html' title='rusoto::cloudhsm::CloudHsmClient'>CloudHsmClient</a>&lt;P,&nbsp;D&gt; <span class='where'>where P: <a class='trait' href='../../rusoto/trait.ProvideAwsCredentials.html' title='rusoto::ProvideAwsCredentials'>ProvideAwsCredentials</a>, D: <a class='trait' href='../../rusoto/trait.DispatchSignedRequest.html' title='rusoto::DispatchSignedRequest'>DispatchSignedRequest</a></span></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-8307' class='srclink' href='../../src/rusoto/home/travis/build/rusoto/rusoto/target/debug/build/rusoto-61f21223a43ed2cb/out/cloudhsm.rs.html#6711-7136' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.with_request_dispatcher' class='method'><span id='with_request_dispatcher.v' class='invisible'><code>fn <a href='#method.with_request_dispatcher' class='fnname'>with_request_dispatcher</a>(request_dispatcher: D, credentials_provider: P, region: <a class='enum' href='../../rusoto/enum.Region.html' title='rusoto::Region'>Region</a>) -&gt; Self</code></span></h4>
+<h4 id='method.add_tags_to_resource' class='method'><span id='add_tags_to_resource.v' class='invisible'><code>fn <a href='#method.add_tags_to_resource' class='fnname'>add_tags_to_resource</a>(&amp;self, input: &amp;<a class='struct' href='../../rusoto/cloudhsm/struct.AddTagsToResourceRequest.html' title='rusoto::cloudhsm::AddTagsToResourceRequest'>AddTagsToResourceRequest</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../../rusoto/cloudhsm/struct.AddTagsToResourceResponse.html' title='rusoto::cloudhsm::AddTagsToResourceResponse'>AddTagsToResourceResponse</a>,&nbsp;<a class='enum' href='../../rusoto/cloudhsm/enum.AddTagsToResourceError.html' title='rusoto::cloudhsm::AddTagsToResourceError'>AddTagsToResourceError</a>&gt;</code></span></h4>
+<div class='docblock'><p>Adds or overwrites one or more tags for the specified AWS CloudHSM resource.</p> <p>Each tag consists of a key and a value. Tag keys must be unique to each resource.</p>
+</div><h4 id='method.create_hapg' class='method'><span id='create_hapg.v' class='invisible'><code>fn <a href='#method.create_hapg' class='fnname'>create_hapg</a>(&amp;self, input: &amp;<a class='struct' href='../../rusoto/cloudhsm/struct.CreateHapgRequest.html' title='rusoto::cloudhsm::CreateHapgRequest'>CreateHapgRequest</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../../rusoto/cloudhsm/struct.CreateHapgResponse.html' title='rusoto::cloudhsm::CreateHapgResponse'>CreateHapgResponse</a>,&nbsp;<a class='enum' href='../../rusoto/cloudhsm/enum.CreateHapgError.html' title='rusoto::cloudhsm::CreateHapgError'>CreateHapgError</a>&gt;</code></span></h4>
+<div class='docblock'><p>Creates a high-availability partition group. A high-availability partition group is a group of partitions that spans multiple physical HSMs.</p>
+</div><h4 id='method.create_hsm' class='method'><span id='create_hsm.v' class='invisible'><code>fn <a href='#method.create_hsm' class='fnname'>create_hsm</a>(&amp;self, input: &amp;<a class='struct' href='../../rusoto/cloudhsm/struct.CreateHsmRequest.html' title='rusoto::cloudhsm::CreateHsmRequest'>CreateHsmRequest</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../../rusoto/cloudhsm/struct.CreateHsmResponse.html' title='rusoto::cloudhsm::CreateHsmResponse'>CreateHsmResponse</a>,&nbsp;<a class='enum' href='../../rusoto/cloudhsm/enum.CreateHsmError.html' title='rusoto::cloudhsm::CreateHsmError'>CreateHsmError</a>&gt;</code></span></h4>
+<div class='docblock'><p><p>Creates an uninitialized HSM instance.</p> <p>There is an upfront fee charged for each HSM instance that you create with the <a>CreateHsm</a> operation. If you accidentally provision an HSM and want to request a refund, delete the instance using the <a>DeleteHsm</a> operation, go to the <a href="https://console.aws.amazon.com/support/home#/">AWS Support Center</a>, create a new case, and select <b>Account and Billing Support</b>.</p> <important> <p>It can take up to 20 minutes to create and provision an HSM. You can monitor the status of the HSM with the <a>DescribeHsm</a> operation. The HSM is ready to be initialized when the status changes to <code>RUNNING</code>.</p> </important></p>
+</div><h4 id='method.create_luna_client' class='method'><span id='create_luna_client.v' class='invisible'><code>fn <a href='#method.create_luna_client' class='fnname'>create_luna_client</a>(&amp;self, input: &amp;<a class='struct' href='../../rusoto/cloudhsm/struct.CreateLunaClientRequest.html' title='rusoto::cloudhsm::CreateLunaClientRequest'>CreateLunaClientRequest</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../../rusoto/cloudhsm/struct.CreateLunaClientResponse.html' title='rusoto::cloudhsm::CreateLunaClientResponse'>CreateLunaClientResponse</a>,&nbsp;<a class='enum' href='../../rusoto/cloudhsm/enum.CreateLunaClientError.html' title='rusoto::cloudhsm::CreateLunaClientError'>CreateLunaClientError</a>&gt;</code></span></h4>
+<div class='docblock'><p>Creates an HSM client.</p>
+</div><h4 id='method.delete_hapg' class='method'><span id='delete_hapg.v' class='invisible'><code>fn <a href='#method.delete_hapg' class='fnname'>delete_hapg</a>(&amp;self, input: &amp;<a class='struct' href='../../rusoto/cloudhsm/struct.DeleteHapgRequest.html' title='rusoto::cloudhsm::DeleteHapgRequest'>DeleteHapgRequest</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../../rusoto/cloudhsm/struct.DeleteHapgResponse.html' title='rusoto::cloudhsm::DeleteHapgResponse'>DeleteHapgResponse</a>,&nbsp;<a class='enum' href='../../rusoto/cloudhsm/enum.DeleteHapgError.html' title='rusoto::cloudhsm::DeleteHapgError'>DeleteHapgError</a>&gt;</code></span></h4>
+<div class='docblock'><p>Deletes a high-availability partition group.</p>
+</div><h4 id='method.delete_hsm' class='method'><span id='delete_hsm.v' class='invisible'><code>fn <a href='#method.delete_hsm' class='fnname'>delete_hsm</a>(&amp;self, input: &amp;<a class='struct' href='../../rusoto/cloudhsm/struct.DeleteHsmRequest.html' title='rusoto::cloudhsm::DeleteHsmRequest'>DeleteHsmRequest</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../../rusoto/cloudhsm/struct.DeleteHsmResponse.html' title='rusoto::cloudhsm::DeleteHsmResponse'>DeleteHsmResponse</a>,&nbsp;<a class='enum' href='../../rusoto/cloudhsm/enum.DeleteHsmError.html' title='rusoto::cloudhsm::DeleteHsmError'>DeleteHsmError</a>&gt;</code></span></h4>
+<div class='docblock'><p>Deletes an HSM. After completion, this operation cannot be undone and your key material cannot be recovered.</p>
+</div><h4 id='method.delete_luna_client' class='method'><span id='delete_luna_client.v' class='invisible'><code>fn <a href='#method.delete_luna_client' class='fnname'>delete_luna_client</a>(&amp;self, input: &amp;<a class='struct' href='../../rusoto/cloudhsm/struct.DeleteLunaClientRequest.html' title='rusoto::cloudhsm::DeleteLunaClientRequest'>DeleteLunaClientRequest</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../../rusoto/cloudhsm/struct.DeleteLunaClientResponse.html' title='rusoto::cloudhsm::DeleteLunaClientResponse'>DeleteLunaClientResponse</a>,&nbsp;<a class='enum' href='../../rusoto/cloudhsm/enum.DeleteLunaClientError.html' title='rusoto::cloudhsm::DeleteLunaClientError'>DeleteLunaClientError</a>&gt;</code></span></h4>
+<div class='docblock'><p>Deletes a client.</p>
+</div><h4 id='method.describe_hapg' class='method'><span id='describe_hapg.v' class='invisible'><code>fn <a href='#method.describe_hapg' class='fnname'>describe_hapg</a>(&amp;self, input: &amp;<a class='struct' href='../../rusoto/cloudhsm/struct.DescribeHapgRequest.html' title='rusoto::cloudhsm::DescribeHapgRequest'>DescribeHapgRequest</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../../rusoto/cloudhsm/struct.DescribeHapgResponse.html' title='rusoto::cloudhsm::DescribeHapgResponse'>DescribeHapgResponse</a>,&nbsp;<a class='enum' href='../../rusoto/cloudhsm/enum.DescribeHapgError.html' title='rusoto::cloudhsm::DescribeHapgError'>DescribeHapgError</a>&gt;</code></span></h4>
+<div class='docblock'><p>Retrieves information about a high-availability partition group.</p>
+</div><h4 id='method.describe_hsm' class='method'><span id='describe_hsm.v' class='invisible'><code>fn <a href='#method.describe_hsm' class='fnname'>describe_hsm</a>(&amp;self, input: &amp;<a class='struct' href='../../rusoto/cloudhsm/struct.DescribeHsmRequest.html' title='rusoto::cloudhsm::DescribeHsmRequest'>DescribeHsmRequest</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../../rusoto/cloudhsm/struct.DescribeHsmResponse.html' title='rusoto::cloudhsm::DescribeHsmResponse'>DescribeHsmResponse</a>,&nbsp;<a class='enum' href='../../rusoto/cloudhsm/enum.DescribeHsmError.html' title='rusoto::cloudhsm::DescribeHsmError'>DescribeHsmError</a>&gt;</code></span></h4>
+<div class='docblock'><p>Retrieves information about an HSM. You can identify the HSM by its ARN or its serial number.</p>
+</div><h4 id='method.describe_luna_client' class='method'><span id='describe_luna_client.v' class='invisible'><code>fn <a href='#method.describe_luna_client' class='fnname'>describe_luna_client</a>(&amp;self, input: &amp;<a class='struct' href='../../rusoto/cloudhsm/struct.DescribeLunaClientRequest.html' title='rusoto::cloudhsm::DescribeLunaClientRequest'>DescribeLunaClientRequest</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../../rusoto/cloudhsm/struct.DescribeLunaClientResponse.html' title='rusoto::cloudhsm::DescribeLunaClientResponse'>DescribeLunaClientResponse</a>,&nbsp;<a class='enum' href='../../rusoto/cloudhsm/enum.DescribeLunaClientError.html' title='rusoto::cloudhsm::DescribeLunaClientError'>DescribeLunaClientError</a>&gt;</code></span></h4>
+<div class='docblock'><p>Retrieves information about an HSM client.</p>
+</div><h4 id='method.get_config' class='method'><span id='get_config.v' class='invisible'><code>fn <a href='#method.get_config' class='fnname'>get_config</a>(&amp;self, input: &amp;<a class='struct' href='../../rusoto/cloudhsm/struct.GetConfigRequest.html' title='rusoto::cloudhsm::GetConfigRequest'>GetConfigRequest</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../../rusoto/cloudhsm/struct.GetConfigResponse.html' title='rusoto::cloudhsm::GetConfigResponse'>GetConfigResponse</a>,&nbsp;<a class='enum' href='../../rusoto/cloudhsm/enum.GetConfigError.html' title='rusoto::cloudhsm::GetConfigError'>GetConfigError</a>&gt;</code></span></h4>
+<div class='docblock'><p>Gets the configuration files necessary to connect to all high availability partition groups the client is associated with.</p>
+</div><h4 id='method.list_available_zones' class='method'><span id='list_available_zones.v' class='invisible'><code>fn <a href='#method.list_available_zones' class='fnname'>list_available_zones</a>(&amp;self, input: &amp;<a class='struct' href='../../rusoto/cloudhsm/struct.ListAvailableZonesRequest.html' title='rusoto::cloudhsm::ListAvailableZonesRequest'>ListAvailableZonesRequest</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../../rusoto/cloudhsm/struct.ListAvailableZonesResponse.html' title='rusoto::cloudhsm::ListAvailableZonesResponse'>ListAvailableZonesResponse</a>,&nbsp;<a class='enum' href='../../rusoto/cloudhsm/enum.ListAvailableZonesError.html' title='rusoto::cloudhsm::ListAvailableZonesError'>ListAvailableZonesError</a>&gt;</code></span></h4>
+<div class='docblock'><p>Lists the Availability Zones that have available AWS CloudHSM capacity.</p>
+</div><h4 id='method.list_hapgs' class='method'><span id='list_hapgs.v' class='invisible'><code>fn <a href='#method.list_hapgs' class='fnname'>list_hapgs</a>(&amp;self, input: &amp;<a class='struct' href='../../rusoto/cloudhsm/struct.ListHapgsRequest.html' title='rusoto::cloudhsm::ListHapgsRequest'>ListHapgsRequest</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../../rusoto/cloudhsm/struct.ListHapgsResponse.html' title='rusoto::cloudhsm::ListHapgsResponse'>ListHapgsResponse</a>,&nbsp;<a class='enum' href='../../rusoto/cloudhsm/enum.ListHapgsError.html' title='rusoto::cloudhsm::ListHapgsError'>ListHapgsError</a>&gt;</code></span></h4>
+<div class='docblock'><p>Lists the high-availability partition groups for the account.</p> <p>This operation supports pagination with the use of the <i>NextToken</i> member. If more results are available, the <i>NextToken</i> member of the response contains a token that you pass in the next call to <a>ListHapgs</a> to retrieve the next set of items.</p>
+</div><h4 id='method.list_hsms' class='method'><span id='list_hsms.v' class='invisible'><code>fn <a href='#method.list_hsms' class='fnname'>list_hsms</a>(&amp;self, input: &amp;<a class='struct' href='../../rusoto/cloudhsm/struct.ListHsmsRequest.html' title='rusoto::cloudhsm::ListHsmsRequest'>ListHsmsRequest</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../../rusoto/cloudhsm/struct.ListHsmsResponse.html' title='rusoto::cloudhsm::ListHsmsResponse'>ListHsmsResponse</a>,&nbsp;<a class='enum' href='../../rusoto/cloudhsm/enum.ListHsmsError.html' title='rusoto::cloudhsm::ListHsmsError'>ListHsmsError</a>&gt;</code></span></h4>
+<div class='docblock'><p>Retrieves the identifiers of all of the HSMs provisioned for the current customer.</p> <p>This operation supports pagination with the use of the <i>NextToken</i> member. If more results are available, the <i>NextToken</i> member of the response contains a token that you pass in the next call to <a>ListHsms</a> to retrieve the next set of items.</p>
+</div><h4 id='method.list_luna_clients' class='method'><span id='list_luna_clients.v' class='invisible'><code>fn <a href='#method.list_luna_clients' class='fnname'>list_luna_clients</a>(&amp;self, input: &amp;<a class='struct' href='../../rusoto/cloudhsm/struct.ListLunaClientsRequest.html' title='rusoto::cloudhsm::ListLunaClientsRequest'>ListLunaClientsRequest</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../../rusoto/cloudhsm/struct.ListLunaClientsResponse.html' title='rusoto::cloudhsm::ListLunaClientsResponse'>ListLunaClientsResponse</a>,&nbsp;<a class='enum' href='../../rusoto/cloudhsm/enum.ListLunaClientsError.html' title='rusoto::cloudhsm::ListLunaClientsError'>ListLunaClientsError</a>&gt;</code></span></h4>
+<div class='docblock'><p>Lists all of the clients.</p> <p>This operation supports pagination with the use of the <i>NextToken</i> member. If more results are available, the <i>NextToken</i> member of the response contains a token that you pass in the next call to <a>ListLunaClients</a> to retrieve the next set of items.</p>
+</div><h4 id='method.list_tags_for_resource' class='method'><span id='list_tags_for_resource.v' class='invisible'><code>fn <a href='#method.list_tags_for_resource' class='fnname'>list_tags_for_resource</a>(&amp;self, input: &amp;<a class='struct' href='../../rusoto/cloudhsm/struct.ListTagsForResourceRequest.html' title='rusoto::cloudhsm::ListTagsForResourceRequest'>ListTagsForResourceRequest</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../../rusoto/cloudhsm/struct.ListTagsForResourceResponse.html' title='rusoto::cloudhsm::ListTagsForResourceResponse'>ListTagsForResourceResponse</a>,&nbsp;<a class='enum' href='../../rusoto/cloudhsm/enum.ListTagsForResourceError.html' title='rusoto::cloudhsm::ListTagsForResourceError'>ListTagsForResourceError</a>&gt;</code></span></h4>
+<div class='docblock'><p>Returns a list of all tags for the specified AWS CloudHSM resource.</p>
+</div><h4 id='method.modify_hapg' class='method'><span id='modify_hapg.v' class='invisible'><code>fn <a href='#method.modify_hapg' class='fnname'>modify_hapg</a>(&amp;self, input: &amp;<a class='struct' href='../../rusoto/cloudhsm/struct.ModifyHapgRequest.html' title='rusoto::cloudhsm::ModifyHapgRequest'>ModifyHapgRequest</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../../rusoto/cloudhsm/struct.ModifyHapgResponse.html' title='rusoto::cloudhsm::ModifyHapgResponse'>ModifyHapgResponse</a>,&nbsp;<a class='enum' href='../../rusoto/cloudhsm/enum.ModifyHapgError.html' title='rusoto::cloudhsm::ModifyHapgError'>ModifyHapgError</a>&gt;</code></span></h4>
+<div class='docblock'><p>Modifies an existing high-availability partition group.</p>
+</div><h4 id='method.modify_hsm' class='method'><span id='modify_hsm.v' class='invisible'><code>fn <a href='#method.modify_hsm' class='fnname'>modify_hsm</a>(&amp;self, input: &amp;<a class='struct' href='../../rusoto/cloudhsm/struct.ModifyHsmRequest.html' title='rusoto::cloudhsm::ModifyHsmRequest'>ModifyHsmRequest</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../../rusoto/cloudhsm/struct.ModifyHsmResponse.html' title='rusoto::cloudhsm::ModifyHsmResponse'>ModifyHsmResponse</a>,&nbsp;<a class='enum' href='../../rusoto/cloudhsm/enum.ModifyHsmError.html' title='rusoto::cloudhsm::ModifyHsmError'>ModifyHsmError</a>&gt;</code></span></h4>
+<div class='docblock'><p><p>Modifies an HSM.</p> <important> <p>This operation can result in the HSM being offline for up to 15 minutes while the AWS CloudHSM service is reconfigured. If you are modifying a production HSM, you should ensure that your AWS CloudHSM service is configured for high availability, and consider executing this operation during a maintenance window.</p> </important></p>
+</div><h4 id='method.modify_luna_client' class='method'><span id='modify_luna_client.v' class='invisible'><code>fn <a href='#method.modify_luna_client' class='fnname'>modify_luna_client</a>(&amp;self, input: &amp;<a class='struct' href='../../rusoto/cloudhsm/struct.ModifyLunaClientRequest.html' title='rusoto::cloudhsm::ModifyLunaClientRequest'>ModifyLunaClientRequest</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../../rusoto/cloudhsm/struct.ModifyLunaClientResponse.html' title='rusoto::cloudhsm::ModifyLunaClientResponse'>ModifyLunaClientResponse</a>,&nbsp;<a class='enum' href='../../rusoto/cloudhsm/enum.ModifyLunaClientError.html' title='rusoto::cloudhsm::ModifyLunaClientError'>ModifyLunaClientError</a>&gt;</code></span></h4>
+<div class='docblock'><p>Modifies the certificate used by the client.</p> <p>This action can potentially start a workflow to install the new certificate on the client's HSMs.</p>
+</div><h4 id='method.remove_tags_from_resource' class='method'><span id='remove_tags_from_resource.v' class='invisible'><code>fn <a href='#method.remove_tags_from_resource' class='fnname'>remove_tags_from_resource</a>(&amp;self, input: &amp;<a class='struct' href='../../rusoto/cloudhsm/struct.RemoveTagsFromResourceRequest.html' title='rusoto::cloudhsm::RemoveTagsFromResourceRequest'>RemoveTagsFromResourceRequest</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../../rusoto/cloudhsm/struct.RemoveTagsFromResourceResponse.html' title='rusoto::cloudhsm::RemoveTagsFromResourceResponse'>RemoveTagsFromResourceResponse</a>,&nbsp;<a class='enum' href='../../rusoto/cloudhsm/enum.RemoveTagsFromResourceError.html' title='rusoto::cloudhsm::RemoveTagsFromResourceError'>RemoveTagsFromResourceError</a>&gt;</code></span></h4>
+<div class='docblock'><p>Removes one or more tags from the specified AWS CloudHSM resource.</p> <p>To remove a tag, specify only the tag key to remove (not the value). To overwrite the value for an existing tag, use <a>AddTagsToResource</a>.</p>
+</div></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "rusoto";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../../jquery.js"></script>
+    <script src="../../main.js"></script>
+    
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>

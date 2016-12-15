@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `UpdateTrailError` enum in crate `rusoto`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, UpdateTrailError">
+
+    <title>rusoto::cloudtrail::UpdateTrailError - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='../index.html'>rusoto</a>::<wbr><a href='index.html'>cloudtrail</a></p><script>window.sidebarCurrent = {name: 'UpdateTrailError', ty: 'enum', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content enum">
+<h1 class='fqn'><span class='in-band'>Enum <a href='../index.html'>rusoto</a>::<wbr><a href='index.html'>cloudtrail</a>::<wbr><a class='enum' href=''>UpdateTrailError</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-12966' class='srclink' href='../../src/rusoto/home/travis/build/rusoto/rusoto/target/debug/build/rusoto-61f21223a43ed2cb/out/cloudtrail.rs.html#6677-6753' title='goto source code'>[src]</a></span></h1>
+<pre class='rust enum'>pub enum UpdateTrailError {
+    S3BucketDoesNotExist(<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>),
+    InsufficientS3BucketPolicy(<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>),
+    InsufficientSnsTopicPolicy(<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>),
+    InsufficientEncryptionPolicy(<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>),
+    TrailNotFound(<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>),
+    InvalidS3BucketName(<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>),
+    InvalidS3Prefix(<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>),
+    InvalidSnsTopicName(<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>),
+    InvalidKmsKeyId(<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>),
+    InvalidTrailName(<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>),
+    TrailNotProvided(<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>),
+    InvalidParameterCombination(<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>),
+    InvalidHomeRegion(<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>),
+    KmsKeyNotFound(<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>),
+    KmsKeyDisabled(<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>),
+    Kms(<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>),
+    InvalidCloudWatchLogsLogGroupArn(<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>),
+    InvalidCloudWatchLogsRoleArn(<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>),
+    CloudWatchLogsDeliveryUnavailable(<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>),
+    UnsupportedOperation(<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>),
+    OperationNotPermitted(<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>),
+    HttpDispatch(<a class='struct' href='../../rusoto/struct.HttpDispatchError.html' title='rusoto::HttpDispatchError'>HttpDispatchError</a>),
+    Credentials(<a class='struct' href='../../rusoto/struct.CredentialsError.html' title='rusoto::CredentialsError'>CredentialsError</a>),
+    Validation(<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>),
+    Unknown(<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>),
+}</pre><h2 class='variants'>Variants</h2>
+<span id='variant.S3BucketDoesNotExist' class='variant'><span id='S3BucketDoesNotExist.v' class='invisible'><code>S3BucketDoesNotExist(<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>)</code></span></span><div class='docblock'><p>This exception is thrown when the specified S3 bucket does not exist.</p>
+</div><span id='variant.InsufficientS3BucketPolicy' class='variant'><span id='InsufficientS3BucketPolicy.v' class='invisible'><code>InsufficientS3BucketPolicy(<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>)</code></span></span><div class='docblock'><p>This exception is thrown when the policy on the S3 bucket is not sufficient.</p>
+</div><span id='variant.InsufficientSnsTopicPolicy' class='variant'><span id='InsufficientSnsTopicPolicy.v' class='invisible'><code>InsufficientSnsTopicPolicy(<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>)</code></span></span><div class='docblock'><p>This exception is thrown when the policy on the SNS topic is not sufficient.</p>
+</div><span id='variant.InsufficientEncryptionPolicy' class='variant'><span id='InsufficientEncryptionPolicy.v' class='invisible'><code>InsufficientEncryptionPolicy(<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>)</code></span></span><div class='docblock'><p>This exception is thrown when the policy on the S3 bucket or KMS key is not sufficient.</p>
+</div><span id='variant.TrailNotFound' class='variant'><span id='TrailNotFound.v' class='invisible'><code>TrailNotFound(<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>)</code></span></span><div class='docblock'><p>This exception is thrown when the trail with the given name is not found.</p>
+</div><span id='variant.InvalidS3BucketName' class='variant'><span id='InvalidS3BucketName.v' class='invisible'><code>InvalidS3BucketName(<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>)</code></span></span><div class='docblock'><p>This exception is thrown when the provided S3 bucket name is not valid.</p>
+</div><span id='variant.InvalidS3Prefix' class='variant'><span id='InvalidS3Prefix.v' class='invisible'><code>InvalidS3Prefix(<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>)</code></span></span><div class='docblock'><p>This exception is thrown when the provided S3 prefix is not valid.</p>
+</div><span id='variant.InvalidSnsTopicName' class='variant'><span id='InvalidSnsTopicName.v' class='invisible'><code>InvalidSnsTopicName(<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>)</code></span></span><div class='docblock'><p>This exception is thrown when the provided SNS topic name is not valid.</p>
+</div><span id='variant.InvalidKmsKeyId' class='variant'><span id='InvalidKmsKeyId.v' class='invisible'><code>InvalidKmsKeyId(<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>)</code></span></span><div class='docblock'><p>This exception is thrown when the KMS key ARN is invalid.</p>
+</div><span id='variant.InvalidTrailName' class='variant'><span id='InvalidTrailName.v' class='invisible'><code>InvalidTrailName(<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>)</code></span></span><div class='docblock'><p><p>This exception is thrown when the provided trail name is not valid. Trail names must meet the following requirements:</p> <ul> <li> <p>Contain only ASCII letters (a-z, A-Z), numbers (0-9), periods (.), underscores (_), or dashes (-)</p> </li> <li> <p>Start with a letter or number, and end with a letter or number</p> </li> <li> <p>Be between 3 and 128 characters</p> </li> <li> <p>Have no adjacent periods, underscores or dashes. Names like <code>my-_namespace</code> and <code>my--namespace</code> are invalid.</p> </li> <li> <p>Not be in IP address format (for example, 192.168.5.4)</p> </li> </ul></p>
+</div><span id='variant.TrailNotProvided' class='variant'><span id='TrailNotProvided.v' class='invisible'><code>TrailNotProvided(<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>)</code></span></span><div class='docblock'><p>This exception is deprecated.</p>
+</div><span id='variant.InvalidParameterCombination' class='variant'><span id='InvalidParameterCombination.v' class='invisible'><code>InvalidParameterCombination(<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>)</code></span></span><div class='docblock'><p>This exception is thrown when the combination of parameters provided is not valid.</p>
+</div><span id='variant.InvalidHomeRegion' class='variant'><span id='InvalidHomeRegion.v' class='invisible'><code>InvalidHomeRegion(<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>)</code></span></span><div class='docblock'><p>This exception is thrown when an operation is called on a trail from a region other than the region in which the trail was created.</p>
+</div><span id='variant.KmsKeyNotFound' class='variant'><span id='KmsKeyNotFound.v' class='invisible'><code>KmsKeyNotFound(<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>)</code></span></span><div class='docblock'><p>This exception is thrown when the KMS key does not exist, or when the S3 bucket and the KMS key are not in the same region.</p>
+</div><span id='variant.KmsKeyDisabled' class='variant'><span id='KmsKeyDisabled.v' class='invisible'><code>KmsKeyDisabled(<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>)</code></span></span><div class='docblock'><p>This exception is deprecated.</p>
+</div><span id='variant.Kms' class='variant'><span id='Kms.v' class='invisible'><code>Kms(<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>)</code></span></span><div class='docblock'><p>This exception is thrown when there is an issue with the specified KMS key and the trail can’t be updated.</p>
+</div><span id='variant.InvalidCloudWatchLogsLogGroupArn' class='variant'><span id='InvalidCloudWatchLogsLogGroupArn.v' class='invisible'><code>InvalidCloudWatchLogsLogGroupArn(<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>)</code></span></span><div class='docblock'><p>This exception is thrown when the provided CloudWatch log group is not valid.</p>
+</div><span id='variant.InvalidCloudWatchLogsRoleArn' class='variant'><span id='InvalidCloudWatchLogsRoleArn.v' class='invisible'><code>InvalidCloudWatchLogsRoleArn(<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>)</code></span></span><div class='docblock'><p>This exception is thrown when the provided role is not valid.</p>
+</div><span id='variant.CloudWatchLogsDeliveryUnavailable' class='variant'><span id='CloudWatchLogsDeliveryUnavailable.v' class='invisible'><code>CloudWatchLogsDeliveryUnavailable(<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>)</code></span></span><div class='docblock'><p>Cannot set a CloudWatch Logs delivery for this region.</p>
+</div><span id='variant.UnsupportedOperation' class='variant'><span id='UnsupportedOperation.v' class='invisible'><code>UnsupportedOperation(<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>)</code></span></span><div class='docblock'><p>This exception is thrown when the requested operation is not supported.</p>
+</div><span id='variant.OperationNotPermitted' class='variant'><span id='OperationNotPermitted.v' class='invisible'><code>OperationNotPermitted(<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>)</code></span></span><div class='docblock'><p>This exception is thrown when the requested operation is not permitted.</p>
+</div><span id='variant.HttpDispatch' class='variant'><span id='HttpDispatch.v' class='invisible'><code>HttpDispatch(<a class='struct' href='../../rusoto/struct.HttpDispatchError.html' title='rusoto::HttpDispatchError'>HttpDispatchError</a>)</code></span></span><div class='docblock'><p>An error occurred dispatching the HTTP request</p>
+</div><span id='variant.Credentials' class='variant'><span id='Credentials.v' class='invisible'><code>Credentials(<a class='struct' href='../../rusoto/struct.CredentialsError.html' title='rusoto::CredentialsError'>CredentialsError</a>)</code></span></span><div class='docblock'><p>An error was encountered with AWS credentials.</p>
+</div><span id='variant.Validation' class='variant'><span id='Validation.v' class='invisible'><code>Validation(<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>)</code></span></span><div class='docblock'><p>A validation error occurred.  Details from AWS are provided.</p>
+</div><span id='variant.Unknown' class='variant'><span id='Unknown.v' class='invisible'><code>Unknown(<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>)</code></span></span><div class='docblock'><p>An unknown error occurred.  The raw HTTP response is provided.</p>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl <a class='enum' href='../../rusoto/cloudtrail/enum.UpdateTrailError.html' title='rusoto::cloudtrail::UpdateTrailError'>UpdateTrailError</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-13182' class='srclink' href='../../src/rusoto/home/travis/build/rusoto/rusoto/target/debug/build/rusoto-61f21223a43ed2cb/out/cloudtrail.rs.html#6754-6815' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.from_body' class='method'><span id='from_body.v' class='invisible'><code>fn <a href='#method.from_body' class='fnname'>from_body</a>(body: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='enum' href='../../rusoto/cloudtrail/enum.UpdateTrailError.html' title='rusoto::cloudtrail::UpdateTrailError'>UpdateTrailError</a></code></span></h4>
+</div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html' title='core::cmp::PartialEq'>PartialEq</a> for <a class='enum' href='../../rusoto/cloudtrail/enum.UpdateTrailError.html' title='rusoto::cloudtrail::UpdateTrailError'>UpdateTrailError</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-13017' class='srclink' href='../../src/rusoto/home/travis/build/rusoto/rusoto/target/debug/build/rusoto-61f21223a43ed2cb/out/cloudtrail.rs.html#6676' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.eq' class='method'><span id='eq.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#tymethod.eq' class='fnname'>eq</a>(&amp;self, __arg_0: &amp;<a class='enum' href='../../rusoto/cloudtrail/enum.UpdateTrailError.html' title='rusoto::cloudtrail::UpdateTrailError'>UpdateTrailError</a>) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code></span></h4>
+<div class='docblock'><p>This method tests for <code>self</code> and <code>other</code> values to be equal, and is used by <code>==</code>. <a href="https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#tymethod.eq">Read more</a></p>
+</div><h4 id='method.ne' class='method'><span id='ne.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#method.ne' class='fnname'>ne</a>(&amp;self, __arg_0: &amp;<a class='enum' href='../../rusoto/cloudtrail/enum.UpdateTrailError.html' title='rusoto::cloudtrail::UpdateTrailError'>UpdateTrailError</a>) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code></span></h4>
+<div class='docblock'><p>This method tests for <code>!=</code>.</p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='enum' href='../../rusoto/cloudtrail/enum.UpdateTrailError.html' title='rusoto::cloudtrail::UpdateTrailError'>UpdateTrailError</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-13128' class='srclink' href='../../src/rusoto/home/travis/build/rusoto/rusoto/target/debug/build/rusoto-61f21223a43ed2cb/out/cloudtrail.rs.html#6676' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.fmt' class='method'><span id='fmt.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#tymethod.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></span></h4>
+<div class='docblock'><p>Formats the value using the given formatter.</p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/convert/trait.From.html' title='core::convert::From'>From</a>&lt;Error&gt; for <a class='enum' href='../../rusoto/cloudtrail/enum.UpdateTrailError.html' title='rusoto::cloudtrail::UpdateTrailError'>UpdateTrailError</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-13192' class='srclink' href='../../src/rusoto/home/travis/build/rusoto/rusoto/target/debug/build/rusoto-61f21223a43ed2cb/out/cloudtrail.rs.html#6816-6820' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.from' class='method'><span id='from.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/convert/trait.From.html#tymethod.from' class='fnname'>from</a>(err: Error) -&gt; <a class='enum' href='../../rusoto/cloudtrail/enum.UpdateTrailError.html' title='rusoto::cloudtrail::UpdateTrailError'>UpdateTrailError</a></code></span></h4>
+<div class='docblock'><p>Performs the conversion.</p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/convert/trait.From.html' title='core::convert::From'>From</a>&lt;<a class='struct' href='../../rusoto/struct.CredentialsError.html' title='rusoto::CredentialsError'>CredentialsError</a>&gt; for <a class='enum' href='../../rusoto/cloudtrail/enum.UpdateTrailError.html' title='rusoto::cloudtrail::UpdateTrailError'>UpdateTrailError</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-13195' class='srclink' href='../../src/rusoto/home/travis/build/rusoto/rusoto/target/debug/build/rusoto-61f21223a43ed2cb/out/cloudtrail.rs.html#6821-6825' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.from-1' class='method'><span id='from.v-1' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/convert/trait.From.html#tymethod.from' class='fnname'>from</a>(err: <a class='struct' href='../../rusoto/struct.CredentialsError.html' title='rusoto::CredentialsError'>CredentialsError</a>) -&gt; <a class='enum' href='../../rusoto/cloudtrail/enum.UpdateTrailError.html' title='rusoto::cloudtrail::UpdateTrailError'>UpdateTrailError</a></code></span></h4>
+<div class='docblock'><p>Performs the conversion.</p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/convert/trait.From.html' title='core::convert::From'>From</a>&lt;<a class='struct' href='../../rusoto/struct.HttpDispatchError.html' title='rusoto::HttpDispatchError'>HttpDispatchError</a>&gt; for <a class='enum' href='../../rusoto/cloudtrail/enum.UpdateTrailError.html' title='rusoto::cloudtrail::UpdateTrailError'>UpdateTrailError</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-13198' class='srclink' href='../../src/rusoto/home/travis/build/rusoto/rusoto/target/debug/build/rusoto-61f21223a43ed2cb/out/cloudtrail.rs.html#6826-6830' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.from-2' class='method'><span id='from.v-2' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/convert/trait.From.html#tymethod.from' class='fnname'>from</a>(err: <a class='struct' href='../../rusoto/struct.HttpDispatchError.html' title='rusoto::HttpDispatchError'>HttpDispatchError</a>) -&gt; <a class='enum' href='../../rusoto/cloudtrail/enum.UpdateTrailError.html' title='rusoto::cloudtrail::UpdateTrailError'>UpdateTrailError</a></code></span></h4>
+<div class='docblock'><p>Performs the conversion.</p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Display.html' title='core::fmt::Display'>Display</a> for <a class='enum' href='../../rusoto/cloudtrail/enum.UpdateTrailError.html' title='rusoto::cloudtrail::UpdateTrailError'>UpdateTrailError</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-13201' class='srclink' href='../../src/rusoto/home/travis/build/rusoto/rusoto/target/debug/build/rusoto-61f21223a43ed2cb/out/cloudtrail.rs.html#6831-6835' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.fmt-1' class='method'><span id='fmt.v-1' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Display.html#tymethod.fmt' class='fnname'>fmt</a>(&amp;self, f: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></span></h4>
+<div class='docblock'><p>Formats the value using the given formatter.</p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/std/error/trait.Error.html' title='std::error::Error'>Error</a> for <a class='enum' href='../../rusoto/cloudtrail/enum.UpdateTrailError.html' title='rusoto::cloudtrail::UpdateTrailError'>UpdateTrailError</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-13207' class='srclink' href='../../src/rusoto/home/travis/build/rusoto/rusoto/target/debug/build/rusoto-61f21223a43ed2cb/out/cloudtrail.rs.html#6836-6871' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.description' class='method'><span id='description.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/std/error/trait.Error.html#tymethod.description' class='fnname'>description</a>(&amp;self) -&gt; &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a></code></span></h4>
+<div class='docblock'><p>A short description of the error. <a href="https://doc.rust-lang.org/nightly/std/error/trait.Error.html#tymethod.description">Read more</a></p>
+</div><h4 id='method.cause' class='method'><span id='cause.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/std/error/trait.Error.html#method.cause' class='fnname'>cause</a>(&amp;self) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;&amp;<a class='trait' href='https://doc.rust-lang.org/nightly/std/error/trait.Error.html' title='std::error::Error'>Error</a>&gt;</code><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div></span></h4>
+<div class='docblock'><p>The lower-level cause of this error, if any. <a href="https://doc.rust-lang.org/nightly/std/error/trait.Error.html#method.cause">Read more</a></p>
+</div></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "rusoto";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../../jquery.js"></script>
+    <script src="../../main.js"></script>
+    
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>

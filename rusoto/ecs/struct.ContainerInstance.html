@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `ContainerInstance` struct in crate `rusoto`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, ContainerInstance">
+
+    <title>rusoto::ecs::ContainerInstance - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='../index.html'>rusoto</a>::<wbr><a href='index.html'>ecs</a></p><script>window.sidebarCurrent = {name: 'ContainerInstance', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content struct">
+<h1 class='fqn'><span class='in-band'>Struct <a href='../index.html'>rusoto</a>::<wbr><a href='index.html'>ecs</a>::<wbr><a class='struct' href=''>ContainerInstance</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-183456' class='srclink' href='../../src/rusoto/home/travis/build/rusoto/rusoto/target/debug/build/rusoto-61f21223a43ed2cb/out/ecs.rs.html#3114-3158' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct ContainerInstance {
+    pub agent_connected: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/ecs/type.Boolean.html' title='rusoto::ecs::Boolean'>Boolean</a>&gt;,
+    pub agent_update_status: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/ecs/type.AgentUpdateStatus.html' title='rusoto::ecs::AgentUpdateStatus'>AgentUpdateStatus</a>&gt;,
+    pub attributes: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/ecs/type.Attributes.html' title='rusoto::ecs::Attributes'>Attributes</a>&gt;,
+    pub container_instance_arn: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub ec_2_instance_id: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub pending_tasks_count: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/ecs/type.Integer.html' title='rusoto::ecs::Integer'>Integer</a>&gt;,
+    pub registered_resources: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/ecs/type.Resources.html' title='rusoto::ecs::Resources'>Resources</a>&gt;,
+    pub remaining_resources: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/ecs/type.Resources.html' title='rusoto::ecs::Resources'>Resources</a>&gt;,
+    pub running_tasks_count: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/ecs/type.Integer.html' title='rusoto::ecs::Integer'>Integer</a>&gt;,
+    pub status: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub version_info: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../../rusoto/ecs/struct.VersionInfo.html' title='rusoto::ecs::VersionInfo'>VersionInfo</a>&gt;,
+}</pre><div class='docblock'><p>An EC2 instance that is running the Amazon ECS agent and has been registered with a cluster.</p>
+</div><h2 class='fields'>Fields</h2><span id='structfield.agent_connected' class='structfield'>
+                           <span id='agent_connected.v' class='invisible'>
+                           <code>agent_connected: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/ecs/type.Boolean.html' title='rusoto::ecs::Boolean'>Boolean</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>This parameter returns <code>true</code> if the agent is actually connected to Amazon ECS. Registered instances with an agent that may be unhealthy or stopped return <code>false</code>, and instances without a connected agent cannot accept placement requests.</p>
+</div><span id='structfield.agent_update_status' class='structfield'>
+                           <span id='agent_update_status.v' class='invisible'>
+                           <code>agent_update_status: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/ecs/type.AgentUpdateStatus.html' title='rusoto::ecs::AgentUpdateStatus'>AgentUpdateStatus</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>The status of the most recent agent update. If an update has never been requested, this value is <code>NULL</code>.</p>
+</div><span id='structfield.attributes' class='structfield'>
+                           <span id='attributes.v' class='invisible'>
+                           <code>attributes: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/ecs/type.Attributes.html' title='rusoto::ecs::Attributes'>Attributes</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>The attributes set for the container instance by the Amazon ECS container agent at instance registration.</p>
+</div><span id='structfield.container_instance_arn' class='structfield'>
+                           <span id='container_instance_arn.v' class='invisible'>
+                           <code>container_instance_arn: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>The Amazon Resource Name (ARN) of the container instance. The ARN contains the <code>arn:aws:ecs</code> namespace, followed by the region of the container instance, the AWS account ID of the container instance owner, the <code>container-instance</code> namespace, and then the container instance ID. For example, <code>arn:aws:ecs:<i>region</i>:<i>aws_account_id</i>:container-instance/<i>container_instance_ID</i> </code>.</p>
+</div><span id='structfield.ec_2_instance_id' class='structfield'>
+                           <span id='ec_2_instance_id.v' class='invisible'>
+                           <code>ec_2_instance_id: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>The EC2 instance ID of the container instance.</p>
+</div><span id='structfield.pending_tasks_count' class='structfield'>
+                           <span id='pending_tasks_count.v' class='invisible'>
+                           <code>pending_tasks_count: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/ecs/type.Integer.html' title='rusoto::ecs::Integer'>Integer</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>The number of tasks on the container instance that are in the <code>PENDING</code> status.</p>
+</div><span id='structfield.registered_resources' class='structfield'>
+                           <span id='registered_resources.v' class='invisible'>
+                           <code>registered_resources: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/ecs/type.Resources.html' title='rusoto::ecs::Resources'>Resources</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>The registered resources on the container instance that are in use by current tasks.</p>
+</div><span id='structfield.remaining_resources' class='structfield'>
+                           <span id='remaining_resources.v' class='invisible'>
+                           <code>remaining_resources: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/ecs/type.Resources.html' title='rusoto::ecs::Resources'>Resources</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>The remaining resources of the container instance that are available for new tasks.</p>
+</div><span id='structfield.running_tasks_count' class='structfield'>
+                           <span id='running_tasks_count.v' class='invisible'>
+                           <code>running_tasks_count: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/ecs/type.Integer.html' title='rusoto::ecs::Integer'>Integer</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>The number of tasks on the container instance that are in the <code>RUNNING</code> status.</p>
+</div><span id='structfield.status' class='structfield'>
+                           <span id='status.v' class='invisible'>
+                           <code>status: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>The status of the container instance. The valid values are <code>ACTIVE</code> or <code>INACTIVE</code>. <code>ACTIVE</code> indicates that the container instance can accept tasks.</p>
+</div><span id='structfield.version_info' class='structfield'>
+                           <span id='version_info.v' class='invisible'>
+                           <code>version_info: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../../rusoto/ecs/struct.VersionInfo.html' title='rusoto::ecs::VersionInfo'>VersionInfo</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>The version information for the Amazon ECS container agent and Docker daemon running on the container instance.</p>
+</div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../../rusoto/ecs/struct.ContainerInstance.html' title='rusoto::ecs::ContainerInstance'>ContainerInstance</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-183468' class='srclink' href='../../src/rusoto/home/travis/build/rusoto/rusoto/target/debug/build/rusoto-61f21223a43ed2cb/out/ecs.rs.html#3113' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.clone' class='method'><span id='clone.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../../rusoto/ecs/struct.ContainerInstance.html' title='rusoto::ecs::ContainerInstance'>ContainerInstance</a></code></span></h4>
+<div class='docblock'><p>Returns a copy of the value. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone">Read more</a></p>
+</div><h4 id='method.clone_from' class='method'><span id='clone_from.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div></span></h4>
+<div class='docblock'><p>Performs copy-assignment from <code>source</code>. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../../rusoto/ecs/struct.ContainerInstance.html' title='rusoto::ecs::ContainerInstance'>ContainerInstance</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-183482' class='srclink' href='../../src/rusoto/home/travis/build/rusoto/rusoto/target/debug/build/rusoto-61f21223a43ed2cb/out/ecs.rs.html#3113' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.fmt' class='method'><span id='fmt.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#tymethod.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></span></h4>
+<div class='docblock'><p>Formats the value using the given formatter.</p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../../rusoto/ecs/struct.ContainerInstance.html' title='rusoto::ecs::ContainerInstance'>ContainerInstance</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-183498' class='srclink' href='../../src/rusoto/home/travis/build/rusoto/rusoto/target/debug/build/rusoto-61f21223a43ed2cb/out/ecs.rs.html#3113' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.default' class='method'><span id='default.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../../rusoto/ecs/struct.ContainerInstance.html' title='rusoto::ecs::ContainerInstance'>ContainerInstance</a></code></span></h4>
+<div class='docblock'><p>Returns the &quot;default value&quot; for a type. <a href="https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default">Read more</a></p>
+</div></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "rusoto";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../../jquery.js"></script>
+    <script src="../../main.js"></script>
+    
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>

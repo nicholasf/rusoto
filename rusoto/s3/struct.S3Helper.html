@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `S3Helper` struct in crate `rusoto`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, S3Helper">
+
+    <title>rusoto::s3::S3Helper - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='../index.html'>rusoto</a>::<wbr><a href='index.html'>s3</a></p><script>window.sidebarCurrent = {name: 'S3Helper', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content struct">
+<h1 class='fqn'><span class='in-band'>Struct <a href='../index.html'>rusoto</a>::<wbr><a href='index.html'>s3</a>::<wbr><a class='struct' href=''>S3Helper</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-360829' class='srclink' href='../../src/rusoto/src/s3.rs.html#10668-10670' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct S3Helper&lt;P&gt; <span class='where'>where P: <a class='trait' href='../../rusoto/trait.ProvideAwsCredentials.html' title='rusoto::ProvideAwsCredentials'>ProvideAwsCredentials</a></span> { /* fields omitted */ }</pre><div class='docblock'><p>Wraps the generated S3 client with a higher level interface</p>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;P&gt; <a class='struct' href='../../rusoto/s3/struct.S3Helper.html' title='rusoto::s3::S3Helper'>S3Helper</a>&lt;P&gt; <span class='where'>where P: <a class='trait' href='../../rusoto/trait.ProvideAwsCredentials.html' title='rusoto::ProvideAwsCredentials'>ProvideAwsCredentials</a></span></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-360849' class='srclink' href='../../src/rusoto/src/s3.rs.html#10683-10964' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.new' class='method'><span id='new.v' class='invisible'><code>fn <a href='#method.new' class='fnname'>new</a>(credentials_provider: P, region: <a class='enum' href='../../rusoto/enum.Region.html' title='rusoto::Region'>Region</a>) -&gt; <a class='struct' href='../../rusoto/s3/struct.S3Helper.html' title='rusoto::s3::S3Helper'>S3Helper</a>&lt;P&gt;</code></span></h4>
+<div class='docblock'><p>Creates a new S3 helper</p>
+</div><h4 id='method.list_buckets' class='method'><span id='list_buckets.v' class='invisible'><code>fn <a href='#method.list_buckets' class='fnname'>list_buckets</a>(&amp;self) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../../rusoto/s3/struct.ListBucketsOutput.html' title='rusoto::s3::ListBucketsOutput'>ListBucketsOutput</a>,&nbsp;<a class='struct' href='../../rusoto/s3/struct.S3Error.html' title='rusoto::s3::S3Error'>S3Error</a>&gt;</code></span></h4>
+<div class='docblock'><p>Lists buckets</p>
+</div><h4 id='method.create_bucket' class='method'><span id='create_bucket.v' class='invisible'><code>fn <a href='#method.create_bucket' class='fnname'>create_bucket</a>(&amp;self, bucket_name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, canned_acl: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='enum' href='../../rusoto/s3/enum.CannedAcl.html' title='rusoto::s3::CannedAcl'>CannedAcl</a>&gt;) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../../rusoto/s3/struct.CreateBucketOutput.html' title='rusoto::s3::CreateBucketOutput'>CreateBucketOutput</a>,&nbsp;<a class='struct' href='../../rusoto/s3/struct.S3Error.html' title='rusoto::s3::S3Error'>S3Error</a>&gt;</code></span></h4>
+<div class='docblock'><p>Creates bucket in default us-east-1/us-standard region.</p>
+</div><h4 id='method.create_bucket_in_region' class='method'><span id='create_bucket_in_region.v' class='invisible'><code>fn <a href='#method.create_bucket_in_region' class='fnname'>create_bucket_in_region</a>(&amp;self, bucket_name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, region: <a class='enum' href='../../rusoto/enum.Region.html' title='rusoto::Region'>Region</a>, canned_acl: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='enum' href='../../rusoto/s3/enum.CannedAcl.html' title='rusoto::s3::CannedAcl'>CannedAcl</a>&gt;) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../../rusoto/s3/struct.CreateBucketOutput.html' title='rusoto::s3::CreateBucketOutput'>CreateBucketOutput</a>,&nbsp;<a class='struct' href='../../rusoto/s3/struct.S3Error.html' title='rusoto::s3::S3Error'>S3Error</a>&gt;</code></span></h4>
+<div class='docblock'><p>Creates bucket in specified region.</p>
+</div><h4 id='method.delete_bucket' class='method'><span id='delete_bucket.v' class='invisible'><code>fn <a href='#method.delete_bucket' class='fnname'>delete_bucket</a>(&amp;self, bucket_name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, region: <a class='enum' href='../../rusoto/enum.Region.html' title='rusoto::Region'>Region</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>,&nbsp;<a class='struct' href='../../rusoto/s3/struct.S3Error.html' title='rusoto::s3::S3Error'>S3Error</a>&gt;</code></span></h4>
+<div class='docblock'><p>Deletes specified bucket</p>
+</div><h4 id='method.get_object' class='method'><span id='get_object.v' class='invisible'><code>fn <a href='#method.get_object' class='fnname'>get_object</a>(&amp;self, bucket_name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, object_name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../../rusoto/s3/struct.GetObjectOutput.html' title='rusoto::s3::GetObjectOutput'>GetObjectOutput</a>,&nbsp;<a class='struct' href='../../rusoto/s3/struct.S3Error.html' title='rusoto::s3::S3Error'>S3Error</a>&gt;</code></span></h4>
+<div class='docblock'><p>Download a named object from bucket</p>
+</div><h4 id='method.put_object' class='method'><span id='put_object.v' class='invisible'><code>fn <a href='#method.put_object' class='fnname'>put_object</a>(&amp;self, bucket_name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, object_name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, object_as_bytes: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.slice.html'>&amp;[</a><a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u8.html'>u8</a><a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.slice.html'>]</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../../rusoto/s3/struct.PutObjectOutput.html' title='rusoto::s3::PutObjectOutput'>PutObjectOutput</a>,&nbsp;<a class='struct' href='../../rusoto/s3/struct.S3Error.html' title='rusoto::s3::S3Error'>S3Error</a>&gt;</code></span></h4>
+<div class='docblock'><p>Upload an object to specified bucket</p>
+</div><h4 id='method.put_object_with_reduced_redundancy' class='method'><span id='put_object_with_reduced_redundancy.v' class='invisible'><code>fn <a href='#method.put_object_with_reduced_redundancy' class='fnname'>put_object_with_reduced_redundancy</a>(&amp;self, bucket_name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, object_name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, object_as_bytes: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.slice.html'>&amp;[</a><a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u8.html'>u8</a><a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.slice.html'>]</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../../rusoto/s3/struct.PutObjectOutput.html' title='rusoto::s3::PutObjectOutput'>PutObjectOutput</a>,&nbsp;<a class='struct' href='../../rusoto/s3/struct.S3Error.html' title='rusoto::s3::S3Error'>S3Error</a>&gt;</code></span></h4>
+<div class='docblock'><p>Helper: uploads object to specified bucket using reduced redudancy storage settings</p>
+</div><h4 id='method.put_object_with_aws_encryption' class='method'><span id='put_object_with_aws_encryption.v' class='invisible'><code>fn <a href='#method.put_object_with_aws_encryption' class='fnname'>put_object_with_aws_encryption</a>(&amp;self, bucket_name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, object_name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, object_as_bytes: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.slice.html'>&amp;[</a><a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u8.html'>u8</a><a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.slice.html'>]</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../../rusoto/s3/struct.PutObjectOutput.html' title='rusoto::s3::PutObjectOutput'>PutObjectOutput</a>,&nbsp;<a class='struct' href='../../rusoto/s3/struct.S3Error.html' title='rusoto::s3::S3Error'>S3Error</a>&gt;</code></span></h4>
+<div class='docblock'><p>Uploads object to specified S3 bucket with server side encryption at rest.</p>
+</div><h4 id='method.put_object_with_kms_encryption' class='method'><span id='put_object_with_kms_encryption.v' class='invisible'><code>fn <a href='#method.put_object_with_kms_encryption' class='fnname'>put_object_with_kms_encryption</a>(&amp;self, bucket_name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, object_name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, object_as_bytes: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.slice.html'>&amp;[</a><a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u8.html'>u8</a><a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.slice.html'>]</a>, key_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../../rusoto/s3/struct.PutObjectOutput.html' title='rusoto::s3::PutObjectOutput'>PutObjectOutput</a>,&nbsp;<a class='struct' href='../../rusoto/s3/struct.S3Error.html' title='rusoto::s3::S3Error'>S3Error</a>&gt;</code></span></h4>
+<div class='docblock'><p>Uploads object to specified S3 bucket using AWS KMS for key management of encryption at rest.</p>
+</div><h4 id='method.put_object_with_request' class='method'><span id='put_object_with_request.v' class='invisible'><code>fn <a href='#method.put_object_with_request' class='fnname'>put_object_with_request</a>(&amp;self, request: &amp;mut <a class='struct' href='../../rusoto/s3/struct.PutObjectRequest.html' title='rusoto::s3::PutObjectRequest'>PutObjectRequest</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../../rusoto/s3/struct.PutObjectOutput.html' title='rusoto::s3::PutObjectOutput'>PutObjectOutput</a>,&nbsp;<a class='struct' href='../../rusoto/s3/struct.S3Error.html' title='rusoto::s3::S3Error'>S3Error</a>&gt;</code></span></h4>
+<div class='docblock'><p>Uploads object: lets sender specify options.
+The most generic of put_object: caller specifies the whole request.</p>
+</div><h4 id='method.put_multipart_object' class='method'><span id='put_multipart_object.v' class='invisible'><code>fn <a href='#method.put_multipart_object' class='fnname'>put_multipart_object</a>&lt;T:&nbsp;<a class='trait' href='https://doc.rust-lang.org/nightly/std/io/trait.Read.html' title='std::io::Read'>Read</a>&gt;(&amp;self, bucket_name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, object_name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, object_as_reader: &amp;mut T) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../../rusoto/s3/struct.PutObjectOutput.html' title='rusoto::s3::PutObjectOutput'>PutObjectOutput</a>,&nbsp;<a class='struct' href='../../rusoto/s3/struct.S3Error.html' title='rusoto::s3::S3Error'>S3Error</a>&gt;</code></span></h4>
+<div class='docblock'><p>Uploads a multi-part object to specified bucket.  Allows for large file uploads.</p>
+</div><h4 id='method.list_multipart_uploads_for_bucket' class='method'><span id='list_multipart_uploads_for_bucket.v' class='invisible'><code>fn <a href='#method.list_multipart_uploads_for_bucket' class='fnname'>list_multipart_uploads_for_bucket</a>(&amp;self, bucket_name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../../rusoto/s3/struct.ListMultipartUploadsOutput.html' title='rusoto::s3::ListMultipartUploadsOutput'>ListMultipartUploadsOutput</a>,&nbsp;<a class='struct' href='../../rusoto/s3/struct.S3Error.html' title='rusoto::s3::S3Error'>S3Error</a>&gt;</code></span></h4>
+<div class='docblock'><p>Lists multipart uploads not yet completed for specified bucket</p>
+</div><h4 id='method.delete_object' class='method'><span id='delete_object.v' class='invisible'><code>fn <a href='#method.delete_object' class='fnname'>delete_object</a>(&amp;self, bucket_name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, object_name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../../rusoto/s3/struct.DeleteObjectOutput.html' title='rusoto::s3::DeleteObjectOutput'>DeleteObjectOutput</a>,&nbsp;<a class='struct' href='../../rusoto/s3/struct.S3Error.html' title='rusoto::s3::S3Error'>S3Error</a>&gt;</code></span></h4>
+<div class='docblock'><p>Deletes specified object from specified bucket.</p>
+</div><h4 id='method.abort_multipart_upload' class='method'><span id='abort_multipart_upload.v' class='invisible'><code>fn <a href='#method.abort_multipart_upload' class='fnname'>abort_multipart_upload</a>(&amp;self, bucket_name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, object_name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, upload_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../../rusoto/s3/struct.AbortMultipartUploadOutput.html' title='rusoto::s3::AbortMultipartUploadOutput'>AbortMultipartUploadOutput</a>,&nbsp;<a class='struct' href='../../rusoto/s3/struct.S3Error.html' title='rusoto::s3::S3Error'>S3Error</a>&gt;</code></span></h4>
+<div class='docblock'><p>Abort multipart upload.</p>
+</div><h4 id='method.multipart_upload_list_parts' class='method'><span id='multipart_upload_list_parts.v' class='invisible'><code>fn <a href='#method.multipart_upload_list_parts' class='fnname'>multipart_upload_list_parts</a>(&amp;self, bucket_name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, object_name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, upload_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../../rusoto/s3/struct.ListPartsOutput.html' title='rusoto::s3::ListPartsOutput'>ListPartsOutput</a>,&nbsp;<a class='struct' href='../../rusoto/s3/struct.S3Error.html' title='rusoto::s3::S3Error'>S3Error</a>&gt;</code></span></h4>
+<div class='docblock'><p>List parts from a multiupload request.</p>
+</div></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "rusoto";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../../jquery.js"></script>
+    <script src="../../main.js"></script>
+    
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>

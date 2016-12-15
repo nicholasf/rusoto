@@ -1,0 +1,1371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `elastictranscoder` mod in crate `rusoto`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, elastictranscoder">
+
+    <title>rusoto::elastictranscoder - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='../index.html'>rusoto</a></p><script>window.sidebarCurrent = {name: 'elastictranscoder', ty: 'mod', relpath: '../'};</script><script defer src="../sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content mod">
+<h1 class='fqn'><span class='in-band'>Module <a href='../index.html'>rusoto</a>::<wbr><a class='mod' href=''>elastictranscoder</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-207131' class='srclink' href='../../src/rusoto/src/elastictranscoder.rs.html#1-3' title='goto source code'>[src]</a></span></h1>
+<div class='docblock'><p>Amazon Elastic Transcoder</p>
+</div><h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Artwork.html'
+                                  title='rusoto::elastictranscoder::Artwork'>Artwork</a></td>
+                           <td class='docblock-short'>
+                                <p>The file to be used as album art. There can be multiple artworks associated with an audio file, to a maximum of 20.</p> <p>To remove artwork or leave the artwork empty, you can either set <code>Artwork</code> to null, or set the <code>Merge Policy</code> to "Replace" and use an empty <code>Artwork</code> array.</p> <p>To pass through existing artwork unchanged, set the <code>Merge Policy</code> to "Prepend", "Append", or "Fallback", and use an empty <code>Artwork</code> array.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AudioCodecOptions.html'
+                                  title='rusoto::elastictranscoder::AudioCodecOptions'>AudioCodecOptions</a></td>
+                           <td class='docblock-short'>
+                                <p>Options associated with your audio codec.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AudioParameters.html'
+                                  title='rusoto::elastictranscoder::AudioParameters'>AudioParameters</a></td>
+                           <td class='docblock-short'>
+                                <p>Parameters required for transcoding audio.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CancelJobRequest.html'
+                                  title='rusoto::elastictranscoder::CancelJobRequest'>CancelJobRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The <code>CancelJobRequest</code> structure.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CancelJobResponse.html'
+                                  title='rusoto::elastictranscoder::CancelJobResponse'>CancelJobResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The response body contains a JSON object. If the job is successfully canceled, the value of <code>Success</code> is <code>true</code>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CaptionFormat.html'
+                                  title='rusoto::elastictranscoder::CaptionFormat'>CaptionFormat</a></td>
+                           <td class='docblock-short'>
+                                <p>The file format of the output captions. If you leave this value blank, Elastic Transcoder returns an error.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CaptionSource.html'
+                                  title='rusoto::elastictranscoder::CaptionSource'>CaptionSource</a></td>
+                           <td class='docblock-short'>
+                                <p>A source file for the input sidecar captions used during the transcoding process.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Captions.html'
+                                  title='rusoto::elastictranscoder::Captions'>Captions</a></td>
+                           <td class='docblock-short'>
+                                <p>The captions to be created, if any.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Clip.html'
+                                  title='rusoto::elastictranscoder::Clip'>Clip</a></td>
+                           <td class='docblock-short'>
+                                <p>Settings for one clip in a composition. All jobs in a playlist must have the same clip settings.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateJobOutput.html'
+                                  title='rusoto::elastictranscoder::CreateJobOutput'>CreateJobOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>The <code>CreateJobOutput</code> structure.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateJobPlaylist.html'
+                                  title='rusoto::elastictranscoder::CreateJobPlaylist'>CreateJobPlaylist</a></td>
+                           <td class='docblock-short'>
+                                <p>Information about the master playlist.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateJobRequest.html'
+                                  title='rusoto::elastictranscoder::CreateJobRequest'>CreateJobRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The <code>CreateJobRequest</code> structure.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateJobResponse.html'
+                                  title='rusoto::elastictranscoder::CreateJobResponse'>CreateJobResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The CreateJobResponse structure.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreatePipelineRequest.html'
+                                  title='rusoto::elastictranscoder::CreatePipelineRequest'>CreatePipelineRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The <code>CreatePipelineRequest</code> structure.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreatePipelineResponse.html'
+                                  title='rusoto::elastictranscoder::CreatePipelineResponse'>CreatePipelineResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>When you create a pipeline, Elastic Transcoder returns the values that you specified in the request.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreatePresetRequest.html'
+                                  title='rusoto::elastictranscoder::CreatePresetRequest'>CreatePresetRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The <code>CreatePresetRequest</code> structure.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreatePresetResponse.html'
+                                  title='rusoto::elastictranscoder::CreatePresetResponse'>CreatePresetResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The <code>CreatePresetResponse</code> structure.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeletePipelineRequest.html'
+                                  title='rusoto::elastictranscoder::DeletePipelineRequest'>DeletePipelineRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The <code>DeletePipelineRequest</code> structure.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeletePipelineResponse.html'
+                                  title='rusoto::elastictranscoder::DeletePipelineResponse'>DeletePipelineResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The <code>DeletePipelineResponse</code> structure.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeletePresetRequest.html'
+                                  title='rusoto::elastictranscoder::DeletePresetRequest'>DeletePresetRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The <code>DeletePresetRequest</code> structure.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeletePresetResponse.html'
+                                  title='rusoto::elastictranscoder::DeletePresetResponse'>DeletePresetResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The <code>DeletePresetResponse</code> structure.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DetectedProperties.html'
+                                  title='rusoto::elastictranscoder::DetectedProperties'>DetectedProperties</a></td>
+                           <td class='docblock-short'>
+                                <p>The detected properties of the input file. Elastic Transcoder identifies these values from the input file.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Encryption.html'
+                                  title='rusoto::elastictranscoder::Encryption'>Encryption</a></td>
+                           <td class='docblock-short'>
+                                <p>The encryption settings, if any, that are used for decrypting your input files or encrypting your output files. If your input file is encrypted, you must specify the mode that Elastic Transcoder will use to decrypt your file, otherwise you must specify the mode you want Elastic Transcoder to use to encrypt your output files.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.EtsClient.html'
+                                  title='rusoto::elastictranscoder::EtsClient'>EtsClient</a></td>
+                           <td class='docblock-short'>
+                                <p>A client for the Amazon Elastic Transcoder API.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.HlsContentProtection.html'
+                                  title='rusoto::elastictranscoder::HlsContentProtection'>HlsContentProtection</a></td>
+                           <td class='docblock-short'>
+                                <p>The HLS content protection settings, if any, that you want Elastic Transcoder to apply to your output files.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Job.html'
+                                  title='rusoto::elastictranscoder::Job'>Job</a></td>
+                           <td class='docblock-short'>
+                                <p>A section of the response body that provides information about the job that is created.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.JobAlbumArt.html'
+                                  title='rusoto::elastictranscoder::JobAlbumArt'>JobAlbumArt</a></td>
+                           <td class='docblock-short'>
+                                <p>The .jpg or .png file associated with an audio file.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.JobInput.html'
+                                  title='rusoto::elastictranscoder::JobInput'>JobInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Information about the file that you're transcoding.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.JobOutput.html'
+                                  title='rusoto::elastictranscoder::JobOutput'>JobOutput</a></td>
+                           <td class='docblock-short'>
+                                <p><important>Outputs recommended instead.</important>If you specified one output for a job, information about that output. If you specified multiple outputs for a job, the <code>Output</code> object lists information about the first output. This duplicates the information that is listed for the first output in the <code>Outputs</code> object.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.JobWatermark.html'
+                                  title='rusoto::elastictranscoder::JobWatermark'>JobWatermark</a></td>
+                           <td class='docblock-short'>
+                                <p>Watermarks can be in .png or .jpg format. If you want to display a watermark that is not rectangular, use the .png format, which supports transparency.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListJobsByPipelineRequest.html'
+                                  title='rusoto::elastictranscoder::ListJobsByPipelineRequest'>ListJobsByPipelineRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The <code>ListJobsByPipelineRequest</code> structure.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListJobsByPipelineResponse.html'
+                                  title='rusoto::elastictranscoder::ListJobsByPipelineResponse'>ListJobsByPipelineResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The <code>ListJobsByPipelineResponse</code> structure.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListJobsByStatusRequest.html'
+                                  title='rusoto::elastictranscoder::ListJobsByStatusRequest'>ListJobsByStatusRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The <code>ListJobsByStatusRequest</code> structure.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListJobsByStatusResponse.html'
+                                  title='rusoto::elastictranscoder::ListJobsByStatusResponse'>ListJobsByStatusResponse</a></td>
+                           <td class='docblock-short'>
+                                <p> The <code>ListJobsByStatusResponse</code> structure. </p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListPipelinesRequest.html'
+                                  title='rusoto::elastictranscoder::ListPipelinesRequest'>ListPipelinesRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The <code>ListPipelineRequest</code> structure.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListPipelinesResponse.html'
+                                  title='rusoto::elastictranscoder::ListPipelinesResponse'>ListPipelinesResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>A list of the pipelines associated with the current AWS account.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListPresetsRequest.html'
+                                  title='rusoto::elastictranscoder::ListPresetsRequest'>ListPresetsRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The <code>ListPresetsRequest</code> structure.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListPresetsResponse.html'
+                                  title='rusoto::elastictranscoder::ListPresetsResponse'>ListPresetsResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The <code>ListPresetsResponse</code> structure.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Notifications.html'
+                                  title='rusoto::elastictranscoder::Notifications'>Notifications</a></td>
+                           <td class='docblock-short'>
+                                <p><p>The Amazon Simple Notification Service (Amazon SNS) topic or topics to notify in order to report job status.</p> <important>To receive notifications, you must also subscribe to the new topic in the Amazon SNS console.</important></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Permission.html'
+                                  title='rusoto::elastictranscoder::Permission'>Permission</a></td>
+                           <td class='docblock-short'>
+                                <p>The <code>Permission</code> structure.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Pipeline.html'
+                                  title='rusoto::elastictranscoder::Pipeline'>Pipeline</a></td>
+                           <td class='docblock-short'>
+                                <p>The pipeline (queue) that is used to manage jobs.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.PipelineOutputConfig.html'
+                                  title='rusoto::elastictranscoder::PipelineOutputConfig'>PipelineOutputConfig</a></td>
+                           <td class='docblock-short'>
+                                <p>The <code>PipelineOutputConfig</code> structure.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.PlayReadyDrm.html'
+                                  title='rusoto::elastictranscoder::PlayReadyDrm'>PlayReadyDrm</a></td>
+                           <td class='docblock-short'>
+                                <p>The PlayReady DRM settings, if any, that you want Elastic Transcoder to apply to the output files associated with this playlist.</p> <p>PlayReady DRM encrypts your media files using <code>AES-CTR</code> encryption.</p> <p>If you use DRM for an <code>HLSv3</code> playlist, your outputs must have a master playlist.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Playlist.html'
+                                  title='rusoto::elastictranscoder::Playlist'>Playlist</a></td>
+                           <td class='docblock-short'>
+                                <p> Use Only for Fragmented MP4 or MPEG-TS Outputs. If you specify a preset for which the value of Container is <code>fmp4</code> (Fragmented MP4) or <code>ts</code> (MPEG-TS), Playlists contains information about the master playlists that you want Elastic Transcoder to create. We recommend that you create only one master playlist per output format. The maximum number of master playlists in a job is 30. </p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Preset.html'
+                                  title='rusoto::elastictranscoder::Preset'>Preset</a></td>
+                           <td class='docblock-short'>
+                                <p>Presets are templates that contain most of the settings for transcoding media files from one format to another. Elastic Transcoder includes some default presets for common formats, for example, several iPod and iPhone versions. You can also create your own presets for formats that aren't included among the default presets. You specify which preset you want to use when you create a job.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.PresetWatermark.html'
+                                  title='rusoto::elastictranscoder::PresetWatermark'>PresetWatermark</a></td>
+                           <td class='docblock-short'>
+                                <p>Settings for the size, location, and opacity of graphics that you want Elastic Transcoder to overlay over videos that are transcoded using this preset. You can specify settings for up to four watermarks. Watermarks appear in the specified size and location, and with the specified opacity for the duration of the transcoded video.</p> <p>Watermarks can be in .png or .jpg format. If you want to display a watermark that is not rectangular, use the .png format, which supports transparency.</p> <p>When you create a job that uses this preset, you specify the .png or .jpg graphics that you want Elastic Transcoder to include in the transcoded videos. You can specify fewer graphics in the job than you specify watermark settings in the preset, which allows you to use the same preset for up to four watermarks that have different dimensions.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ReadJobRequest.html'
+                                  title='rusoto::elastictranscoder::ReadJobRequest'>ReadJobRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The <code>ReadJobRequest</code> structure.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ReadJobResponse.html'
+                                  title='rusoto::elastictranscoder::ReadJobResponse'>ReadJobResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The <code>ReadJobResponse</code> structure.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ReadPipelineRequest.html'
+                                  title='rusoto::elastictranscoder::ReadPipelineRequest'>ReadPipelineRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The <code>ReadPipelineRequest</code> structure.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ReadPipelineResponse.html'
+                                  title='rusoto::elastictranscoder::ReadPipelineResponse'>ReadPipelineResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The <code>ReadPipelineResponse</code> structure.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ReadPresetRequest.html'
+                                  title='rusoto::elastictranscoder::ReadPresetRequest'>ReadPresetRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The <code>ReadPresetRequest</code> structure.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ReadPresetResponse.html'
+                                  title='rusoto::elastictranscoder::ReadPresetResponse'>ReadPresetResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The <code>ReadPresetResponse</code> structure.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.TestRoleRequest.html'
+                                  title='rusoto::elastictranscoder::TestRoleRequest'>TestRoleRequest</a></td>
+                           <td class='docblock-short'>
+                                <p> The <code>TestRoleRequest</code> structure. </p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.TestRoleResponse.html'
+                                  title='rusoto::elastictranscoder::TestRoleResponse'>TestRoleResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The <code>TestRoleResponse</code> structure.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Thumbnails.html'
+                                  title='rusoto::elastictranscoder::Thumbnails'>Thumbnails</a></td>
+                           <td class='docblock-short'>
+                                <p>Thumbnails for videos.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.TimeSpan.html'
+                                  title='rusoto::elastictranscoder::TimeSpan'>TimeSpan</a></td>
+                           <td class='docblock-short'>
+                                <p>Settings that determine when a clip begins and how long it lasts.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Timing.html'
+                                  title='rusoto::elastictranscoder::Timing'>Timing</a></td>
+                           <td class='docblock-short'>
+                                <p>Details about the timing of a job.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UpdatePipelineNotificationsRequest.html'
+                                  title='rusoto::elastictranscoder::UpdatePipelineNotificationsRequest'>UpdatePipelineNotificationsRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The <code>UpdatePipelineNotificationsRequest</code> structure.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UpdatePipelineNotificationsResponse.html'
+                                  title='rusoto::elastictranscoder::UpdatePipelineNotificationsResponse'>UpdatePipelineNotificationsResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The <code>UpdatePipelineNotificationsResponse</code> structure.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UpdatePipelineRequest.html'
+                                  title='rusoto::elastictranscoder::UpdatePipelineRequest'>UpdatePipelineRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The <code>UpdatePipelineRequest</code> structure.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UpdatePipelineResponse.html'
+                                  title='rusoto::elastictranscoder::UpdatePipelineResponse'>UpdatePipelineResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>When you update a pipeline, Elastic Transcoder returns the values that you specified in the request. </p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UpdatePipelineStatusRequest.html'
+                                  title='rusoto::elastictranscoder::UpdatePipelineStatusRequest'>UpdatePipelineStatusRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The <code>UpdatePipelineStatusRequest</code> structure.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UpdatePipelineStatusResponse.html'
+                                  title='rusoto::elastictranscoder::UpdatePipelineStatusResponse'>UpdatePipelineStatusResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>When you update status for a pipeline, Elastic Transcoder returns the values that you specified in the request.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.VideoParameters.html'
+                                  title='rusoto::elastictranscoder::VideoParameters'>VideoParameters</a></td>
+                           <td class='docblock-short'>
+                                <p>The <code>VideoParameters</code> structure.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Warning.html'
+                                  title='rusoto::elastictranscoder::Warning'>Warning</a></td>
+                           <td class='docblock-short'>
+                                <p>Elastic Transcoder returns a warning if the resources used by your pipeline are not in the same region as the pipeline.</p> <p>Using resources in the same region, such as your Amazon S3 buckets, Amazon SNS notification topics, and AWS KMS key, reduces processing time and prevents cross-regional charges.</p>
+                           </td>
+                       </tr></table><h2 id='enums' class='section-header'><a href="#enums">Enums</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.CancelJobError.html'
+                                  title='rusoto::elastictranscoder::CancelJobError'>CancelJobError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.CreateJobError.html'
+                                  title='rusoto::elastictranscoder::CreateJobError'>CreateJobError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.CreatePipelineError.html'
+                                  title='rusoto::elastictranscoder::CreatePipelineError'>CreatePipelineError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.CreatePresetError.html'
+                                  title='rusoto::elastictranscoder::CreatePresetError'>CreatePresetError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DeletePipelineError.html'
+                                  title='rusoto::elastictranscoder::DeletePipelineError'>DeletePipelineError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DeletePresetError.html'
+                                  title='rusoto::elastictranscoder::DeletePresetError'>DeletePresetError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ListJobsByPipelineError.html'
+                                  title='rusoto::elastictranscoder::ListJobsByPipelineError'>ListJobsByPipelineError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ListJobsByStatusError.html'
+                                  title='rusoto::elastictranscoder::ListJobsByStatusError'>ListJobsByStatusError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ListPipelinesError.html'
+                                  title='rusoto::elastictranscoder::ListPipelinesError'>ListPipelinesError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ListPresetsError.html'
+                                  title='rusoto::elastictranscoder::ListPresetsError'>ListPresetsError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ReadJobError.html'
+                                  title='rusoto::elastictranscoder::ReadJobError'>ReadJobError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ReadPipelineError.html'
+                                  title='rusoto::elastictranscoder::ReadPipelineError'>ReadPipelineError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ReadPresetError.html'
+                                  title='rusoto::elastictranscoder::ReadPresetError'>ReadPresetError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.TestRoleError.html'
+                                  title='rusoto::elastictranscoder::TestRoleError'>TestRoleError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.UpdatePipelineError.html'
+                                  title='rusoto::elastictranscoder::UpdatePipelineError'>UpdatePipelineError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.UpdatePipelineNotificationsError.html'
+                                  title='rusoto::elastictranscoder::UpdatePipelineNotificationsError'>UpdatePipelineNotificationsError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.UpdatePipelineStatusError.html'
+                                  title='rusoto::elastictranscoder::UpdatePipelineStatusError'>UpdatePipelineStatusError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr></table><h2 id='types' class='section-header'><a href="#types">Type Definitions</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AccessControl.html'
+                                  title='rusoto::elastictranscoder::AccessControl'>AccessControl</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AccessControls.html'
+                                  title='rusoto::elastictranscoder::AccessControls'>AccessControls</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Artworks.html'
+                                  title='rusoto::elastictranscoder::Artworks'>Artworks</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Ascending.html'
+                                  title='rusoto::elastictranscoder::Ascending'>Ascending</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AspectRatio.html'
+                                  title='rusoto::elastictranscoder::AspectRatio'>AspectRatio</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AudioBitDepth.html'
+                                  title='rusoto::elastictranscoder::AudioBitDepth'>AudioBitDepth</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AudioBitOrder.html'
+                                  title='rusoto::elastictranscoder::AudioBitOrder'>AudioBitOrder</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AudioBitRate.html'
+                                  title='rusoto::elastictranscoder::AudioBitRate'>AudioBitRate</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AudioChannels.html'
+                                  title='rusoto::elastictranscoder::AudioChannels'>AudioChannels</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AudioCodec.html'
+                                  title='rusoto::elastictranscoder::AudioCodec'>AudioCodec</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AudioCodecProfile.html'
+                                  title='rusoto::elastictranscoder::AudioCodecProfile'>AudioCodecProfile</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AudioPackingMode.html'
+                                  title='rusoto::elastictranscoder::AudioPackingMode'>AudioPackingMode</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AudioSampleRate.html'
+                                  title='rusoto::elastictranscoder::AudioSampleRate'>AudioSampleRate</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AudioSigned.html'
+                                  title='rusoto::elastictranscoder::AudioSigned'>AudioSigned</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Base64EncodedString.html'
+                                  title='rusoto::elastictranscoder::Base64EncodedString'>Base64EncodedString</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.BucketName.html'
+                                  title='rusoto::elastictranscoder::BucketName'>BucketName</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.CaptionFormatFormat.html'
+                                  title='rusoto::elastictranscoder::CaptionFormatFormat'>CaptionFormatFormat</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.CaptionFormatPattern.html'
+                                  title='rusoto::elastictranscoder::CaptionFormatPattern'>CaptionFormatPattern</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.CaptionFormats.html'
+                                  title='rusoto::elastictranscoder::CaptionFormats'>CaptionFormats</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.CaptionMergePolicy.html'
+                                  title='rusoto::elastictranscoder::CaptionMergePolicy'>CaptionMergePolicy</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.CaptionSources.html'
+                                  title='rusoto::elastictranscoder::CaptionSources'>CaptionSources</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.CodecOption.html'
+                                  title='rusoto::elastictranscoder::CodecOption'>CodecOption</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.CodecOptions.html'
+                                  title='rusoto::elastictranscoder::CodecOptions'>CodecOptions</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Composition.html'
+                                  title='rusoto::elastictranscoder::Composition'>Composition</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.CreateJobOutputs.html'
+                                  title='rusoto::elastictranscoder::CreateJobOutputs'>CreateJobOutputs</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.CreateJobPlaylists.html'
+                                  title='rusoto::elastictranscoder::CreateJobPlaylists'>CreateJobPlaylists</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Description.html'
+                                  title='rusoto::elastictranscoder::Description'>Description</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Digits.html'
+                                  title='rusoto::elastictranscoder::Digits'>Digits</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.DigitsOrAuto.html'
+                                  title='rusoto::elastictranscoder::DigitsOrAuto'>DigitsOrAuto</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.EncryptionMode.html'
+                                  title='rusoto::elastictranscoder::EncryptionMode'>EncryptionMode</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ExceptionMessages.html'
+                                  title='rusoto::elastictranscoder::ExceptionMessages'>ExceptionMessages</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Filename.html'
+                                  title='rusoto::elastictranscoder::Filename'>Filename</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.FixedGOP.html'
+                                  title='rusoto::elastictranscoder::FixedGOP'>FixedGOP</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.FloatString.html'
+                                  title='rusoto::elastictranscoder::FloatString'>FloatString</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.FrameRate.html'
+                                  title='rusoto::elastictranscoder::FrameRate'>FrameRate</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Grantee.html'
+                                  title='rusoto::elastictranscoder::Grantee'>Grantee</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.GranteeType.html'
+                                  title='rusoto::elastictranscoder::GranteeType'>GranteeType</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.HlsContentProtectionMethod.html'
+                                  title='rusoto::elastictranscoder::HlsContentProtectionMethod'>HlsContentProtectionMethod</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.HorizontalAlign.html'
+                                  title='rusoto::elastictranscoder::HorizontalAlign'>HorizontalAlign</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Id.html'
+                                  title='rusoto::elastictranscoder::Id'>Id</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Interlaced.html'
+                                  title='rusoto::elastictranscoder::Interlaced'>Interlaced</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.JobContainer.html'
+                                  title='rusoto::elastictranscoder::JobContainer'>JobContainer</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.JobOutputs.html'
+                                  title='rusoto::elastictranscoder::JobOutputs'>JobOutputs</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.JobStatus.html'
+                                  title='rusoto::elastictranscoder::JobStatus'>JobStatus</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.JobWatermarks.html'
+                                  title='rusoto::elastictranscoder::JobWatermarks'>JobWatermarks</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Jobs.html'
+                                  title='rusoto::elastictranscoder::Jobs'>Jobs</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.JpgOrPng.html'
+                                  title='rusoto::elastictranscoder::JpgOrPng'>JpgOrPng</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Key.html'
+                                  title='rusoto::elastictranscoder::Key'>Key</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.KeyArn.html'
+                                  title='rusoto::elastictranscoder::KeyArn'>KeyArn</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.KeyIdGuid.html'
+                                  title='rusoto::elastictranscoder::KeyIdGuid'>KeyIdGuid</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.KeyStoragePolicy.html'
+                                  title='rusoto::elastictranscoder::KeyStoragePolicy'>KeyStoragePolicy</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.KeyframesMaxDist.html'
+                                  title='rusoto::elastictranscoder::KeyframesMaxDist'>KeyframesMaxDist</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.LongKey.html'
+                                  title='rusoto::elastictranscoder::LongKey'>LongKey</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.MaxFrameRate.html'
+                                  title='rusoto::elastictranscoder::MaxFrameRate'>MaxFrameRate</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.MergePolicy.html'
+                                  title='rusoto::elastictranscoder::MergePolicy'>MergePolicy</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Name.html'
+                                  title='rusoto::elastictranscoder::Name'>Name</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.NonEmptyBase64EncodedString.html'
+                                  title='rusoto::elastictranscoder::NonEmptyBase64EncodedString'>NonEmptyBase64EncodedString</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.NullableInteger.html'
+                                  title='rusoto::elastictranscoder::NullableInteger'>NullableInteger</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.NullableLong.html'
+                                  title='rusoto::elastictranscoder::NullableLong'>NullableLong</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.OneTo512String.html'
+                                  title='rusoto::elastictranscoder::OneTo512String'>OneTo512String</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Opacity.html'
+                                  title='rusoto::elastictranscoder::Opacity'>Opacity</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.OutputKeys.html'
+                                  title='rusoto::elastictranscoder::OutputKeys'>OutputKeys</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.PaddingPolicy.html'
+                                  title='rusoto::elastictranscoder::PaddingPolicy'>PaddingPolicy</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Permissions.html'
+                                  title='rusoto::elastictranscoder::Permissions'>Permissions</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.PipelineStatus.html'
+                                  title='rusoto::elastictranscoder::PipelineStatus'>PipelineStatus</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Pipelines.html'
+                                  title='rusoto::elastictranscoder::Pipelines'>Pipelines</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.PixelsOrPercent.html'
+                                  title='rusoto::elastictranscoder::PixelsOrPercent'>PixelsOrPercent</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.PlayReadyDrmFormatString.html'
+                                  title='rusoto::elastictranscoder::PlayReadyDrmFormatString'>PlayReadyDrmFormatString</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.PlaylistFormat.html'
+                                  title='rusoto::elastictranscoder::PlaylistFormat'>PlaylistFormat</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Playlists.html'
+                                  title='rusoto::elastictranscoder::Playlists'>Playlists</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.PresetContainer.html'
+                                  title='rusoto::elastictranscoder::PresetContainer'>PresetContainer</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.PresetType.html'
+                                  title='rusoto::elastictranscoder::PresetType'>PresetType</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.PresetWatermarkId.html'
+                                  title='rusoto::elastictranscoder::PresetWatermarkId'>PresetWatermarkId</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.PresetWatermarks.html'
+                                  title='rusoto::elastictranscoder::PresetWatermarks'>PresetWatermarks</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Presets.html'
+                                  title='rusoto::elastictranscoder::Presets'>Presets</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Resolution.html'
+                                  title='rusoto::elastictranscoder::Resolution'>Resolution</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Role.html'
+                                  title='rusoto::elastictranscoder::Role'>Role</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Rotate.html'
+                                  title='rusoto::elastictranscoder::Rotate'>Rotate</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.SizingPolicy.html'
+                                  title='rusoto::elastictranscoder::SizingPolicy'>SizingPolicy</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.SnsTopic.html'
+                                  title='rusoto::elastictranscoder::SnsTopic'>SnsTopic</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.SnsTopics.html'
+                                  title='rusoto::elastictranscoder::SnsTopics'>SnsTopics</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.StorageClass.html'
+                                  title='rusoto::elastictranscoder::StorageClass'>StorageClass</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Success.html'
+                                  title='rusoto::elastictranscoder::Success'>Success</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Target.html'
+                                  title='rusoto::elastictranscoder::Target'>Target</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ThumbnailPattern.html'
+                                  title='rusoto::elastictranscoder::ThumbnailPattern'>ThumbnailPattern</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ThumbnailResolution.html'
+                                  title='rusoto::elastictranscoder::ThumbnailResolution'>ThumbnailResolution</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Time.html'
+                                  title='rusoto::elastictranscoder::Time'>Time</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.TimeOffset.html'
+                                  title='rusoto::elastictranscoder::TimeOffset'>TimeOffset</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.UserMetadata.html'
+                                  title='rusoto::elastictranscoder::UserMetadata'>UserMetadata</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.VerticalAlign.html'
+                                  title='rusoto::elastictranscoder::VerticalAlign'>VerticalAlign</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.VideoBitRate.html'
+                                  title='rusoto::elastictranscoder::VideoBitRate'>VideoBitRate</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.VideoCodec.html'
+                                  title='rusoto::elastictranscoder::VideoCodec'>VideoCodec</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Warnings.html'
+                                  title='rusoto::elastictranscoder::Warnings'>Warnings</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.WatermarkKey.html'
+                                  title='rusoto::elastictranscoder::WatermarkKey'>WatermarkKey</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.WatermarkSizingPolicy.html'
+                                  title='rusoto::elastictranscoder::WatermarkSizingPolicy'>WatermarkSizingPolicy</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ZeroTo255String.html'
+                                  title='rusoto::elastictranscoder::ZeroTo255String'>ZeroTo255String</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ZeroTo512String.html'
+                                  title='rusoto::elastictranscoder::ZeroTo512String'>ZeroTo512String</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr></table></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "rusoto";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../../jquery.js"></script>
+    <script src="../../main.js"></script>
+    
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>

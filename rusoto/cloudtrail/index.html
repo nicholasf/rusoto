@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `cloudtrail` mod in crate `rusoto`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, cloudtrail">
+
+    <title>rusoto::cloudtrail - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='../index.html'>rusoto</a></p><script>window.sidebarCurrent = {name: 'cloudtrail', ty: 'mod', relpath: '../'};</script><script defer src="../sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content mod">
+<h1 class='fqn'><span class='in-band'>Module <a href='../index.html'>rusoto</a>::<wbr><a class='mod' href=''>cloudtrail</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-8534' class='srclink' href='../../src/rusoto/src/cloudtrail.rs.html#1-3' title='goto source code'>[src]</a></span></h1>
+<div class='docblock'><p>AWS CloudTrail</p>
+</div><h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AddTagsRequest.html'
+                                  title='rusoto::cloudtrail::AddTagsRequest'>AddTagsRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>Specifies the tags to add to a trail.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AddTagsResponse.html'
+                                  title='rusoto::cloudtrail::AddTagsResponse'>AddTagsResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>Returns the objects or data listed below if successful. Otherwise, returns an error.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CloudTrailClient.html'
+                                  title='rusoto::cloudtrail::CloudTrailClient'>CloudTrailClient</a></td>
+                           <td class='docblock-short'>
+                                <p>A client for the CloudTrail API.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateTrailRequest.html'
+                                  title='rusoto::cloudtrail::CreateTrailRequest'>CreateTrailRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>Specifies the settings for each trail.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateTrailResponse.html'
+                                  title='rusoto::cloudtrail::CreateTrailResponse'>CreateTrailResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>Returns the objects or data listed below if successful. Otherwise, returns an error.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteTrailRequest.html'
+                                  title='rusoto::cloudtrail::DeleteTrailRequest'>DeleteTrailRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The request that specifies the name of a trail to delete.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteTrailResponse.html'
+                                  title='rusoto::cloudtrail::DeleteTrailResponse'>DeleteTrailResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>Returns the objects or data listed below if successful. Otherwise, returns an error.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeTrailsRequest.html'
+                                  title='rusoto::cloudtrail::DescribeTrailsRequest'>DescribeTrailsRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>Returns information about the trail.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeTrailsResponse.html'
+                                  title='rusoto::cloudtrail::DescribeTrailsResponse'>DescribeTrailsResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>Returns the objects or data listed below if successful. Otherwise, returns an error.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Event.html'
+                                  title='rusoto::cloudtrail::Event'>Event</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains information about an event that was returned by a lookup request. The result includes a representation of a CloudTrail event.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetTrailStatusRequest.html'
+                                  title='rusoto::cloudtrail::GetTrailStatusRequest'>GetTrailStatusRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The name of a trail about which you want the current status.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetTrailStatusResponse.html'
+                                  title='rusoto::cloudtrail::GetTrailStatusResponse'>GetTrailStatusResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>Returns the objects or data listed below if successful. Otherwise, returns an error.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListPublicKeysRequest.html'
+                                  title='rusoto::cloudtrail::ListPublicKeysRequest'>ListPublicKeysRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>Requests the public keys for a specified time range.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListPublicKeysResponse.html'
+                                  title='rusoto::cloudtrail::ListPublicKeysResponse'>ListPublicKeysResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>Returns the objects or data listed below if successful. Otherwise, returns an error.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListTagsRequest.html'
+                                  title='rusoto::cloudtrail::ListTagsRequest'>ListTagsRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>Specifies a list of trail tags to return.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListTagsResponse.html'
+                                  title='rusoto::cloudtrail::ListTagsResponse'>ListTagsResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>Returns the objects or data listed below if successful. Otherwise, returns an error.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.LookupAttribute.html'
+                                  title='rusoto::cloudtrail::LookupAttribute'>LookupAttribute</a></td>
+                           <td class='docblock-short'>
+                                <p>Specifies an attribute and value that filter the events returned.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.LookupEventsRequest.html'
+                                  title='rusoto::cloudtrail::LookupEventsRequest'>LookupEventsRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains a request for LookupEvents.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.LookupEventsResponse.html'
+                                  title='rusoto::cloudtrail::LookupEventsResponse'>LookupEventsResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains a response to a LookupEvents action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.PublicKey.html'
+                                  title='rusoto::cloudtrail::PublicKey'>PublicKey</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains information about a returned public key.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RemoveTagsRequest.html'
+                                  title='rusoto::cloudtrail::RemoveTagsRequest'>RemoveTagsRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>Specifies the tags to remove from a trail.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RemoveTagsResponse.html'
+                                  title='rusoto::cloudtrail::RemoveTagsResponse'>RemoveTagsResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>Returns the objects or data listed below if successful. Otherwise, returns an error.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Resource.html'
+                                  title='rusoto::cloudtrail::Resource'>Resource</a></td>
+                           <td class='docblock-short'>
+                                <p>Specifies the type and name of a resource referenced by an event.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ResourceTag.html'
+                                  title='rusoto::cloudtrail::ResourceTag'>ResourceTag</a></td>
+                           <td class='docblock-short'>
+                                <p>A resource tag.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.StartLoggingRequest.html'
+                                  title='rusoto::cloudtrail::StartLoggingRequest'>StartLoggingRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The request to CloudTrail to start logging AWS API calls for an account.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.StartLoggingResponse.html'
+                                  title='rusoto::cloudtrail::StartLoggingResponse'>StartLoggingResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>Returns the objects or data listed below if successful. Otherwise, returns an error.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.StopLoggingRequest.html'
+                                  title='rusoto::cloudtrail::StopLoggingRequest'>StopLoggingRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>Passes the request to CloudTrail to stop logging AWS API calls for the specified account.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.StopLoggingResponse.html'
+                                  title='rusoto::cloudtrail::StopLoggingResponse'>StopLoggingResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>Returns the objects or data listed below if successful. Otherwise, returns an error.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Tag.html'
+                                  title='rusoto::cloudtrail::Tag'>Tag</a></td>
+                           <td class='docblock-short'>
+                                <p>A custom key-value pair associated with a resource such as a CloudTrail trail.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Trail.html'
+                                  title='rusoto::cloudtrail::Trail'>Trail</a></td>
+                           <td class='docblock-short'>
+                                <p>The settings for a trail.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UpdateTrailRequest.html'
+                                  title='rusoto::cloudtrail::UpdateTrailRequest'>UpdateTrailRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>Specifies settings to update for the trail.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UpdateTrailResponse.html'
+                                  title='rusoto::cloudtrail::UpdateTrailResponse'>UpdateTrailResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>Returns the objects or data listed below if successful. Otherwise, returns an error.</p>
+                           </td>
+                       </tr></table><h2 id='enums' class='section-header'><a href="#enums">Enums</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.AddTagsError.html'
+                                  title='rusoto::cloudtrail::AddTagsError'>AddTagsError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.CreateTrailError.html'
+                                  title='rusoto::cloudtrail::CreateTrailError'>CreateTrailError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DeleteTrailError.html'
+                                  title='rusoto::cloudtrail::DeleteTrailError'>DeleteTrailError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeTrailsError.html'
+                                  title='rusoto::cloudtrail::DescribeTrailsError'>DescribeTrailsError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.GetTrailStatusError.html'
+                                  title='rusoto::cloudtrail::GetTrailStatusError'>GetTrailStatusError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ListPublicKeysError.html'
+                                  title='rusoto::cloudtrail::ListPublicKeysError'>ListPublicKeysError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ListTagsError.html'
+                                  title='rusoto::cloudtrail::ListTagsError'>ListTagsError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.LookupEventsError.html'
+                                  title='rusoto::cloudtrail::LookupEventsError'>LookupEventsError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.RemoveTagsError.html'
+                                  title='rusoto::cloudtrail::RemoveTagsError'>RemoveTagsError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.StartLoggingError.html'
+                                  title='rusoto::cloudtrail::StartLoggingError'>StartLoggingError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.StopLoggingError.html'
+                                  title='rusoto::cloudtrail::StopLoggingError'>StopLoggingError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.UpdateTrailError.html'
+                                  title='rusoto::cloudtrail::UpdateTrailError'>UpdateTrailError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr></table><h2 id='types' class='section-header'><a href="#types">Type Definitions</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Boolean.html'
+                                  title='rusoto::cloudtrail::Boolean'>Boolean</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ByteBuffer.html'
+                                  title='rusoto::cloudtrail::ByteBuffer'>ByteBuffer</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Date.html'
+                                  title='rusoto::cloudtrail::Date'>Date</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.EventsList.html'
+                                  title='rusoto::cloudtrail::EventsList'>EventsList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.LookupAttributeKey.html'
+                                  title='rusoto::cloudtrail::LookupAttributeKey'>LookupAttributeKey</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.LookupAttributesList.html'
+                                  title='rusoto::cloudtrail::LookupAttributesList'>LookupAttributesList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.MaxResults.html'
+                                  title='rusoto::cloudtrail::MaxResults'>MaxResults</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.NextToken.html'
+                                  title='rusoto::cloudtrail::NextToken'>NextToken</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.PublicKeyList.html'
+                                  title='rusoto::cloudtrail::PublicKeyList'>PublicKeyList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ResourceIdList.html'
+                                  title='rusoto::cloudtrail::ResourceIdList'>ResourceIdList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ResourceList.html'
+                                  title='rusoto::cloudtrail::ResourceList'>ResourceList</a></td>
+                           <td class='docblock-short'>
+                                <p>A list of resources referenced by the event returned.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ResourceTagList.html'
+                                  title='rusoto::cloudtrail::ResourceTagList'>ResourceTagList</a></td>
+                           <td class='docblock-short'>
+                                <p>A list of resource tags.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.TagsList.html'
+                                  title='rusoto::cloudtrail::TagsList'>TagsList</a></td>
+                           <td class='docblock-short'>
+                                <p>A list of tags.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.TrailList.html'
+                                  title='rusoto::cloudtrail::TrailList'>TrailList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.TrailNameList.html'
+                                  title='rusoto::cloudtrail::TrailNameList'>TrailNameList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr></table></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "rusoto";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../../jquery.js"></script>
+    <script src="../../main.js"></script>
+    
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>

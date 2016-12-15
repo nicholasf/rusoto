@@ -1,0 +1,2141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `iot` mod in crate `rusoto`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, iot">
+
+    <title>rusoto::iot - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='../index.html'>rusoto</a></p><script>window.sidebarCurrent = {name: 'iot', ty: 'mod', relpath: '../'};</script><script defer src="../sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content mod">
+<h1 class='fqn'><span class='in-band'>Module <a href='../index.html'>rusoto</a>::<wbr><a class='mod' href=''>iot</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-266095' class='srclink' href='../../src/rusoto/src/iot.rs.html#1-3' title='goto source code'>[src]</a></span></h1>
+<div class='docblock'><p>Amazon IoT</p>
+</div><h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AcceptCertificateTransferRequest.html'
+                                  title='rusoto::iot::AcceptCertificateTransferRequest'>AcceptCertificateTransferRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The input for the AcceptCertificateTransfer operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Action.html'
+                                  title='rusoto::iot::Action'>Action</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes the actions associated with a rule.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AttachPrincipalPolicyRequest.html'
+                                  title='rusoto::iot::AttachPrincipalPolicyRequest'>AttachPrincipalPolicyRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The input for the AttachPrincipalPolicy operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AttachThingPrincipalRequest.html'
+                                  title='rusoto::iot::AttachThingPrincipalRequest'>AttachThingPrincipalRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The input for the AttachThingPrincipal operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AttachThingPrincipalResponse.html'
+                                  title='rusoto::iot::AttachThingPrincipalResponse'>AttachThingPrincipalResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The output from the AttachThingPrincipal operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AttributePayload.html'
+                                  title='rusoto::iot::AttributePayload'>AttributePayload</a></td>
+                           <td class='docblock-short'>
+                                <p>The attribute payload.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CACertificate.html'
+                                  title='rusoto::iot::CACertificate'>CACertificate</a></td>
+                           <td class='docblock-short'>
+                                <p>A CA certificate.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CACertificateDescription.html'
+                                  title='rusoto::iot::CACertificateDescription'>CACertificateDescription</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes a CA certificate.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CancelCertificateTransferRequest.html'
+                                  title='rusoto::iot::CancelCertificateTransferRequest'>CancelCertificateTransferRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The input for the CancelCertificateTransfer operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Certificate.html'
+                                  title='rusoto::iot::Certificate'>Certificate</a></td>
+                           <td class='docblock-short'>
+                                <p>Information about a certificate.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CertificateDescription.html'
+                                  title='rusoto::iot::CertificateDescription'>CertificateDescription</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes a certificate.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CloudwatchAlarmAction.html'
+                                  title='rusoto::iot::CloudwatchAlarmAction'>CloudwatchAlarmAction</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes an action that updates a CloudWatch alarm.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CloudwatchMetricAction.html'
+                                  title='rusoto::iot::CloudwatchMetricAction'>CloudwatchMetricAction</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes an action that captures a CloudWatch metric.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateCertificateFromCsrRequest.html'
+                                  title='rusoto::iot::CreateCertificateFromCsrRequest'>CreateCertificateFromCsrRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The input for the CreateCertificateFromCsr operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateCertificateFromCsrResponse.html'
+                                  title='rusoto::iot::CreateCertificateFromCsrResponse'>CreateCertificateFromCsrResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The output from the CreateCertificateFromCsr operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateKeysAndCertificateRequest.html'
+                                  title='rusoto::iot::CreateKeysAndCertificateRequest'>CreateKeysAndCertificateRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The input for the CreateKeysAndCertificate operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateKeysAndCertificateResponse.html'
+                                  title='rusoto::iot::CreateKeysAndCertificateResponse'>CreateKeysAndCertificateResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The output of the CreateKeysAndCertificate operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreatePolicyRequest.html'
+                                  title='rusoto::iot::CreatePolicyRequest'>CreatePolicyRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The input for the CreatePolicy operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreatePolicyResponse.html'
+                                  title='rusoto::iot::CreatePolicyResponse'>CreatePolicyResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The output from the CreatePolicy operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreatePolicyVersionRequest.html'
+                                  title='rusoto::iot::CreatePolicyVersionRequest'>CreatePolicyVersionRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The input for the CreatePolicyVersion operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreatePolicyVersionResponse.html'
+                                  title='rusoto::iot::CreatePolicyVersionResponse'>CreatePolicyVersionResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The output of the CreatePolicyVersion operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateThingRequest.html'
+                                  title='rusoto::iot::CreateThingRequest'>CreateThingRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The input for the CreateThing operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateThingResponse.html'
+                                  title='rusoto::iot::CreateThingResponse'>CreateThingResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The output of the CreateThing operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateThingTypeRequest.html'
+                                  title='rusoto::iot::CreateThingTypeRequest'>CreateThingTypeRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The input for the CreateThingType operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateThingTypeResponse.html'
+                                  title='rusoto::iot::CreateThingTypeResponse'>CreateThingTypeResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The output of the CreateThingType operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateTopicRuleRequest.html'
+                                  title='rusoto::iot::CreateTopicRuleRequest'>CreateTopicRuleRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The input for the CreateTopicRule operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteCACertificateRequest.html'
+                                  title='rusoto::iot::DeleteCACertificateRequest'>DeleteCACertificateRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>Input for the DeleteCACertificate operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteCACertificateResponse.html'
+                                  title='rusoto::iot::DeleteCACertificateResponse'>DeleteCACertificateResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The output for the DeleteCACertificate operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteCertificateRequest.html'
+                                  title='rusoto::iot::DeleteCertificateRequest'>DeleteCertificateRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The input for the DeleteCertificate operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeletePolicyRequest.html'
+                                  title='rusoto::iot::DeletePolicyRequest'>DeletePolicyRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The input for the DeletePolicy operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeletePolicyVersionRequest.html'
+                                  title='rusoto::iot::DeletePolicyVersionRequest'>DeletePolicyVersionRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The input for the DeletePolicyVersion operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteRegistrationCodeRequest.html'
+                                  title='rusoto::iot::DeleteRegistrationCodeRequest'>DeleteRegistrationCodeRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The input for the DeleteRegistrationCode operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteRegistrationCodeResponse.html'
+                                  title='rusoto::iot::DeleteRegistrationCodeResponse'>DeleteRegistrationCodeResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The output for the DeleteRegistrationCode operation. </p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteThingRequest.html'
+                                  title='rusoto::iot::DeleteThingRequest'>DeleteThingRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The input for the DeleteThing operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteThingResponse.html'
+                                  title='rusoto::iot::DeleteThingResponse'>DeleteThingResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The output of the DeleteThing operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteThingTypeRequest.html'
+                                  title='rusoto::iot::DeleteThingTypeRequest'>DeleteThingTypeRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The input for the DeleteThingType operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteThingTypeResponse.html'
+                                  title='rusoto::iot::DeleteThingTypeResponse'>DeleteThingTypeResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The output for the DeleteThingType operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteTopicRuleRequest.html'
+                                  title='rusoto::iot::DeleteTopicRuleRequest'>DeleteTopicRuleRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The input for the DeleteTopicRule operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeprecateThingTypeRequest.html'
+                                  title='rusoto::iot::DeprecateThingTypeRequest'>DeprecateThingTypeRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The input for the DeprecateThingType operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeprecateThingTypeResponse.html'
+                                  title='rusoto::iot::DeprecateThingTypeResponse'>DeprecateThingTypeResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The output for the DeprecateThingType operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeCACertificateRequest.html'
+                                  title='rusoto::iot::DescribeCACertificateRequest'>DescribeCACertificateRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The input for the DescribeCACertificate operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeCACertificateResponse.html'
+                                  title='rusoto::iot::DescribeCACertificateResponse'>DescribeCACertificateResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The output from the DescribeCACertificate operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeCertificateRequest.html'
+                                  title='rusoto::iot::DescribeCertificateRequest'>DescribeCertificateRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The input for the DescribeCertificate operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeCertificateResponse.html'
+                                  title='rusoto::iot::DescribeCertificateResponse'>DescribeCertificateResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The output of the DescribeCertificate operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeEndpointRequest.html'
+                                  title='rusoto::iot::DescribeEndpointRequest'>DescribeEndpointRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The input for the DescribeEndpoint operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeEndpointResponse.html'
+                                  title='rusoto::iot::DescribeEndpointResponse'>DescribeEndpointResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The output from the DescribeEndpoint operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeThingRequest.html'
+                                  title='rusoto::iot::DescribeThingRequest'>DescribeThingRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The input for the DescribeThing operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeThingResponse.html'
+                                  title='rusoto::iot::DescribeThingResponse'>DescribeThingResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The output from the DescribeThing operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeThingTypeRequest.html'
+                                  title='rusoto::iot::DescribeThingTypeRequest'>DescribeThingTypeRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The input for the DescribeThingType operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DescribeThingTypeResponse.html'
+                                  title='rusoto::iot::DescribeThingTypeResponse'>DescribeThingTypeResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The output for the DescribeThingType operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DetachPrincipalPolicyRequest.html'
+                                  title='rusoto::iot::DetachPrincipalPolicyRequest'>DetachPrincipalPolicyRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The input for the DetachPrincipalPolicy operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DetachThingPrincipalRequest.html'
+                                  title='rusoto::iot::DetachThingPrincipalRequest'>DetachThingPrincipalRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The input for the DetachThingPrincipal operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DetachThingPrincipalResponse.html'
+                                  title='rusoto::iot::DetachThingPrincipalResponse'>DetachThingPrincipalResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The output from the DetachThingPrincipal operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DisableTopicRuleRequest.html'
+                                  title='rusoto::iot::DisableTopicRuleRequest'>DisableTopicRuleRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The input for the DisableTopicRuleRequest operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DynamoDBAction.html'
+                                  title='rusoto::iot::DynamoDBAction'>DynamoDBAction</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes an action to write to a DynamoDB table.</p> <p>The <code>tableName</code>, <code>hashKeyField</code>, and <code>rangeKeyField</code> values must match the values used when you created the table.</p> <p>The <code>hashKeyValue</code> and <code>rangeKeyvalue</code> fields use a substitution template syntax. These templates provide data at runtime. The syntax is as follows: ${<i>sql-expression</i>}.</p> <p>You can specify any valid expression in a WHERE or SELECT clause, including JSON properties, comparisons, calculations, and functions. For example, the following field uses the third level of the topic:</p> <p><code>"hashKeyValue": "${topic(3)}"</code></p> <p>The following field uses the timestamp:</p> <p><code>"rangeKeyValue": "${timestamp()}"</code></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ElasticsearchAction.html'
+                                  title='rusoto::iot::ElasticsearchAction'>ElasticsearchAction</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes an action that writes data to an Amazon Elasticsearch Service domain.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.EnableTopicRuleRequest.html'
+                                  title='rusoto::iot::EnableTopicRuleRequest'>EnableTopicRuleRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The input for the EnableTopicRuleRequest operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.FirehoseAction.html'
+                                  title='rusoto::iot::FirehoseAction'>FirehoseAction</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes an action that writes data to an Amazon Kinesis Firehose stream.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetLoggingOptionsRequest.html'
+                                  title='rusoto::iot::GetLoggingOptionsRequest'>GetLoggingOptionsRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The input for the GetLoggingOptions operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetLoggingOptionsResponse.html'
+                                  title='rusoto::iot::GetLoggingOptionsResponse'>GetLoggingOptionsResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The output from the GetLoggingOptions operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetPolicyRequest.html'
+                                  title='rusoto::iot::GetPolicyRequest'>GetPolicyRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The input for the GetPolicy operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetPolicyResponse.html'
+                                  title='rusoto::iot::GetPolicyResponse'>GetPolicyResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The output from the GetPolicy operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetPolicyVersionRequest.html'
+                                  title='rusoto::iot::GetPolicyVersionRequest'>GetPolicyVersionRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The input for the GetPolicyVersion operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetPolicyVersionResponse.html'
+                                  title='rusoto::iot::GetPolicyVersionResponse'>GetPolicyVersionResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The output from the GetPolicyVersion operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetRegistrationCodeRequest.html'
+                                  title='rusoto::iot::GetRegistrationCodeRequest'>GetRegistrationCodeRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The input to the GetRegistrationCode operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetRegistrationCodeResponse.html'
+                                  title='rusoto::iot::GetRegistrationCodeResponse'>GetRegistrationCodeResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The output from the GetRegistrationCode operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetTopicRuleRequest.html'
+                                  title='rusoto::iot::GetTopicRuleRequest'>GetTopicRuleRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The input for the GetTopicRule operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetTopicRuleResponse.html'
+                                  title='rusoto::iot::GetTopicRuleResponse'>GetTopicRuleResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The output from the GetTopicRule operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.IotClient.html'
+                                  title='rusoto::iot::IotClient'>IotClient</a></td>
+                           <td class='docblock-short'>
+                                <p>A client for the AWS IoT API.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.KeyPair.html'
+                                  title='rusoto::iot::KeyPair'>KeyPair</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes a key pair.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.KinesisAction.html'
+                                  title='rusoto::iot::KinesisAction'>KinesisAction</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes an action to write data to an Amazon Kinesis stream.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.LambdaAction.html'
+                                  title='rusoto::iot::LambdaAction'>LambdaAction</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes an action to invoke a Lambda function.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListCACertificatesRequest.html'
+                                  title='rusoto::iot::ListCACertificatesRequest'>ListCACertificatesRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>Input for the ListCACertificates operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListCACertificatesResponse.html'
+                                  title='rusoto::iot::ListCACertificatesResponse'>ListCACertificatesResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The output from the ListCACertificates operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListCertificatesByCARequest.html'
+                                  title='rusoto::iot::ListCertificatesByCARequest'>ListCertificatesByCARequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The input to the ListCertificatesByCA operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListCertificatesByCAResponse.html'
+                                  title='rusoto::iot::ListCertificatesByCAResponse'>ListCertificatesByCAResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The output of the ListCertificatesByCA operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListCertificatesRequest.html'
+                                  title='rusoto::iot::ListCertificatesRequest'>ListCertificatesRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The input for the ListCertificates operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListCertificatesResponse.html'
+                                  title='rusoto::iot::ListCertificatesResponse'>ListCertificatesResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The output of the ListCertificates operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListOutgoingCertificatesRequest.html'
+                                  title='rusoto::iot::ListOutgoingCertificatesRequest'>ListOutgoingCertificatesRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The input to the ListOutgoingCertificates operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListOutgoingCertificatesResponse.html'
+                                  title='rusoto::iot::ListOutgoingCertificatesResponse'>ListOutgoingCertificatesResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The output from the ListOutgoingCertificates operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListPoliciesRequest.html'
+                                  title='rusoto::iot::ListPoliciesRequest'>ListPoliciesRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The input for the ListPolicies operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListPoliciesResponse.html'
+                                  title='rusoto::iot::ListPoliciesResponse'>ListPoliciesResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The output from the ListPolicies operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListPolicyPrincipalsRequest.html'
+                                  title='rusoto::iot::ListPolicyPrincipalsRequest'>ListPolicyPrincipalsRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The input for the ListPolicyPrincipals operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListPolicyPrincipalsResponse.html'
+                                  title='rusoto::iot::ListPolicyPrincipalsResponse'>ListPolicyPrincipalsResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The output from the ListPolicyPrincipals operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListPolicyVersionsRequest.html'
+                                  title='rusoto::iot::ListPolicyVersionsRequest'>ListPolicyVersionsRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The input for the ListPolicyVersions operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListPolicyVersionsResponse.html'
+                                  title='rusoto::iot::ListPolicyVersionsResponse'>ListPolicyVersionsResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The output from the ListPolicyVersions operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListPrincipalPoliciesRequest.html'
+                                  title='rusoto::iot::ListPrincipalPoliciesRequest'>ListPrincipalPoliciesRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The input for the ListPrincipalPolicies operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListPrincipalPoliciesResponse.html'
+                                  title='rusoto::iot::ListPrincipalPoliciesResponse'>ListPrincipalPoliciesResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The output from the ListPrincipalPolicies operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListPrincipalThingsRequest.html'
+                                  title='rusoto::iot::ListPrincipalThingsRequest'>ListPrincipalThingsRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The input for the ListPrincipalThings operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListPrincipalThingsResponse.html'
+                                  title='rusoto::iot::ListPrincipalThingsResponse'>ListPrincipalThingsResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The output from the ListPrincipalThings operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListThingPrincipalsRequest.html'
+                                  title='rusoto::iot::ListThingPrincipalsRequest'>ListThingPrincipalsRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The input for the ListThingPrincipal operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListThingPrincipalsResponse.html'
+                                  title='rusoto::iot::ListThingPrincipalsResponse'>ListThingPrincipalsResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The output from the ListThingPrincipals operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListThingTypesRequest.html'
+                                  title='rusoto::iot::ListThingTypesRequest'>ListThingTypesRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The input for the ListThingTypes operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListThingTypesResponse.html'
+                                  title='rusoto::iot::ListThingTypesResponse'>ListThingTypesResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The output for the ListThingTypes operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListThingsRequest.html'
+                                  title='rusoto::iot::ListThingsRequest'>ListThingsRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The input for the ListThings operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListThingsResponse.html'
+                                  title='rusoto::iot::ListThingsResponse'>ListThingsResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The output from the ListThings operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListTopicRulesRequest.html'
+                                  title='rusoto::iot::ListTopicRulesRequest'>ListTopicRulesRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The input for the ListTopicRules operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListTopicRulesResponse.html'
+                                  title='rusoto::iot::ListTopicRulesResponse'>ListTopicRulesResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The output from the ListTopicRules operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.LoggingOptionsPayload.html'
+                                  title='rusoto::iot::LoggingOptionsPayload'>LoggingOptionsPayload</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes the logging options payload.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.OutgoingCertificate.html'
+                                  title='rusoto::iot::OutgoingCertificate'>OutgoingCertificate</a></td>
+                           <td class='docblock-short'>
+                                <p>A certificate that has been transfered but not yet accepted.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Policy.html'
+                                  title='rusoto::iot::Policy'>Policy</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes an AWS IoT policy.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.PolicyVersion.html'
+                                  title='rusoto::iot::PolicyVersion'>PolicyVersion</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes a policy version.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RegisterCACertificateRequest.html'
+                                  title='rusoto::iot::RegisterCACertificateRequest'>RegisterCACertificateRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The input to the RegisterCACertificate operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RegisterCACertificateResponse.html'
+                                  title='rusoto::iot::RegisterCACertificateResponse'>RegisterCACertificateResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The output from the RegisterCACertificateResponse operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RegisterCertificateRequest.html'
+                                  title='rusoto::iot::RegisterCertificateRequest'>RegisterCertificateRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The input to the RegisterCertificate operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RegisterCertificateResponse.html'
+                                  title='rusoto::iot::RegisterCertificateResponse'>RegisterCertificateResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The output from the RegisterCertificate operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RejectCertificateTransferRequest.html'
+                                  title='rusoto::iot::RejectCertificateTransferRequest'>RejectCertificateTransferRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The input for the RejectCertificateTransfer operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ReplaceTopicRuleRequest.html'
+                                  title='rusoto::iot::ReplaceTopicRuleRequest'>ReplaceTopicRuleRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The input for the ReplaceTopicRule operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RepublishAction.html'
+                                  title='rusoto::iot::RepublishAction'>RepublishAction</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes an action to republish to another topic.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.S3Action.html'
+                                  title='rusoto::iot::S3Action'>S3Action</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes an action to write data to an Amazon S3 bucket.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SetDefaultPolicyVersionRequest.html'
+                                  title='rusoto::iot::SetDefaultPolicyVersionRequest'>SetDefaultPolicyVersionRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The input for the SetDefaultPolicyVersion operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SetLoggingOptionsRequest.html'
+                                  title='rusoto::iot::SetLoggingOptionsRequest'>SetLoggingOptionsRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The input for the SetLoggingOptions operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SnsAction.html'
+                                  title='rusoto::iot::SnsAction'>SnsAction</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes an action to publish to an Amazon SNS topic.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SqsAction.html'
+                                  title='rusoto::iot::SqsAction'>SqsAction</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes an action to publish data to an Amazon SQS queue.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ThingAttribute.html'
+                                  title='rusoto::iot::ThingAttribute'>ThingAttribute</a></td>
+                           <td class='docblock-short'>
+                                <p>The properties of the thing, including thing name, thing type name, and a list of thing attributes.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ThingTypeDefinition.html'
+                                  title='rusoto::iot::ThingTypeDefinition'>ThingTypeDefinition</a></td>
+                           <td class='docblock-short'>
+                                <p>The definition of the thing type, including thing type name and description.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ThingTypeMetadata.html'
+                                  title='rusoto::iot::ThingTypeMetadata'>ThingTypeMetadata</a></td>
+                           <td class='docblock-short'>
+                                <p>The ThingTypeMetadata contains additional information about the thing type including: creation date and time, a value indicating whether the thing type is deprecated, and a date and time when time was deprecated.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ThingTypeProperties.html'
+                                  title='rusoto::iot::ThingTypeProperties'>ThingTypeProperties</a></td>
+                           <td class='docblock-short'>
+                                <p>The ThingTypeProperties contains information about the thing type including: a thing type description, and a list of searchable thing attribute names.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.TopicRule.html'
+                                  title='rusoto::iot::TopicRule'>TopicRule</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes a rule.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.TopicRuleListItem.html'
+                                  title='rusoto::iot::TopicRuleListItem'>TopicRuleListItem</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes a rule.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.TopicRulePayload.html'
+                                  title='rusoto::iot::TopicRulePayload'>TopicRulePayload</a></td>
+                           <td class='docblock-short'>
+                                <p>Describes a rule.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.TransferCertificateRequest.html'
+                                  title='rusoto::iot::TransferCertificateRequest'>TransferCertificateRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The input for the TransferCertificate operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.TransferCertificateResponse.html'
+                                  title='rusoto::iot::TransferCertificateResponse'>TransferCertificateResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The output from the TransferCertificate operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.TransferData.html'
+                                  title='rusoto::iot::TransferData'>TransferData</a></td>
+                           <td class='docblock-short'>
+                                <p>Data used to transfer a certificate to an AWS account.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UpdateCACertificateRequest.html'
+                                  title='rusoto::iot::UpdateCACertificateRequest'>UpdateCACertificateRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The input to the UpdateCACertificate operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UpdateCertificateRequest.html'
+                                  title='rusoto::iot::UpdateCertificateRequest'>UpdateCertificateRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The input for the UpdateCertificate operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UpdateThingRequest.html'
+                                  title='rusoto::iot::UpdateThingRequest'>UpdateThingRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>The input for the UpdateThing operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UpdateThingResponse.html'
+                                  title='rusoto::iot::UpdateThingResponse'>UpdateThingResponse</a></td>
+                           <td class='docblock-short'>
+                                <p>The output from the UpdateThing operation.</p>
+                           </td>
+                       </tr></table><h2 id='enums' class='section-header'><a href="#enums">Enums</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.AcceptCertificateTransferError.html'
+                                  title='rusoto::iot::AcceptCertificateTransferError'>AcceptCertificateTransferError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.AttachPrincipalPolicyError.html'
+                                  title='rusoto::iot::AttachPrincipalPolicyError'>AttachPrincipalPolicyError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.AttachThingPrincipalError.html'
+                                  title='rusoto::iot::AttachThingPrincipalError'>AttachThingPrincipalError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.CancelCertificateTransferError.html'
+                                  title='rusoto::iot::CancelCertificateTransferError'>CancelCertificateTransferError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.CreateCertificateFromCsrError.html'
+                                  title='rusoto::iot::CreateCertificateFromCsrError'>CreateCertificateFromCsrError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.CreateKeysAndCertificateError.html'
+                                  title='rusoto::iot::CreateKeysAndCertificateError'>CreateKeysAndCertificateError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.CreatePolicyError.html'
+                                  title='rusoto::iot::CreatePolicyError'>CreatePolicyError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.CreatePolicyVersionError.html'
+                                  title='rusoto::iot::CreatePolicyVersionError'>CreatePolicyVersionError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.CreateThingError.html'
+                                  title='rusoto::iot::CreateThingError'>CreateThingError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.CreateThingTypeError.html'
+                                  title='rusoto::iot::CreateThingTypeError'>CreateThingTypeError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.CreateTopicRuleError.html'
+                                  title='rusoto::iot::CreateTopicRuleError'>CreateTopicRuleError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DeleteCACertificateError.html'
+                                  title='rusoto::iot::DeleteCACertificateError'>DeleteCACertificateError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DeleteCertificateError.html'
+                                  title='rusoto::iot::DeleteCertificateError'>DeleteCertificateError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DeletePolicyError.html'
+                                  title='rusoto::iot::DeletePolicyError'>DeletePolicyError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DeletePolicyVersionError.html'
+                                  title='rusoto::iot::DeletePolicyVersionError'>DeletePolicyVersionError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DeleteRegistrationCodeError.html'
+                                  title='rusoto::iot::DeleteRegistrationCodeError'>DeleteRegistrationCodeError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DeleteThingError.html'
+                                  title='rusoto::iot::DeleteThingError'>DeleteThingError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DeleteThingTypeError.html'
+                                  title='rusoto::iot::DeleteThingTypeError'>DeleteThingTypeError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DeleteTopicRuleError.html'
+                                  title='rusoto::iot::DeleteTopicRuleError'>DeleteTopicRuleError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DeprecateThingTypeError.html'
+                                  title='rusoto::iot::DeprecateThingTypeError'>DeprecateThingTypeError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeCACertificateError.html'
+                                  title='rusoto::iot::DescribeCACertificateError'>DescribeCACertificateError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeCertificateError.html'
+                                  title='rusoto::iot::DescribeCertificateError'>DescribeCertificateError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeEndpointError.html'
+                                  title='rusoto::iot::DescribeEndpointError'>DescribeEndpointError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeThingError.html'
+                                  title='rusoto::iot::DescribeThingError'>DescribeThingError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DescribeThingTypeError.html'
+                                  title='rusoto::iot::DescribeThingTypeError'>DescribeThingTypeError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DetachPrincipalPolicyError.html'
+                                  title='rusoto::iot::DetachPrincipalPolicyError'>DetachPrincipalPolicyError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DetachThingPrincipalError.html'
+                                  title='rusoto::iot::DetachThingPrincipalError'>DetachThingPrincipalError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.DisableTopicRuleError.html'
+                                  title='rusoto::iot::DisableTopicRuleError'>DisableTopicRuleError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.EnableTopicRuleError.html'
+                                  title='rusoto::iot::EnableTopicRuleError'>EnableTopicRuleError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.GetLoggingOptionsError.html'
+                                  title='rusoto::iot::GetLoggingOptionsError'>GetLoggingOptionsError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.GetPolicyError.html'
+                                  title='rusoto::iot::GetPolicyError'>GetPolicyError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.GetPolicyVersionError.html'
+                                  title='rusoto::iot::GetPolicyVersionError'>GetPolicyVersionError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.GetRegistrationCodeError.html'
+                                  title='rusoto::iot::GetRegistrationCodeError'>GetRegistrationCodeError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.GetTopicRuleError.html'
+                                  title='rusoto::iot::GetTopicRuleError'>GetTopicRuleError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ListCACertificatesError.html'
+                                  title='rusoto::iot::ListCACertificatesError'>ListCACertificatesError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ListCertificatesByCAError.html'
+                                  title='rusoto::iot::ListCertificatesByCAError'>ListCertificatesByCAError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ListCertificatesError.html'
+                                  title='rusoto::iot::ListCertificatesError'>ListCertificatesError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ListOutgoingCertificatesError.html'
+                                  title='rusoto::iot::ListOutgoingCertificatesError'>ListOutgoingCertificatesError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ListPoliciesError.html'
+                                  title='rusoto::iot::ListPoliciesError'>ListPoliciesError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ListPolicyPrincipalsError.html'
+                                  title='rusoto::iot::ListPolicyPrincipalsError'>ListPolicyPrincipalsError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ListPolicyVersionsError.html'
+                                  title='rusoto::iot::ListPolicyVersionsError'>ListPolicyVersionsError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ListPrincipalPoliciesError.html'
+                                  title='rusoto::iot::ListPrincipalPoliciesError'>ListPrincipalPoliciesError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ListPrincipalThingsError.html'
+                                  title='rusoto::iot::ListPrincipalThingsError'>ListPrincipalThingsError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ListThingPrincipalsError.html'
+                                  title='rusoto::iot::ListThingPrincipalsError'>ListThingPrincipalsError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ListThingTypesError.html'
+                                  title='rusoto::iot::ListThingTypesError'>ListThingTypesError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ListThingsError.html'
+                                  title='rusoto::iot::ListThingsError'>ListThingsError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ListTopicRulesError.html'
+                                  title='rusoto::iot::ListTopicRulesError'>ListTopicRulesError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.RegisterCACertificateError.html'
+                                  title='rusoto::iot::RegisterCACertificateError'>RegisterCACertificateError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.RegisterCertificateError.html'
+                                  title='rusoto::iot::RegisterCertificateError'>RegisterCertificateError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.RejectCertificateTransferError.html'
+                                  title='rusoto::iot::RejectCertificateTransferError'>RejectCertificateTransferError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ReplaceTopicRuleError.html'
+                                  title='rusoto::iot::ReplaceTopicRuleError'>ReplaceTopicRuleError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.SetDefaultPolicyVersionError.html'
+                                  title='rusoto::iot::SetDefaultPolicyVersionError'>SetDefaultPolicyVersionError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.SetLoggingOptionsError.html'
+                                  title='rusoto::iot::SetLoggingOptionsError'>SetLoggingOptionsError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.TransferCertificateError.html'
+                                  title='rusoto::iot::TransferCertificateError'>TransferCertificateError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.UpdateCACertificateError.html'
+                                  title='rusoto::iot::UpdateCACertificateError'>UpdateCACertificateError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.UpdateCertificateError.html'
+                                  title='rusoto::iot::UpdateCertificateError'>UpdateCertificateError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.UpdateThingError.html'
+                                  title='rusoto::iot::UpdateThingError'>UpdateThingError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr></table><h2 id='types' class='section-header'><a href="#types">Type Definitions</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ActionList.html'
+                                  title='rusoto::iot::ActionList'>ActionList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AlarmName.html'
+                                  title='rusoto::iot::AlarmName'>AlarmName</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AllowAutoRegistration.html'
+                                  title='rusoto::iot::AllowAutoRegistration'>AllowAutoRegistration</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AscendingOrder.html'
+                                  title='rusoto::iot::AscendingOrder'>AscendingOrder</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AttributeName.html'
+                                  title='rusoto::iot::AttributeName'>AttributeName</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AttributeValue.html'
+                                  title='rusoto::iot::AttributeValue'>AttributeValue</a></td>
+                           <td class='docblock-short'>
+                                <p>An attribute value for an Thing. An empty or null value in Update means that existing value for that attribute should be deleted. Empty and null values in create are ignored.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Attributes.html'
+                                  title='rusoto::iot::Attributes'>Attributes</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AutoRegistrationStatus.html'
+                                  title='rusoto::iot::AutoRegistrationStatus'>AutoRegistrationStatus</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AwsAccountId.html'
+                                  title='rusoto::iot::AwsAccountId'>AwsAccountId</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AwsArn.html'
+                                  title='rusoto::iot::AwsArn'>AwsArn</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AwsIotSqlVersion.html'
+                                  title='rusoto::iot::AwsIotSqlVersion'>AwsIotSqlVersion</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Boolean.html'
+                                  title='rusoto::iot::Boolean'>Boolean</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.BucketName.html'
+                                  title='rusoto::iot::BucketName'>BucketName</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.CACertificateStatus.html'
+                                  title='rusoto::iot::CACertificateStatus'>CACertificateStatus</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.CACertificates.html'
+                                  title='rusoto::iot::CACertificates'>CACertificates</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.CannedAccessControlList.html'
+                                  title='rusoto::iot::CannedAccessControlList'>CannedAccessControlList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.CertificateArn.html'
+                                  title='rusoto::iot::CertificateArn'>CertificateArn</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.CertificateId.html'
+                                  title='rusoto::iot::CertificateId'>CertificateId</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.CertificatePem.html'
+                                  title='rusoto::iot::CertificatePem'>CertificatePem</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.CertificateSigningRequest.html'
+                                  title='rusoto::iot::CertificateSigningRequest'>CertificateSigningRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.CertificateStatus.html'
+                                  title='rusoto::iot::CertificateStatus'>CertificateStatus</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Certificates.html'
+                                  title='rusoto::iot::Certificates'>Certificates</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ClientId.html'
+                                  title='rusoto::iot::ClientId'>ClientId</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.CreatedAtDate.html'
+                                  title='rusoto::iot::CreatedAtDate'>CreatedAtDate</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.CreationDate.html'
+                                  title='rusoto::iot::CreationDate'>CreationDate</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.DateType.html'
+                                  title='rusoto::iot::DateType'>DateType</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.DeliveryStreamName.html'
+                                  title='rusoto::iot::DeliveryStreamName'>DeliveryStreamName</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.DeprecationDate.html'
+                                  title='rusoto::iot::DeprecationDate'>DeprecationDate</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Description.html'
+                                  title='rusoto::iot::Description'>Description</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.DynamoKeyType.html'
+                                  title='rusoto::iot::DynamoKeyType'>DynamoKeyType</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.DynamoOperation.html'
+                                  title='rusoto::iot::DynamoOperation'>DynamoOperation</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ElasticsearchEndpoint.html'
+                                  title='rusoto::iot::ElasticsearchEndpoint'>ElasticsearchEndpoint</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ElasticsearchId.html'
+                                  title='rusoto::iot::ElasticsearchId'>ElasticsearchId</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ElasticsearchIndex.html'
+                                  title='rusoto::iot::ElasticsearchIndex'>ElasticsearchIndex</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ElasticsearchType.html'
+                                  title='rusoto::iot::ElasticsearchType'>ElasticsearchType</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.EndpointAddress.html'
+                                  title='rusoto::iot::EndpointAddress'>EndpointAddress</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ErrorMessage.html'
+                                  title='rusoto::iot::ErrorMessage'>ErrorMessage</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.FirehoseSeparator.html'
+                                  title='rusoto::iot::FirehoseSeparator'>FirehoseSeparator</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Flag.html'
+                                  title='rusoto::iot::Flag'>Flag</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.FunctionArn.html'
+                                  title='rusoto::iot::FunctionArn'>FunctionArn</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.HashKeyField.html'
+                                  title='rusoto::iot::HashKeyField'>HashKeyField</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.HashKeyValue.html'
+                                  title='rusoto::iot::HashKeyValue'>HashKeyValue</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.IsDefaultVersion.html'
+                                  title='rusoto::iot::IsDefaultVersion'>IsDefaultVersion</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.IsDisabled.html'
+                                  title='rusoto::iot::IsDisabled'>IsDisabled</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Key.html'
+                                  title='rusoto::iot::Key'>Key</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.LogLevel.html'
+                                  title='rusoto::iot::LogLevel'>LogLevel</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Marker.html'
+                                  title='rusoto::iot::Marker'>Marker</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.MaxResults.html'
+                                  title='rusoto::iot::MaxResults'>MaxResults</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Message.html'
+                                  title='rusoto::iot::Message'>Message</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.MessageFormat.html'
+                                  title='rusoto::iot::MessageFormat'>MessageFormat</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.MetricName.html'
+                                  title='rusoto::iot::MetricName'>MetricName</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.MetricNamespace.html'
+                                  title='rusoto::iot::MetricNamespace'>MetricNamespace</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.MetricTimestamp.html'
+                                  title='rusoto::iot::MetricTimestamp'>MetricTimestamp</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.MetricUnit.html'
+                                  title='rusoto::iot::MetricUnit'>MetricUnit</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.MetricValue.html'
+                                  title='rusoto::iot::MetricValue'>MetricValue</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.NextToken.html'
+                                  title='rusoto::iot::NextToken'>NextToken</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.OptionalVersion.html'
+                                  title='rusoto::iot::OptionalVersion'>OptionalVersion</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.OutgoingCertificates.html'
+                                  title='rusoto::iot::OutgoingCertificates'>OutgoingCertificates</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.PageSize.html'
+                                  title='rusoto::iot::PageSize'>PageSize</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.PartitionKey.html'
+                                  title='rusoto::iot::PartitionKey'>PartitionKey</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.PayloadField.html'
+                                  title='rusoto::iot::PayloadField'>PayloadField</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Policies.html'
+                                  title='rusoto::iot::Policies'>Policies</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.PolicyArn.html'
+                                  title='rusoto::iot::PolicyArn'>PolicyArn</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.PolicyDocument.html'
+                                  title='rusoto::iot::PolicyDocument'>PolicyDocument</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.PolicyName.html'
+                                  title='rusoto::iot::PolicyName'>PolicyName</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.PolicyVersionId.html'
+                                  title='rusoto::iot::PolicyVersionId'>PolicyVersionId</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.PolicyVersions.html'
+                                  title='rusoto::iot::PolicyVersions'>PolicyVersions</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Principal.html'
+                                  title='rusoto::iot::Principal'>Principal</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.PrincipalArn.html'
+                                  title='rusoto::iot::PrincipalArn'>PrincipalArn</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Principals.html'
+                                  title='rusoto::iot::Principals'>Principals</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.PrivateKey.html'
+                                  title='rusoto::iot::PrivateKey'>PrivateKey</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.PublicKey.html'
+                                  title='rusoto::iot::PublicKey'>PublicKey</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.QueueUrl.html'
+                                  title='rusoto::iot::QueueUrl'>QueueUrl</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.RangeKeyField.html'
+                                  title='rusoto::iot::RangeKeyField'>RangeKeyField</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.RangeKeyValue.html'
+                                  title='rusoto::iot::RangeKeyValue'>RangeKeyValue</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.RegistrationCode.html'
+                                  title='rusoto::iot::RegistrationCode'>RegistrationCode</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.RemoveThingType.html'
+                                  title='rusoto::iot::RemoveThingType'>RemoveThingType</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ResourceArn.html'
+                                  title='rusoto::iot::ResourceArn'>ResourceArn</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ResourceId.html'
+                                  title='rusoto::iot::ResourceId'>ResourceId</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.RuleArn.html'
+                                  title='rusoto::iot::RuleArn'>RuleArn</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.RuleName.html'
+                                  title='rusoto::iot::RuleName'>RuleName</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.SQL.html'
+                                  title='rusoto::iot::SQL'>SQL</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.SearchableAttributes.html'
+                                  title='rusoto::iot::SearchableAttributes'>SearchableAttributes</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.SetAsActive.html'
+                                  title='rusoto::iot::SetAsActive'>SetAsActive</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.SetAsActiveFlag.html'
+                                  title='rusoto::iot::SetAsActiveFlag'>SetAsActiveFlag</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.SetAsDefault.html'
+                                  title='rusoto::iot::SetAsDefault'>SetAsDefault</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.StateReason.html'
+                                  title='rusoto::iot::StateReason'>StateReason</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.StateValue.html'
+                                  title='rusoto::iot::StateValue'>StateValue</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.StreamName.html'
+                                  title='rusoto::iot::StreamName'>StreamName</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.TableName.html'
+                                  title='rusoto::iot::TableName'>TableName</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ThingArn.html'
+                                  title='rusoto::iot::ThingArn'>ThingArn</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ThingAttributeList.html'
+                                  title='rusoto::iot::ThingAttributeList'>ThingAttributeList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ThingName.html'
+                                  title='rusoto::iot::ThingName'>ThingName</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ThingNameList.html'
+                                  title='rusoto::iot::ThingNameList'>ThingNameList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ThingTypeArn.html'
+                                  title='rusoto::iot::ThingTypeArn'>ThingTypeArn</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ThingTypeDescription.html'
+                                  title='rusoto::iot::ThingTypeDescription'>ThingTypeDescription</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ThingTypeList.html'
+                                  title='rusoto::iot::ThingTypeList'>ThingTypeList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ThingTypeName.html'
+                                  title='rusoto::iot::ThingTypeName'>ThingTypeName</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Topic.html'
+                                  title='rusoto::iot::Topic'>Topic</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.TopicPattern.html'
+                                  title='rusoto::iot::TopicPattern'>TopicPattern</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.TopicRuleList.html'
+                                  title='rusoto::iot::TopicRuleList'>TopicRuleList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.UndoDeprecate.html'
+                                  title='rusoto::iot::UndoDeprecate'>UndoDeprecate</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.UseBase64.html'
+                                  title='rusoto::iot::UseBase64'>UseBase64</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Version.html'
+                                  title='rusoto::iot::Version'>Version</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr></table></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "rusoto";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../../jquery.js"></script>
+    <script src="../../main.js"></script>
+    
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `JobFlowInstancesConfig` struct in crate `rusoto`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, JobFlowInstancesConfig">
+
+    <title>rusoto::emr::JobFlowInstancesConfig - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='../index.html'>rusoto</a>::<wbr><a href='index.html'>emr</a></p><script>window.sidebarCurrent = {name: 'JobFlowInstancesConfig', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content struct">
+<h1 class='fqn'><span class='in-band'>Struct <a href='../index.html'>rusoto</a>::<wbr><a href='index.html'>emr</a>::<wbr><a class='struct' href=''>JobFlowInstancesConfig</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-200604' class='srclink' href='../../src/rusoto/home/travis/build/rusoto/rusoto/target/debug/build/rusoto-61f21223a43ed2cb/out/emr.rs.html#12892-12949' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct JobFlowInstancesConfig {
+    pub additional_master_security_groups: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/emr/type.SecurityGroupsList.html' title='rusoto::emr::SecurityGroupsList'>SecurityGroupsList</a>&gt;,
+    pub additional_slave_security_groups: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/emr/type.SecurityGroupsList.html' title='rusoto::emr::SecurityGroupsList'>SecurityGroupsList</a>&gt;,
+    pub ec_2_key_name: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/emr/type.XmlStringMaxLen256.html' title='rusoto::emr::XmlStringMaxLen256'>XmlStringMaxLen256</a>&gt;,
+    pub ec_2_subnet_id: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/emr/type.XmlStringMaxLen256.html' title='rusoto::emr::XmlStringMaxLen256'>XmlStringMaxLen256</a>&gt;,
+    pub emr_managed_master_security_group: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/emr/type.XmlStringMaxLen256.html' title='rusoto::emr::XmlStringMaxLen256'>XmlStringMaxLen256</a>&gt;,
+    pub emr_managed_slave_security_group: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/emr/type.XmlStringMaxLen256.html' title='rusoto::emr::XmlStringMaxLen256'>XmlStringMaxLen256</a>&gt;,
+    pub hadoop_version: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/emr/type.XmlStringMaxLen256.html' title='rusoto::emr::XmlStringMaxLen256'>XmlStringMaxLen256</a>&gt;,
+    pub instance_count: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/emr/type.Integer.html' title='rusoto::emr::Integer'>Integer</a>&gt;,
+    pub instance_groups: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/emr/type.InstanceGroupConfigList.html' title='rusoto::emr::InstanceGroupConfigList'>InstanceGroupConfigList</a>&gt;,
+    pub keep_job_flow_alive_when_no_steps: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/emr/type.Boolean.html' title='rusoto::emr::Boolean'>Boolean</a>&gt;,
+    pub master_instance_type: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/emr/type.InstanceType.html' title='rusoto::emr::InstanceType'>InstanceType</a>&gt;,
+    pub placement: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../../rusoto/emr/struct.PlacementType.html' title='rusoto::emr::PlacementType'>PlacementType</a>&gt;,
+    pub service_access_security_group: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/emr/type.XmlStringMaxLen256.html' title='rusoto::emr::XmlStringMaxLen256'>XmlStringMaxLen256</a>&gt;,
+    pub slave_instance_type: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/emr/type.InstanceType.html' title='rusoto::emr::InstanceType'>InstanceType</a>&gt;,
+    pub termination_protected: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/emr/type.Boolean.html' title='rusoto::emr::Boolean'>Boolean</a>&gt;,
+}</pre><div class='docblock'><p>A description of the Amazon EC2 instance running the job flow. A valid JobFlowInstancesConfig must contain at least InstanceGroups, which is the recommended configuration. However, a valid alternative is to have MasterInstanceType, SlaveInstanceType, and InstanceCount (all three must be present).</p>
+</div><h2 class='fields'>Fields</h2><span id='structfield.additional_master_security_groups' class='structfield'>
+                           <span id='additional_master_security_groups.v' class='invisible'>
+                           <code>additional_master_security_groups: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/emr/type.SecurityGroupsList.html' title='rusoto::emr::SecurityGroupsList'>SecurityGroupsList</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>A list of additional Amazon EC2 security group IDs for the master node.</p>
+</div><span id='structfield.additional_slave_security_groups' class='structfield'>
+                           <span id='additional_slave_security_groups.v' class='invisible'>
+                           <code>additional_slave_security_groups: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/emr/type.SecurityGroupsList.html' title='rusoto::emr::SecurityGroupsList'>SecurityGroupsList</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>A list of additional Amazon EC2 security group IDs for the slave nodes.</p>
+</div><span id='structfield.ec_2_key_name' class='structfield'>
+                           <span id='ec_2_key_name.v' class='invisible'>
+                           <code>ec_2_key_name: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/emr/type.XmlStringMaxLen256.html' title='rusoto::emr::XmlStringMaxLen256'>XmlStringMaxLen256</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>The name of the Amazon EC2 key pair that can be used to ssh to the master node as the user called "hadoop."</p>
+</div><span id='structfield.ec_2_subnet_id' class='structfield'>
+                           <span id='ec_2_subnet_id.v' class='invisible'>
+                           <code>ec_2_subnet_id: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/emr/type.XmlStringMaxLen256.html' title='rusoto::emr::XmlStringMaxLen256'>XmlStringMaxLen256</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>To launch the job flow in Amazon Virtual Private Cloud (Amazon VPC), set this parameter to the identifier of the Amazon VPC subnet where you want the job flow to launch. If you do not specify this value, the job flow is launched in the normal Amazon Web Services cloud, outside of an Amazon VPC.</p> <p>Amazon VPC currently does not support cluster compute quadruple extra large (cc1.4xlarge) instances. Thus you cannot specify the cc1.4xlarge instance type for nodes of a job flow launched in a Amazon VPC.</p>
+</div><span id='structfield.emr_managed_master_security_group' class='structfield'>
+                           <span id='emr_managed_master_security_group.v' class='invisible'>
+                           <code>emr_managed_master_security_group: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/emr/type.XmlStringMaxLen256.html' title='rusoto::emr::XmlStringMaxLen256'>XmlStringMaxLen256</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>The identifier of the Amazon EC2 security group for the master node.</p>
+</div><span id='structfield.emr_managed_slave_security_group' class='structfield'>
+                           <span id='emr_managed_slave_security_group.v' class='invisible'>
+                           <code>emr_managed_slave_security_group: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/emr/type.XmlStringMaxLen256.html' title='rusoto::emr::XmlStringMaxLen256'>XmlStringMaxLen256</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>The identifier of the Amazon EC2 security group for the slave nodes.</p>
+</div><span id='structfield.hadoop_version' class='structfield'>
+                           <span id='hadoop_version.v' class='invisible'>
+                           <code>hadoop_version: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/emr/type.XmlStringMaxLen256.html' title='rusoto::emr::XmlStringMaxLen256'>XmlStringMaxLen256</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>The Hadoop version for the job flow. Valid inputs are "0.18" (deprecated), "0.20" (deprecated), "0.20.205" (deprecated), "1.0.3", "2.2.0", or "2.4.0". If you do not set this value, the default of 0.18 is used, unless the AmiVersion parameter is set in the RunJobFlow call, in which case the default version of Hadoop for that AMI version is used.</p>
+</div><span id='structfield.instance_count' class='structfield'>
+                           <span id='instance_count.v' class='invisible'>
+                           <code>instance_count: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/emr/type.Integer.html' title='rusoto::emr::Integer'>Integer</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>The number of Amazon EC2 instances used to execute the job flow.</p>
+</div><span id='structfield.instance_groups' class='structfield'>
+                           <span id='instance_groups.v' class='invisible'>
+                           <code>instance_groups: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/emr/type.InstanceGroupConfigList.html' title='rusoto::emr::InstanceGroupConfigList'>InstanceGroupConfigList</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>Configuration for the job flow's instance groups.</p>
+</div><span id='structfield.keep_job_flow_alive_when_no_steps' class='structfield'>
+                           <span id='keep_job_flow_alive_when_no_steps.v' class='invisible'>
+                           <code>keep_job_flow_alive_when_no_steps: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/emr/type.Boolean.html' title='rusoto::emr::Boolean'>Boolean</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>Specifies whether the job flow should be kept alive after completing all steps.</p>
+</div><span id='structfield.master_instance_type' class='structfield'>
+                           <span id='master_instance_type.v' class='invisible'>
+                           <code>master_instance_type: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/emr/type.InstanceType.html' title='rusoto::emr::InstanceType'>InstanceType</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>The EC2 instance type of the master node.</p>
+</div><span id='structfield.placement' class='structfield'>
+                           <span id='placement.v' class='invisible'>
+                           <code>placement: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../../rusoto/emr/struct.PlacementType.html' title='rusoto::emr::PlacementType'>PlacementType</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>The Availability Zone the job flow will run in.</p>
+</div><span id='structfield.service_access_security_group' class='structfield'>
+                           <span id='service_access_security_group.v' class='invisible'>
+                           <code>service_access_security_group: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/emr/type.XmlStringMaxLen256.html' title='rusoto::emr::XmlStringMaxLen256'>XmlStringMaxLen256</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>The identifier of the Amazon EC2 security group for the Amazon EMR service to access clusters in VPC private subnets.</p>
+</div><span id='structfield.slave_instance_type' class='structfield'>
+                           <span id='slave_instance_type.v' class='invisible'>
+                           <code>slave_instance_type: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/emr/type.InstanceType.html' title='rusoto::emr::InstanceType'>InstanceType</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>The EC2 instance type of the slave nodes.</p>
+</div><span id='structfield.termination_protected' class='structfield'>
+                           <span id='termination_protected.v' class='invisible'>
+                           <code>termination_protected: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/emr/type.Boolean.html' title='rusoto::emr::Boolean'>Boolean</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>Specifies whether to lock the job flow to prevent the Amazon EC2 instances from being terminated by API call, user intervention, or in the event of a job flow error.</p>
+</div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../../rusoto/emr/struct.JobFlowInstancesConfig.html' title='rusoto::emr::JobFlowInstancesConfig'>JobFlowInstancesConfig</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-200620' class='srclink' href='../../src/rusoto/home/travis/build/rusoto/rusoto/target/debug/build/rusoto-61f21223a43ed2cb/out/emr.rs.html#12891' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.clone' class='method'><span id='clone.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../../rusoto/emr/struct.JobFlowInstancesConfig.html' title='rusoto::emr::JobFlowInstancesConfig'>JobFlowInstancesConfig</a></code></span></h4>
+<div class='docblock'><p>Returns a copy of the value. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone">Read more</a></p>
+</div><h4 id='method.clone_from' class='method'><span id='clone_from.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div></span></h4>
+<div class='docblock'><p>Performs copy-assignment from <code>source</code>. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../../rusoto/emr/struct.JobFlowInstancesConfig.html' title='rusoto::emr::JobFlowInstancesConfig'>JobFlowInstancesConfig</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-200638' class='srclink' href='../../src/rusoto/home/travis/build/rusoto/rusoto/target/debug/build/rusoto-61f21223a43ed2cb/out/emr.rs.html#12891' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.fmt' class='method'><span id='fmt.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#tymethod.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></span></h4>
+<div class='docblock'><p>Formats the value using the given formatter.</p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../../rusoto/emr/struct.JobFlowInstancesConfig.html' title='rusoto::emr::JobFlowInstancesConfig'>JobFlowInstancesConfig</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-200658' class='srclink' href='../../src/rusoto/home/travis/build/rusoto/rusoto/target/debug/build/rusoto-61f21223a43ed2cb/out/emr.rs.html#12891' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.default' class='method'><span id='default.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../../rusoto/emr/struct.JobFlowInstancesConfig.html' title='rusoto::emr::JobFlowInstancesConfig'>JobFlowInstancesConfig</a></code></span></h4>
+<div class='docblock'><p>Returns the &quot;default value&quot; for a type. <a href="https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default">Read more</a></p>
+</div></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "rusoto";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../../jquery.js"></script>
+    <script src="../../main.js"></script>
+    
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>

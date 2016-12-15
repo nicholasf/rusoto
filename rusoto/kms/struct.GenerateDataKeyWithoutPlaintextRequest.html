@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `GenerateDataKeyWithoutPlaintextRequest` struct in crate `rusoto`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, GenerateDataKeyWithoutPlaintextRequest">
+
+    <title>rusoto::kms::GenerateDataKeyWithoutPlaintextRequest - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='../index.html'>rusoto</a>::<wbr><a href='index.html'>kms</a></p><script>window.sidebarCurrent = {name: 'GenerateDataKeyWithoutPlaintextRequest', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content struct">
+<h1 class='fqn'><span class='in-band'>Struct <a href='../index.html'>rusoto</a>::<wbr><a href='index.html'>kms</a>::<wbr><a class='struct' href=''>GenerateDataKeyWithoutPlaintextRequest</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-292336' class='srclink' href='../../src/rusoto/home/travis/build/rusoto/rusoto/target/debug/build/rusoto-61f21223a43ed2cb/out/kms.rs.html#2502-2523' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct GenerateDataKeyWithoutPlaintextRequest {
+    pub encryption_context: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/kms/type.EncryptionContextType.html' title='rusoto::kms::EncryptionContextType'>EncryptionContextType</a>&gt;,
+    pub grant_tokens: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/kms/type.GrantTokenList.html' title='rusoto::kms::GrantTokenList'>GrantTokenList</a>&gt;,
+    pub key_id: <a class='type' href='../../rusoto/kms/type.KeyIdType.html' title='rusoto::kms::KeyIdType'>KeyIdType</a>,
+    pub key_spec: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/kms/type.DataKeySpec.html' title='rusoto::kms::DataKeySpec'>DataKeySpec</a>&gt;,
+    pub number_of_bytes: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/kms/type.NumberOfBytesType.html' title='rusoto::kms::NumberOfBytesType'>NumberOfBytesType</a>&gt;,
+}</pre><h2 class='fields'>Fields</h2><span id='structfield.encryption_context' class='structfield'>
+                           <span id='encryption_context.v' class='invisible'>
+                           <code>encryption_context: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/kms/type.EncryptionContextType.html' title='rusoto::kms::EncryptionContextType'>EncryptionContextType</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>Name:value pair that contains additional data to be authenticated during the encryption and decryption processes.</p>
+</div><span id='structfield.grant_tokens' class='structfield'>
+                           <span id='grant_tokens.v' class='invisible'>
+                           <code>grant_tokens: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/kms/type.GrantTokenList.html' title='rusoto::kms::GrantTokenList'>GrantTokenList</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>A list of grant tokens.</p> <p>For more information, see <a href="http://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#grant_token">Grant Tokens</a> in the <i>AWS Key Management Service Developer Guide</i>.</p>
+</div><span id='structfield.key_id' class='structfield'>
+                           <span id='key_id.v' class='invisible'>
+                           <code>key_id: <a class='type' href='../../rusoto/kms/type.KeyIdType.html' title='rusoto::kms::KeyIdType'>KeyIdType</a></code>
+                           </span></span><span class='stab '></span><div class='docblock'><p><p>A unique identifier for the customer master key. This value can be a globally unique identifier, a fully specified ARN to either an alias or a key, or an alias name prefixed by &quot;alias/&quot;.</p> <ul> <li> <p>Key ARN Example - arn:aws:kms:us-east-1:123456789012:key/12345678-1234-1234-1234-123456789012</p> </li> <li> <p>Alias ARN Example - arn:aws:kms:us-east-1:123456789012:alias/MyAliasName</p> </li> <li> <p>Globally Unique Key ID Example - 12345678-1234-1234-1234-123456789012</p> </li> <li> <p>Alias Name Example - alias/MyAliasName</p> </li> </ul></p>
+</div><span id='structfield.key_spec' class='structfield'>
+                           <span id='key_spec.v' class='invisible'>
+                           <code>key_spec: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/kms/type.DataKeySpec.html' title='rusoto::kms::DataKeySpec'>DataKeySpec</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>Value that identifies the encryption algorithm and key size. Currently this can be AES_128 or AES_256.</p>
+</div><span id='structfield.number_of_bytes' class='structfield'>
+                           <span id='number_of_bytes.v' class='invisible'>
+                           <code>number_of_bytes: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/kms/type.NumberOfBytesType.html' title='rusoto::kms::NumberOfBytesType'>NumberOfBytesType</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>Integer that contains the number of bytes to generate. Common values are 128, 256, 512, 1024 and so on. We recommend that you use the <code>KeySpec</code> parameter instead.</p>
+</div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../../rusoto/kms/struct.GenerateDataKeyWithoutPlaintextRequest.html' title='rusoto::kms::GenerateDataKeyWithoutPlaintextRequest'>GenerateDataKeyWithoutPlaintextRequest</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-292342' class='srclink' href='../../src/rusoto/home/travis/build/rusoto/rusoto/target/debug/build/rusoto-61f21223a43ed2cb/out/kms.rs.html#2501' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.default' class='method'><span id='default.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../../rusoto/kms/struct.GenerateDataKeyWithoutPlaintextRequest.html' title='rusoto::kms::GenerateDataKeyWithoutPlaintextRequest'>GenerateDataKeyWithoutPlaintextRequest</a></code></span></h4>
+<div class='docblock'><p>Returns the &quot;default value&quot; for a type. <a href="https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default">Read more</a></p>
+</div></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "rusoto";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../../jquery.js"></script>
+    <script src="../../main.js"></script>
+    
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>

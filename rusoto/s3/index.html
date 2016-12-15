@@ -1,0 +1,2334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `s3` mod in crate `rusoto`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, s3">
+
+    <title>rusoto::s3 - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='../index.html'>rusoto</a></p><script>window.sidebarCurrent = {name: 's3', ty: 'mod', relpath: '../'};</script><script defer src="../sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content mod">
+<h1 class='fqn'><span class='in-band'>Module <a href='../index.html'>rusoto</a>::<wbr><a class='mod' href=''>s3</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-350591' class='srclink' href='../../src/rusoto/src/s3.rs.html#1-11372' title='goto source code'>[src]</a></span></h1>
+<div class='docblock'><p>The AWS S3 API.</p>
+</div><h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AbortMultipartUploadOutput.html'
+                                  title='rusoto::s3::AbortMultipartUploadOutput'>AbortMultipartUploadOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>Output from <code>AbortMultipartUpload</code> call</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AbortMultipartUploadRequest.html'
+                                  title='rusoto::s3::AbortMultipartUploadRequest'>AbortMultipartUploadRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AccessControlPolicy.html'
+                                  title='rusoto::s3::AccessControlPolicy'>AccessControlPolicy</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Bucket.html'
+                                  title='rusoto::s3::Bucket'>Bucket</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.BucketAlreadyExists.html'
+                                  title='rusoto::s3::BucketAlreadyExists'>BucketAlreadyExists</a></td>
+                           <td class='docblock-short'>
+                                <p>The requested bucket name is not available. The bucket namespace is shared by
+all users of the system. Please select a different name and try again.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.BucketLoggingStatus.html'
+                                  title='rusoto::s3::BucketLoggingStatus'>BucketLoggingStatus</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CORSConfiguration.html'
+                                  title='rusoto::s3::CORSConfiguration'>CORSConfiguration</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CORSRule.html'
+                                  title='rusoto::s3::CORSRule'>CORSRule</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CloudFunctionConfiguration.html'
+                                  title='rusoto::s3::CloudFunctionConfiguration'>CloudFunctionConfiguration</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CommonPrefix.html'
+                                  title='rusoto::s3::CommonPrefix'>CommonPrefix</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CompleteMultipartUploadOutput.html'
+                                  title='rusoto::s3::CompleteMultipartUploadOutput'>CompleteMultipartUploadOutput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CompleteMultipartUploadRequest.html'
+                                  title='rusoto::s3::CompleteMultipartUploadRequest'>CompleteMultipartUploadRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CompletedMultipartUpload.html'
+                                  title='rusoto::s3::CompletedMultipartUpload'>CompletedMultipartUpload</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CompletedPart.html'
+                                  title='rusoto::s3::CompletedPart'>CompletedPart</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Condition.html'
+                                  title='rusoto::s3::Condition'>Condition</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CopyObjectOutput.html'
+                                  title='rusoto::s3::CopyObjectOutput'>CopyObjectOutput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CopyObjectRequest.html'
+                                  title='rusoto::s3::CopyObjectRequest'>CopyObjectRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CopyObjectResult.html'
+                                  title='rusoto::s3::CopyObjectResult'>CopyObjectResult</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CopyPartResult.html'
+                                  title='rusoto::s3::CopyPartResult'>CopyPartResult</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateBucketConfiguration.html'
+                                  title='rusoto::s3::CreateBucketConfiguration'>CreateBucketConfiguration</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateBucketOutput.html'
+                                  title='rusoto::s3::CreateBucketOutput'>CreateBucketOutput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateBucketRequest.html'
+                                  title='rusoto::s3::CreateBucketRequest'>CreateBucketRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateMultipartUploadOutput.html'
+                                  title='rusoto::s3::CreateMultipartUploadOutput'>CreateMultipartUploadOutput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CreateMultipartUploadRequest.html'
+                                  title='rusoto::s3::CreateMultipartUploadRequest'>CreateMultipartUploadRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Delete.html'
+                                  title='rusoto::s3::Delete'>Delete</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteBucketCorsRequest.html'
+                                  title='rusoto::s3::DeleteBucketCorsRequest'>DeleteBucketCorsRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteBucketLifecycleRequest.html'
+                                  title='rusoto::s3::DeleteBucketLifecycleRequest'>DeleteBucketLifecycleRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteBucketPolicyRequest.html'
+                                  title='rusoto::s3::DeleteBucketPolicyRequest'>DeleteBucketPolicyRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteBucketReplicationRequest.html'
+                                  title='rusoto::s3::DeleteBucketReplicationRequest'>DeleteBucketReplicationRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteBucketRequest.html'
+                                  title='rusoto::s3::DeleteBucketRequest'>DeleteBucketRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteBucketTaggingRequest.html'
+                                  title='rusoto::s3::DeleteBucketTaggingRequest'>DeleteBucketTaggingRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteBucketWebsiteRequest.html'
+                                  title='rusoto::s3::DeleteBucketWebsiteRequest'>DeleteBucketWebsiteRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteMarkerEntry.html'
+                                  title='rusoto::s3::DeleteMarkerEntry'>DeleteMarkerEntry</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteObjectOutput.html'
+                                  title='rusoto::s3::DeleteObjectOutput'>DeleteObjectOutput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteObjectRequest.html'
+                                  title='rusoto::s3::DeleteObjectRequest'>DeleteObjectRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteObjectsOutput.html'
+                                  title='rusoto::s3::DeleteObjectsOutput'>DeleteObjectsOutput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeleteObjectsRequest.html'
+                                  title='rusoto::s3::DeleteObjectsRequest'>DeleteObjectsRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeletedObject.html'
+                                  title='rusoto::s3::DeletedObject'>DeletedObject</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Destination.html'
+                                  title='rusoto::s3::Destination'>Destination</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ErrorDocument.html'
+                                  title='rusoto::s3::ErrorDocument'>ErrorDocument</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetBucketAclOutput.html'
+                                  title='rusoto::s3::GetBucketAclOutput'>GetBucketAclOutput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetBucketAclRequest.html'
+                                  title='rusoto::s3::GetBucketAclRequest'>GetBucketAclRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetBucketCorsOutput.html'
+                                  title='rusoto::s3::GetBucketCorsOutput'>GetBucketCorsOutput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetBucketCorsRequest.html'
+                                  title='rusoto::s3::GetBucketCorsRequest'>GetBucketCorsRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetBucketLifecycleOutput.html'
+                                  title='rusoto::s3::GetBucketLifecycleOutput'>GetBucketLifecycleOutput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetBucketLifecycleRequest.html'
+                                  title='rusoto::s3::GetBucketLifecycleRequest'>GetBucketLifecycleRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetBucketLocationOutput.html'
+                                  title='rusoto::s3::GetBucketLocationOutput'>GetBucketLocationOutput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetBucketLocationRequest.html'
+                                  title='rusoto::s3::GetBucketLocationRequest'>GetBucketLocationRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetBucketLoggingOutput.html'
+                                  title='rusoto::s3::GetBucketLoggingOutput'>GetBucketLoggingOutput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetBucketLoggingRequest.html'
+                                  title='rusoto::s3::GetBucketLoggingRequest'>GetBucketLoggingRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetBucketNotificationConfigurationRequest.html'
+                                  title='rusoto::s3::GetBucketNotificationConfigurationRequest'>GetBucketNotificationConfigurationRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetBucketPolicyOutput.html'
+                                  title='rusoto::s3::GetBucketPolicyOutput'>GetBucketPolicyOutput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetBucketPolicyRequest.html'
+                                  title='rusoto::s3::GetBucketPolicyRequest'>GetBucketPolicyRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetBucketReplicationOutput.html'
+                                  title='rusoto::s3::GetBucketReplicationOutput'>GetBucketReplicationOutput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetBucketReplicationRequest.html'
+                                  title='rusoto::s3::GetBucketReplicationRequest'>GetBucketReplicationRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetBucketRequestPaymentOutput.html'
+                                  title='rusoto::s3::GetBucketRequestPaymentOutput'>GetBucketRequestPaymentOutput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetBucketRequestPaymentRequest.html'
+                                  title='rusoto::s3::GetBucketRequestPaymentRequest'>GetBucketRequestPaymentRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetBucketTaggingOutput.html'
+                                  title='rusoto::s3::GetBucketTaggingOutput'>GetBucketTaggingOutput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetBucketTaggingRequest.html'
+                                  title='rusoto::s3::GetBucketTaggingRequest'>GetBucketTaggingRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetBucketVersioningOutput.html'
+                                  title='rusoto::s3::GetBucketVersioningOutput'>GetBucketVersioningOutput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetBucketVersioningRequest.html'
+                                  title='rusoto::s3::GetBucketVersioningRequest'>GetBucketVersioningRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetBucketWebsiteOutput.html'
+                                  title='rusoto::s3::GetBucketWebsiteOutput'>GetBucketWebsiteOutput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetBucketWebsiteRequest.html'
+                                  title='rusoto::s3::GetBucketWebsiteRequest'>GetBucketWebsiteRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetObjectAclOutput.html'
+                                  title='rusoto::s3::GetObjectAclOutput'>GetObjectAclOutput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetObjectAclRequest.html'
+                                  title='rusoto::s3::GetObjectAclRequest'>GetObjectAclRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetObjectOutput.html'
+                                  title='rusoto::s3::GetObjectOutput'>GetObjectOutput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetObjectRequest.html'
+                                  title='rusoto::s3::GetObjectRequest'>GetObjectRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetObjectTorrentOutput.html'
+                                  title='rusoto::s3::GetObjectTorrentOutput'>GetObjectTorrentOutput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetObjectTorrentRequest.html'
+                                  title='rusoto::s3::GetObjectTorrentRequest'>GetObjectTorrentRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Grant.html'
+                                  title='rusoto::s3::Grant'>Grant</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Grantee.html'
+                                  title='rusoto::s3::Grantee'>Grantee</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.HeadBucketRequest.html'
+                                  title='rusoto::s3::HeadBucketRequest'>HeadBucketRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.HeadObjectOutput.html'
+                                  title='rusoto::s3::HeadObjectOutput'>HeadObjectOutput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.HeadObjectRequest.html'
+                                  title='rusoto::s3::HeadObjectRequest'>HeadObjectRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.IndexDocument.html'
+                                  title='rusoto::s3::IndexDocument'>IndexDocument</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Initiator.html'
+                                  title='rusoto::s3::Initiator'>Initiator</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.LambdaFunctionConfiguration.html'
+                                  title='rusoto::s3::LambdaFunctionConfiguration'>LambdaFunctionConfiguration</a></td>
+                           <td class='docblock-short'>
+                                <p>Container for specifying the AWS Lambda notification configuration.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.LifecycleConfiguration.html'
+                                  title='rusoto::s3::LifecycleConfiguration'>LifecycleConfiguration</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.LifecycleExpiration.html'
+                                  title='rusoto::s3::LifecycleExpiration'>LifecycleExpiration</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListBucketsOutput.html'
+                                  title='rusoto::s3::ListBucketsOutput'>ListBucketsOutput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListMultipartUploadsOutput.html'
+                                  title='rusoto::s3::ListMultipartUploadsOutput'>ListMultipartUploadsOutput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListMultipartUploadsRequest.html'
+                                  title='rusoto::s3::ListMultipartUploadsRequest'>ListMultipartUploadsRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListObjectVersionsOutput.html'
+                                  title='rusoto::s3::ListObjectVersionsOutput'>ListObjectVersionsOutput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListObjectVersionsRequest.html'
+                                  title='rusoto::s3::ListObjectVersionsRequest'>ListObjectVersionsRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListObjectsOutput.html'
+                                  title='rusoto::s3::ListObjectsOutput'>ListObjectsOutput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListObjectsRequest.html'
+                                  title='rusoto::s3::ListObjectsRequest'>ListObjectsRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListPartsOutput.html'
+                                  title='rusoto::s3::ListPartsOutput'>ListPartsOutput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListPartsRequest.html'
+                                  title='rusoto::s3::ListPartsRequest'>ListPartsRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.LoggingEnabled.html'
+                                  title='rusoto::s3::LoggingEnabled'>LoggingEnabled</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.MultipartUpload.html'
+                                  title='rusoto::s3::MultipartUpload'>MultipartUpload</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.NoSuchBucket.html'
+                                  title='rusoto::s3::NoSuchBucket'>NoSuchBucket</a></td>
+                           <td class='docblock-short'>
+                                <p>The specified bucket does not exist.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.NoSuchKey.html'
+                                  title='rusoto::s3::NoSuchKey'>NoSuchKey</a></td>
+                           <td class='docblock-short'>
+                                <p>The specified key does not exist.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.NoSuchUpload.html'
+                                  title='rusoto::s3::NoSuchUpload'>NoSuchUpload</a></td>
+                           <td class='docblock-short'>
+                                <p>The specified multipart upload does not exist.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.NoncurrentVersionExpiration.html'
+                                  title='rusoto::s3::NoncurrentVersionExpiration'>NoncurrentVersionExpiration</a></td>
+                           <td class='docblock-short'>
+                                <p>Specifies when noncurrent object versions expire. Upon expiration, Amazon S3
+permanently deletes the noncurrent object versions. You set this lifecycle
+configuration action on a bucket that has versioning enabled (or suspended) to
+request that Amazon S3 delete noncurrent object versions at a specific period
+in the object&#39;s lifetime.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.NoncurrentVersionTransition.html'
+                                  title='rusoto::s3::NoncurrentVersionTransition'>NoncurrentVersionTransition</a></td>
+                           <td class='docblock-short'>
+                                <p>Container for the transition rule that describes when noncurrent objects
+transition to the GLACIER storage class. If your bucket is versioning-enabled
+(or versioning is suspended), you can set this action to request that Amazon
+S3 transition noncurrent object versions to the GLACIER storage class at a
+specific period in the object&#39;s lifetime.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.NotificationConfiguration.html'
+                                  title='rusoto::s3::NotificationConfiguration'>NotificationConfiguration</a></td>
+                           <td class='docblock-short'>
+                                <p>Container for specifying the notification configuration of the bucket. If this
+element is empty, notifications are turned off on the bucket.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.NotificationConfigurationDeprecated.html'
+                                  title='rusoto::s3::NotificationConfigurationDeprecated'>NotificationConfigurationDeprecated</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Object.html'
+                                  title='rusoto::s3::Object'>Object</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ObjectAlreadyInActiveTierError.html'
+                                  title='rusoto::s3::ObjectAlreadyInActiveTierError'>ObjectAlreadyInActiveTierError</a></td>
+                           <td class='docblock-short'>
+                                <p>This operation is not allowed against this storage tier</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ObjectIdentifier.html'
+                                  title='rusoto::s3::ObjectIdentifier'>ObjectIdentifier</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ObjectNotInActiveTierError.html'
+                                  title='rusoto::s3::ObjectNotInActiveTierError'>ObjectNotInActiveTierError</a></td>
+                           <td class='docblock-short'>
+                                <p>The source object of the COPY operation is not in the active tier and is only
+stored in Amazon Glacier.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ObjectVersion.html'
+                                  title='rusoto::s3::ObjectVersion'>ObjectVersion</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Owner.html'
+                                  title='rusoto::s3::Owner'>Owner</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Part.html'
+                                  title='rusoto::s3::Part'>Part</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.PutBucketAclRequest.html'
+                                  title='rusoto::s3::PutBucketAclRequest'>PutBucketAclRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.PutBucketCorsRequest.html'
+                                  title='rusoto::s3::PutBucketCorsRequest'>PutBucketCorsRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.PutBucketLifecycleRequest.html'
+                                  title='rusoto::s3::PutBucketLifecycleRequest'>PutBucketLifecycleRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.PutBucketLoggingRequest.html'
+                                  title='rusoto::s3::PutBucketLoggingRequest'>PutBucketLoggingRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.PutBucketNotificationConfigurationRequest.html'
+                                  title='rusoto::s3::PutBucketNotificationConfigurationRequest'>PutBucketNotificationConfigurationRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.PutBucketNotificationRequest.html'
+                                  title='rusoto::s3::PutBucketNotificationRequest'>PutBucketNotificationRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.PutBucketPolicyRequest.html'
+                                  title='rusoto::s3::PutBucketPolicyRequest'>PutBucketPolicyRequest</a></td>
+                           <td class='docblock-short'>
+                                <p>Put bucket policy request</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.PutBucketReplicationRequest.html'
+                                  title='rusoto::s3::PutBucketReplicationRequest'>PutBucketReplicationRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.PutBucketRequestPaymentRequest.html'
+                                  title='rusoto::s3::PutBucketRequestPaymentRequest'>PutBucketRequestPaymentRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.PutBucketTaggingRequest.html'
+                                  title='rusoto::s3::PutBucketTaggingRequest'>PutBucketTaggingRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.PutBucketVersioningRequest.html'
+                                  title='rusoto::s3::PutBucketVersioningRequest'>PutBucketVersioningRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.PutBucketWebsiteRequest.html'
+                                  title='rusoto::s3::PutBucketWebsiteRequest'>PutBucketWebsiteRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.PutObjectAclOutput.html'
+                                  title='rusoto::s3::PutObjectAclOutput'>PutObjectAclOutput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.PutObjectAclRequest.html'
+                                  title='rusoto::s3::PutObjectAclRequest'>PutObjectAclRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.PutObjectOutput.html'
+                                  title='rusoto::s3::PutObjectOutput'>PutObjectOutput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.PutObjectRequest.html'
+                                  title='rusoto::s3::PutObjectRequest'>PutObjectRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.QueueConfiguration.html'
+                                  title='rusoto::s3::QueueConfiguration'>QueueConfiguration</a></td>
+                           <td class='docblock-short'>
+                                <p>Container for specifying an configuration when you want Amazon S3 to publish
+events to an Amazon Simple Queue Service (Amazon SQS) queue.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.QueueConfigurationDeprecated.html'
+                                  title='rusoto::s3::QueueConfigurationDeprecated'>QueueConfigurationDeprecated</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Redirect.html'
+                                  title='rusoto::s3::Redirect'>Redirect</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RedirectAllRequestsTo.html'
+                                  title='rusoto::s3::RedirectAllRequestsTo'>RedirectAllRequestsTo</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ReplicationConfiguration.html'
+                                  title='rusoto::s3::ReplicationConfiguration'>ReplicationConfiguration</a></td>
+                           <td class='docblock-short'>
+                                <p>Container for replication rules. You can add as many as 1,000 rules. Total
+replication configuration size can be up to 2 MB.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ReplicationRule.html'
+                                  title='rusoto::s3::ReplicationRule'>ReplicationRule</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RequestPaymentConfiguration.html'
+                                  title='rusoto::s3::RequestPaymentConfiguration'>RequestPaymentConfiguration</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RestoreObjectOutput.html'
+                                  title='rusoto::s3::RestoreObjectOutput'>RestoreObjectOutput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RestoreObjectRequest.html'
+                                  title='rusoto::s3::RestoreObjectRequest'>RestoreObjectRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RestoreRequest.html'
+                                  title='rusoto::s3::RestoreRequest'>RestoreRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RoutingRule.html'
+                                  title='rusoto::s3::RoutingRule'>RoutingRule</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Rule.html'
+                                  title='rusoto::s3::Rule'>Rule</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.S3Client.html'
+                                  title='rusoto::s3::S3Client'>S3Client</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.S3ClientError.html'
+                                  title='rusoto::s3::S3ClientError'>S3ClientError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.S3Error.html'
+                                  title='rusoto::s3::S3Error'>S3Error</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.S3Helper.html'
+                                  title='rusoto::s3::S3Helper'>S3Helper</a></td>
+                           <td class='docblock-short'>
+                                <p>Wraps the generated S3 client with a higher level interface</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Tag.html'
+                                  title='rusoto::s3::Tag'>Tag</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Tagging.html'
+                                  title='rusoto::s3::Tagging'>Tagging</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.TargetGrant.html'
+                                  title='rusoto::s3::TargetGrant'>TargetGrant</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.TopicConfiguration.html'
+                                  title='rusoto::s3::TopicConfiguration'>TopicConfiguration</a></td>
+                           <td class='docblock-short'>
+                                <p>Container for specifying the configuration when you want Amazon S3 to publish
+events to an Amazon Simple Notification Service (Amazon SNS) topic.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.TopicConfigurationDeprecated.html'
+                                  title='rusoto::s3::TopicConfigurationDeprecated'>TopicConfigurationDeprecated</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Transition.html'
+                                  title='rusoto::s3::Transition'>Transition</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UploadPartCopyOutput.html'
+                                  title='rusoto::s3::UploadPartCopyOutput'>UploadPartCopyOutput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UploadPartCopyRequest.html'
+                                  title='rusoto::s3::UploadPartCopyRequest'>UploadPartCopyRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UploadPartOutput.html'
+                                  title='rusoto::s3::UploadPartOutput'>UploadPartOutput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UploadPartRequest.html'
+                                  title='rusoto::s3::UploadPartRequest'>UploadPartRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.VersioningConfiguration.html'
+                                  title='rusoto::s3::VersioningConfiguration'>VersioningConfiguration</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.WebsiteConfiguration.html'
+                                  title='rusoto::s3::WebsiteConfiguration'>WebsiteConfiguration</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr></table><h2 id='enums' class='section-header'><a href="#enums">Enums</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.CannedAcl.html'
+                                  title='rusoto::s3::CannedAcl'>CannedAcl</a></td>
+                           <td class='docblock-short'>
+                                <p>Canned ACL for S3</p>
+                           </td>
+                       </tr></table><h2 id='functions' class='section-header'><a href="#functions">Functions</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='fn' href='fn.canned_acl_in_aws_format.html'
+                                  title='rusoto::s3::canned_acl_in_aws_format'>canned_acl_in_aws_format</a></td>
+                           <td class='docblock-short'>
+                                <p>Maps canned acl to AWS format.  EG public-read.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='fn' href='fn.create_bucket_config_xml.html'
+                                  title='rusoto::s3::create_bucket_config_xml'>create_bucket_config_xml</a></td>
+                           <td class='docblock-short'>
+                                <p>Manually writes out bucket configuration (location constraint) in XML.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='fn' href='fn.multipart_upload_finish_xml.html'
+                                  title='rusoto::s3::multipart_upload_finish_xml'>multipart_upload_finish_xml</a></td>
+                           <td class='docblock-short'>
+                                <p>Writes out XML with all the parts in it for S3 to complete.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='fn' href='fn.needs_create_bucket_config.html'
+                                  title='rusoto::s3::needs_create_bucket_config'>needs_create_bucket_config</a></td>
+                           <td class='docblock-short'>
+                                <p>Helper function to determine if a create config is needed.</p>
+                           </td>
+                       </tr></table><h2 id='types' class='section-header'><a href="#types">Type Definitions</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AcceptRanges.html'
+                                  title='rusoto::s3::AcceptRanges'>AcceptRanges</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AllowedHeader.html'
+                                  title='rusoto::s3::AllowedHeader'>AllowedHeader</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AllowedHeaders.html'
+                                  title='rusoto::s3::AllowedHeaders'>AllowedHeaders</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AllowedMethod.html'
+                                  title='rusoto::s3::AllowedMethod'>AllowedMethod</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AllowedMethods.html'
+                                  title='rusoto::s3::AllowedMethods'>AllowedMethods</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AllowedOrigin.html'
+                                  title='rusoto::s3::AllowedOrigin'>AllowedOrigin</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.AllowedOrigins.html'
+                                  title='rusoto::s3::AllowedOrigins'>AllowedOrigins</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Body.html'
+                                  title='rusoto::s3::Body'>Body</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.BucketLocationConstraint.html'
+                                  title='rusoto::s3::BucketLocationConstraint'>BucketLocationConstraint</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.BucketLogsPermission.html'
+                                  title='rusoto::s3::BucketLogsPermission'>BucketLogsPermission</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.BucketName.html'
+                                  title='rusoto::s3::BucketName'>BucketName</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.BucketVersioningStatus.html'
+                                  title='rusoto::s3::BucketVersioningStatus'>BucketVersioningStatus</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Buckets.html'
+                                  title='rusoto::s3::Buckets'>Buckets</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.CORSRules.html'
+                                  title='rusoto::s3::CORSRules'>CORSRules</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.CacheControl.html'
+                                  title='rusoto::s3::CacheControl'>CacheControl</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.CloudFunction.html'
+                                  title='rusoto::s3::CloudFunction'>CloudFunction</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.CloudFunctionInvocationRole.html'
+                                  title='rusoto::s3::CloudFunctionInvocationRole'>CloudFunctionInvocationRole</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Code.html'
+                                  title='rusoto::s3::Code'>Code</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.CommonPrefixList.html'
+                                  title='rusoto::s3::CommonPrefixList'>CommonPrefixList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.CompletedPartList.html'
+                                  title='rusoto::s3::CompletedPartList'>CompletedPartList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ContentDisposition.html'
+                                  title='rusoto::s3::ContentDisposition'>ContentDisposition</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ContentEncoding.html'
+                                  title='rusoto::s3::ContentEncoding'>ContentEncoding</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ContentLanguage.html'
+                                  title='rusoto::s3::ContentLanguage'>ContentLanguage</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ContentLength.html'
+                                  title='rusoto::s3::ContentLength'>ContentLength</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ContentMD5.html'
+                                  title='rusoto::s3::ContentMD5'>ContentMD5</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ContentRange.html'
+                                  title='rusoto::s3::ContentRange'>ContentRange</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ContentType.html'
+                                  title='rusoto::s3::ContentType'>ContentType</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.CopySource.html'
+                                  title='rusoto::s3::CopySource'>CopySource</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.CopySourceIfMatch.html'
+                                  title='rusoto::s3::CopySourceIfMatch'>CopySourceIfMatch</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.CopySourceIfModifiedSince.html'
+                                  title='rusoto::s3::CopySourceIfModifiedSince'>CopySourceIfModifiedSince</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.CopySourceIfNoneMatch.html'
+                                  title='rusoto::s3::CopySourceIfNoneMatch'>CopySourceIfNoneMatch</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.CopySourceIfUnmodifiedSince.html'
+                                  title='rusoto::s3::CopySourceIfUnmodifiedSince'>CopySourceIfUnmodifiedSince</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.CopySourceRange.html'
+                                  title='rusoto::s3::CopySourceRange'>CopySourceRange</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.CopySourceSSECustomerAlgorithm.html'
+                                  title='rusoto::s3::CopySourceSSECustomerAlgorithm'>CopySourceSSECustomerAlgorithm</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.CopySourceSSECustomerKey.html'
+                                  title='rusoto::s3::CopySourceSSECustomerKey'>CopySourceSSECustomerKey</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.CopySourceSSECustomerKeyMD5.html'
+                                  title='rusoto::s3::CopySourceSSECustomerKeyMD5'>CopySourceSSECustomerKeyMD5</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.CopySourceVersionId.html'
+                                  title='rusoto::s3::CopySourceVersionId'>CopySourceVersionId</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.CreationDate.html'
+                                  title='rusoto::s3::CreationDate'>CreationDate</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Date.html'
+                                  title='rusoto::s3::Date'>Date</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Days.html'
+                                  title='rusoto::s3::Days'>Days</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.DeleteMarker.html'
+                                  title='rusoto::s3::DeleteMarker'>DeleteMarker</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.DeleteMarkerVersionId.html'
+                                  title='rusoto::s3::DeleteMarkerVersionId'>DeleteMarkerVersionId</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.DeleteMarkers.html'
+                                  title='rusoto::s3::DeleteMarkers'>DeleteMarkers</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.DeletedObjects.html'
+                                  title='rusoto::s3::DeletedObjects'>DeletedObjects</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Delimiter.html'
+                                  title='rusoto::s3::Delimiter'>Delimiter</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.DisplayName.html'
+                                  title='rusoto::s3::DisplayName'>DisplayName</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ETag.html'
+                                  title='rusoto::s3::ETag'>ETag</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.EmailAddress.html'
+                                  title='rusoto::s3::EmailAddress'>EmailAddress</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.EncodingType.html'
+                                  title='rusoto::s3::EncodingType'>EncodingType</a></td>
+                           <td class='docblock-short'>
+                                <p>Requests Amazon S3 to encode the object keys in the response and specifies the
+encoding method to use. An object key may contain any Unicode character;
+however, XML 1.0 parser cannot parse some characters, such as characters with
+an ASCII value from 0 to 10. For characters that are not supported in XML 1.0,
+you can add this parameter to request that Amazon S3 encode the keys in the
+response.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Errors.html'
+                                  title='rusoto::s3::Errors'>Errors</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Event.html'
+                                  title='rusoto::s3::Event'>Event</a></td>
+                           <td class='docblock-short'>
+                                <p>Bucket event for which to send notifications.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.EventList.html'
+                                  title='rusoto::s3::EventList'>EventList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Expiration.html'
+                                  title='rusoto::s3::Expiration'>Expiration</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ExpirationStatus.html'
+                                  title='rusoto::s3::ExpirationStatus'>ExpirationStatus</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Expires.html'
+                                  title='rusoto::s3::Expires'>Expires</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ExposeHeader.html'
+                                  title='rusoto::s3::ExposeHeader'>ExposeHeader</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ExposeHeaders.html'
+                                  title='rusoto::s3::ExposeHeaders'>ExposeHeaders</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.GrantFullControl.html'
+                                  title='rusoto::s3::GrantFullControl'>GrantFullControl</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.GrantRead.html'
+                                  title='rusoto::s3::GrantRead'>GrantRead</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.GrantReadACP.html'
+                                  title='rusoto::s3::GrantReadACP'>GrantReadACP</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.GrantWrite.html'
+                                  title='rusoto::s3::GrantWrite'>GrantWrite</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.GrantWriteACP.html'
+                                  title='rusoto::s3::GrantWriteACP'>GrantWriteACP</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Grants.html'
+                                  title='rusoto::s3::Grants'>Grants</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.HostName.html'
+                                  title='rusoto::s3::HostName'>HostName</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.HttpErrorCodeReturnedEquals.html'
+                                  title='rusoto::s3::HttpErrorCodeReturnedEquals'>HttpErrorCodeReturnedEquals</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.HttpRedirectCode.html'
+                                  title='rusoto::s3::HttpRedirectCode'>HttpRedirectCode</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ID.html'
+                                  title='rusoto::s3::ID'>ID</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.IfMatch.html'
+                                  title='rusoto::s3::IfMatch'>IfMatch</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.IfModifiedSince.html'
+                                  title='rusoto::s3::IfModifiedSince'>IfModifiedSince</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.IfNoneMatch.html'
+                                  title='rusoto::s3::IfNoneMatch'>IfNoneMatch</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.IfUnmodifiedSince.html'
+                                  title='rusoto::s3::IfUnmodifiedSince'>IfUnmodifiedSince</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Initiated.html'
+                                  title='rusoto::s3::Initiated'>Initiated</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.IsLatest.html'
+                                  title='rusoto::s3::IsLatest'>IsLatest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.IsTruncated.html'
+                                  title='rusoto::s3::IsTruncated'>IsTruncated</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.KeyMarker.html'
+                                  title='rusoto::s3::KeyMarker'>KeyMarker</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.KeyPrefixEquals.html'
+                                  title='rusoto::s3::KeyPrefixEquals'>KeyPrefixEquals</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.LambdaFunctionArn.html'
+                                  title='rusoto::s3::LambdaFunctionArn'>LambdaFunctionArn</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.LambdaFunctionConfigurationList.html'
+                                  title='rusoto::s3::LambdaFunctionConfigurationList'>LambdaFunctionConfigurationList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.LastModified.html'
+                                  title='rusoto::s3::LastModified'>LastModified</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Location.html'
+                                  title='rusoto::s3::Location'>Location</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.MFA.html'
+                                  title='rusoto::s3::MFA'>MFA</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.MFADelete.html'
+                                  title='rusoto::s3::MFADelete'>MFADelete</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.MFADeleteStatus.html'
+                                  title='rusoto::s3::MFADeleteStatus'>MFADeleteStatus</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Marker.html'
+                                  title='rusoto::s3::Marker'>Marker</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.MaxAgeSeconds.html'
+                                  title='rusoto::s3::MaxAgeSeconds'>MaxAgeSeconds</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.MaxKeys.html'
+                                  title='rusoto::s3::MaxKeys'>MaxKeys</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.MaxParts.html'
+                                  title='rusoto::s3::MaxParts'>MaxParts</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.MaxUploads.html'
+                                  title='rusoto::s3::MaxUploads'>MaxUploads</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Metadata.html'
+                                  title='rusoto::s3::Metadata'>Metadata</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.MetadataDirective.html'
+                                  title='rusoto::s3::MetadataDirective'>MetadataDirective</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.MetadataKey.html'
+                                  title='rusoto::s3::MetadataKey'>MetadataKey</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.MetadataValue.html'
+                                  title='rusoto::s3::MetadataValue'>MetadataValue</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.MissingMeta.html'
+                                  title='rusoto::s3::MissingMeta'>MissingMeta</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.MultipartUploadId.html'
+                                  title='rusoto::s3::MultipartUploadId'>MultipartUploadId</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.MultipartUploadList.html'
+                                  title='rusoto::s3::MultipartUploadList'>MultipartUploadList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.NextKeyMarker.html'
+                                  title='rusoto::s3::NextKeyMarker'>NextKeyMarker</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.NextMarker.html'
+                                  title='rusoto::s3::NextMarker'>NextMarker</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.NextPartNumberMarker.html'
+                                  title='rusoto::s3::NextPartNumberMarker'>NextPartNumberMarker</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.NextUploadIdMarker.html'
+                                  title='rusoto::s3::NextUploadIdMarker'>NextUploadIdMarker</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.NextVersionIdMarker.html'
+                                  title='rusoto::s3::NextVersionIdMarker'>NextVersionIdMarker</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.NotificationId.html'
+                                  title='rusoto::s3::NotificationId'>NotificationId</a></td>
+                           <td class='docblock-short'>
+                                <p>Optional unique identifier for configurations in a notification configuration.
+If you don&#39;t provide one, Amazon S3 will assign an ID.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ObjectCannedACL.html'
+                                  title='rusoto::s3::ObjectCannedACL'>ObjectCannedACL</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ObjectIdentifierList.html'
+                                  title='rusoto::s3::ObjectIdentifierList'>ObjectIdentifierList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ObjectKey.html'
+                                  title='rusoto::s3::ObjectKey'>ObjectKey</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ObjectList.html'
+                                  title='rusoto::s3::ObjectList'>ObjectList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ObjectStorageClass.html'
+                                  title='rusoto::s3::ObjectStorageClass'>ObjectStorageClass</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ObjectVersionId.html'
+                                  title='rusoto::s3::ObjectVersionId'>ObjectVersionId</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ObjectVersionList.html'
+                                  title='rusoto::s3::ObjectVersionList'>ObjectVersionList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ObjectVersionStorageClass.html'
+                                  title='rusoto::s3::ObjectVersionStorageClass'>ObjectVersionStorageClass</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.PartNumber.html'
+                                  title='rusoto::s3::PartNumber'>PartNumber</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.PartNumberMarker.html'
+                                  title='rusoto::s3::PartNumberMarker'>PartNumberMarker</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Parts.html'
+                                  title='rusoto::s3::Parts'>Parts</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Payer.html'
+                                  title='rusoto::s3::Payer'>Payer</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Permission.html'
+                                  title='rusoto::s3::Permission'>Permission</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Policy.html'
+                                  title='rusoto::s3::Policy'>Policy</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Prefix.html'
+                                  title='rusoto::s3::Prefix'>Prefix</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Protocol.html'
+                                  title='rusoto::s3::Protocol'>Protocol</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.QueueArn.html'
+                                  title='rusoto::s3::QueueArn'>QueueArn</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.QueueConfigurationList.html'
+                                  title='rusoto::s3::QueueConfigurationList'>QueueConfigurationList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Quiet.html'
+                                  title='rusoto::s3::Quiet'>Quiet</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Range.html'
+                                  title='rusoto::s3::Range'>Range</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ReplaceKeyPrefixWith.html'
+                                  title='rusoto::s3::ReplaceKeyPrefixWith'>ReplaceKeyPrefixWith</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ReplaceKeyWith.html'
+                                  title='rusoto::s3::ReplaceKeyWith'>ReplaceKeyWith</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ReplicationRuleStatus.html'
+                                  title='rusoto::s3::ReplicationRuleStatus'>ReplicationRuleStatus</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ReplicationRules.html'
+                                  title='rusoto::s3::ReplicationRules'>ReplicationRules</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ReplicationStatus.html'
+                                  title='rusoto::s3::ReplicationStatus'>ReplicationStatus</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.RequestCharged.html'
+                                  title='rusoto::s3::RequestCharged'>RequestCharged</a></td>
+                           <td class='docblock-short'>
+                                <p>If present, indicates that the requester was successfully charged for the
+request.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.RequestPayer.html'
+                                  title='rusoto::s3::RequestPayer'>RequestPayer</a></td>
+                           <td class='docblock-short'>
+                                <p>Confirms that the requester knows that she or he will be charged for the
+request. Bucket owners need not specify this parameter in their requests.
+Documentation on downloading objects from requester pays buckets can be found
+<a href="http://docs.aws.amazon.com/AmazonS3/latest/dev/ObjectsinRequesterPaysBuckets.html">here</a>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ResponseCacheControl.html'
+                                  title='rusoto::s3::ResponseCacheControl'>ResponseCacheControl</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ResponseContentDisposition.html'
+                                  title='rusoto::s3::ResponseContentDisposition'>ResponseContentDisposition</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ResponseContentEncoding.html'
+                                  title='rusoto::s3::ResponseContentEncoding'>ResponseContentEncoding</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ResponseContentLanguage.html'
+                                  title='rusoto::s3::ResponseContentLanguage'>ResponseContentLanguage</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ResponseContentType.html'
+                                  title='rusoto::s3::ResponseContentType'>ResponseContentType</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ResponseExpires.html'
+                                  title='rusoto::s3::ResponseExpires'>ResponseExpires</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Restore.html'
+                                  title='rusoto::s3::Restore'>Restore</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Role.html'
+                                  title='rusoto::s3::Role'>Role</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.RoutingRules.html'
+                                  title='rusoto::s3::RoutingRules'>RoutingRules</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Rules.html'
+                                  title='rusoto::s3::Rules'>Rules</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.S3ClientMessage.html'
+                                  title='rusoto::s3::S3ClientMessage'>S3ClientMessage</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.SSECustomerAlgorithm.html'
+                                  title='rusoto::s3::SSECustomerAlgorithm'>SSECustomerAlgorithm</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.SSECustomerKey.html'
+                                  title='rusoto::s3::SSECustomerKey'>SSECustomerKey</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.SSECustomerKeyMD5.html'
+                                  title='rusoto::s3::SSECustomerKeyMD5'>SSECustomerKeyMD5</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.SSEKMSKeyId.html'
+                                  title='rusoto::s3::SSEKMSKeyId'>SSEKMSKeyId</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.ServerSideEncryption.html'
+                                  title='rusoto::s3::ServerSideEncryption'>ServerSideEncryption</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Size.html'
+                                  title='rusoto::s3::Size'>Size</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.StorageClass.html'
+                                  title='rusoto::s3::StorageClass'>StorageClass</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Suffix.html'
+                                  title='rusoto::s3::Suffix'>Suffix</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.TagSet.html'
+                                  title='rusoto::s3::TagSet'>TagSet</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.TargetBucket.html'
+                                  title='rusoto::s3::TargetBucket'>TargetBucket</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.TargetGrants.html'
+                                  title='rusoto::s3::TargetGrants'>TargetGrants</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.TargetPrefix.html'
+                                  title='rusoto::s3::TargetPrefix'>TargetPrefix</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.TopicArn.html'
+                                  title='rusoto::s3::TopicArn'>TopicArn</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.TopicConfigurationList.html'
+                                  title='rusoto::s3::TopicConfigurationList'>TopicConfigurationList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.TransitionStorageClass.html'
+                                  title='rusoto::s3::TransitionStorageClass'>TransitionStorageClass</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Type.html'
+                                  title='rusoto::s3::Type'>Type</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.URI.html'
+                                  title='rusoto::s3::URI'>URI</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.UploadIdMarker.html'
+                                  title='rusoto::s3::UploadIdMarker'>UploadIdMarker</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Value.html'
+                                  title='rusoto::s3::Value'>Value</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.VersionIdMarker.html'
+                                  title='rusoto::s3::VersionIdMarker'>VersionIdMarker</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.WebsiteRedirectLocation.html'
+                                  title='rusoto::s3::WebsiteRedirectLocation'>WebsiteRedirectLocation</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr></table></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "rusoto";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../../jquery.js"></script>
+    <script src="../../main.js"></script>
+    
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>

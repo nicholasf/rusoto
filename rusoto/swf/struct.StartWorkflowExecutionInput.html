@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `StartWorkflowExecutionInput` struct in crate `rusoto`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, StartWorkflowExecutionInput">
+
+    <title>rusoto::swf::StartWorkflowExecutionInput - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='../index.html'>rusoto</a>::<wbr><a href='index.html'>swf</a></p><script>window.sidebarCurrent = {name: 'StartWorkflowExecutionInput', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content struct">
+<h1 class='fqn'><span class='in-band'>Struct <a href='../index.html'>rusoto</a>::<wbr><a href='index.html'>swf</a>::<wbr><a class='struct' href=''>StartWorkflowExecutionInput</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-414415' class='srclink' href='../../src/rusoto/home/travis/build/rusoto/rusoto/target/debug/build/rusoto-61f21223a43ed2cb/out/swf.rs.html#32473-32517' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct StartWorkflowExecutionInput {
+    pub child_policy: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/swf/type.ChildPolicy.html' title='rusoto::swf::ChildPolicy'>ChildPolicy</a>&gt;,
+    pub domain: <a class='type' href='../../rusoto/swf/type.DomainName.html' title='rusoto::swf::DomainName'>DomainName</a>,
+    pub execution_start_to_close_timeout: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/swf/type.DurationInSecondsOptional.html' title='rusoto::swf::DurationInSecondsOptional'>DurationInSecondsOptional</a>&gt;,
+    pub input: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/swf/type.Data.html' title='rusoto::swf::Data'>Data</a>&gt;,
+    pub lambda_role: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/swf/type.Arn.html' title='rusoto::swf::Arn'>Arn</a>&gt;,
+    pub tag_list: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/swf/type.TagList.html' title='rusoto::swf::TagList'>TagList</a>&gt;,
+    pub task_list: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../../rusoto/swf/struct.TaskList.html' title='rusoto::swf::TaskList'>TaskList</a>&gt;,
+    pub task_priority: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/swf/type.TaskPriority.html' title='rusoto::swf::TaskPriority'>TaskPriority</a>&gt;,
+    pub task_start_to_close_timeout: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/swf/type.DurationInSecondsOptional.html' title='rusoto::swf::DurationInSecondsOptional'>DurationInSecondsOptional</a>&gt;,
+    pub workflow_id: <a class='type' href='../../rusoto/swf/type.WorkflowId.html' title='rusoto::swf::WorkflowId'>WorkflowId</a>,
+    pub workflow_type: <a class='struct' href='../../rusoto/swf/struct.WorkflowType.html' title='rusoto::swf::WorkflowType'>WorkflowType</a>,
+}</pre><h2 class='fields'>Fields</h2><span id='structfield.child_policy' class='structfield'>
+                           <span id='child_policy.v' class='invisible'>
+                           <code>child_policy: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/swf/type.ChildPolicy.html' title='rusoto::swf::ChildPolicy'>ChildPolicy</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p><p>If set, specifies the policy to use for the child workflow executions of this workflow execution if it is terminated, by calling the <a>TerminateWorkflowExecution</a> action explicitly or due to an expired timeout. This policy overrides the default child policy specified when registering the workflow type using <a>RegisterWorkflowType</a>.</p> <p>The supported child policies are:</p> <ul> <li><b>TERMINATE:</b> the child executions will be terminated.</li> <li><b>REQUEST_CANCEL:</b> a request to cancel will be attempted for each child execution by recording a <code>WorkflowExecutionCancelRequested</code> event in its history. It is up to the decider to take appropriate actions when it receives an execution history with this event.</li> <li><b>ABANDON:</b> no action will be taken. The child executions will continue to run.</li> </ul> <note>A child policy for this workflow execution must be specified either as a default for the workflow type or through this parameter. If neither this parameter is set nor a default child policy was specified at registration time then a fault will be returned.</note></p>
+</div><span id='structfield.domain' class='structfield'>
+                           <span id='domain.v' class='invisible'>
+                           <code>domain: <a class='type' href='../../rusoto/swf/type.DomainName.html' title='rusoto::swf::DomainName'>DomainName</a></code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>The name of the domain in which the workflow execution is created.</p>
+</div><span id='structfield.execution_start_to_close_timeout' class='structfield'>
+                           <span id='execution_start_to_close_timeout.v' class='invisible'>
+                           <code>execution_start_to_close_timeout: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/swf/type.DurationInSecondsOptional.html' title='rusoto::swf::DurationInSecondsOptional'>DurationInSecondsOptional</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p><p>The total duration for this workflow execution. This overrides the defaultExecutionStartToCloseTimeout specified when registering the workflow type.</p> <p>The duration is specified in seconds; an integer greater than or equal to 0. Exceeding this limit will cause the workflow execution to time out. Unlike some of the other timeout parameters in Amazon SWF, you cannot specify a value of &quot;NONE&quot; for this timeout; there is a one-year max limit on the time that a workflow execution can run.</p> <note> An execution start-to-close timeout must be specified either through this parameter or as a default when the workflow type is registered. If neither this parameter nor a default execution start-to-close timeout is specified, a fault is returned.</note></p>
+</div><span id='structfield.input' class='structfield'>
+                           <span id='input.v' class='invisible'>
+                           <code>input: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/swf/type.Data.html' title='rusoto::swf::Data'>Data</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>The input for the workflow execution. This is a free form string which should be meaningful to the workflow you are starting. This <code>input</code> is made available to the new workflow execution in the <code>WorkflowExecutionStarted</code> history event.</p>
+</div><span id='structfield.lambda_role' class='structfield'>
+                           <span id='lambda_role.v' class='invisible'>
+                           <code>lambda_role: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/swf/type.Arn.html' title='rusoto::swf::Arn'>Arn</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p><p>The ARN of an IAM role that authorizes Amazon SWF to invoke AWS Lambda functions.</p> <note>In order for this workflow execution to invoke AWS Lambda functions, an appropriate IAM role must be specified either as a default for the workflow type or through this field.</note></p>
+</div><span id='structfield.tag_list' class='structfield'>
+                           <span id='tag_list.v' class='invisible'>
+                           <code>tag_list: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/swf/type.TagList.html' title='rusoto::swf::TagList'>TagList</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>The list of tags to associate with the workflow execution. You can specify a maximum of 5 tags. You can list workflow executions with a specific tag by calling <a>ListOpenWorkflowExecutions</a> or <a>ListClosedWorkflowExecutions</a> and specifying a <a>TagFilter</a>.</p>
+</div><span id='structfield.task_list' class='structfield'>
+                           <span id='task_list.v' class='invisible'>
+                           <code>task_list: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../../rusoto/swf/struct.TaskList.html' title='rusoto::swf::TaskList'>TaskList</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>The task list to use for the decision tasks generated for this workflow execution. This overrides the <code>defaultTaskList</code> specified when registering the workflow type.</p> <note>A task list for this workflow execution must be specified either as a default for the workflow type or through this parameter. If neither this parameter is set nor a default task list was specified at registration time then a fault will be returned.</note> <p>The specified string must not start or end with whitespace. It must not contain a <code>:</code> (colon), <code>/</code> (slash), <code>|</code> (vertical bar), or any control characters (\u0000-\u001f | \u007f - \u009f). Also, it must not contain the literal string quotarnquot.</p>
+</div><span id='structfield.task_priority' class='structfield'>
+                           <span id='task_priority.v' class='invisible'>
+                           <code>task_priority: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/swf/type.TaskPriority.html' title='rusoto::swf::TaskPriority'>TaskPriority</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>The task priority to use for this workflow execution. This will override any default priority that was assigned when the workflow type was registered. If not set, then the default task priority for the workflow type will be used. Valid values are integers that range from Java's <code>Integer.MIN_VALUE</code> (-2147483648) to <code>Integer.MAX_VALUE</code> (2147483647). Higher numbers indicate higher priority.</p> <p>For more information about setting task priority, see <a href="http://docs.aws.amazon.com/amazonswf/latest/developerguide/programming-priority.html">Setting Task Priority</a> in the <i>Amazon Simple Workflow Developer Guide</i>.</p>
+</div><span id='structfield.task_start_to_close_timeout' class='structfield'>
+                           <span id='task_start_to_close_timeout.v' class='invisible'>
+                           <code>task_start_to_close_timeout: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='type' href='../../rusoto/swf/type.DurationInSecondsOptional.html' title='rusoto::swf::DurationInSecondsOptional'>DurationInSecondsOptional</a>&gt;</code>
+                           </span></span><span class='stab '></span><div class='docblock'><p><p>Specifies the maximum duration of decision tasks for this workflow execution. This parameter overrides the <code>defaultTaskStartToCloseTimout</code> specified when registering the workflow type using <a>RegisterWorkflowType</a>.</p> <p>The duration is specified in seconds; an integer greater than or equal to 0. The value &quot;NONE&quot; can be used to specify unlimited duration.</p> <note>A task start-to-close timeout for this workflow execution must be specified either as a default for the workflow type or through this parameter. If neither this parameter is set nor a default task start-to-close timeout was specified at registration time then a fault will be returned.</note></p>
+</div><span id='structfield.workflow_id' class='structfield'>
+                           <span id='workflow_id.v' class='invisible'>
+                           <code>workflow_id: <a class='type' href='../../rusoto/swf/type.WorkflowId.html' title='rusoto::swf::WorkflowId'>WorkflowId</a></code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>The user defined identifier associated with the workflow execution. You can use this to associate a custom identifier with the workflow execution. You may specify the same identifier if a workflow execution is logically a <i>restart</i> of a previous execution. You cannot have two open workflow executions with the same <code>workflowId</code> at the same time.</p> <p>The specified string must not start or end with whitespace. It must not contain a <code>:</code> (colon), <code>/</code> (slash), <code>|</code> (vertical bar), or any control characters (\u0000-\u001f | \u007f - \u009f). Also, it must not contain the literal string quotarnquot.</p>
+</div><span id='structfield.workflow_type' class='structfield'>
+                           <span id='workflow_type.v' class='invisible'>
+                           <code>workflow_type: <a class='struct' href='../../rusoto/swf/struct.WorkflowType.html' title='rusoto::swf::WorkflowType'>WorkflowType</a></code>
+                           </span></span><span class='stab '></span><div class='docblock'><p>The type of the workflow to start.</p>
+</div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../../rusoto/swf/struct.StartWorkflowExecutionInput.html' title='rusoto::swf::StartWorkflowExecutionInput'>StartWorkflowExecutionInput</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-414427' class='srclink' href='../../src/rusoto/home/travis/build/rusoto/rusoto/target/debug/build/rusoto-61f21223a43ed2cb/out/swf.rs.html#32472' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.clone' class='method'><span id='clone.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../../rusoto/swf/struct.StartWorkflowExecutionInput.html' title='rusoto::swf::StartWorkflowExecutionInput'>StartWorkflowExecutionInput</a></code></span></h4>
+<div class='docblock'><p>Returns a copy of the value. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone">Read more</a></p>
+</div><h4 id='method.clone_from' class='method'><span id='clone_from.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div></span></h4>
+<div class='docblock'><p>Performs copy-assignment from <code>source</code>. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../../rusoto/swf/struct.StartWorkflowExecutionInput.html' title='rusoto::swf::StartWorkflowExecutionInput'>StartWorkflowExecutionInput</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-414441' class='srclink' href='../../src/rusoto/home/travis/build/rusoto/rusoto/target/debug/build/rusoto-61f21223a43ed2cb/out/swf.rs.html#32472' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.fmt' class='method'><span id='fmt.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#tymethod.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></span></h4>
+<div class='docblock'><p>Formats the value using the given formatter.</p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../../rusoto/swf/struct.StartWorkflowExecutionInput.html' title='rusoto::swf::StartWorkflowExecutionInput'>StartWorkflowExecutionInput</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-414457' class='srclink' href='../../src/rusoto/home/travis/build/rusoto/rusoto/target/debug/build/rusoto-61f21223a43ed2cb/out/swf.rs.html#32472' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.default' class='method'><span id='default.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../../rusoto/swf/struct.StartWorkflowExecutionInput.html' title='rusoto::swf::StartWorkflowExecutionInput'>StartWorkflowExecutionInput</a></code></span></h4>
+<div class='docblock'><p>Returns the &quot;default value&quot; for a type. <a href="https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default">Read more</a></p>
+</div></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "rusoto";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../../jquery.js"></script>
+    <script src="../../main.js"></script>
+    
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>
